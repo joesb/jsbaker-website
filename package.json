@@ -1,10 +1,20 @@
 {
   "name": "jsbaker.co.uk",
   "version": "1.0.0",
-  "description": "",
+  "description": "The website for J S Baker",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "npx eleventy",
+    "watch": "npx eleventy --watch",
+    "serve": "npx eleventy --serve & node-sass --watch _includes/assets/sass/styles.scss _includes/assets/css/styles.css & npx postcss --watch _includes/assets/css/styles.css --use autoprefixer -d _includes/assets/css/build ",
+    "debug": "DEBUG=* npx eleventy",
+    "wdebug": "set DEBUG=Eleventy* & eleventy",
+    "sass": "node-sass --watch _includes/assets/sass/styles.scss _includes/assets/css/styles.css",
+    "npf": "npx postcss _includes/assets/css/styles.css --use autoprefixer -d _includes/assets/css/build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/joesb/jsbaker-website"
   },
   "keywords": [],
   "author": "",
