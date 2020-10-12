@@ -1,4 +1,4 @@
-# JSBaker.co.uk website
+# J S Baker website
 
 ## To Install 11ty theme
 
