@@ -1,0 +1,68 @@
+/* ==========================================================================
+VARIABLES
+========================================================================== */
+
+@import "node_modules/sass-rem/rem";
+
+$base-font-size: 19px;
+
+// Custom media queries
+$xs-mobile-down: 340px;
+$sm-mobile: 375px;
+$md-mobile: 480px;
+$mobile: 576px;
+$tablet: 768px;
+$desktop: 992px;
+$lg-desktop: 1200px;
+$carousel-desktop: 1300px;
+$xl-desktop: 1440px;
+
+// Fonts
+$primary-font: 'Nunito', sans-serif;
+$secondary-font: 'Source Sans Pro', sans-serif;
+$headings-font: 'Nunito', sans-serif;
+
+// Font weight
+$base-font-weight-bold: 700;
+$base-font-weight-regular: normal;
+$headings-font-weight: 700;
+
+// Font sizes
+$body-font-size-mobile: rem(16px);
+$body-font-size: rem(17px);
+
+$lg-body-font-size-mobile: rem(19px);
+$lg-body-font-size: rem(25px);
+
+$h1-font-size-mobile: rem(22px);
+$h1-font-size: rem(29px);
+
+$h2-font-size-mobile: rem(19px);
+$h2-font-size: rem(23px);
+
+$h3-font-size-mobile: rem(17px);
+$h3-font-size: rem(19px);
+
+$h4-font-size-mobile: rem(17px);
+$h4-font-size: rem(19px);
+
+// Font line heights
+$base-line-height: rem(19px);
+
+$body-line-height-mobile: rem(23px);
+$body-line-height: rem(25px);
+
+$lg-body-line-height-mobile: rem(26px);
+$lg-body-line-height: rem(37px);
+
+$h1-line-height-mobile: rem(30px);
+$h1-line-height: rem(40px);
+
+$h2-line-height-mobile: rem(26px);
+$h2-line-height: rem(33px);
+
+$h3-line-height-mobile: rem(25px);
+$h3-line-height: rem(28px);
+
+$h4-line-height-mobile: rem(25px);
+$h4-line-height: rem(28px);
