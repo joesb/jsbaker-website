@@ -1,0 +1,13 @@
+<nav class="breadcrumbs-block" aria-label="Breadcrumbs">
+	<div class="container">
+		<div class="breadcrumbs">
+			<ol class="breadcrumbs__list">
+				<li class="breadcrumbs__list-item"><a class="breadcrumbs__link" href="{{ '/' | url }}">Home</a></li>
+				{% if ( breadcrumbs_parent ) %}
+				<li class="breadcrumbs__list-item"><a class="breadcrumbs__link" href="{{ breadcrumbs_parent_url }}">{{ breadcrumbs_parent }}</a></li>
+				{% endif %}
+				<li class="breadcrumbs__list-item"><a class="breadcrumbs__link" href="{{ permalink }}">{{ navtitle }}</a></li>
+			</ol>
+		</div>
+	</div>
+</nav>

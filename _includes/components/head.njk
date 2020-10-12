@@ -1,0 +1,23 @@
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  {% if permalink == '/' %}
+    <title>{{ title or renderData.title or metadata.title }}</title>
+  {% else %}
+    <title>{{ title or renderData.title or metadata.title }} | J S Baker</title>
+  {% endif %}
+  {% if metadesc %}
+  <meta name="description" content="{{ metadesc }}" />
+  {% endif %}
+  <link href="https://fonts.googleapis.com/css?family=Nunito:300,400,400i,700|Source+Sans+Pro:300,400&display=swap" rel="stylesheet">
+  {% set css %}
+    {% include "assets/css/build/styles.css" %}
+  {% endset %}
+  <style>{{ css | cssmin | safe }}</style>
+  <script src="/_includes/assets/js/jquery-3.4.1.min.js"></script>
+
+  {% set js %}
+    {% include "assets/js/inline.js" %}
+  {% endset %}
+  <script>{{ js | jsmin | safe }}</script>
+</head>

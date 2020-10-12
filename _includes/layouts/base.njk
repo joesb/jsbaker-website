@@ -1,0 +1,51 @@
+<!doctype html>
+<html {% if section %} data-current="{{ section }}"{% endif %} lang="en">
+
+	{% include "components/head.njk" %}
+
+	<body>
+		<div class="govuk-skip-link-wrapper">
+			<a href="#content" class="govuk-skip-link">Skip to main content</a>
+		</div>
+
+		<header role="banner" class="header-main" id="main-navigation">
+			<div class="container container--wide container--flex">
+				<div class="header-main__logo">
+					<a href="{{ '/' | url }}">
+						<img src="/static/img/ui/nlc-full-logoX600.png" alt="{{ metadata.title }}" />
+					</a>
+				</div>
+				<div class="header-main__nav">
+					{% include "components/nav.njk" %}
+				</div>
+				<button class="header-main__menu js-closed" aria-expanded="false" href="#main-navigation">
+					<a class="css-nav css-nav--open" href="#main-navigation" aria-label="Open menu">Open</a>
+					<a class="css-nav css-nav--close" href="#" aria-label="Close menu">Close</a>
+					<div class="header-main__menu__text closed-text" aria-label="Open menu">Menu</div>
+					<div class="header-main__menu__text open-text" aria-label="Close menu">Close</div>
+					<div class="header-main__menu__burger">
+						<div></div>
+						<div></div>
+						<div></div>
+					</div>
+				</button>
+			</div>
+		</header>
+
+		{%- if not home -%}
+			{% include "components/breadcrumbs.njk" %}
+		{% endif %}
+
+		<main id="content">
+			{% if not primary %}
+				{% include "components/title-bar.njk" %}
+			{% endif %}
+			{{ layoutContent | safe }}
+		</main>
+
+		{% include "components/footer.njk" %}
+
+	</body>
+	<!-- Google Analytics -->
+	<!-- End Google Analytics -->
+</html>
