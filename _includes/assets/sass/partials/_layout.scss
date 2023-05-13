@@ -1,0 +1,43 @@
+/* ==========================================================================
+LAYOUT
+========================================================================== */
+
+body {
+  display: grid;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "head head head head head"
+    "main main main main main"
+    ".... .... foot .... ...."
+  ;
+  grid-template-columns: 2fr 1fr minmax(30ch, $break-large) 1fr 2fr;
+}
+
+header {
+  grid-area: head;
+}
+
+main {
+  grid-area: main;
+  min-height: 100vh;
+  flex-grow: 1;
+}
+
+footer {
+  grid-area: foot;
+  display: grid;
+  grid-auto-flow: row;
+  gap: 1.5em;
+  padding: 3em 1.5em;
+
+  @include respond-to('medium') {
+    padding: 3em 6em;
+  }
+}
+
+@include respond-to('medium') {
+  footer {
+    gap: 3em;
+    grid-auto-flow: column;
+  }
+}

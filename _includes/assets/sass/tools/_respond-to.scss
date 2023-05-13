@@ -1,0 +1,24 @@
+///** Mixins */
+
+// @include respond-to( );
+@mixin respond-to( $condition ) {
+  @if $condition == 'initialize' { @media only screen and (min-width: 1px) { @content; } }
+
+  @else if $condition == 'very-small' { @media only screen and (min-width: $break-very-small) { @content; } }
+
+  @else if $condition == 'small' { @media only screen and (min-width: $break-small) { @content; } }
+
+  @else if $condition == 'medium' { @media only screen and (min-width: $break-medium) { @content; } }
+
+  @else if $condition == 'large' { @media only screen and (min-width: $break-large) { @content; } }
+
+  @else if $condition == 'extra-large' { @media only screen and (min-width: $break-extra-large) { @content; } }
+
+  @else if $condition == 'largest' { @media only screen and (min-width: $break-largest) { @content; } }
+
+  @else if $condition == 'iphone6-7' { @media screen and (max-width: $iphone6-7) { @content; } }
+
+  @else if $condition == 'nexus6' { @media screen and (max-width: $nexus6) { @content; } }
+
+  @else { @media screen and (#{$condition}) { @content; } }
+}

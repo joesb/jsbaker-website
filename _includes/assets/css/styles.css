@@ -1,0 +1,178 @@
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+# Variables
+# Normalize
+# Elements
+# Components
+# Typography
+# Layout
+# Accessibility
+# Forms
+# Media
+# Navigation
+*/
+/*--------------------------------------------------------------
+# OpenProps
+--------------------------------------------------------------*/
+/* ==========================================================================
+*    OPENPROPS 
+*
+*    cf. https://open-props.style/
+========================================================================== */
+/* the props */
+@import "https://unpkg.com/open-props";
+/* optional imports that use the props */
+@import "https://unpkg.com/open-props/normalize.light.min.css";
+@import "https://unpkg.com/open-props/buttons.light.min.css";
+/*--------------------------------------------------------------
+# Variables
+--------------------------------------------------------------*/
+/* ==========================================================================
+VARIABLES
+========================================================================== */
+/* --------------------------------------------------------------
+# Tools
+-------------------------------------------------------------- */
+/*--------------------------------------------------------------
+# Normalize
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+# Elements
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+# Components
+--------------------------------------------------------------*/
+/* ==========================================================================
+COMPONENTS
+========================================================================== */
+.content-canvas {
+  display: grid;
+  column-gap: 1rem;
+  grid-template-columns: [full-start] 1fr [wide-start] minmax(0, auto) [main-start] minmax(15ch, calc(64rem - 3rem)) [main-mid] minmax(15ch, auto) [main-end] minmax(0, auto) [wide-end] 1fr [full-end];
+  grid-auto-flow: row; }
+
+@media only screen and (min-width: 64rem) {
+  .content-canvas {
+    grid-template-columns: [full-start] minmax(3vw, 1fr) [wide-start] minmax(6vw, auto) [main-start] minmax(calc(36rem - 3rem), calc((48rem - 3rem) * 3 / 5)) [main-mid] minmax(40ch, calc((48rem - 3rem) * 2 / 5)) [main-end] minmax(6vw, auto) [wide-end] minmax(3vw, 1fr) [full-end];
+    grid-template-rows: fit-content(auto); } }
+
+.content-canvas > *,
+.content-canvas-item-left,
+.content-canvas-item-right {
+  width: 100%;
+  grid-column: main-start/main-end; }
+  .content-canvas > * .fig-image,
+  .content-canvas-item-left .fig-image,
+  .content-canvas-item-right .fig-image {
+    margin-top: 0;
+    margin-left: 0;
+    margin-right: 0; }
+    .content-canvas > * .fig-image img,
+    .content-canvas-item-left .fig-image img,
+    .content-canvas-item-right .fig-image img {
+      width: 100%; }
+
+.content-canvas-item-wide {
+  grid-column: wide-start/wide-end; }
+
+.content-canvas-item-full {
+  grid-column: full-start/full-end; }
+
+@media only screen and (min-width: 48rem) {
+  .content-canvas-item-left {
+    grid-column: main-start/main-mid; }
+  .content-canvas-item-right {
+    grid-column: main-mid/main-end; }
+    .content-canvas-item-right.content-canvas-item-right--span-2 {
+      grid-row: span 2; }
+      .content-canvas-item-right.content-canvas-item-right--span-2 + * {
+        grid-column: main-start/main-mid; }
+    .content-canvas-item-right.content-canvas-item-right--span-3 {
+      grid-row: span 3; }
+      .content-canvas-item-right.content-canvas-item-right--span-3 + *,
+      .content-canvas-item-right.content-canvas-item-right--span-3 + * + * {
+        grid-column: main-start/main-mid; }
+    .content-canvas-item-right.content-canvas-item-right--span-4 {
+      grid-row: span 4; }
+      .content-canvas-item-right.content-canvas-item-right--span-4 + *,
+      .content-canvas-item-right.content-canvas-item-right--span-4 + * + *,
+      .content-canvas-item-right.content-canvas-item-right--span-4 + * + * + * {
+        grid-column: main-start/main-mid; }
+    .content-canvas-item-right.content-canvas-item-right--span-5 {
+      grid-row: span 5; }
+      .content-canvas-item-right.content-canvas-item-right--span-5 + *,
+      .content-canvas-item-right.content-canvas-item-right--span-5 + * + *,
+      .content-canvas-item-right.content-canvas-item-right--span-5 + * + * + *,
+      .content-canvas-item-right.content-canvas-item-right--span-5 + * + * + * + * {
+        grid-column: main-start/main-mid; }
+  .content-canvas-item-wide-left {
+    grid-column: wide-start/main-mid; }
+  .content-canvas-item-wide-right {
+    grid-column: main-mid/wide-end; }
+  .pull-right {
+    grid-column: main-mid/main-end;
+    grid-row: span 4; }
+  .pull-right + *,
+  .pull-right + * + *,
+  .pull-right + * + * + * {
+    grid-column: main-start/main-mid; } }
+
+/*--------------------------------------------------------------
+# Typography
+--------------------------------------------------------------*/
+/* ==========================================================================
+TYPOGRAPHY
+========================================================================== */
+:where(p),
+.body-style {
+  font-family: "PT Sans", var(--font-sans);
+  margin-block-end: 1rem; }
+
+/*--------------------------------------------------------------
+# Layout
+--------------------------------------------------------------*/
+/* ==========================================================================
+LAYOUT
+========================================================================== */
+body {
+  display: grid;
+  grid-auto-flow: row;
+  grid-template-areas: "head head head head head" "main main main main main" ".... .... foot .... ....";
+  grid-template-columns: 2fr 1fr minmax(30ch, 64rem) 1fr 2fr; }
+
+header {
+  grid-area: head; }
+
+main {
+  grid-area: main;
+  min-height: 100vh;
+  flex-grow: 1; }
+
+footer {
+  grid-area: foot;
+  display: grid;
+  grid-auto-flow: row;
+  gap: 1.5em;
+  padding: 3em 1.5em; }
+  @media only screen and (min-width: 48rem) {
+    footer {
+      padding: 3em 6em; } }
+
+@media only screen and (min-width: 48rem) {
+  footer {
+    gap: 3em;
+    grid-auto-flow: column; } }
+
+/*--------------------------------------------------------------
+# Accessibility
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+# Forms
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+# Media
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+# Navigation
+--------------------------------------------------------------*/
