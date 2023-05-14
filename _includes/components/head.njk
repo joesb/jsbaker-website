@@ -19,8 +19,18 @@
     {% include "assets/css/build/styles.css" %}
   {% endset %}
   <style>{{ css | cssmin | safe }}</style>
-  <script src="/_includes/assets/js/jquery-3.4.1.min.js"></script>
 
+  {% if styles %}
+    {% for style in styles %}
+      {% set include_style %}assets/css/build/{{ style }}{% endset %}
+      {% set include_css %}
+        {% include include_style %}
+      {% endset %}
+    <style>{{ include_css | cssmin | safe }}</style>
+    {% endfor %}
+  {% endif %}
+  
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
   {% set js %}
     {% include "assets/js/inline.js" %}
   {% endset %}

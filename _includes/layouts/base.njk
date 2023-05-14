@@ -6,17 +6,17 @@
 	<body>
 
 		{# Header #}
-		{% include "components/header.njk" %}
+		{% include "components/site-header.njk" %}
 
-		{%- if not home -%}
+		{# {%- if not home -%}
 			{% include "components/breadcrumbs.njk" %}
-		{% endif %}
+		{% endif %} #}
 
 		{# Main content #}
-		{% include "components/main.njk" %}
+		{% include "components/site-main.njk" %}
 
 		{# Footer #}
-		{% include "components/footer.njk" %}
+		{% include "components/site-footer.njk" %}
 
 	</body>
 	<!-- Google Analytics -->

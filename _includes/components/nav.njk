@@ -1,11 +1,20 @@
 <nav aria-label="Main navigation">
   <div class="main-nav">
-    <ul>
+    {# <ul>
     {%- for nav in collections.mainNav -%}
       <li>
         <a href="{{ nav.url | url }}"{% activepath nav.url, page.url %}>{{ nav.data.navtitle }}</a>
       </li>
     {%- endfor -%}
+    </ul> #}
+
+    {% set navPages = collections.all | eleventyNavigation %}
+    <ul>
+    {%- for entry in navPages %}
+      <li {% activepath entry.url, page.url %}>
+        <a href="{{ entry.url }}">{{ entry.title }}</a>
+      </li>
+    {%- endfor %}
     </ul>
   </div>
 

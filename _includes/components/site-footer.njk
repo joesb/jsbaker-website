@@ -1,12 +1,20 @@
 <footer class="footer-main">
 	<div class="container container--wide">
 		<nav aria-label="Find out more" class="footer-main__nav">
-			<ul>
+			{# <ul>
 				{%- for footer in collections.footerNav -%}
 				<li>
 					<a href="{{ footer.url | url }}"{% if footer.url == page.url %} data-current="current item" class="current"{% endif %}>{{ footer.data.navtitle }}</a>
 				</li>
 				{%- endfor -%}
+			</ul> #}
+			{% set navPages = collections.all | eleventyNavigation %}
+			<ul>
+			{%- for entry in navPages %}
+				<li {% activepath entry.url, page.url %}>
+					<a href="{{ entry.url }}">{{ entry.title }}</a>
+				</li>
+			{%- endfor %}
 			</ul>
 		</nav>
 	</div>
