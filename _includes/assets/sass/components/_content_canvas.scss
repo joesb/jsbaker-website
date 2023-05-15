@@ -26,15 +26,15 @@
       [wide-start]
         minmax(6vw, auto)
       [main-start]
-        minmax(calc(#{$break-small} - 3rem), calc((#{$break-medium} - 3rem) * 3 / 5))
+        minmax(calc(#{$break-very-small} - 3rem), calc((#{$break-small} - 3rem) * 3 / 5))
       [main-mid]
-        minmax(40ch, calc((#{$break-medium} - 3rem) * 2 / 5))
+        minmax(20ch, calc((#{$break-small} - 3rem) * 2 / 5))
       [main-end]
         minmax(6vw, auto)
       [wide-end]
         minmax(3vw, 1fr)
       [full-end];
-    grid-template-rows: fit-content(auto);
+    // grid-template-rows: fit-content(25ch);
   }
 }
 

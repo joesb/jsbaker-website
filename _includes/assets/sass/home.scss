@@ -2,9 +2,40 @@
 /*--------------------------------------------------------------
 # Variables
 --------------------------------------------------------------*/
-@import "./partials/variables";
+@import "./common/variables";
 
 /* --------------------------------------------------------------
 # Tools
 -------------------------------------------------------------- */
 @import "./tools/tools";
+
+.home-layout__item--dark-cyan {
+  background-color: $dark-cyan;
+  color: var(--surface-1);
+}
+
+.home-layout__item__inner {
+  padding: 4rem;
+}
+
+
+@include respond-to('medium') {
+  .home-layout {
+    display: grid;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "left right"
+    ;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .home-layout__item--left {
+    grid-area: left;
+  }
+
+  .home-layout__item--right {
+    grid-area: right;
+  }
+}
+
+

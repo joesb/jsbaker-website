@@ -1,0 +1,36 @@
+.site-content {
+  padding: 1.5em 0;
+  margin-bottom: px-to-rem($mobile-space);
+
+  @include respond-to('medium') {
+    padding: 6em 0;
+  }
+}
+
+.site-content--zero-padding {
+  padding: 0;
+
+  @include respond-to('medium') {
+    padding: 0;
+  }
+}
+
+.site-content--zero-top-padding {
+  padding-top: 0;
+
+  @include respond-to('medium') {
+    padding-top: 0;
+  }
+}
+
+.site-content--zero-bottom-padding {
+  padding-bottom: 0;
+
+  @include respond-to('medium') {
+    padding-bottom: 0;
+  }
+}
+
+.site-content--zero-spacing {
+  margin: 0;
+}

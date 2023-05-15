@@ -1,8 +1,29 @@
 ---
 layout: layouts/base.njk
 section: home
+primary: true
 styles:
   - home.css
 ---
 
-{{ content | safe }}
+<div class="site-content site-content--zero-top-padding content-canvas">
+
+  <div class="home-layout content-canvas-item-full">
+
+    <div class="home-layout__item home-layout__item--left home-layout__item--dark-cyan">
+      <div class="home-layout__item__inner">
+        {% include "layouts/components/title-bar.njk" %}
+
+        {{ content | safe  }}
+      </div>
+    </div>
+
+    <div class="home-layout__item home-layout__item--right">
+      <div class="home-layout__item__inner">
+        
+        <img src="/static/images/{{ image | url }}" />
+      </div>
+    </div>
+
+  </div>
+</div>

@@ -1,13 +1,14 @@
 const CleanCSS = require('clean-css');
 const UglifyJS = require('uglify-es');
 const htmlmin = require('html-minifier');
-// const pluginRss = require('@11ty/eleventy-plugin-rss');
+const pluginRss = require('@11ty/eleventy-plugin-rss');
 const eleventyNavigationPlugin = require("@11ty/eleventy-navigation");
 const markdownIt = require("markdown-it");
 const markdownItAnchor = require("markdown-it-anchor");
 
 module.exports = function (eleventyConfig) {
 
+  eleventyConfig.addPlugin(pluginRss);
   eleventyConfig.addPlugin(eleventyNavigationPlugin);
 
   // Return active path attributes
@@ -34,6 +35,11 @@ module.exports = function (eleventyConfig) {
       return code;
     }
     return minified.code;
+  });
+
+  // Check a string starts with a character.
+  eleventyConfig.addFilter('starts_with', function(str, prefix, not = false) {
+    return str.startsWith(str, prefix) !== not;
   });
 
   // Minify HTML output
@@ -95,6 +101,36 @@ module.exports = function (eleventyConfig) {
     return sortByOrder(nav);
   });
 
+  // Sort Soul Song pieces by 'order' field
+  eleventyConfig.addCollection('writing', (collection) => {
+    var nav = collection.getFilteredByTag('#writing');
+    return sortByOrder(nav);
+  });
+
+  function sortByOrder(collection) {
+    return collection.sort((a, b) => {
+      if (a.data.order < b.data.order) return -1;
+      else if (a.data.order > b.data.order) return 1;
+      else return 0;
+    });
+  }
+
+  function sortByDate(collection) {
+    return collection.sort((a, b) => {
+      if (a.data.date < b.data.date) return -1;
+      else if (a.data.date > b.data.date) return 1;
+      else return 0;
+    });
+  }
+
+  function sortByTitle(collection) {
+    return collection.sort((a, b) => {
+      if (a.data.title < b.data.title) return -1;
+      else if (a.data.title > b.data.title) return 1;
+      else return 0;
+    });
+  }
+
   // Customize Markdown library and settings:
   let markdownLibrary = markdownIt({
     html: true,
@@ -114,6 +150,8 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addFilter("markdown", (content) => {
     return markdownLibrary.render(content);
   });
+
+  eleventyConfig.addPassthroughCopy('static/');
 
   return {
     templateFormats: ['md', 'njk', 'html', 'liquid'],

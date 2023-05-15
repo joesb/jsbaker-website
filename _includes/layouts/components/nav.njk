@@ -11,14 +11,16 @@
     {% set navPages = collections.all | eleventyNavigation %}
     <ul>
     {%- for entry in navPages %}
-      <li {% activepath entry.url, page.url %}>
-        <a href="{{ entry.url }}">{{ entry.title }}</a>
+    {% if entry.url != "/" %}
+      <li>
+        <a {% activepath entry.url, page.url %} href="{{ entry.url }}">{{ entry.title }}</a>
       </li>
+    {% endif %}
     {%- endfor %}
     </ul>
   </div>
 
-  <div class="secondary-nav">
+  {# <div class="secondary-nav">
     <ul>
       {%- for primary in collections.primaryNav -%}
       <li>
@@ -26,5 +28,5 @@
       </li>
       {%- endfor -%}
     </ul>
-  </div>
+  </div> #}
 </nav>

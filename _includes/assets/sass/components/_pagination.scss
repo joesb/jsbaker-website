@@ -1,0 +1,81 @@
+.pagination {
+  margin-top: px-to-rem(2 * $mobile-space);
+
+  ol {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .pagination-item {
+    position: relative;
+    margin: px-to-rem(9px);
+    height: px-to-rem(27px);
+
+    span {
+      @include hide-text;
+
+      &::before {
+        cursor: not-allowed;
+        position: absolute;
+        left: 0;
+        top: 0;
+        display: inline-block;
+        width: 1rem;
+        font-size: 1.5rem;
+        color: var(--text-alt-1);
+        z-index: 2;
+        text-indent: 0;
+      }
+    }
+
+    a {
+      span {
+        &::before {
+          cursor: pointer;
+          color: var(--text-1);
+        }
+      }
+    }
+
+    &.first {
+      span {
+        &::before {
+          content: '\00AB';
+        }
+      }
+    }
+
+    &.previous {
+      span {
+        &::before {
+          content: '\2039';
+        }
+      }
+    }
+
+    &.next {
+      span {
+        &::before {
+          content: '\203A';
+        }
+      }
+    }
+
+    &.last {
+      span {
+        &::before {
+          content: '\00BB';
+        }
+      }
+    }
+  }
+
+  .current {
+    font-weight: $base-font-weight-bold;
+  }
+}

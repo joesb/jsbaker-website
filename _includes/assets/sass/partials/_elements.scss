@@ -16,8 +16,17 @@ ELEMENTS
   }
   
   html {
-    background-color: $white;
-    color: $black;
+    --surface-1: #{$surface-1};
+    --surface-2: #{$surface-2};
+    --surface-3: #{$surface-3};
+    --surface-4: #{$surface-4};
+    --text-1: #{$text-1};
+    --text-alt-1: #{$text-alt-1};
+    --text-highlight-1: #{$text-highlight-1};
+
+    --font-size-fluid-0: clamp(#{$body-font-size-mobile}, 1.5vw, #{$body-font-size});
+    --font-size-fluid-3: clamp(#{$h1-font-size-mobile}, 4vw, #{$h1-font-size});
+    
     font-family: $primary-font;
     font-size: $base-font-size;
     font-weight: $base-font-weight-regular;
@@ -42,7 +51,7 @@ ELEMENTS
   
   a,
   a:visited {
-    color: $red;
+    color: $english-violet;
   }
   
   a:hover,
@@ -60,16 +69,10 @@ ELEMENTS
     font-family: $secondary-font;
     margin: 0;
     padding: 0;
-    color: $body;
   
     li {
-      font-size: $body-font-size-mobile;
+      font-size: var(--font-size-fluid-0);
       font-weight: $base-font-weight-regular;
-  
-      @media only screen and (min-width: $tablet) {
-        font-size: $body-font-size;
-        line-height: $body-line-height;
-      }
   
       &:last-child {
         margin-bottom: 0px;
@@ -80,8 +83,8 @@ ELEMENTS
   main {
     ul,
     ol {
-      margin-bottom: govuk-px-to-rem(30px);
-      padding-left: govuk-px-to-rem(40px);
+      margin-bottom: px-to-rem(30px);
+      padding-left: px-to-rem(40px);
   
       ul,
       ol {
@@ -89,12 +92,12 @@ ELEMENTS
       }
   
       li {
-        margin: govuk-px-to-rem(9px);
-        line-height: govuk-px-to-rem(27px);
+        margin: px-to-rem(9px);
+        line-height: px-to-rem(27px);
       }
   
       hr {
-        height: govuk-px-to-rem(1px);
+        height: px-to-rem(1px);
         border: none;
       }
     }

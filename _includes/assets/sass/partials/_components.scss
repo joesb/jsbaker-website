@@ -2,4 +2,13 @@
 COMPONENTS
 ========================================================================== */
 
+@import "../components/site-header";
+@import "../components/site-header-nav";
+@import "../components/site-content";
 @import "../components/content_canvas";
+@import "../components/faux-block-link";
+@import "../components/page";
+
+// Index pages
+@import "../components/index-list";
+@import "../components/pagination";

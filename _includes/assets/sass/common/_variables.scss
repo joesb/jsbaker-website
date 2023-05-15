@@ -1,0 +1,103 @@
+/* ==========================================================================
+VARIABLES
+========================================================================== */
+
+@import "../tools/px-to-rem";
+
+$base-font-size: 18px;
+$root-font-size: $base-font-size !default;
+
+// Units
+$base-space: 27px;
+$mobile-space: $base-space * 0.666667;
+
+// Colors
+$white: rgba(255, 255, 255, 100%);            // #FFFFFF
+$floral-white: rgba(253, 248, 237, 100%);     // #FDF8ED
+$cosmic-latte: rgba(252, 245, 229, 100%);     // #FCF5E5
+$parchment: rgba(251, 241, 218, 100%);        // #FBF1DA
+$eerie-black: rgba(28, 29, 33, 100%);         // #1C1D21
+$eerie-black-light: rgba(28, 29, 33, 50%);
+$english-violet: rgba(74, 64, 99, 100%);      // #4A4063
+$dark-cyan: rgba(85, 134, 140, 100%);         // #55868C
+$french-rose: rgba(247, 85, 144, 100%);       // #F75590
+
+$champagne: rgba(249, 234, 200, 100%);         // #F9EAC8
+
+$surface-1: $white;
+$surface-2: $floral-white;
+$surface-3: $cosmic-latte;
+$surface-4: $parchment;
+$text-1: $eerie-black;
+
+$text-alt-1: $english-violet;
+$text-highlight-1: $dark-cyan;
+
+// Custom media queries
+$break-very-small: 26rem; // >= 416px @ 16px
+$break-small: 36rem; // >= 576px @ 16px
+$break-medium: 48rem; // >= 768px @ 16px
+$break-large: 64rem; // >= 1024px @ 16px
+$break-extra-large: 80rem; // >= 1280px @ 16px
+$break-largest: 90rem; // >= 1440px @ 16px
+
+// $xs-mobile-down: 340px;
+// $sm-mobile: 375px;
+// $md-mobile: 480px;
+$mobile: $break-small;
+$tablet: $break-medium;
+$desktop: $break-large;
+// $lg-desktop: 1200px;
+// $carousel-desktop: 1300px;
+// $xl-desktop: 1440px;
+
+// Fonts
+$primary-font: 'Nunito Sans', var(--font-sans);
+$secondary-font: 'Nunito Sans', var(--font-sans);
+$headings-font: 'PT Serif', var(--font-serif);
+
+// Font weight
+$base-font-weight-bold: 700;
+$base-font-weight-regular: 300;
+$base-font-weight-medium: 500;
+$headings-font-weight: 600;
+
+// Font sizes
+$body-font-size-mobile: px-to-rem(16px);
+$body-font-size: px-to-rem(17px);
+
+$lg-body-font-size-mobile: px-to-rem(19px);
+$lg-body-font-size: px-to-rem(25px);
+
+$h1-font-size-mobile: px-to-rem(28px);
+$h1-font-size: px-to-rem(36px);
+
+$h2-font-size-mobile: px-to-rem(19px);
+$h2-font-size: px-to-rem(23px);
+
+$h3-font-size-mobile: px-to-rem(17px);
+$h3-font-size: px-to-rem(19px);
+
+$h4-font-size-mobile: px-to-rem(17px);
+$h4-font-size: px-to-rem(19px);
+
+// Font line heights
+$base-line-height: px-to-rem(19px);
+
+$body-line-height-mobile: px-to-rem(23px);
+$body-line-height: px-to-rem(25px);
+
+$lg-body-line-height-mobile: px-to-rem(26px);
+$lg-body-line-height: px-to-rem(37px);
+
+$h1-line-height-mobile: px-to-rem(30px);
+$h1-line-height: px-to-rem(40px);
+
+$h2-line-height-mobile: px-to-rem(26px);
+$h2-line-height: px-to-rem(33px);
+
+$h3-line-height-mobile: px-to-rem(25px);
+$h3-line-height: px-to-rem(28px);
+
+$h4-line-height-mobile: px-to-rem(25px);
+$h4-line-height: px-to-rem(28px);

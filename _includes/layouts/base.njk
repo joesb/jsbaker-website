@@ -1,22 +1,22 @@
 <!doctype html>
 <html {% if section %} data-current="{{ section }}"{% endif %} lang="en">
 
-	{% include "components/head.njk" %}
+	{% include "layouts/components/head.njk" %}
 
 	<body>
 
 		{# Header #}
-		{% include "components/site-header.njk" %}
+		{% include "layouts/components/site-header.njk" %}
 
 		{# {%- if not home -%}
 			{% include "components/breadcrumbs.njk" %}
 		{% endif %} #}
 
 		{# Main content #}
-		{% include "components/site-main.njk" %}
+		{% include "layouts/components/site-main.njk" %}
 
 		{# Footer #}
-		{% include "components/site-footer.njk" %}
+		{% include "layouts/components/site-footer.njk" %}
 
 	</body>
 	<!-- Google Analytics -->

@@ -1,0 +1,29 @@
+    <ul class="index-list">
+    {% set cls = cycler("odd", "even") %}
+    {% set sze = cycler("large","small") %}
+    {% for item in items %}
+      {% set vr = cls.next() %}
+      {% if loop.index != 1 and vr == "even" %}
+      {% set trash = sze.next() %}
+      {% endif %}
+      <li class="faux-block-link-parent item-{{ loop.index }} item-{{ vr }}{% if loop.index != 1 %} item-{{ sze.next() }}{% endif %}">
+        <h2><a href="{{ item.url | url }}"{% activepath item.url, page.url %}>{{ item.data.title }}</a></h2>
+        <a href="{{ item.url | url }}"{% activepath item.url, page.url %} class="faux-block-link"><span class="hide-text" aria-hidden="true">{{ item.data.title }}</span></a>
+      </li>
+    {% endfor %}
+    </ul>
+
+    <nav class="pagination">
+      <ol>
+        <li class="pagination-item first">{% if page.url != pagination.href.first %}<a href="{{ pagination.href.first }}"><span title="First">First</span></a>{% else %}<span title="First">First</span>{% endif %}</li>
+        <li class="pagination-item previous">{% if pagination.href.previous %}<a href="{{ pagination.href.previous }}"><span title="Previous">Previous</span></a>{% else %}<span title="Previous">Previous</span>{% endif %}</li>
+    {% for pageEntry in pagination.pages %}
+        {% if page.url == pagination.hrefs[ loop.index0 ] %}
+        <li>Page {{loop.index}} of {{ pagination.hrefs | length }}</li>
+        {% endif %}
+        {# <li><a href="{{ pagination.hrefs[ loop.index0 ] }}"{% if page.url == pagination.hrefs[ loop.index0 ] %} class="current" aria-current="page"{% endif %}>{{ loop.index }}</a></li> #}
+    {% endfor %}
+        <li class="pagination-item next">{% if pagination.href.next %}<a href="{{ pagination.href.next }}"><span title="Next">Next</span></a>{% else %}<span title="Next">Next</span>{% endif %}</li>
+        <li class="pagination-item last">{% if page.url != pagination.href.last %}<a href="{{ pagination.href.last }}"><span title="Last">Last</span></a>{% else %}<span title="Last">Last</span>{% endif %}</li>
+      </ol>
+    </nav>
