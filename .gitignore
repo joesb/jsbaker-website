@@ -1,3 +1,14 @@
-_site/
-node_modules/
+# Ignore node modules
+node_modules
+
+# Ignore the 11ty site build
+_site
+
+# VS Code local settings
+.vscode
+
+# no need to include CSS files that get built
+_includes/assets/**/*.css
+
+.DS_Store
 package-lock.json
