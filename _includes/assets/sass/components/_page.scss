@@ -1,8 +1,28 @@
 .page-title {
   padding: px-to-rem($mobile-space) 0;
   margin-bottom: px-to-rem($mobile-space);
+}
 
-  // @include respond-to('medium') {
-  //   padding: 3em 0;
-  // }
+.page-title__heading {
+  font-size: var(--font-size-fluid-4);
+}
+
+.page {
+  position: relative;
+
+  >* {
+    position: relative;
+    z-index: 1;
+  }
+}
+
+.page--with-hero {
+  padding-block-start: 65vh;
+
+  .page-title {
+    position: absolute;
+    top: 40vh;
+    left: 0;
+    color: var(--surface-1);
+  }
 }

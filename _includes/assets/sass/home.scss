@@ -12,10 +12,29 @@
 .home-layout__item--dark-cyan {
   background-color: $dark-cyan;
   color: var(--surface-1);
+
+  a {
+    color: var(--surface-1);
+    text-decoration: underline;
+
+    &:hover {
+      color: darken($surface-2, 33%);
+    }
+  }
 }
 
 .home-layout__item__inner {
-  padding: 4rem;
+  padding: clamp(4rem, 12vw, 12rem) clamp(4rem, 10vw, 12rem);
+}
+
+.home-layout__item__inner__content {
+  max-width: 35ch;
+  margin-inline: auto;
+
+  :where(p) {
+    font-size: var(--font-size-fluid-01);
+    line-height: 2rem;
+  }
 }
 
 

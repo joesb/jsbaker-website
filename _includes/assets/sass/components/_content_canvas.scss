@@ -7,9 +7,9 @@
     [wide-start]
       minmax(0, auto)
     [main-start]
-      minmax(15ch, calc(#{$break-large} - 3rem))
+      minmax(10ch, calc(#{$break-medium} - 3rem))
     [main-mid]
-      minmax(15ch, auto)
+      minmax(10ch, auto)
     [main-end]
       minmax(0, auto)
     [wide-end]

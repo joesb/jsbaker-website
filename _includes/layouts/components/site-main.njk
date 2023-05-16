@@ -1,6 +1,6 @@
     <main id="content" class="main">
 			{% if not primary and not list %}
-			<div class="site-content page content-canvas">
+			<div class="site-content content-canvas page{% if page.class %} {{ page.class }}{% endif %}">
 				{% include "layouts/components/title-bar.njk" %}
 				{{ layoutContent | safe }}
 			</div>

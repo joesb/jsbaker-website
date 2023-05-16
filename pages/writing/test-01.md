@@ -1,7 +1,17 @@
 ---
 title: Test 01
+layout: layouts/page.njk
+page:
+  class: "page--with-hero"
 tags:
   - '#writing'
+image:
+  path: "https://images.pexels.com/photos/9578717/pexels-photo-9578717.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+  alt: "Some text here"
+  class: ""
+  # pictureClass: "content-canvas-item-right content-canvas-item-right--span-3"
+  pictureClass: "content-canvas-item-full picture--hero"
+  caption: ""
 ---
 
 Nullam lobortis nibh sed odio venenatis facilisis. Vivamus iaculis, tortor ac sodales placerat, nisl sem finibus sem, vitae ultrices orci quam nec ex. Aliquam volutpat ex fringilla augue luctus consequat. Nulla faucibus accumsan velit, eget fringilla ligula maximus ut. Mauris quis quam nec mi porta efficitur. Donec ac laoreet metus. Morbi efficitur rutrum quam id faucibus. Quisque interdum mattis erat non laoreet. Morbi eget justo non libero laoreet molestie. Integer euismod metus id sapien luctus efficitur. Aliquam vel interdum tellus.

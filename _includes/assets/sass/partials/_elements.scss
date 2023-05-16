@@ -30,7 +30,9 @@ ELEMENTS
     --surface-rose: #{$surface-rose};
 
     --font-size-fluid-0: clamp(#{$body-font-size-mobile}, 1.5vw, #{$body-font-size});
+    --font-size-fluid-01: clamp(#{$h3-font-size-mobile}, 1.75vw, #{$h3-font-size});
     --font-size-fluid-3: clamp(#{$h1-font-size-mobile}, 4vw, #{$h1-font-size});
+    --font-size-fluid-4: clamp(#{$h1-lg-font-size-mobile}, 6vw, #{$h1-lg-font-size});
     
     font-family: $primary-font;
     font-size: $base-font-size;

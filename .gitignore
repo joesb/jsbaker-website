@@ -7,6 +7,9 @@ _site
 # VS Code local settings
 .vscode
 
+# 11ty cache
+.cache/
+
 # no need to include CSS files that get built
 _includes/assets/**/*.css
 

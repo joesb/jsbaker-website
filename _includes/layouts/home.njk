@@ -12,9 +12,11 @@ styles:
 
     <div class="home-layout__item home-layout__item--left home-layout__item--dark-cyan">
       <div class="home-layout__item__inner">
-        {% include "layouts/components/title-bar.njk" %}
+        <div class="home-layout__item__inner__content">
+          {% include "layouts/components/title-bar.njk" %}
 
-        {{ content | safe  }}
+          {{ content | safe  }}
+        </div>
       </div>
     </div>
 

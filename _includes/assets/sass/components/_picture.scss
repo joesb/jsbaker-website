@@ -12,3 +12,18 @@
   border-style: solid;
   border-color: lighten($text-1, 67%);
 }
+
+.picture--hero {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  height: 60vh;
+  overflow: hidden;
+
+  img {
+    block-size: 100%;
+    object-fit: cover;
+    object-position: center center;
+  }
+}

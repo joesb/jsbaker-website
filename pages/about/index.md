@@ -4,12 +4,14 @@ layout: layouts/page.njk
 eleventyNavigation:
   key: About
   order: 10
+page:
+  class: "page--with-hero"
 image:
   path: static/images/home/IMG_1723.jpeg
   alt: "Some text here"
   class: ""
   # pictureClass: "content-canvas-item-right content-canvas-item-right--span-3"
-  pictureClass: "content-canvas-item-full"
+  pictureClass: "content-canvas-item-full picture--hero"
   caption: ""
 ---
 
