@@ -1,9 +1,13 @@
+/* ==========================================================================
+SITE CONTENT
+========================================================================== */
+
 .site-content {
   padding: 1.5em 0;
   margin-bottom: px-to-rem($mobile-space);
 
   @include respond-to('medium') {
-    padding: 6em 0;
+    padding: 4em 0;
   }
 }
 
@@ -33,4 +37,48 @@
 
 .site-content--zero-spacing {
   margin: 0;
+}
+
+/* ---------------------- *
+ *  SITE CONTENT COLOURS  *
+ * ---------------------- */
+
+ .site-content--surface-0 {
+  background-color: var(--surface-0);
+}
+
+.site-content--surface-1 {
+  background-color: var(--surface-1);
+}
+
+.site-content--surface-2 {
+  background-color: var(--surface-2);
+}
+
+.site-content--surface-3 {
+  background-color: var(--surface-3);
+}
+
+.site-content--surface-dark {
+  color: var(--surface-1);
+}
+
+.site-content--surface-black {
+  background-color: var(--surface-black);
+}
+
+.site-content--surface-black-light {
+  background-color: var(--surface-black-light);
+}
+
+.site-content--surface-teal {
+  background-color: var(--surface-teal);
+}
+
+.site-content--surface-violet {
+  background-color: var(--surface-violet);
+}
+
+.site-content--surface-rose {
+  background-color: var(--surface-rose);
 }

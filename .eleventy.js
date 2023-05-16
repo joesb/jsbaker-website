@@ -3,6 +3,7 @@ const UglifyJS = require('uglify-es');
 const htmlmin = require('html-minifier');
 const pluginRss = require('@11ty/eleventy-plugin-rss');
 const eleventyNavigationPlugin = require("@11ty/eleventy-navigation");
+const Image = require("@11ty/eleventy-img");
 const markdownIt = require("markdown-it");
 const markdownItAnchor = require("markdown-it-anchor");
 
@@ -21,6 +22,39 @@ module.exports = function (eleventyConfig) {
     }
     return '';
   });
+
+  // Return responsive images
+  eleventyConfig.addShortcode("image", async function(src, alt, cls, pictureCls = "", sizes = "(min-width: 30em) 50vw, 100vw") {
+		if(alt === undefined) {
+			// You bet we throw an error on missing alt (alt="" works okay)
+			throw new Error(`Missing \`alt\` on responsiveimage from: ${src}`);
+		}
+
+		let metadata = await Image(src, {
+			widths: [300, 600, 1000, 2000],
+			formats: ['webp', 'jpeg'],
+      urlPath: "/static/img/",
+      outputDir: "./static/img/"
+		});
+
+		let lowsrc = metadata.jpeg[0];
+		let highsrc = metadata.jpeg[metadata.jpeg.length - 1];
+
+		return `<picture class="${pictureCls}">
+			${Object.values(metadata).map(imageFormat => {
+				return `  <source type="${imageFormat[0].sourceType}" srcset="${imageFormat.map(entry => entry.srcset).join(", ")}" sizes="${sizes}">`;
+			}).join("\n")}
+				<img
+					src="${lowsrc.url}"
+					width="${highsrc.width}"
+					height="${highsrc.height}"
+          class="${cls}"
+					alt="${alt}"
+					loading="lazy"
+					decoding="async">
+			</picture>`;
+	});
+
 
   // Minify CSS
   eleventyConfig.addFilter('cssmin', function (code) {
@@ -101,9 +135,21 @@ module.exports = function (eleventyConfig) {
     return sortByOrder(nav);
   });
 
-  // Sort Soul Song pieces by 'order' field
+  // Sort writing pieces by 'order' field
   eleventyConfig.addCollection('writing', (collection) => {
     var nav = collection.getFilteredByTag('#writing');
+    return sortByOrder(nav);
+  });
+
+  // Sort reading pieces by 'order' field
+  eleventyConfig.addCollection('reading', (collection) => {
+    var nav = collection.getFilteredByTag('#reading');
+    return sortByOrder(nav);
+  });
+
+  // Sort thinking pieces by 'order' field
+  eleventyConfig.addCollection('thinking', (collection) => {
+    var nav = collection.getFilteredByTag('#thinking');
     return sortByOrder(nav);
   });
 

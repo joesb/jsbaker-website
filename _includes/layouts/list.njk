@@ -1,13 +1,23 @@
 ---
 layout: layouts/base.njk
-section: list
+list: true
 ---
 
-	{{ content | safe }}
+	<div class="site-content site-content--zero-top-padding content-canvas">
+		
+		<div class="site-content{% if pageClass %} {{ pageClass }} {% else %} site-content--surface-teal site-content--surface-dark{% endif %} content-canvas-item-full content-canvas">
+
+			{% include "layouts/components/title-bar.njk" %}
+			
+			{{ content | safe }}
+
+		</div>
 
 
-	<div class="site-content content-canvas-item-wide">
+		<div class="site-content content-canvas-item-wide">
 
-		{% include "layouts/components/index-list.njk" %}
+			{% include "layouts/components/index-list.njk" %}
+
+		</div>
 
 	</div>

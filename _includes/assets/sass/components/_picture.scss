@@ -1,0 +1,14 @@
+:where(figcaption) {
+  font-size: var(--font-size-0);
+}
+
+.picture--block,
+.figure--block {
+  margin-block: 2rem;
+}
+
+.picture--outline {
+  border-width: 1px;
+  border-style: solid;
+  border-color: lighten($text-1, 67%);
+}

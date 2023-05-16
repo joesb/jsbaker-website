@@ -5,9 +5,7 @@ permalink: /
 eleventyNavigation:
   key: Home
 layout: layouts/home.njk
-tags:
-  - primary
-image: home/jsb.jpeg
+image: home/jsb-01.jpeg
 ---
 
 Aliquam id enim non purus consequat blandit. Pellentesque convallis blandit iaculis. Fusce velit augue, hendrerit vitae nisl nec, viverra sodales dui. Praesent id pellentesque neque, ac pretium metus. Vivamus vel nibh et ex pretium fermentum vitae blandit ex. Nullam sapien risus, auctor eu malesuada sed, congue vel eros. Mauris eu arcu eu urna auctor placerat non sed sapien. In eget congue orci. Curabitur velit eros, luctus sit amet ullamcorper ut, molestie euismod dui. Aenean vulputate orci nunc, id ullamcorper ipsum aliquet non. Etiam ac rhoncus ex. Sed ligula est, hendrerit sed molestie vel, sollicitudin non sapien. Donec a ante urna. Vivamus non lorem egestas, dictum nulla sed, efficitur velit. Nam diam metus, hendrerit a pretium quis, vulputate eget ligula.

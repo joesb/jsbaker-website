@@ -23,6 +23,11 @@ ELEMENTS
     --text-1: #{$text-1};
     --text-alt-1: #{$text-alt-1};
     --text-highlight-1: #{$text-highlight-1};
+    --surface-black: #{$eerie-black};
+    --surface-black-light: #{$eerie-black-light};
+    --surface-teal: #{$surface-teal};
+    --surface-violet: #{$surface-violet};
+    --surface-rose: #{$surface-rose};
 
     --font-size-fluid-0: clamp(#{$body-font-size-mobile}, 1.5vw, #{$body-font-size});
     --font-size-fluid-3: clamp(#{$h1-font-size-mobile}, 4vw, #{$h1-font-size});
