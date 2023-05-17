@@ -1,6 +1,6 @@
 ---
 title: Thinking
-layout: layouts/list.njk
+layout: list.njk
 eleventyNavigation:
   key: Thinking
 pagination:

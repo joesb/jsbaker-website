@@ -24,15 +24,15 @@
 }
 
 .home-layout__item__inner {
-  padding: clamp(4rem, 12vw, 12rem) clamp(4rem, 10vw, 12rem);
+  padding: clamp(4rem, 8vw, 12rem) clamp(4rem, 12vw, 12rem);
 }
 
 .home-layout__item__inner__content {
-  max-width: 35ch;
+  max-width: 40ch;
   margin-inline: auto;
 
   :where(p) {
-    font-size: var(--font-size-fluid-01);
+    font-size: var(--font-size-fluid-1);
     line-height: 2rem;
   }
 }

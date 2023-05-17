@@ -24,13 +24,13 @@
       [full-start]
         minmax(3vw, 1fr)
       [wide-start]
-        minmax(6vw, auto)
+        minmax(10vw, auto)
       [main-start]
         minmax(calc(#{$break-very-small} - 3rem), calc((#{$break-small} - 3rem) * 3 / 5))
       [main-mid]
         minmax(20ch, calc((#{$break-small} - 3rem) * 2 / 5))
       [main-end]
-        minmax(6vw, auto)
+        minmax(10vw, auto)
       [wide-end]
         minmax(3vw, 1fr)
       [full-end];

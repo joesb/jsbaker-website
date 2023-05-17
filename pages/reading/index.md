@@ -1,6 +1,6 @@
 ---
 title: Reading
-layout: layouts/list.njk
+layout: list.njk
 eleventyNavigation:
   key: Reading
 pagination:

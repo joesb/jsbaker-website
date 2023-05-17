@@ -1,6 +1,8 @@
 ---
 title: Test 01
-layout: layouts/page.njk
+layout: page.njk
+date: 2023-05-10
+promoted: true
 page:
   class: "page--with-hero"
 tags:
@@ -10,7 +12,9 @@ image:
   alt: "Some text here"
   class: ""
   # pictureClass: "content-canvas-item-right content-canvas-item-right--span-3"
-  pictureClass: "content-canvas-item-full picture--hero"
+  pictureClass:
+    page: "content-canvas-item-full picture--hero"
+    list: "index-list__item__picture"
   caption: ""
 ---
 

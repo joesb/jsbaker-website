@@ -1,7 +1,20 @@
 ---
 title: Test 05
+layout: page.njk
+date: 2023-05-14
 tags:
   - '#writing'
+page:
+  class: "page--with-hero"
+image:
+  path: "https://images.pexels.com/photos/4038905/pexels-photo-4038905.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+  alt: "Some text here"
+  class: ""
+  # pictureClass: "content-canvas-item-right content-canvas-item-right--span-3"
+  pictureClass:
+    page: "content-canvas-item-full picture--hero"
+    list: "index-list__item__picture"
+  caption: ""
 ---
 
 Sed placerat, est non ullamcorper ultrices, sapien libero laoreet ante, ac vestibulum urna velit nec lacus. Nulla sapien mauris, tincidunt at consequat a, euismod ut lacus. Cras rutrum, nisi et auctor auctor, justo augue finibus quam, non ultrices neque est id sapien. Quisque finibus urna sed libero feugiat, eu viverra ligula elementum. Quisque in nulla quis massa eleifend condimentum sit amet tincidunt nunc. Praesent mattis orci consectetur, fringilla nibh nec, eleifend ipsum. Morbi vestibulum eu odio vitae fermentum. Aenean arcu augue, tristique eu leo ut, dapibus varius augue. Suspendisse malesuada, sem non viverra pretium, nibh enim fringilla metus, vel tempus orci arcu a purus. Quisque ac rhoncus mauris. Mauris erat enim, luctus id tempor vel, consequat ut ante. Duis efficitur enim vel nisi consectetur, rutrum lacinia lectus tincidunt. Maecenas tellus ipsum, accumsan non leo id, ultricies faucibus ligula. In egestas magna eget luctus bibendum.

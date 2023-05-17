@@ -1,9 +1,9 @@
 ---
-layout: layouts/base.njk
+layout: base.njk
 section: page
 ---
 	{% if image.path %}
-			{% image image.path, image.alt, image.class, image.pictureClass %}
+			{% image image.path, image.alt, image.class, image.pictureClass.page %}
 	{% endif %}
 
 	{{ layoutContent | safe }}

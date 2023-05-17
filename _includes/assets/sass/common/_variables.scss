@@ -66,6 +66,9 @@ $base-font-weight-medium: 500;
 $headings-font-weight: 600;
 
 // Font sizes
+$body-sml-font-size-mobile: px-to-rem(10px);
+$body-sml-font-size: px-to-rem(14px);
+
 $body-font-size-mobile: px-to-rem(16px);
 $body-font-size: px-to-rem($base-font-size);
 
@@ -78,8 +81,8 @@ $h1-lg-font-size: px-to-rem(64px);
 $h1-font-size-mobile: px-to-rem(28px);
 $h1-font-size: px-to-rem(36px);
 
-$h2-font-size-mobile: px-to-rem(19px);
-$h2-font-size: px-to-rem(23px);
+$h2-font-size-mobile: px-to-rem(22px);
+$h2-font-size: px-to-rem(32px);
 
 $h3-font-size-mobile: px-to-rem(18px);
 $h3-font-size: px-to-rem(20px);

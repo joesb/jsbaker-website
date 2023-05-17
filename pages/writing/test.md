@@ -1,7 +1,20 @@
 ---
 title: Test
+layout: page.njk
+date: 2023-05-09
 tags:
   - '#writing'
+page:
+  class: "page--with-hero"
+image:
+  path: https://images.pexels.com/photos/5698398/pexels-photo-5698398.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2
+  alt: "Some text here"
+  class: ""
+  # pictureClass: "content-canvas-item-right content-canvas-item-right--span-3"
+  pictureClass:
+    page: "content-canvas-item-full picture--hero"
+    list: "index-list__item__picture"
+  caption: ""
 ---
 
 Nullam lobortis nibh sed odio venenatis facilisis. Vivamus iaculis, tortor ac sodales placerat, nisl sem finibus sem, vitae ultrices orci quam nec ex. Aliquam volutpat ex fringilla augue luctus consequat. Nulla faucibus accumsan velit, eget fringilla ligula maximus ut. Mauris quis quam nec mi porta efficitur. Donec ac laoreet metus. Morbi efficitur rutrum quam id faucibus. Quisque interdum mattis erat non laoreet. Morbi eget justo non libero laoreet molestie. Integer euismod metus id sapien luctus efficitur. Aliquam vel interdum tellus.

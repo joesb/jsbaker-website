@@ -2,7 +2,7 @@
 title: Writing
 eleventyNavigation:
   key: Writing
-layout: layouts/list.njk
+layout: list.njk
 pagination:
   data: collections.writing
   size: 11

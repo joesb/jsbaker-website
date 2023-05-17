@@ -11,9 +11,11 @@
 			{% set navPages = collections.all | eleventyNavigation %}
 			<ul>
 			{%- for entry in navPages %}
+			{% if entry.url != "/" %}
 				<li {% activepath entry.url, page.url %}>
 					<a href="{{ entry.url }}">{{ entry.title }}</a>
 				</li>
+			{% endif %}
 			{%- endfor %}
 			</ul>
 		</nav>

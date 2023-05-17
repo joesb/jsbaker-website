@@ -8,7 +8,7 @@ body {
   grid-template-areas:
     "head head head head head"
     "main main main main main"
-    ".... .... foot .... ...."
+    "foot foot foot foot foot"
   ;
   grid-template-columns: 2fr 1fr minmax(30ch, $break-large) 1fr 2fr;
 }

@@ -1,5 +1,7 @@
 ---
 title: Test 03
+layout: page.njk
+date: 2023-05-12
 tags:
   - '#writing'
 ---

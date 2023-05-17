@@ -1,6 +1,6 @@
 ---
 title: About Me
-layout: layouts/page.njk
+layout: page.njk
 eleventyNavigation:
   key: About
   order: 10
@@ -11,7 +11,9 @@ image:
   alt: "Some text here"
   class: ""
   # pictureClass: "content-canvas-item-right content-canvas-item-right--span-3"
-  pictureClass: "content-canvas-item-full picture--hero"
+  pictureClass:
+    page: "content-canvas-item-full picture--hero"
+    list: "index-list__item__picture"
   caption: ""
 ---
 

@@ -6,12 +6,23 @@
       {% if loop.index != 1 and vr == "even" %}
       {% set trash = sze.next() %}
       {% endif %}
-      <li class="faux-block-link-parent item-{{ loop.index }} item-{{ vr }}{% if loop.index != 1 %} item-{{ sze.next() }}{% endif %}">
-        <h2><a href="{{ item.url | url }}"{% activepath item.url, page.url %}>{{ item.data.title }}</a></h2>
+      <li class="faux-block-link-parent index-list__item index-list__item-{{ loop.index }}{% if loop.first %} index-list__item-first{% endif %} index-list__item-{{ vr }}{% if loop.index != 1 %} index-list__item-{{ sze.next() }}{% endif %}{% if item.data.image.path %} index-list__item--picture{% endif %}">
+        <div class="index-list__item__content">
+          <h2><a href="{{ item.url | url }}"{% activepath item.url, page.url %}>{{ item.data.title }}</a></h2>
+          <div class="item-meta">
+            <span class="item-date">{{ item.date.toLocaleString('default', { day: 'numeric' }) }} {{ item.date.toLocaleString('default', { month: 'long' }) }}, {{ item.date.getYear() }}</span>
+            <span class="divider"></span>
+            <span class="item-reading-time">{{ item.content | timeToRead }} read</span></div>
+        </div>
         <a href="{{ item.url | url }}"{% activepath item.url, page.url %} class="faux-block-link"><span class="hide-text" aria-hidden="true">{{ item.data.title }}</span></a>
+        {% if item.data.image.path %}
+          {% image item.data.image.path, item.data.image.alt, item.data.image.class, item.data.image.pictureClass.list %}
+        {% endif %}
       </li>
     {% endfor %}
     </ul>
+
+{% if pagination.pages|length > 1 %}
 
     <nav class="pagination">
       <ol>
@@ -27,3 +38,5 @@
         <li class="pagination-item last">{% if page.url != pagination.href.last %}<a href="{{ pagination.href.last }}"><span title="Last">Last</span></a>{% else %}<span title="Last">Last</span>{% endif %}</li>
       </ol>
     </nav>
+
+{% endif %}

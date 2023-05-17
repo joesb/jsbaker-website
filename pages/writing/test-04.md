@@ -1,7 +1,20 @@
 ---
 title: Test 04
+layout: page.njk
+date: 2023-05-13
 tags:
   - '#writing'
+page:
+  class: "page--with-hero"
+image:
+  path: "https://images.pexels.com/photos/3692596/pexels-photo-3692596.jpeg"
+  alt: "Couple hugging"
+  class: ""
+  # pictureClass: "content-canvas-item-right content-canvas-item-right--span-3"
+  pictureClass:
+    page: "content-canvas-item-full picture--hero"
+    list: "index-list__item__picture"
+  caption: ""
 ---
 
 Nullam lobortis nibh sed odio venenatis facilisis. Vivamus iaculis, tortor ac sodales placerat, nisl sem finibus sem, vitae ultrices orci quam nec ex. Aliquam volutpat ex fringilla augue luctus consequat. Nulla faucibus accumsan velit, eget fringilla ligula maximus ut. Mauris quis quam nec mi porta efficitur. Donec ac laoreet metus. Morbi efficitur rutrum quam id faucibus. Quisque interdum mattis erat non laoreet. Morbi eget justo non libero laoreet molestie. Integer euismod metus id sapien luctus efficitur. Aliquam vel interdum tellus.

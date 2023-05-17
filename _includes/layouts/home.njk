@@ -1,5 +1,5 @@
 ---
-layout: layouts/base.njk
+layout: base.njk
 section: home
 primary: true
 styles:
@@ -26,6 +26,12 @@ styles:
         <img src="/static/images/{{ image | url }}" />
       </div>
     </div>
+
+  </div>
+
+  <div class="site-content content-canvas-item-wide">
+
+    {% include "layouts/components/index-list.njk" %}
 
   </div>
 </div>

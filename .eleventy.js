@@ -6,11 +6,18 @@ const eleventyNavigationPlugin = require("@11ty/eleventy-navigation");
 const Image = require("@11ty/eleventy-img");
 const markdownIt = require("markdown-it");
 const markdownItAnchor = require("markdown-it-anchor");
+const inspect = require("util").inspect;
+const timeToRead = require('eleventy-plugin-time-to-read');
 
 module.exports = function (eleventyConfig) {
 
   eleventyConfig.addPlugin(pluginRss);
   eleventyConfig.addPlugin(eleventyNavigationPlugin);
+  eleventyConfig.addPlugin(timeToRead, {
+    speed: '850 characters per minute',
+    style: "short"
+  });
+  eleventyConfig.addFilter("debug", (content) => `<pre>${inspect(content)}</pre>`);
 
   // Return active path attributes
   eleventyConfig.addShortcode('activepath', function (itemUrl, currentUrl) {
@@ -135,22 +142,43 @@ module.exports = function (eleventyConfig) {
     return sortByOrder(nav);
   });
 
+  // Sort writing, reading, thinking pieces by 'order' field
+  eleventyConfig.addCollection('allContent', (collection) => {
+    var contentTags = ['#writing', '#reading', '#thinking'];
+    var nav = collection.getAll().filter(function (item) {
+      const itemTags = item.data.tags;
+      if (Array.isArray(itemTags)) {
+        return itemTags.some(v => contentTags.includes(v));
+      }
+      else {
+        return;
+      }
+    });
+    return sortByDate(nav).reverse();
+  });
+
+  // Collection of items promotoed
+  eleventyConfig.addCollection('promotedContent', (collection) => {
+    var items = collection.getAll().filter(item => item.data.promoted == true);
+    return sortByOrder(items);
+  });
+
   // Sort writing pieces by 'order' field
   eleventyConfig.addCollection('writing', (collection) => {
     var nav = collection.getFilteredByTag('#writing');
-    return sortByOrder(nav);
+    return sortByDate(nav).reverse();
   });
 
   // Sort reading pieces by 'order' field
   eleventyConfig.addCollection('reading', (collection) => {
     var nav = collection.getFilteredByTag('#reading');
-    return sortByOrder(nav);
+    return sortByDate(nav).reverse();
   });
 
   // Sort thinking pieces by 'order' field
   eleventyConfig.addCollection('thinking', (collection) => {
     var nav = collection.getFilteredByTag('#thinking');
-    return sortByOrder(nav);
+    return sortByDate(nav).reverse();
   });
 
   function sortByOrder(collection) {
@@ -215,6 +243,7 @@ module.exports = function (eleventyConfig) {
     dir: {
       input: 'pages',
       includes: '../_includes',
+      layouts: '../_includes/layouts',
       data: '../_data',
       output: '_site',
     },
