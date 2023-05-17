@@ -66,8 +66,11 @@ $base-font-weight-medium: 500;
 $headings-font-weight: 600;
 
 // Font sizes
-$body-sml-font-size-mobile: px-to-rem(10px);
-$body-sml-font-size: px-to-rem(14px);
+$body-v-sml-font-size-mobile: px-to-rem(10px);
+$body-v-sml-font-size: px-to-rem(14px);
+
+$body-sml-font-size-mobile: px-to-rem(12px);
+$body-sml-font-size: px-to-rem(16px);
 
 $body-font-size-mobile: px-to-rem(16px);
 $body-font-size: px-to-rem($base-font-size);

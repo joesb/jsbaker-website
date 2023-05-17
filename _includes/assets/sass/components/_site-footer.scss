@@ -1,3 +1,107 @@
 .footer-main {
   background-color: var(--surface-3);
 }
+
+.footer-main__container {
+  display: grid;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "left .... right"
+  ;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.footer-main___left {
+  grid-area: left;
+}
+
+.footer-main__right {
+  grid-area: right;
+}
+
+.footer-main__container__contact-me__list {
+  margin-block-start: var(--size-5);
+  display: grid;
+  grid-auto-flow: row;
+  grid-template-columns: 1fr 2fr;
+  gap: 0.75rem 1.25rem;
+  font-size: var(--font-size-fluid-0);
+
+  >* {
+    align-self: center;
+  }
+
+  :where(dt) {
+    margin-block-start: unset;
+    text-align: right;
+  }
+}
+
+.social-site {
+  display: inline-block;
+  position: relative;
+  padding-right: 2.5em;
+
+  &::after {
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    content: ' ';
+    mask-size: contain;
+    mask-repeat: no-repeat;
+    background: var(--surface-teal);
+    height: px-to-rem(24px);
+    width: px-to-rem(32px);
+    transition: 0.2s;
+  }
+
+
+  &:hover {
+    &::after {
+      transform: translateX(5px);
+    }
+  }
+
+  &.email {
+    &::after {
+      mask-image: url("/static/images/icons/email.svg");
+    }
+  }
+
+  &.twitter {
+    &::after {
+      mask-image: url("/static/images/icons/twitter.svg");
+    }
+  }
+
+  &.mastodon {
+    &::after {
+      mask-image: url("/static/images/icons/mastodon.svg");
+    }
+  }
+
+  &.instagram {
+    &::after {
+      mask-image: url("/static/images/icons/instagram.svg");
+    }
+  }
+
+  &.facebook {
+    &::after {
+      mask-image: url("/static/images/icons/facebook.svg");
+    }
+  }
+
+  &.youtube {
+    &::after {
+      mask-image: url("/static/images/icons/youtube.svg");
+    }
+  }
+
+  &.soundcloud {
+    &::after {
+      mask-image: url("/static/images/icons/soundcloud.svg");
+    }
+  }
+}

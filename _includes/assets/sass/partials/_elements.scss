@@ -29,7 +29,8 @@ ELEMENTS
     --surface-violet: #{$surface-violet};
     --surface-rose: #{$surface-rose};
 
-    --font-size-fluid-00: clamp(#{$body-sml-font-size-mobile}, 1.5vw, #{$body-sml-font-size});
+    --font-size-fluid-000: clamp(#{$body-v-sml-font-size-mobile}, 1.3vw, #{$body-v-sml-font-size});
+    --font-size-fluid-00: clamp(#{$body-sml-font-size-mobile}, 1.4vw, #{$body-sml-font-size});
     --font-size-fluid-0: clamp(#{$body-font-size-mobile}, 1.5vw, #{$body-font-size});
     --font-size-fluid-01: clamp(#{$h3-font-size-mobile}, 1.75vw, #{$h3-font-size});
     --font-size-fluid-21: clamp(#{$h2-font-size-mobile}, 2.5vw, #{$h2-font-size});
