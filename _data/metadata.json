@@ -9,5 +9,26 @@
     "name": "J S Baker",
     "url": "https://www.jsbaker.co.uk/about/"
   },
-  "page_count": 6
+  "page_count": 6,
+  "social_site": [
+    {
+      "name": "Mastodon",
+      "machine_name": "mastodon",
+      "url": "https://mstdn.social/@joesb",
+      "alias": "mstdn.social/@joesb",
+      "rel": "me"
+    },
+    {
+      "name": "Twitter",
+      "machine_name": "twitter",
+      "url": "https://twitter.com/joesb",
+      "alias": "@joesb"
+    },
+    {
+      "name": "Instagram",
+      "machine_name": "instagram",
+      "url": "https://instagram.com/joesb",
+      "alias": "@joesb"
+    }
+  ]
 }

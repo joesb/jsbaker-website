@@ -112,3 +112,22 @@ ELEMENTS
       }
     }
   }
+
+// Links, anchors
+
+a {
+  text-decoration: underline;
+
+  &:hover {
+    color: var(--text-highlight-1);
+    text-decoration: underline;
+  }
+
+  &.light {
+    color: var(--surface-1);
+
+    &:hover {
+      color: darken($surface-2, 33%);
+    }
+  }
+}

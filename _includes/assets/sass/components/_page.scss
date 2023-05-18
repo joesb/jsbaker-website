@@ -4,7 +4,7 @@
 }
 
 .page-title__heading {
-  font-size: var(--font-size-fluid-4);
+  font-size: var(--font-size-fluid-3);
 }
 
 .page {
@@ -21,8 +21,15 @@
 
   .page-title {
     position: absolute;
-    top: 40vh;
+    top: 0;
     left: 0;
+    min-height: 60vh;
     color: var(--surface-1);
+    display: flex;
+    padding: px-to-rem(2 * $mobile-space) 0;
+  }
+
+  .title-bar {
+    align-self: flex-end;
   }
 }

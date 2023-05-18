@@ -11,7 +11,7 @@
     [main-mid]
       minmax(10ch, auto)
     [main-end]
-      minmax(0, auto)
+      minmax(0, 25ch)
     [wide-end]
       1fr
     [full-end];
@@ -30,7 +30,7 @@
       [main-mid]
         minmax(20ch, calc((#{$break-small} - 3rem) * 2 / 5))
       [main-end]
-        minmax(10vw, auto)
+        minmax(10vw, 25ch)
       [wide-end]
         minmax(3vw, 1fr)
       [full-end];
@@ -68,7 +68,8 @@
     grid-column: main-start/main-mid;
   }
 
-  .content-canvas-item-right {
+  .content-canvas-item-right,
+  .content-canvas-item-wide-right {
     grid-column: main-mid/main-end;
 
     &.content-canvas-item-right--span-2 {

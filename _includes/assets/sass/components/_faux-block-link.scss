@@ -1,7 +1,14 @@
 .faux-block-link-parent {
   position: relative;
 
+  .index-list__item__picture {
+    img {
+      transition: all 0.3s ease;
+    }
+  }
+
   &:hover {
+
     a {
       text-decoration: none;
     }
@@ -9,6 +16,17 @@
     .single-meta-forward {
       &::after {
         transform: translateX(5px);
+      }
+    }
+
+    .index-list__item__picture {
+      img {
+        transform: scale(1.05);
+        transition: all 0.3s ease;
+      }
+
+      &.index-list__item-first {
+        transform: scale(1.01);
       }
     }
   }

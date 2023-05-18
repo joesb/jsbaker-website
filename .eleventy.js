@@ -6,6 +6,7 @@ const eleventyNavigationPlugin = require("@11ty/eleventy-navigation");
 const Image = require("@11ty/eleventy-img");
 const markdownIt = require("markdown-it");
 const markdownItAnchor = require("markdown-it-anchor");
+const markdownItAttrs = require('markdown-it-attrs');
 const inspect = require("util").inspect;
 const timeToRead = require('eleventy-plugin-time-to-read');
 
@@ -218,7 +219,7 @@ module.exports = function (eleventyConfig) {
       level: [1,2,3,4],
     }),
     slugify: eleventyConfig.getFilter("slug")
-  });
+  }).use(markdownItAttrs);
   eleventyConfig.setLibrary("md", markdownLibrary);
 
   eleventyConfig.addFilter("markdown", (content) => {

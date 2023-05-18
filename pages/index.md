@@ -12,4 +12,4 @@ pagination:
   alias: items
 ---
 
-My writer's journal, for my [writing](/writing) projects, as well as the [reading](/reading) and [thinking](/thinking) that support them.
+My writer's journal, for my [writing](/writing){.light} projects, as well as the [reading](/reading){.light} and [thinking](/thinking){.light} that support them.

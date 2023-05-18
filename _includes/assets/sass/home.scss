@@ -12,15 +12,6 @@
 .home-layout__item--dark-cyan {
   background-color: $dark-cyan;
   color: var(--surface-1);
-
-  a {
-    color: var(--surface-1);
-    text-decoration: underline;
-
-    &:hover {
-      color: darken($surface-2, 33%);
-    }
-  }
 }
 
 .home-layout__item__inner {

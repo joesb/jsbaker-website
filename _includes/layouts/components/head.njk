@@ -35,4 +35,8 @@
   <script>{{ js | jsmin | safe }}</script>
 
   {% include "layouts/components/head-social-cards.njk" %}
+
+  {% if canonical %}
+  <link rel="canonical" href="{{ canonical }}" />
+  {% endif %}
 </head>

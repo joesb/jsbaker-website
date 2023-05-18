@@ -22,12 +22,10 @@
 		<div class="footer-main__container__contact-me footer__nav footer-main__right">
 			<h3 class="h4-style">Contact me</h3>
 			<dl class="footer-main__container__contact-me__list">
-				<dt>Mastodon</dt>
-				<dd><a href="https://mstdn.social/@joesb" rel="me noreferrer" target="_blank" class="social-site mastodon">mstdn.social/@joesb</a></dd>
-				<dt>Twitter</dt>
-				<dd><a href="https://twitter.com/joesb" rel="noreferrer" target="_blank" class="social-site twitter">@joesb</a></dd>
-				<dt>Instagram</dt>
-				<dd><a href="https://www.instagram.com/joesb/" rel="noreferrer" target="_blank" class="social-site instagram">@joesb</dd>
+				{% for item in metadata.social_site %}
+				<dt>{{ item.name }}</dt>
+				<dd><a href="{{ item.url }}" rel="noreferrer{% if item.rel %} {{ item.rel }}{% endif %}" target="_blank" class="social-site {{ item.machine_name }}">{{ item.alias }}</a></dd>
+				{% endfor %}
 			</dl>
 		</div>
 	</div>

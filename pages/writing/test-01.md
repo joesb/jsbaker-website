@@ -1,21 +1,23 @@
 ---
-title: Test 01
+title: "Reading Recap, November 2018 (pt. 1)"
+description: "Since finishing my PhD I’ve read lots of fiction again. Here’s a belated recap on books I read in the second half of 2017."
 layout: page.njk
 date: 2023-05-10
 promoted: true
+canonical: "https://medium.com/post-phd-world/reading-recap-november-2018-pt-1-2ebacab50c55"
 page:
   class: "page--with-hero"
 tags:
   - '#writing'
 image:
-  path: "https://images.pexels.com/photos/9578717/pexels-photo-9578717.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-  alt: "Some text here"
-  class: ""
+  path: "https://images.unsplash.com/photo-1518336751805-17d4ea1ba5a0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=3269&q=80"
+  alt: "Books on bookshelves"
+  class: "image-greyscale-75 image-darken-33"
   # pictureClass: "content-canvas-item-right content-canvas-item-right--span-3"
   pictureClass:
     page: "content-canvas-item-full picture--hero"
     list: "index-list__item__picture"
-  caption: ""
+  caption: 'books on bookshelf” by <a class="af ne" href="https://unsplash.com/@chuttersnap?utm_source=medium&amp;utm_medium=referral" rel="noopener ugc nofollow" target="_blank">chuttersnap</a> on <a class="af ne" href="https://unsplash.com?utm_source=medium&amp;utm_medium=referral" rel="noopener ugc nofollow" target="_blank">Unsplash</a>'
 ---
 
 Nullam lobortis nibh sed odio venenatis facilisis. Vivamus iaculis, tortor ac sodales placerat, nisl sem finibus sem, vitae ultrices orci quam nec ex. Aliquam volutpat ex fringilla augue luctus consequat. Nulla faucibus accumsan velit, eget fringilla ligula maximus ut. Mauris quis quam nec mi porta efficitur. Donec ac laoreet metus. Morbi efficitur rutrum quam id faucibus. Quisque interdum mattis erat non laoreet. Morbi eget justo non libero laoreet molestie. Integer euismod metus id sapien luctus efficitur. Aliquam vel interdum tellus.
