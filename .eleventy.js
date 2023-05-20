@@ -9,6 +9,7 @@ const markdownItAnchor = require("markdown-it-anchor");
 const markdownItAttrs = require('markdown-it-attrs');
 const inspect = require("util").inspect;
 const timeToRead = require('eleventy-plugin-time-to-read');
+const embedEverything = require("eleventy-plugin-embed-everything");
 
 module.exports = function (eleventyConfig) {
 
@@ -18,6 +19,7 @@ module.exports = function (eleventyConfig) {
     speed: '850 characters per minute',
     style: "short"
   });
+  eleventyConfig.addPlugin(embedEverything);
   eleventyConfig.addFilter("debug", (content) => `<pre>${inspect(content)}</pre>`);
 
   // Return active path attributes
@@ -63,6 +65,43 @@ module.exports = function (eleventyConfig) {
 			</picture>`;
 	});
 
+    // // Collection of items promotoed
+    // eleventyConfig.addCollection('promotedContent', (collection) => {
+    //   var items = collection.getAll().filter(item => item.data.promoted == true);
+    //   return sortByOrder(items);
+    // });
+
+  eleventyConfig.addShortcode("link_internal", async function(url) {
+    var collections = this.ctx.environments.collections;
+    var page = collections.all.filter(item => item.url == url);
+    if (!page.length) {
+      throw new Error(`Cannot find page with URL ${url}`);
+    }
+    var thePage = page[0];
+    var theEmbed = `<div class="faux-block-link-parent link--internal">
+      <div class="link--internal__content">
+        <h2>${thePage.data.title}</h2>`;
+    if (thePage.data.description) {
+      theEmbed += `<div class="summary">${thePage.data.description}</div>`;
+    }
+    theEmbed += `
+      </div>`;
+    if (thePage.data.image) {
+      var image = thePage.data.image;
+      var picture = await getPictureMarkup(image.path, image.alt, image.class, "link--internal__image__picture", "(min-width: 30em) 50vw, 100vw", [100, 200]);
+      theEmbed += `
+      <div class="link--internal__image">
+        ${picture}
+      </div>
+      `;
+    }
+    theEmbed += `<a href="${thePage.url}" class="faux-block-link">
+        <span class="hide-text" aria-hidden="true">${thePage.data.title}</span>
+      </a>
+    </div>`;
+
+    return theEmbed
+  });
 
   // Minify CSS
   eleventyConfig.addFilter('cssmin', function (code) {
@@ -205,6 +244,37 @@ module.exports = function (eleventyConfig) {
       else return 0;
     });
   }
+
+  async function getPictureMarkup(src, alt, cls, pictureCls = "", sizes = "(min-width: 30em) 50vw, 100vw", widths = [300, 600, 1000, 2000]) {
+		if(alt === undefined) {
+			// You bet we throw an error on missing alt (alt="" works okay)
+			throw new Error(`Missing \`alt\` on responsiveimage from: ${src}`);
+		}
+
+		let metadata = await Image(src, {
+			widths: widths,
+			formats: ['webp', 'jpeg'],
+      urlPath: "/static/img/",
+      outputDir: "./static/img/"
+		});
+
+		let lowsrc = metadata.jpeg[0];
+		let highsrc = metadata.jpeg[metadata.jpeg.length - 1];
+
+		return `<picture class="${pictureCls}">
+			${Object.values(metadata).map(imageFormat => {
+				return `  <source type="${imageFormat[0].sourceType}" srcset="${imageFormat.map(entry => entry.srcset).join(", ")}" sizes="${sizes}">`;
+			}).join("\n")}
+				<img
+					src="${lowsrc.url}"
+					width="${highsrc.width}"
+					height="${highsrc.height}"
+          class="${cls}"
+					alt="${alt}"
+					loading="lazy"
+					decoding="async">
+			</picture>`;
+	};
 
   // Customize Markdown library and settings:
   let markdownLibrary = markdownIt({

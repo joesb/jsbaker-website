@@ -1,7 +1,8 @@
 .faux-block-link-parent {
   position: relative;
 
-  .index-list__item__picture {
+  .index-list__item__picture,
+  .link--internal__image {
     img {
       transition: all 0.3s ease;
     }
@@ -19,7 +20,8 @@
       }
     }
 
-    .index-list__item__picture {
+    .index-list__item__picture,
+    .link--internal__image {
       img {
         transform: scale(1.05);
         transition: all 0.3s ease;
