@@ -1,3 +1,27 @@
+.page {
+  position: relative;
+
+  .metadata {
+    margin-block: var(--size-7);
+    padding-block: var(--size-3);
+    border-width: 0 0 1px 0;
+    border-style: solid;
+    border-color: lighten($text-1, 67%);
+  }
+
+  >* {
+    position: relative;
+    z-index: 1;
+  }
+
+  .separator {
+    text-align: center;
+    margin-block: var(--size-3);
+    padding-block: var(--size-2);
+    font-size:  var(--size-7);
+  }
+}
+
 .page-title {
   padding: px-to-rem($mobile-space) 0;
   margin-bottom: px-to-rem($mobile-space);
@@ -5,15 +29,6 @@
 
 .page-title__heading {
   font-size: var(--font-size-fluid-3);
-}
-
-.page {
-  position: relative;
-
-  >* {
-    position: relative;
-    z-index: 1;
-  }
 }
 
 .page--with-hero {
@@ -32,4 +47,11 @@
   .title-bar {
     align-self: flex-end;
   }
+}
+
+.page__summary {
+  font-size: var(--font-size-fluid-1);
+  line-height: var(--size-6);
+  margin-block: var(--size-7);
+  font-weight: 600;
 }

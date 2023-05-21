@@ -56,22 +56,6 @@
     position: relative;
     z-index: 1;
     align-self: flex-end;
-
-    .item-meta {
-      font-size: var(--font-size-fluid-00);
-      display: flex;
-      justify-content: flex-start;
-      align-items: center;
-      gap: px-to-rem(10px);
-    }
-  }
-
-  .divider {
-    height: 5px;
-    width: 5px;
-    background-color: var(--text-2);
-    border-radius: 50%;
-    display: inline-block;
   }
 
   h2 {

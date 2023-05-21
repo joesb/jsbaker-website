@@ -6,4 +6,17 @@ section: page
 			{% image image.path, image.alt, image.class, image.pictureClass.page %}
 	{% endif %}
 
+	{% if description %}
+	<div class="page__summary">
+		{{ description }}
+	</div>
+	{% endif %}
+
+	<div class="metadata">
+		<span class="metadata__date">
+			{{ page.date.toLocaleString('default', { day: 'numeric' }) }} {{ page.date.toLocaleString('default', { month: 'long' }) }}, {{ page.date.toLocaleString('default', {year: "numeric"}) }}</span>
+		<span class="metadata__divider divider"></span>
+		<span class="metadata__reading-time">{{ content | timeToRead }} read</span>
+	</div>
+
 	{{ layoutContent | safe }}
