@@ -23,12 +23,30 @@
     .index-list__item__picture,
     .link--internal__image {
       img {
-        transform: scale(1.05);
+        transform: scale(1.04);
         transition: all 0.3s ease;
       }
+    }
+  }
+    
+  &.index-list__item-first {
+    &:hover {
+      .index-list__item__picture,
+      .link--internal__image {
+        img {
+          transform: scale(1.02);
+        }
+      }
+    }
+  }
 
-      &.index-list__item-first {
-        transform: scale(1.01);
+  &.index-list__item-large {
+    &:hover {
+      .index-list__item__picture,
+      .link--internal__image {
+        img {
+          transform: scale(1.025);
+        }
       }
     }
   }

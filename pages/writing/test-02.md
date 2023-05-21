@@ -3,6 +3,7 @@ title: Test 02
 layout: page.njk
 date: 2023-05-11
 tags:
+  - Writing
   - '#writing'
 ---
 

@@ -120,7 +120,7 @@ module.exports = function (eleventyConfig) {
 
   // Check a string starts with a character.
   eleventyConfig.addFilter('starts_with', function(str, prefix, not = false) {
-    return str.startsWith(str, prefix) !== not;
+    return str.startsWith(prefix) !== not;
   });
 
   // Minify HTML output

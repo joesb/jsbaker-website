@@ -3,6 +3,7 @@ title: Reading
 layout: list.njk
 eleventyNavigation:
   key: Reading
+showTags: false
 pagination:
   data: collections.reading
   size: 11

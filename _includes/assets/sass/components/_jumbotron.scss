@@ -1,0 +1,6 @@
+.jumbotron {
+  :where(p) {
+    font-size: var(--font-size-fluid-1);
+    line-height: 2rem;
+  }
+}

@@ -5,7 +5,7 @@ permalink: /
 eleventyNavigation:
   key: Home
 layout: home.njk
-image: home/jsb-01.jpeg
+image: home/jsb-002.jpeg
 pagination:
   data: collections.promotedContent
   size: 11

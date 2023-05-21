@@ -8,7 +8,8 @@ canonical: "https://medium.com/post-phd-world/reading-recap-november-2018-pt-1-2
 page:
   class: "page--with-hero"
 tags:
-  - '#writing'
+  - "Reading"
+  - "#reading"
 image:
   path: "https://images.unsplash.com/photo-1518336751805-17d4ea1ba5a0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=3269&q=80"
   alt: "Books on bookshelves"

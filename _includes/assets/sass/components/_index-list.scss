@@ -38,6 +38,19 @@
   grid-column: span 3;
   min-height: px-to-rem(150px);
   display: flex;
+  color: var(--surface-2);
+
+  a {
+    color: var(--surface-1);
+
+    &:visited {
+      color: var(--surface-1);
+    }
+  }
+
+  .divider {
+    background-color: var(--surface-2);
+  }
 
   .index-list__item__content {
     position: relative;
@@ -84,18 +97,18 @@
 .index-list__item--picture {
   color: var(--surface-2);
 
-    a {
+  a {
+    color: var(--surface-2);
+
+    &:visited {
       color: var(--surface-2);
-
-      &:visited {
-        color: var(--surface-2);
-      }
-    }
-
-    .divider {
-      background-color: var(--surface-2);
     }
   }
+
+  .divider {
+    background-color: var(--surface-2);
+  }
+}
 
 @include respond-to('small') {
   .index-list__item {
