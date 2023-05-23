@@ -15,25 +15,33 @@
   border-color: lighten($text-1, 67%);
 }
 
-.picture--hero {
+.picture--hero,
+.figure--hero {
   position: absolute;
   top: 0;
   left: 0;
-  z-index: -1;
+  z-index: 0;
   height: 60vh;
   overflow: hidden;
 
-  img {
+  // img {
+  //   block-size: 100%;
+  // }
+
+  picture {
     block-size: 100%;
-    object-fit: cover;
-    object-position: center center;
+    overflow: hidden;
+  }
 
-    &.pos-higher {
-      object-position: center 25%;
-    }
-
-    &.pos-lower {
-      object-position: center 75%;
-    }
+  figcaption {
+    max-width: 35ch;
+    font-size: var(--font-size-00);
+    line-height: var(--font-lineheight-0);
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 1;
+    padding: var(--size-1) var(--size-2);
+    background-color: rgba(var(--surface-2-rgb), 66%);
   }
 }

@@ -8,15 +8,17 @@ tags:
   - Short Story
   - '#writing'
 page:
-  class: "page--with-hero"
+  class: "page--with-hero page--writing"
 image:
   path: "https://live.staticflickr.com/4345/37283402336_2dfad389a1_k.jpg"
   alt: "Peregrine falcon and prey, Caloundra"
-  class: "pos-lower"
+  class: "image-obj-cover image-obj-pos-lower"
   # pictureClass: "content-canvas-item-right content-canvas-item-right--span-3"
   pictureClass:
-    page: "content-canvas-item-full picture--hero "
+    # page: "content-canvas-item-full picture--hero "
     list: "index-list__item__picture"
+  figureClass:
+    page: "content-canvas-item-full figure--hero"
   caption: "Hunter and Hunted. Peregrine falcon and prey, Caloundra. Photo by <a href=\"https://www.flickr.com/photos/paul_e_balfe/37283402336/in/photostream/\" rel=\"noopener nofollow\" target=\"_blank\">Paul Balfe</a> on Flickr"
 ---
 

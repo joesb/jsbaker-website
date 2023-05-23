@@ -9,10 +9,12 @@ page:
 image:
   path: https://images.pexels.com/photos/16519588/pexels-photo-16519588.jpeg
   alt: "Some text here"
-  class: ""
+  class: "image-obj-cover image-obj-pos-higher"
   # pictureClass: "content-canvas-item-right content-canvas-item-right--span-3"
   pictureClass:
     page: "content-canvas-item-full picture--hero"
     list: "index-list__item__picture"
+  figureClass:
+    page: "content-canvas-item-full picture--hero"
   caption: ""
 ---

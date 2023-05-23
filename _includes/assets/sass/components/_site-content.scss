@@ -3,11 +3,19 @@ SITE CONTENT
 ========================================================================== */
 
 .site-content {
-  padding: 1.5em 0;
+  padding: 1.5rem 0;
   margin-bottom: px-to-rem($mobile-space);
 
   @include respond-to('medium') {
-    padding: 4em 0;
+    padding: 4rem 0;
+  }
+}
+
+.site-content--small-padding {
+  padding-block: 1rem;
+
+  @include respond-to('medium') {
+    padding-block: 2rem;
   }
 }
 

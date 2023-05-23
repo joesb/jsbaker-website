@@ -5,11 +5,11 @@ date: 2023-05-13
 tags:
   - '#writing'
 page:
-  class: "page--with-hero"
+  class: "page--with-hero page--writing"
 image:
   path: "https://images.pexels.com/photos/3692596/pexels-photo-3692596.jpeg"
   alt: "Couple hugging"
-  class: ""
+  class: "image-obj-cover"
   # pictureClass: "content-canvas-item-right content-canvas-item-right--span-3"
   pictureClass:
     page: "content-canvas-item-full picture--hero"

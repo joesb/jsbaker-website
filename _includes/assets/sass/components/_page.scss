@@ -20,6 +20,23 @@
     padding-block: var(--size-2);
     font-size:  var(--size-7);
   }
+
+  :where(h2),
+  :where(h3) {
+    margin-block: var(--size-6) var(--size-2);
+
+    +p {
+      margin-block-start: 0;
+    }
+  }
+
+  :where(h4) {
+    margin-block: var(--size-5) var(--size-2);
+
+    +p {
+      margin-block-start: 0;
+    }
+  }
 }
 
 .page-title {

@@ -18,6 +18,7 @@ $cosmic-latte: rgba(252, 245, 229, 100%);     // #FCF5E5
 $parchment: rgba(251, 241, 218, 100%);        // #FBF1DA
 $eerie-black: rgba(28, 29, 33, 100%);         // #1C1D21
 $eerie-black-light: lighten($eerie-black, 20%);
+$eerie-black-pale: lighten($eerie-black, 80%);
 $english-violet: rgba(74, 64, 99, 100%);      // #4A4063
 $dark-cyan: rgba(85, 134, 140, 100%);         // #55868C
 $french-rose: rgba(247, 85, 144, 100%);       // #F75590
@@ -32,6 +33,16 @@ $surface-teal: $dark-cyan;
 $surface-violet: $english-violet;
 $surface-rose: $french-rose;
 $text-1: $eerie-black;
+
+$white-rgb: 255, 255, 255;
+$floral-white-rgb: 253, 248, 237;
+$cosmic-latte-rgb: 252, 245, 229;
+$parchment-rgb: 251, 241, 218;
+
+$surface-1-rgb: $white-rgb;
+$surface-2-rgb: $floral-white-rgb;
+$surface-3-rgb: $cosmic-latte-rgb;
+$surface-4-rgb: $parchment-rgb;
 
 $text-alt-1: $english-violet;
 $text-highlight-1: $dark-cyan;

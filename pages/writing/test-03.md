@@ -6,16 +6,19 @@ date: 2023-05-12
 tags:
   - '#writing'
 page:
-  class: "page--with-hero"
+  class: "page--with-hero page--writing"
 image:
   path: "https://images.pexels.com/photos/551579/pexels-photo-551579.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
   alt: "Two Boys Beside Adult Black and White Border Collie"
-  class: "image-greyscale-50"
+  class: "image-obj-cover image-greyscale-50"
   # pictureClass: "content-canvas-item-right content-canvas-item-right--span-3"
   pictureClass:
-    page: "content-canvas-item-full picture--hero"
+    # page: "content-canvas-item-full picture--hero"
     list: "index-list__item__picture"
-  caption: ""
+  figureClass:
+    page: "content-canvas-item-full figure--hero"
+  caption: "Two boys beside adult black-and-white border collie."
+  credit: "<a href=\"https://www.pexels.com/photo/two-boys-beside-adult-black-and-white-border-collie-551579/\" target=\"_blank\" rel=\"noopener nofollow\">Photo</a> by Kat Smith from Pexels"
 ---
 
 Nullam lobortis nibh sed odio venenatis facilisis. Vivamus iaculis, tortor ac sodales placerat, nisl sem finibus sem, vitae ultrices orci quam nec ex. Aliquam volutpat ex fringilla augue luctus consequat. Nulla faucibus accumsan velit, eget fringilla ligula maximus ut. Mauris quis quam nec mi porta efficitur. Donec ac laoreet metus. Morbi efficitur rutrum quam id faucibus. Quisque interdum mattis erat non laoreet. Morbi eget justo non libero laoreet molestie. Integer euismod metus id sapien luctus efficitur. Aliquam vel interdum tellus.

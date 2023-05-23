@@ -20,11 +20,16 @@ ELEMENTS
     --surface-2: #{$surface-2};
     --surface-3: #{$surface-3};
     --surface-4: #{$surface-4};
+    --surface-1-rgb: #{$surface-1-rgb};
+    --surface-2-rgb: #{$surface-2-rgb};
+    --surface-3-rgb: #{$surface-3-rgb};
+    --surface-4-rgb: #{$surface-4-rgb};
     --text-1: #{$text-1};
     --text-alt-1: #{$text-alt-1};
     --text-highlight-1: #{$text-highlight-1};
     --surface-black: #{$eerie-black};
     --surface-black-light: #{$eerie-black-light};
+    --surface-black-pale: #{$eerie-black-pale};
     --surface-teal: #{$surface-teal};
     --surface-violet: #{$surface-violet};
     --surface-rose: #{$surface-rose};
@@ -132,4 +137,9 @@ a {
       color: darken($surface-2, 33%);
     }
   }
+}
+
+:where(hr) {
+  background-color: var(--surface-black-pale);
+  margin-block: var(--size-fluid-2);
 }

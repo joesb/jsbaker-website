@@ -3,8 +3,20 @@ layout: base.njk
 section: page
 ---
 	{% if image.path %}
+			<figure class="{{ image.figureClass.page }}">
 			{% image image.path, image.alt, image.class, image.pictureClass.page %}
+			{% if image.caption %}
+			<figcaption>{{ image.caption | safe }}{% if image.credit %} {{ image.credit | safe }}{% endif %}</figcaption>
+			{% endif %}
+			</figure>
 	{% endif %}
+
+{% set pageTags = [] %}
+{%- for tag in tags %}
+	{% if tag | starts_with("#", true) %}
+	{% set pageTags = (pageTags.push(tag), pageTags) %}
+	{% endif %}
+{% endfor %}
 
 	{% if description %}
 	<div class="page__summary content-canvas-item-full content-canvas site-content site-content--zero-spacing {% if tags | hasTag('#writing') %} site-content--surface-black-light site-content--surface-dark{% endif %}">
@@ -12,12 +24,10 @@ section: page
 		{% if tags | hasTag('#writing') %}
 		<div class="metadata content-canvas-item-wide-left">
 			<div class="metadata__tags">
-				{%- for tag in tags %}
-					{% if tag | starts_with("#", true) %}
+				{%- for tag in pageTags %}
 					<span class="metadata__tags__tag">{{ tag }}</span>
 						{% if loop.last !== true %}
 					<span class="metadata__divider divider"></span>
-					{% endif %}
 					{% endif %}
 					
 				{% endfor %}
@@ -33,7 +43,7 @@ section: page
 	<div class="metadata page__metadata">
 		{% if tags | hasTag('#writing', false) %}
 		<div class="metadata__tags">
-			{%- for tag in tags %}
+			{%- for tag in pageTags %}
 				{% if tag | starts_with("#", true) %}
 				<span class="metadata__tags__tag">{{ tag }}</span>
 					{% if loop.last !== true %}
@@ -53,3 +63,5 @@ section: page
 	</div>
 
 	{{ layoutContent | safe }}
+
+	{% include "layouts/components/page-footer.njk" %}

@@ -5,11 +5,11 @@ date: 2023-05-14
 tags:
   - '#writing'
 page:
-  class: "page--with-hero"
+  class: "page--with-hero page--writing"
 image:
   path: "https://images.pexels.com/photos/4038905/pexels-photo-4038905.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
   alt: "Some text here"
-  class: ""
+  class: "image-obj-cover"
   # pictureClass: "content-canvas-item-right content-canvas-item-right--span-3"
   pictureClass:
     page: "content-canvas-item-full picture--hero"
