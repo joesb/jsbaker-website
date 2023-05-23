@@ -1,6 +1,11 @@
 .metadata,
 .item-meta {
   font-size: var(--font-size-fluid-00);
+}
+
+.metadata__info,
+.item-meta,
+.metadata__tags {
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -14,4 +19,9 @@
   background-color: var(--text-2);
   border-radius: 50%;
   display: inline-block;
+}
+
+.metadata__tags {
+  margin-block: 0.5rem;
+  font-size: var(--font-size-fluid-000);
 }

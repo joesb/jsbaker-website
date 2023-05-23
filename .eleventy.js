@@ -35,14 +35,14 @@ module.exports = function (eleventyConfig) {
   });
 
   // Return responsive images
-  eleventyConfig.addShortcode("image", async function(src, alt, cls, pictureCls = "", sizes = "(min-width: 30em) 50vw, 100vw") {
+  eleventyConfig.addShortcode("image", async function(src, alt, cls, pictureCls = "", sizes = "(min-width: 30em) 50vw, 100vw", widths = [300, 600, 1000, 1980]) {
 		if(alt === undefined) {
 			// You bet we throw an error on missing alt (alt="" works okay)
 			throw new Error(`Missing \`alt\` on responsiveimage from: ${src}`);
 		}
 
 		let metadata = await Image(src, {
-			widths: [300, 600, 1000, 2000],
+			widths: widths,
 			formats: ['webp', 'jpeg'],
       urlPath: "/static/img/",
       outputDir: "./static/img/"
@@ -104,6 +104,11 @@ module.exports = function (eleventyConfig) {
     return theEmbed
   });
 
+  eleventyConfig.addAsyncShortcode("imageData", async function(src) {
+    var picture = await getPictureData(src, [800]);
+    return picture.jpeg[0].outputPath;
+  });
+
   // Minify CSS
   eleventyConfig.addFilter('cssmin', function (code) {
     return new CleanCSS({}).minify(code).styles;
@@ -140,30 +145,9 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addFilter('fromJson', JSON.parse);
   eleventyConfig.addFilter('toJson', JSON.stringify);
 
-
-  function sortByOrder(collection) {
-    return collection.sort((a, b) => {
-      if (a.data.order < b.data.order) return -1;
-      else if (a.data.order > b.data.order) return 1;
-      else return 0;
-    });
-  }
-
-  function sortByDate(collection) {
-    return collection.sort((a, b) => {
-      if (a.data.date < b.data.date) return -1;
-      else if (a.data.date > b.data.date) return 1;
-      else return 0;
-    });
-  }
-
-  function sortByTitle(collection) {
-    return collection.sort((a, b) => {
-      if (a.data.title < b.data.title) return -1;
-      else if (a.data.title > b.data.title) return 1;
-      else return 0;
-    });
-  }
+  eleventyConfig.addFilter("hasTag", (tags, tag, not = true) => {
+    return (tags || []).includes(tag) === not;
+  });
 
   // Sort footer menu items by 'order' field
   eleventyConfig.addCollection('footerNav', (collection) => {
@@ -246,7 +230,7 @@ module.exports = function (eleventyConfig) {
     });
   }
 
-  async function getPictureMarkup(src, alt, cls, pictureCls = "", sizes = "(min-width: 30em) 50vw, 100vw", widths = [300, 600, 1000, 2000]) {
+  async function getPictureMarkup(src, alt, cls, pictureCls = "", sizes = "(min-width: 30em) 50vw, 100vw", widths = [300, 600, 1000, 1980]) {
 		if(alt === undefined) {
 			// You bet we throw an error on missing alt (alt="" works okay)
 			throw new Error(`Missing \`alt\` on responsiveimage from: ${src}`);
@@ -276,6 +260,16 @@ module.exports = function (eleventyConfig) {
 					decoding="async">
 			</picture>`;
 	};
+
+  async function getPictureData(src, widths = [300, 600, 1000, 1980]) {
+    let metadata = await Image(src, {
+			widths: widths,
+			formats: ['jpeg'],
+      urlPath: "/static/img/",
+      outputDir: "./static/img/"
+		});
+    return metadata;
+  };
 
   // Customize Markdown library and settings:
   let markdownLibrary = markdownIt({

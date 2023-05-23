@@ -7,16 +7,49 @@ section: page
 	{% endif %}
 
 	{% if description %}
-	<div class="page__summary">
-		{{ description }}
+	<div class="page__summary content-canvas-item-full content-canvas site-content site-content--zero-spacing {% if tags | hasTag('#writing') %} site-content--surface-black-light site-content--surface-dark{% endif %}">
+
+		{% if tags | hasTag('#writing') %}
+		<div class="metadata content-canvas-item-wide-left">
+			<div class="metadata__tags">
+				{%- for tag in tags %}
+					{% if tag | starts_with("#", true) %}
+					<span class="metadata__tags__tag">{{ tag }}</span>
+						{% if loop.last !== true %}
+					<span class="metadata__divider divider"></span>
+					{% endif %}
+					{% endif %}
+					
+				{% endfor %}
+			</div>
+		</div>
+		{% endif %}
+		<div class="page__summary__content content-canvas-item-wide-left">
+			{{ description | markdown | safe }}
+		</div>
 	</div>
 	{% endif %}
 
-	<div class="metadata">
-		<span class="metadata__date">
-			{{ page.date.toLocaleString('default', { day: 'numeric' }) }} {{ page.date.toLocaleString('default', { month: 'long' }) }}, {{ page.date.toLocaleString('default', {year: "numeric"}) }}</span>
-		<span class="metadata__divider divider"></span>
-		<span class="metadata__reading-time">{{ content | timeToRead }} read</span>
+	<div class="metadata page__metadata">
+		{% if tags | hasTag('#writing', false) %}
+		<div class="metadata__tags">
+			{%- for tag in tags %}
+				{% if tag | starts_with("#", true) %}
+				<span class="metadata__tags__tag">{{ tag }}</span>
+					{% if loop.last !== true %}
+				<span class="metadata__divider divider"></span>
+				{% endif %}
+				{% endif %}
+				
+			{% endfor %}
+		</div>
+		{% endif %}
+		<div class="metadata__info">
+			<span class="metadata__date">
+				{{ page.date.toLocaleString('default', { day: 'numeric' }) }} {{ page.date.toLocaleString('default', { month: 'long' }) }}, {{ page.date.toLocaleString('default', {year: "numeric"}) }}</span>
+			<span class="metadata__divider divider"></span>
+			<span class="metadata__reading-time">{{ content | timeToRead }} read</span>
+		</div>
 	</div>
 
 	{{ layoutContent | safe }}

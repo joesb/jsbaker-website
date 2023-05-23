@@ -5,7 +5,7 @@
     [full-start]
       1fr
     [wide-start]
-      minmax(0, auto)
+      minmax(0, 25ch)
     [main-start]
       minmax(10ch, calc(#{$break-medium} - 3rem))
     [main-mid]
@@ -24,7 +24,7 @@
       [full-start]
         minmax(3vw, 1fr)
       [wide-start]
-        minmax(10vw, auto)
+        minmax(10vw,  25ch)
       [main-start]
         minmax(calc(#{$break-very-small} - 3rem), calc((#{$break-small} - 3rem) * 3 / 5))
       [main-mid]
@@ -57,6 +57,14 @@
 
 .content-canvas-item-wide {
   grid-column: wide-start/wide-end;
+}
+
+.content-canvas-item-wide-left {
+  grid-column: wide-start/main-end;
+  
+  @include respond-to('large') {
+    grid-column: wide-start/main-mid;
+  }
 }
 
 .content-canvas-item-full {

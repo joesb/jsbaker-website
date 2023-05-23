@@ -3,15 +3,17 @@ title: "A Love That Transcends Death"
 description: "Ben’s chance glimpse of his father on a Tube train is strange, especially since his father has been dead for years, and causes him to reappraise his life and relationships."
 layout: page.njk
 date: 2018-01-05
+canonical: "https://joesb.medium.com/a-love-that-transcends-death-fb3725eb0c8a"
 tags:
-  - Short Story
   - '#writing'
+  - Short Story
+  - Test Tag
 page:
   class: "page--with-hero"
 image:
   path: "https://images.unsplash.com/photo-1511445027662-36c0a9786c6d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=3348&q=80"
-  alt: "Grayscale shot of people's hands on steel bar photo "
-  class: ""
+  alt: "Grayscale shot of people's hands on steel bar photo"
+  class: "image-darken-33"
   # pictureClass: "content-canvas-item-right content-canvas-item-right--span-3"
   pictureClass:
     page: "content-canvas-item-full picture--hero"

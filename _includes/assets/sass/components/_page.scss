@@ -1,8 +1,8 @@
 .page {
   position: relative;
 
-  .metadata {
-    margin-block: var(--size-7);
+  .page__metadata {
+    margin-block: var(--size-5);
     padding-block: var(--size-3);
     border-width: 0 0 1px 0;
     border-style: solid;
@@ -24,7 +24,7 @@
 
 .page-title {
   padding: px-to-rem($mobile-space) 0;
-  margin-bottom: px-to-rem($mobile-space);
+  margin-block-end: px-to-rem($mobile-space);
 }
 
 .page-title__heading {
@@ -32,7 +32,7 @@
 }
 
 .page--with-hero {
-  padding-block-start: 65vh;
+  padding-block-start: 60vh;
 
   .page-title {
     position: absolute;
@@ -42,6 +42,7 @@
     color: var(--surface-1);
     display: flex;
     padding: px-to-rem(2 * $mobile-space) 0;
+    margin-block-end: 0;
   }
 
   .title-bar {
@@ -50,8 +51,10 @@
 }
 
 .page__summary {
-  font-size: var(--font-size-fluid-1);
-  line-height: var(--size-6);
-  margin-block: var(--size-7);
-  font-weight: 600;
+
+  :where(p) {
+    font-size: var(--font-size-fluid-1);
+    line-height: var(--size-6);
+    font-weight: 600;
+  }
 }

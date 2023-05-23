@@ -10,17 +10,25 @@
 {% set ogType %}article{% endset %}
 {% endif %}
 
-{% if image %}
-{% set cardImage %}{{ metadata.url }}static/images/{{ image }}{% endset %}
+{% if description and excerpt|length == 0 %}
+{% set excerpt = description %}
 {% endif %}
+
+{# {% if image.path %}
+  {% set cardImage %}{{ metadata.url }}{% imageData image.path %}{% endset %}
+{% endif %} #}
   <meta name="twitter:card" content="{{cardType}}" />
   <meta name="twitter:site" content="{{ metadata.twitter }}" />
   <meta name="twitter:creator" content="{{ metadata.author.name }}" />
   <meta property="twitter:title" content="{{cardTitle}}" />
   <meta property="twitter:description" content="{% if excerpt %}{{excerpt}}{% else %}{{metadata.summary}}{% endif %}" />
-  <meta property="twitter:image" content="{{cardImage}}" />
+  {% if image.path %}
+  <meta property="twitter:image" content="{{ metadata.url }}{% imageData image.path %}" />
+  {% endif %}
   <meta property="og:url" content="{{ absoluteUrl }}" />
   <meta property="og:title" content="{{cardTitle}}" />
   <meta property="og:description" content="{% if excerpt %}{{excerpt}}{% else %}{{metadata.summary}}{% endif %}" />
-  <meta property="og:image" content="{{cardImage}}" />
+  {% if image.path %}
+  <meta property="og:image" content="{{ metadata.url }}{% imageData image.path %}" />
+  {% endif %}
   <meta property="og:type" content="{{ogType}}" />

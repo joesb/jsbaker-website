@@ -27,5 +27,13 @@
     block-size: 100%;
     object-fit: cover;
     object-position: center center;
+
+    &.pos-higher {
+      object-position: center 25%;
+    }
+
+    &.pos-lower {
+      object-position: center 75%;
+    }
   }
 }
