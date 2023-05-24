@@ -1,9 +1,12 @@
     <header role="banner" class="header-main" id="main-navigation">
 			<div class="header-main__inner container container--wide container--flex">
 				<div class="header-main__logo">
-					<a href="{{ '/' | url }}" class="site-logo">
+					{% if page.url !== '/' %}<a href="{{ '/' | url }}" class="site-logo">
 						<h1>{{ metadata.title }}</h1>
 					</a>
+					{% else %}
+					<h1>{{ metadata.title }}</h1>
+					{% endif %}
 				</div>
 				<div class="header-main__nav">
 					{% include "layouts/components/nav.njk" %}

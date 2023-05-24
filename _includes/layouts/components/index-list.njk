@@ -19,7 +19,7 @@
           {% endif %}
           <h2><a href="{{ item.url | url }}"{% activepath item.url, page.url %}>{{ item.data.title }}</a></h2>
           <div class="metadata item-meta">
-            <span class="item-date">{{ item.date.toLocaleString('default', { day: 'numeric' }) }} {{ item.date.toLocaleString('default', { month: 'long' }) }}, {{ item.date.getYear() }}</span>
+            <span class="item-date">{{ item.date.toLocaleString('default', { day: 'numeric' }) }} {{ item.date.toLocaleString('default', { month: 'long' }) }}, {{ item.date.toLocaleString('default', {year: "numeric"}) }}</span>
             <span class="divider"></span>
             <span class="item-reading-time">{{ item.content | timeToRead }} read</span></div>
         </div>

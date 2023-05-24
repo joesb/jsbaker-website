@@ -2,32 +2,28 @@
 title: About Me
 layout: page.njk
 eleventyNavigation:
-  key: About
+  key: Me
   order: 10
-page:
-  class: "page--with-hero"
+# page:
+#   class: "page--with-hero"
+metadata:
+  show: false
 image:
-  path: static/images/home/IMG_1723.jpeg
+  path: static/images/home/jsb-001.jpeg
   alt: "Some text here"
   class: ""
   # pictureClass: "content-canvas-item-right content-canvas-item-right--span-3"
-  pictureClass:
-    page: "content-canvas-item-full picture--hero"
-    list: "index-list__item__picture"
-  caption: ""
+  # pictureClass:
+    # page: "content-canvas-item-full picture--hero"
+    # list: "index-list__item__picture"
+  caption: "Me, in the park"
+  figureClass:
+    page: "content-canvas-item-wide-right content-canvas-item-right--span-5 content-canvas-span-start-content-top"
 ---
+I am a writer. I write both as part of my work and for personal projects.
 
-Cras vitae ante magna. Nam dapibus, arcu at efficitur fermentum, ex lacus egestas quam, eu porta lorem neque faucibus arcu. Vivamus finibus ultrices diam dignissim convallis. Suspendisse mattis metus augue, sit amet rhoncus nisi varius vitae. Proin ornare, libero ac condimentum maximus, dui lorem gravida erat, sit amet ultricies diam justo non orci. Phasellus in pulvinar orci. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+My **personal writing** is mostly fiction and other creative writing projects. I've written a number of short stories, some of which you'll [find on here](/writing/). I'm currently working on a novel, a family saga set over three generations across the Twentieth Century.
 
-Donec fermentum ante sed arcu aliquet mattis. Maecenas fermentum tortor justo, a vestibulum metus malesuada vitae. Cras porttitor dolor non dictum efficitur. Vivamus in pellentesque augue. Donec placerat consectetur elementum. Nunc ante mauris, commodo pretium suscipit sit amet, tempus pellentesque augue. Praesent faucibus ligula eget lacus malesuada feugiat. In in elit quis sapien dapibus vehicula. Sed vel nibh aliquam, pellentesque turpis hendrerit, consequat ligula.
+For my **work writing**, I [write non-fiction](https://www.convivio.com/about-us/joebaker/){rel=noreferrer target=_blank}, mostly on topics related to business and current affairs to support agency leaders in their leadership role. With decades of experience of digital agencies, I bring research skills from 10 years in academia, digesting a wide range of information and analysing sources for the key insights relevant for agency leaders.
 
-<figure class="content-canvas-item-wide picture--block">
-  {% image "static/images/home/jsb.jpeg", "Something", "picture--outline", %}
-  <figcaption>Something here</figcaption>
-</figure>
-
-Proin ultrices turpis quis turpis fermentum, sit amet dictum ligula dapibus. Praesent finibus ante quis dolor auctor ultrices. Nam molestie magna leo, maximus scelerisque nulla pharetra ut. Maecenas pellentesque odio quis lacus commodo, sed vestibulum odio consectetur. Maecenas eget urna feugiat justo bibendum dapibus ac non sem. In hac habitasse platea dictumst. Donec non leo eget dolor malesuada scelerisque. Praesent vel volutpat tellus. Etiam sit amet tristique odio. Aliquam porta id tellus id porttitor. Mauris libero diam, euismod eget nunc quis, posuere porta lectus. Mauris rhoncus ligula ac cursus condimentum.
-
-Nulla sed pulvinar ante, a sollicitudin eros. Aliquam erat volutpat. Interdum et malesuada fames ac ante ipsum primis in faucibus. Sed fermentum pretium viverra. In dignissim ultricies erat. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Phasellus vel aliquam dolor. Suspendisse pharetra ipsum varius arcu interdum lacinia. Suspendisse sit amet rhoncus orci. Vestibulum sollicitudin eleifend urna eu ornare. Fusce et aliquam lectus. Mauris tincidunt fringilla volutpat. Suspendisse tristique ligula porta blandit euismod.
-
-Nam sit amet auctor nibh, nec bibendum tortor. Cras et nisl orci. Mauris blandit elit pulvinar facilisis varius. Ut porta eros ac sodales venenatis. Aenean auctor et magna id tristique. Praesent a lectus in tortor congue laoreet. Nulla sit amet placerat nunc. Aliquam erat volutpat. Quisque neque metus, imperdiet id lorem sit amet, suscipit interdum magna. Maecenas fermentum dui eget quam elementum imperdiet. Nunc nec fermentum mauris. Vivamus eros urna, luctus a auctor a, maximus vitae quam. Nulla sollicitudin ullamcorper odio in fringilla.
+I have a **doctorate in religion and narrative from Bristol University**. My research focusses on narratology, specifically Paul Ricoeur's theory of narrative and narrative figuration, and how we use stories to understand ourselves and our place in the world. Stories shape us, and the narrative competence we develop through our exposure to stories determines the way we view the world. I have published large parts of my PhD thesis online at [Figuration.al](https://figuration.al/){rel=noreferrer target=_blank}, in particular the theory section about narrative figuration.

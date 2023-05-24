@@ -2,14 +2,6 @@
 layout: base.njk
 section: page
 ---
-	{% if image.path %}
-			<figure class="{{ image.figureClass.page }}">
-			{% image image.path, image.alt, image.class, image.pictureClass.page %}
-			{% if image.caption %}
-			<figcaption>{{ image.caption | safe }}{% if image.credit %} {{ image.credit | safe }}{% endif %}</figcaption>
-			{% endif %}
-			</figure>
-	{% endif %}
 
 {% set pageTags = [] %}
 {%- for tag in tags %}
@@ -40,6 +32,7 @@ section: page
 	</div>
 	{% endif %}
 
+	{% if metadata.show !== false %}
 	<div class="metadata page__metadata">
 		{% if tags | hasTag('#writing', false) %}
 		<div class="metadata__tags">
@@ -54,6 +47,7 @@ section: page
 			{% endfor %}
 		</div>
 		{% endif %}
+
 		<div class="metadata__info">
 			<span class="metadata__date">
 				{{ page.date.toLocaleString('default', { day: 'numeric' }) }} {{ page.date.toLocaleString('default', { month: 'long' }) }}, {{ page.date.toLocaleString('default', {year: "numeric"}) }}</span>
@@ -61,6 +55,16 @@ section: page
 			<span class="metadata__reading-time">{{ content | timeToRead }} read</span>
 		</div>
 	</div>
+	{% endif %}
+
+	{% if image.path %}
+			<figure class="{{ image.figureClass.page }}">
+			{% image image.path, image.alt, image.class, image.pictureClass.page %}
+			{% if image.caption %}
+			<figcaption>{{ image.caption | safe }}{% if image.credit %} {{ image.credit | safe }}{% endif %}</figcaption>
+			{% endif %}
+			</figure>
+	{% endif %}
 
 	{{ layoutContent | safe }}
 

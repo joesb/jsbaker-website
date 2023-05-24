@@ -2,6 +2,7 @@
 title: Writing
 eleventyNavigation:
   key: Writing
+  order: 1
 layout: list.njk
 pagination:
   data: collections.writing

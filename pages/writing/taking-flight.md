@@ -3,6 +3,8 @@ title: "Taking Flight"
 description: "A short story."
 layout: page.njk
 date: 2018-02-26
+promoted: true
+order: 1
 canonical: "https://joesb.medium.com/taking-flight-e39f100e73a2"
 tags:
   - Short Story
