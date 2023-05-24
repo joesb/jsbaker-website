@@ -6,9 +6,9 @@ p,
 .body-style {
   width: 100%;
   font-family: $primary-font;
-  font-size: var(--font-size-fluid-0);
+  font-size: var(--font-size-fluid-01);
   font-weight: $base-font-weight-regular;
-  line-height: $body-line-height;
+  line-height: var(--font-lineheight-3);
   font-style: normal;
   color: inherit;
   margin-block: 0.75rem;

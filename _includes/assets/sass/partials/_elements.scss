@@ -143,3 +143,16 @@ a {
   background-color: var(--surface-black-pale);
   margin-block: var(--size-fluid-2);
 }
+
+blockquote {
+  border-color: var(--surface-teal);
+  max-inline-size: var(--size-content-3);
+
+  &.bq-alt{ 
+    border-inline-start-width: 0;
+
+    >* {
+      font-size: var(--font-size-fluid-1);
+    }
+  }
+}

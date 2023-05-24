@@ -1,7 +1,7 @@
 .index-list {
   display: grid;
   // grid-template-columns: repeat(auto-fit, minmax(25ch, 1fr));
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   list-style: none;
   padding: 0;
   margin: 0;
@@ -35,7 +35,7 @@
 }
 
 .index-list__item {
-  grid-column: span 3;
+  grid-column: span 5;
   min-height: px-to-rem(150px);
   display: flex;
   color: var(--surface-2);
@@ -104,8 +104,12 @@
     min-height: px-to-rem(350px);
   }
 
-  .index-list__item-large {
+  .index-list__item-small {
     grid-column: span 2;
+  }
+
+  .index-list__item-large {
+    grid-column: span 3;
   }
 }
 
