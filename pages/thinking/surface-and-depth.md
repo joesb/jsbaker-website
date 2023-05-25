@@ -14,7 +14,7 @@ tags:
 page:
   class: "page--with-hero page--thinking"
 image:
-  path: https://pixabay.com/get/g0a97f219696a31a4685ff9e0af0909b98a472bdcff685cafa9b8bfce3ac40d652bdfa17a71cb5739b062c1fabec80696.jpg
+  path: static/images/thinking/grandfather-2391461.jpg
   alt: "Grandfather, Granddaughter, Family"
   class: "image-obj-cover image-darken-20"
   # pictureClass: "content-canvas-item-right content-canvas-item-right--span-3"
