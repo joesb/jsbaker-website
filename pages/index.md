@@ -8,6 +8,7 @@ eleventyNavigation:
 layout: home.njk
 image: 
   path: static/images/home/jsb-002.jpeg
+  social: static/images/home/jsb-002-social-card.jpeg
 pagination:
   data: collections.promotedContent
   size: 11
