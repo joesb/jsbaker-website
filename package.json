@@ -5,8 +5,9 @@
   "main": "index.js",
   "scripts": {
     "build": "(npm run sass:build) && npx eleventy",
+    "build:dryrun": "(npm run sass:build) && npx eleventy --dryrun",
     "watch": "npx eleventy --watch",
-    "serve": "(npm run sass:build) && npx eleventy --serve & node-sass --watch _includes/assets/sass/ -o _includes/assets/css/ & npx postcss --watch _includes/assets/css/*.css --use autoprefixer -d _includes/assets/css/build",
+    "serve": "(npm run sass:build) && npx eleventy --dryrun && npx eleventy --serve & node-sass --watch _includes/assets/sass/ -o _includes/assets/css/ & npx postcss --watch _includes/assets/css/*.css --use autoprefixer -d _includes/assets/css/build",
     "debug": "DEBUG=* npx eleventy",
     "wdebug": "set DEBUG=Eleventy* & eleventy",
     "sass:build": "node-sass _includes/assets/sass/ -o _includes/assets/css/  & npx postcss _includes/assets/css/*.css --use autoprefixer -d _includes/assets/css/build",
