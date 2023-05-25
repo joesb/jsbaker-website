@@ -4,6 +4,12 @@
   
   <title>{{ pageTitle or title or renderData.title or metadata.title }} | {{ metadata.title }}</title>
 
+  <!-- Icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/static/apple-touch-icon.png" type="image/png">
+  <link rel="icon" href="/static/favicon/favicon-16x16.png" type="image/png" sizes="16x16">
+  <link rel="icon" href="/static/favicon/favicon-32x32.png" type="image/png" sizes="32x32">
+  <link rel="manifest" href="/static/favicon/site.webmanifest">
+
   {% if metadesc %}
   <meta name="description" content="{{ metadesc }}" />
   {% endif %}
