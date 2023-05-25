@@ -17,4 +17,3 @@ _includes/assets/**/*.css
 static/img/
 
 .DS_Store
-package-lock.json
