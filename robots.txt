@@ -47,6 +47,7 @@
   <meta property="twitter:title" content=" | J S Baker" />
   <meta property="twitter:description" content="" />
   
+  <meta property="twitter:site" content="@joesb" />
   <meta property="og:url" content="https://www.jsbaker.co.uk/robots.txt" />
   <meta property="og:title" content=" | J S Baker" />
   <meta property="og:description" content="" />

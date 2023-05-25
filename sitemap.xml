@@ -47,6 +47,7 @@
   <meta property="twitter:title" content=" | J S Baker" />
   <meta property="twitter:description" content="" />
   
+  <meta property="twitter:site" content="@joesb" />
   <meta property="og:url" content="https://www.jsbaker.co.uk/sitemap.xml" />
   <meta property="og:title" content=" | J S Baker" />
   <meta property="og:description" content="" />
@@ -210,27 +211,27 @@
     
         <url>
             <loc>https://www.jsbaker.co.uk/about/</loc>
-            <lastmod>2023-05-25T13:18:46.339Z</lastmod>
+            <lastmod>2023-05-25T14:16:35.858Z</lastmod>
         </url>
     
         <url>
             <loc>https://www.jsbaker.co.uk/</loc>
-            <lastmod>2023-05-25T13:18:46.339Z</lastmod>
+            <lastmod>2023-05-25T14:16:35.858Z</lastmod>
         </url>
     
         <url>
             <loc>https://www.jsbaker.co.uk/reading/</loc>
-            <lastmod>2023-05-25T13:18:46.339Z</lastmod>
+            <lastmod>2023-05-25T14:16:35.858Z</lastmod>
         </url>
     
         <url>
             <loc>https://www.jsbaker.co.uk/thinking/</loc>
-            <lastmod>2023-05-25T13:18:46.339Z</lastmod>
+            <lastmod>2023-05-25T14:16:35.858Z</lastmod>
         </url>
     
         <url>
             <loc>https://www.jsbaker.co.uk/writing/</loc>
-            <lastmod>2023-05-25T13:18:46.339Z</lastmod>
+            <lastmod>2023-05-25T14:16:35.858Z</lastmod>
         </url>
     
 </urlset>
