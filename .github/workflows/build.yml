@@ -3,7 +3,7 @@ name: Build 11ty
 on:
   push:
     branches:
-      - 11ty
+      - main
 
 env:
   ELEVENTY_ENV: production
