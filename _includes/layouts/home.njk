@@ -22,8 +22,8 @@ styles:
 
     <div class="home-layout__item home-layout__item--right">
       <div class="home-layout__item__inner">
-        
-        <img src="{{ image.path | url }}" />
+
+        {% image image.path, image.alt, image.class, image.pictureClass.page, "(min-width: 30em) 50vw, 100vw", [300, 600] %}
       </div>
     </div>
 
