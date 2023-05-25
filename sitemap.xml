@@ -2,6 +2,18 @@
 <html  data-current="page" lang="en">
 
 	<head>
+  <!-- Analytics & Tag Manager -->
+  
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-S06C0K6Y0W"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-S06C0K6Y0W');
+</script>
+  
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   
@@ -59,18 +71,6 @@
 </head>
 
 	<body>
-		<!-- Analytics & Tag Manager -->
-    
-      <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-S06C0K6Y0W"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-S06C0K6Y0W');
-</script>
-    
 
 		
 		    <header role="banner" class="header-main" id="main-navigation">
@@ -211,27 +211,27 @@
     
         <url>
             <loc>https://www.jsbaker.co.uk/about/</loc>
-            <lastmod>2023-05-25T14:16:35.858Z</lastmod>
+            <lastmod>2023-05-25T14:41:51.079Z</lastmod>
         </url>
     
         <url>
             <loc>https://www.jsbaker.co.uk/</loc>
-            <lastmod>2023-05-25T14:16:35.858Z</lastmod>
+            <lastmod>2023-05-25T14:41:51.079Z</lastmod>
         </url>
     
         <url>
             <loc>https://www.jsbaker.co.uk/reading/</loc>
-            <lastmod>2023-05-25T14:16:35.858Z</lastmod>
+            <lastmod>2023-05-25T14:41:51.079Z</lastmod>
         </url>
     
         <url>
             <loc>https://www.jsbaker.co.uk/thinking/</loc>
-            <lastmod>2023-05-25T14:16:35.858Z</lastmod>
+            <lastmod>2023-05-25T14:41:51.083Z</lastmod>
         </url>
     
         <url>
             <loc>https://www.jsbaker.co.uk/writing/</loc>
-            <lastmod>2023-05-25T14:16:35.858Z</lastmod>
+            <lastmod>2023-05-25T14:41:51.083Z</lastmod>
         </url>
     
 </urlset>
