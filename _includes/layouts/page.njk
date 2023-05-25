@@ -3,6 +3,15 @@ layout: base.njk
 section: page
 ---
 
+	{% if image.path %}
+			<figure class="{{ image.figureClass.page }}">
+			{% image image.path, image.alt, image.class, image.pictureClass.page %}
+			{% if image.caption %}
+			<figcaption>{{ image.caption | safe }}{% if image.credit %} {{ image.credit | safe }}{% endif %}</figcaption>
+			{% endif %}
+			</figure>
+	{% endif %}
+
 {% set pageTags = [] %}
 {%- for tag in tags %}
 	{% if tag | starts_with("#", true) %}
@@ -11,10 +20,10 @@ section: page
 {% endfor %}
 
 	{% if description %}
-	<div class="page__summary content-canvas-item-full content-canvas site-content site-content--zero-spacing {% if tags | hasTag('#writing') %} site-content--surface-black-light site-content--surface-dark{% endif %}">
+	<div class="page__summary{% if page.class === 'page--with-hero' %} content-canvas-item-full content-canvas site-content site-content--zero-spacing{% else %} content-canvas-item-wide-left{% endif %}{% if tags | hasTag('#writing') %} site-content--surface-black-light site-content--surface-dark{% endif %}">
 
 		{% if tags | hasTag('#writing') %}
-		<div class="metadata content-canvas-item-wide-left">
+		<div class="metadata{% if page.class === 'page--with-hero' %} content-canvas-item-wide-left{% endif %}">
 			<div class="metadata__tags">
 				{%- for tag in pageTags %}
 					<span class="metadata__tags__tag">{{ tag }}</span>
@@ -26,7 +35,7 @@ section: page
 			</div>
 		</div>
 		{% endif %}
-		<div class="page__summary__content content-canvas-item-wide-left">
+		<div class="page__summary__content{% if page.class === 'page--with-hero' %} content-canvas-item-wide-left{% endif %}">
 			{{ description | markdown | safe }}
 		</div>
 	</div>
@@ -55,15 +64,6 @@ section: page
 			<span class="metadata__reading-time">{{ content | timeToRead }} read</span>
 		</div>
 	</div>
-	{% endif %}
-
-	{% if image.path %}
-			<figure class="{{ image.figureClass.page }}">
-			{% image image.path, image.alt, image.class, image.pictureClass.page %}
-			{% if image.caption %}
-			<figcaption>{{ image.caption | safe }}{% if image.credit %} {{ image.credit | safe }}{% endif %}</figcaption>
-			{% endif %}
-			</figure>
 	{% endif %}
 
 	{{ layoutContent | safe }}
