@@ -11,6 +11,7 @@ body {
     "foot foot foot foot foot"
   ;
   grid-template-columns: 2fr 1fr minmax(30ch, $break-large) 1fr 2fr;
+  grid-template-rows: minmax(px-to-rem(100px), auto) auto auto;
 }
 
 header {

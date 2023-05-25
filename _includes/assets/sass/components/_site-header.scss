@@ -12,6 +12,20 @@
   padding: 0.5rem 1.5rem;
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  min-block-size: 100%;
+}
+
+.header-main__logo {
+  a {
+    margin-block: 0;
+    padding-block: 0;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
 }
 
 @include respond-to('medium') {
@@ -31,14 +45,6 @@
     display: flex;
     justify-content: center;
     color: var(--surface-violet);
-
-    a {
-      text-decoration: none;
-
-      &:hover {
-        text-decoration: none;
-      }
-    }
   }
 
   .header-main__nav {
