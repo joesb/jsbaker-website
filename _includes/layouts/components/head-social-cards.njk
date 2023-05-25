@@ -28,7 +28,7 @@
   <meta property="og:url" content="{{ absoluteUrl }}" />
   <meta property="og:title" content="{{cardTitle}}" />
   <meta property="og:description" content="{% if excerpt %}{{excerpt}}{% else %}{{metadata.summary}}{% endif %}" />
-  {% if image.path %}
-  <meta property="og:image" content="{{ metadata.url }}{% imageData image.path %}" />
+  {% if image.social or image.path %}
+  <meta property="og:image" content="{{ metadata.url }}}{% if image.social %}{% imageData image.social %}{% else %}{% imageData image.path %}{% endif %}" />
   {% endif %}
   <meta property="og:type" content="{{ogType}}" />
