@@ -27,7 +27,7 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
-      - name: Build dry run site
+      - name: Build site (dry run)
         run: npm run build:dryrun
       
       - name: Build site
