@@ -18,7 +18,6 @@
   ul {
     list-style: none;
     padding: 0;
-    margin: 0;
     width: 100%;
 
     li {
@@ -123,6 +122,14 @@
   }
 }
 
+.footer-main__nav__list {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: minmax(15ch, 25ch) minmax(15ch, 25ch); 
+  justify-items: center;
+  margin-block-end: 3rem;
+}
+
 @include respond-to('medium') {
   .header-main__nav {
     display: block;
@@ -158,6 +165,11 @@
 
   .header-main__menu {
     display: none;
+  }
+
+  .footer-main__nav__list {
+    display: unset;
+    margin-block-end: 0;
   }
 }
 

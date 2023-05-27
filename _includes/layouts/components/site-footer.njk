@@ -9,10 +9,11 @@
 				{%- endfor -%}
 			</ul> #}
 			{% set navPages = collections.all | eleventyNavigation %}
-			<ul>
+			<ul class="footer-main__nav__list">
+			{% set cls = cycler("odd", "even") %}
 			{%- for entry in navPages %}
 			{% if entry.url != "/" %}
-				<li {% activepath entry.url, page.url %}>
+				<li {% activepath entry.url, page.url %} class="{{ cls.next() }}">
 					<a href="{{ entry.url }}">{{ entry.title }}</a>
 				</li>
 			{% endif %}
