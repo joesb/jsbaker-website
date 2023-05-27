@@ -6,9 +6,16 @@
   display: grid;
   grid-auto-flow: row;
   grid-template-areas:
-    "left .... right"
+    "left"
+    "right"
   ;
-  grid-template-columns: 1fr 1fr 1fr;
+
+  @include respond-to('medium') {
+    grid-template-areas:
+      "left .... right"
+    ;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
 }
 
 .footer-main___left {
