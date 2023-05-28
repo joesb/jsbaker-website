@@ -6,7 +6,11 @@
 	<div class="site-content site-content--small-padding">
 
       <p>Thanks for reading.</p>
+      {% if tags | hasTag('Short Story') %}
       <p>If you enjoyed this story, please follow this blog for more.</p>
+      {% else %}
+      <p>If you enjoyed this piece, please follow this blog for more.</p>
+      {% endif %}
       <p>You can also <a href="https://mstdn.social/@joesb" rel="noopener" target="_blank">follow me on Mastodon</a>, to carry on the conversation.</p>
       <p>Joe</p>
 

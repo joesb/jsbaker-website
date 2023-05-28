@@ -20,7 +20,7 @@ section: page
 {% endfor %}
 
 	{% if description %}
-	<div class="page__summary{% if page.class.includes('page--with-hero') %} content-canvas-item-full content-canvas site-content site-content--zero-spacing{% else %} content-canvas-item-wide-left{% endif %}{% if tags | hasTag('#writing') %} site-content--surface-black-light site-content--surface-dark{% endif %}">
+	<div class="page__summary{% if page.class.includes('page--with-hero') %} content-canvas-item-full content-canvas site-content site-content--zero-spacing{% else %} content-canvas-item-wide-left{% endif %}{% if tags | hasTag('#writing') and page.class.includes('page--writing--light') !== true %} site-content--surface-black-light site-content--surface-dark{% endif %}">
 
 		{% if tags | hasTag('#writing') %}
 		<div class="metadata{% if page.class.includes('page--with-hero') %} content-canvas-item-wide-left{% endif %}">
