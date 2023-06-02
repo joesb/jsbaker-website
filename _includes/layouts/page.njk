@@ -25,8 +25,9 @@ section: page
 		{% if tags | hasTag('#writing') %}
 		<div class="metadata{% if page.class.includes('page--with-hero') %} content-canvas-item-wide-left{% endif %}">
 			<div class="metadata__tags">
-				{%- for tag in pageTags %}
-					<span class="metadata__tags__tag">{{ tag }}</span>
+				{%- for topic in pageTags %}
+				{% set t = topic | slug %}
+					<span class="metadata__tags__tag"><a href="{{ ['/tag/', t] | join | url }}" class="light">{{ topic }}</a></span>
 						{% if loop.last !== true %}
 					<span class="metadata__divider divider"></span>
 					{% endif %}
@@ -45,9 +46,16 @@ section: page
 	<div class="metadata page__metadata">
 		{% if tags | hasTag('#writing', false) %}
 		<div class="metadata__tags">
-			{%- for tag in pageTags %}
-				{% if tag | starts_with("#", true) %}
-				<span class="metadata__tags__tag">{{ tag }}</span>
+			{%- for topic in pageTags %}
+				{% if topic | starts_with("#", true) %}
+				{% set t = topic | slug %}
+				<span class="metadata__tags__tag">
+					{% if topic in ['Reading', 'Writing', 'Thinking'] %}
+					<a href="/{{ t | url }}">{{ topic }}</a>
+					{% else %}
+					<a href="{{ ['/tag/', t] | join | url }}">{{ topic }}</a>
+					{% endif %}
+				</span>
 					{% if loop.last !== true %}
 				<span class="metadata__divider divider"></span>
 				{% endif %}
