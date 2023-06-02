@@ -32,7 +32,7 @@
           </div>
           {% endif %}
           <div class="metadata item-meta">
-            <span class="item-date">{{ item.date.toLocaleString('default', { day: 'numeric' }) }} {{ item.date.toLocaleString('default', { month: 'long' }) }}, {{ item.date.toLocaleString('default', {year: "numeric"}) }}</span>
+            <time class="item-date">{{ item.date | readableDate("LLLL yyyy") }}</time>
             <span class="divider"></span>
             <span class="item-reading-time">{{ item.content | timeToRead }} read</span></div>
         </div>
@@ -44,7 +44,7 @@
     {% endfor %}
     </ul>
 
-{% if pagination.pages|length > 1 %}
+{% if showPaginationNav !== false and pagination.pages|length > 1 %}
 
     <nav class="pagination">
       <ol>

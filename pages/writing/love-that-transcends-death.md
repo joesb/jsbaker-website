@@ -7,7 +7,6 @@ canonical: "https://joesb.medium.com/a-love-that-transcends-death-fb3725eb0c8a"
 tags:
   - '#writing'
   - Short Story
-  - Test Tag
 page:
   class: "page--with-hero page--writing"
 image:

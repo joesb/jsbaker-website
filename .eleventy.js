@@ -160,6 +160,21 @@ module.exports = function (eleventyConfig) {
 		return DateTime.fromJSDate(dateObj, {zone: 'utc'}).toFormat('yyyy-LL-dd');
 	});
 
+	// Return all the tags used in a collection
+	eleventyConfig.addFilter("getAllTags", collection => {
+		let tagSet = new Set();
+		for(let item of collection) {
+			(item.data.tags || []).forEach(tag => tagSet.add(tag));
+		}
+		 let tsArray = Array.from(tagSet);
+     return tsArray.sort();
+	});
+
+	eleventyConfig.addFilter("filterTagList", function filterTagList(tags) {
+		return (tags || []).filter(tag => ['all', 'nav', 'rss', '#reading', '#writing', '#thinking', 'Reading', 'Thinking', 'promotedContent', 'footerNav', 'footerSecondaryNav', 'mainNav', 'allContent', 'reading', 'writing', 'thinking'].indexOf(tag) === -1);
+	});
+
+
   // Sort footer menu items by 'order' field
   eleventyConfig.addCollection('footerNav', (collection) => {
     var nav = collection.getFilteredByTag('#footer');
