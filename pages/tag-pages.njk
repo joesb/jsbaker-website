@@ -1,0 +1,21 @@
+---
+title: 'Topic Archive'
+layout: 'base.njk'
+pagination:
+  data: collections
+  size: 1
+  alias: tag
+  filter: ['all', 'nav', 'rss', '#reading', '#writing', '#thinking', 'Reading', 'Thinking', 'promotedContent', 'footerNav', 'footerSecondaryNav', 'mainNav', 'allContent', 'reading', 'writing', 'thinking']
+permalink: '/tag/{{ tag | slug }}/'
+showPaginationNav: false
+---
+
+<h2>Posts on ‘{{ tag }}’</h2>
+
+{% set items = collections[ tag ] %}
+
+<div class="content-canvas-item-wide">
+{% include "layouts/components/index-list.njk" %}
+</div>
+
+<p>See <a href="/tag/">all tags</a>.</p>

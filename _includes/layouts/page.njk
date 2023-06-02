@@ -58,8 +58,7 @@ section: page
 		{% endif %}
 
 		<div class="metadata__info">
-			<span class="metadata__date">
-				{{ page.date.toLocaleString('default', { day: 'numeric' }) }} {{ page.date.toLocaleString('default', { month: 'long' }) }}, {{ page.date.toLocaleString('default', {year: "numeric"}) }}</span>
+			<time class="metadata__date">{{ page.date | readableDate("LLLL yyyy") }}</time>
 			<span class="metadata__divider divider"></span>
 			<span class="metadata__reading-time">{{ content | timeToRead }} read</span>
 		</div>
