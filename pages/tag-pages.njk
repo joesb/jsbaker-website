@@ -1,0 +1,18 @@
+---
+title: 'Tag Archive'
+layout: 'base.njk'
+pagination:
+  data: collections
+  size: 1
+  alias: tag
+  filter: ['all', 'nav', 'rss', '#reading', '#writing', '#thinking', 'Reading', 'Thinking', 'promotedContent', 'footerNav', 'footerSecondaryNav', 'mainNav', 'allContent', 'reading', 'writing', 'thinking']
+permalink: '/tag/{{ tag | slug }}/'
+---
+
+<h2>Tagged ‘{{ tag }}’</h2>
+
+{% set items = collections[ tag ] %}
+
+{% include "layouts/components/index-list.njk" %}
+
+<p>See <a href="/tag/">all tags</a>.</p>

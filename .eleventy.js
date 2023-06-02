@@ -1,3 +1,4 @@
+const { DateTime } = require("luxon");
 const CleanCSS = require('clean-css');
 const UglifyJS = require('uglify-es');
 const htmlmin = require('html-minifier');
@@ -148,6 +149,16 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addFilter("hasTag", (tags, tag, not = true) => {
     return (tags || []).includes(tag) === not;
   });
+
+  eleventyConfig.addFilter("readableDate", (dateObj, format, zone) => {
+		// Formatting tokens for Luxon: https://moment.github.io/luxon/#/formatting?id=table-of-tokens
+		return DateTime.fromJSDate(dateObj, { zone: zone || "utc" }).toFormat(format || "dd LLLL yyyy");
+	});
+
+	eleventyConfig.addFilter('htmlDateString', (dateObj) => {
+		// dateObj input: https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#valid-date-string
+		return DateTime.fromJSDate(dateObj, {zone: 'utc'}).toFormat('yyyy-LL-dd');
+	});
 
   // Sort footer menu items by 'order' field
   eleventyConfig.addCollection('footerNav', (collection) => {
