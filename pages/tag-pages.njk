@@ -12,7 +12,7 @@ showPaginationNav: false
 
 <h2>Posts on ‘{{ tag }}’</h2>
 
-{% set items = collections[ tag ] %}
+{% set items = collections[ tag ] | reverse %}
 
 <div class="content-canvas-item-wide">
 {% include "layouts/components/index-list.njk" %}
