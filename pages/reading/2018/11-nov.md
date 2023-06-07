@@ -3,8 +3,8 @@ title: "Reading Recap, November 2018"
 description: "Since finishing my PhD I’ve read lots of fiction again. Here’s a belated recap on books I read in the second half of 2017."
 layout: page.njk
 date: 2018-11-02
-promoted: true
-order: 3
+promoted: false
+# order: 3
 canonical: "https://medium.com/post-phd-world/reading-recap-november-2018-pt-1-2ebacab50c55"
 page:
   class: "page--with-hero"
