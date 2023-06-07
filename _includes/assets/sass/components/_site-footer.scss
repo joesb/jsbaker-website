@@ -111,4 +111,10 @@
       mask-image: url("/static/images/icons/soundcloud.svg");
     }
   }
+
+  &.medium {
+    &::after {
+      mask-image: url("/static/images/icons/medium.svg");
+    }
+  }
 }

@@ -29,6 +29,12 @@
       "machine_name": "instagram",
       "url": "https://instagram.com/joesb",
       "alias": "@joesb"
+    },
+    {
+      "name": "Medium",
+      "machine_name": "medium",
+      "url": "https://medium.com/@joesb",
+      "alias": "@joesb"
     }
   ]
 }
