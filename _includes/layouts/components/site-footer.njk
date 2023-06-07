@@ -25,7 +25,7 @@
 			<dl class="footer-main__container__contact-me__list">
 				{% for item in metadata.social_site %}
 				<dt>{{ item.name }}</dt>
-				<dd><a href="{{ item.url }}" rel="noreferrer noopenner{% if item.rel %} {{ item.rel }}{% endif %}" target="_blank" class="social-site {{ item.machine_name }}">{{ item.alias }}</a></dd>
+				<dd><a href="{{ item.url }}" rel="noreferrer noopener{% if item.rel %} {{ item.rel }}{% endif %}" target="_blank" class="social-site {{ item.machine_name }}">{{ item.alias }}</a></dd>
 				{% endfor %}
 			</dl>
 		</div>
