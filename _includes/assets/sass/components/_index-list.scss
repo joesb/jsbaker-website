@@ -33,7 +33,7 @@
 
 .index-list__item {
   grid-column: span 5;
-  min-height: px-to-rem(150px);
+  min-height: px-to-rem(108px);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -83,6 +83,7 @@
   align-items: flex-end;
   color: var(--surface-2);
   border-color: lighten($text-1, 50%);
+  min-height: px-to-rem(144px);
 
   a {
     color: var(--surface-2);
@@ -97,16 +98,27 @@
   }
 }
 
-@include respond-to('small') {
-  .index-list__item {
-    min-height: px-to-rem(250px);
+.index-list__item-first {
+  min-height: px-to-rem(216px);
+
+  :where(p) {
+    font-weight: inherit;
+    font-size: inherit;
+    line-height: inherit;
+  }
+
+  &.index-list__item--picture {
+    min-height: px-to-rem(450px);
   }
 }
 
-@include respond-to('medium') {
+@include respond-to('small') {
   .index-list__item {
-    grid-column: unset;
-    min-height: px-to-rem(350px);
+    min-height: px-to-rem(270px);
+  }
+
+  .index-list__item-first {
+    min-height: px-to-rem(270px);
   }
 
   .index-list__item-small {
@@ -118,13 +130,14 @@
   }
 }
 
-.index-list__item-first {
-  min-height: px-to-rem(450px);
+@include respond-to('large') {
+  .index-list__item {
+    // grid-column: unset;
+    min-height: px-to-rem(360px);
+  }
 
-  :where(p) {
-    font-weight: inherit;
-    font-size: inherit;
-    line-height: inherit;
+  .index-list__item-first {
+    min-height: px-to-rem(396px);
   }
 }
 
