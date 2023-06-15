@@ -7,7 +7,7 @@
     "build": "(npm run sass:build) && npx eleventy",
     "build:dryrun": "(npm run sass:build) && npx eleventy --dryrun",
     "watch": "npx eleventy --watch",
-    "serve": "(npm run sass:build) && (npx eleventy --dryrun) && npx eleventy --serve & sass --watch _includes/assets/sass/:_includes/assets/css/",
+    "serve": "(npm run sass:build) && (npx eleventy --dryrun) && npx eleventy --serve & sass --watch _includes/assets/sass/:_includes/assets/css/ & npx postcss --watch _includes/assets/css/*.css --use autoprefixer -d _includes/assets/css/build",
     "debug": "DEBUG=* npx eleventy",
     "wdebug": "set DEBUG=Eleventy* & eleventy",
     "sass:build": "sass --style=compressed _includes/assets/sass/:_includes/assets/css/  & npx postcss _includes/assets/css/*.css --use autoprefixer -d _includes/assets/css/build",
