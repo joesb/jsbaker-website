@@ -1,3 +1,5 @@
+@use "../tools/px-to-rem";
+
 .metadata,
 .item-meta {
   font-size: var(--font-size-fluid-00);
@@ -9,7 +11,7 @@
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  gap: px-to-rem(10px);
+  gap: px-to-rem.px-to-rem(10px);
 }
 
 .metadata__divider,

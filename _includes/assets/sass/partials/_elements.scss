@@ -1,3 +1,8 @@
+@use "sass:color";
+@use "../common/base-variables";
+@use "../common/variables";
+@use "../tools/px-to-rem";
+
 /* ==========================================================================
 ELEMENTS
 ========================================================================== */
@@ -12,42 +17,42 @@ ELEMENTS
  */
 
  :root {
-    font-size: $base-font-size;
+    font-size: base-variables.$root-font-size;
   }
   
   html {
-    --surface-1: #{$surface-1};
-    --surface-2: #{$surface-2};
-    --surface-3: #{$surface-3};
-    --surface-4: #{$surface-4};
-    --surface-1-rgb: #{$surface-1-rgb};
-    --surface-2-rgb: #{$surface-2-rgb};
-    --surface-3-rgb: #{$surface-3-rgb};
-    --surface-4-rgb: #{$surface-4-rgb};
-    --text-1: #{$text-1};
-    --text-alt-1: #{$text-alt-1};
-    --text-highlight-1: #{$text-highlight-1};
-    --surface-black: #{$eerie-black};
-    --surface-black-light: #{$eerie-black-light};
-    --surface-black-pale: #{$eerie-black-pale};
-    --surface-teal: #{$surface-teal};
-    --surface-violet: #{$surface-violet};
-    --surface-rose: #{$surface-rose};
+    --surface-1: #{variables.$surface-1};
+    --surface-2: #{variables.$surface-2};
+    --surface-3: #{variables.$surface-3};
+    --surface-4: #{variables.$surface-4};
+    --surface-1-rgb: #{variables.$surface-1-rgb};
+    --surface-2-rgb: #{variables.$surface-2-rgb};
+    --surface-3-rgb: #{variables.$surface-3-rgb};
+    --surface-4-rgb: #{variables.$surface-4-rgb};
+    --text-1: #{variables.$text-1};
+    --text-alt-1: #{variables.$text-alt-1};
+    --text-highlight-1: #{variables.$text-highlight-1};
+    --surface-black: #{variables.$eerie-black};
+    --surface-black-light: #{variables.$eerie-black-light};
+    --surface-black-pale: #{variables.$eerie-black-pale};
+    --surface-teal: #{variables.$surface-teal};
+    --surface-violet: #{variables.$surface-violet};
+    --surface-rose: #{variables.$surface-rose};
 
-    --font-size-fluid-000: clamp(#{$body-v-sml-font-size-mobile}, 1.3vw, #{$body-v-sml-font-size});
-    --font-size-fluid-00: clamp(#{$body-sml-font-size-mobile}, 1.4vw, #{$body-sml-font-size});
-    --font-size-fluid-0: clamp(#{$body-font-size-mobile}, 1.5vw, #{$body-font-size});
-    --font-size-fluid-01: clamp(#{$h3-font-size-mobile}, 1.75vw, #{$h3-font-size});
-    --font-size-fluid-21: clamp(#{$h2-font-size-mobile}, 2.5vw, #{$h2-font-size});
-    --font-size-fluid-3: clamp(#{$h1-font-size-mobile}, 4vw, #{$h1-font-size});
-    --font-size-fluid-4: clamp(#{$h1-lg-font-size-mobile}, 6vw, #{$h1-lg-font-size});
+    --font-size-fluid-000: clamp(#{variables.$body-v-sml-font-size-mobile}, 1.3vw, #{variables.$body-v-sml-font-size});
+    --font-size-fluid-00: clamp(#{variables.$body-sml-font-size-mobile}, 1.4vw, #{variables.$body-sml-font-size});
+    --font-size-fluid-0: clamp(#{variables.$body-font-size-mobile}, 1.5vw, #{variables.$body-font-size});
+    --font-size-fluid-01: clamp(#{variables.$h3-font-size-mobile}, 1.75vw, #{variables.$h3-font-size});
+    --font-size-fluid-21: clamp(#{variables.$h2-font-size-mobile}, 2.5vw, #{variables.$h2-font-size});
+    --font-size-fluid-3: clamp(#{variables.$h1-font-size-mobile}, 4vw, #{variables.$h1-font-size});
+    --font-size-fluid-4: clamp(#{variables.$h1-lg-font-size-mobile}, 6vw, #{variables.$h1-lg-font-size});
 
     // --gradient-6: conic-gradient(from 90deg at bottom right, black, white);
     
-    font-family: $primary-font;
-    font-size: $base-font-size;
-    font-weight: $base-font-weight-regular;
-    line-height: $base-line-height;
+    font-family: variables.$primary-font;
+    font-size: base-variables.$root-font-size;
+    font-weight: variables.$base-font-weight-regular;
+    line-height: variables.$base-line-height;
     box-sizing: border-box;
     min-height: 100%; /* [2] */
     overflow-y: scroll; /* [1] */
@@ -68,7 +73,7 @@ ELEMENTS
   
   a,
   a:visited {
-    color: $english-violet;
+    color: variables.$english-violet;
   }
   
   a:hover,
@@ -83,13 +88,13 @@ ELEMENTS
   
   ul,
   ol {
-    font-family: $secondary-font;
+    font-family: variables.$secondary-font;
     margin: 0;
     padding: 0;
   
     li {
       font-size: var(--font-size-fluid-0);
-      font-weight: $base-font-weight-regular;
+      font-weight: variables.$base-font-weight-regular;
   
       &:last-child {
         margin-bottom: 0px;
@@ -100,8 +105,8 @@ ELEMENTS
   main {
     ul,
     ol {
-      margin-bottom: px-to-rem(30px);
-      padding-left: px-to-rem(40px);
+      margin-bottom: px-to-rem.px-to-rem(30px);
+      padding-left: px-to-rem.px-to-rem(40px);
   
       ul,
       ol {
@@ -109,12 +114,12 @@ ELEMENTS
       }
   
       li {
-        margin: px-to-rem(9px);
-        line-height: px-to-rem(27px);
+        margin: px-to-rem.px-to-rem(9px);
+        line-height: px-to-rem.px-to-rem(27px);
       }
   
       hr {
-        height: px-to-rem(1px);
+        height: px-to-rem.px-to-rem(1px);
         border: none;
       }
     }
@@ -134,7 +139,7 @@ a {
     color: var(--surface-1);
 
     &:hover {
-      color: darken($surface-2, 33%);
+      color: color.adjust(variables.$surface-2, $lightness: -33%);
     }
   }
 }

@@ -1,3 +1,7 @@
+@use "../common/variables";
+@use "../tools/px-to-rem";
+@use "../tools/respond-to";
+
 /* ==========================================================================
 LAYOUT
 ========================================================================== */
@@ -10,8 +14,8 @@ body {
     "main main main main main"
     "foot foot foot foot foot"
   ;
-  grid-template-columns: 2fr 1fr minmax(30ch, $break-large) 1fr 2fr;
-  grid-template-rows: minmax(px-to-rem(100px), auto) auto auto;
+  grid-template-columns: 2fr 1fr minmax(30ch, variables.$break-large) 1fr 2fr;
+  grid-template-rows: minmax(px-to-rem.px-to-rem(100px), auto) auto auto;
 }
 
 header {
@@ -31,12 +35,12 @@ footer {
   gap: 1.5em;
   padding: 3em 1.5em;
 
-  @include respond-to('medium') {
+  @include respond-to.respond-to('medium') {
     padding: 3em 6em;
   }
 }
 
-@include respond-to('medium') {
+@include respond-to.respond-to('medium') {
   footer {
     gap: 3em;
     grid-auto-flow: column;

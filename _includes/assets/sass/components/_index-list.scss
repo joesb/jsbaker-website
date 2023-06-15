@@ -1,3 +1,8 @@
+@use "sass:color";
+@use "../common/variables";
+@use "../tools/px-to-rem";
+@use "../tools/respond-to";
+
 .index-list {
   display: grid;
   // grid-template-columns: repeat(auto-fit, minmax(25ch, 1fr));
@@ -33,13 +38,13 @@
 
 .index-list__item {
   grid-column: span 5;
-  min-height: px-to-rem(108px);
+  min-height: px-to-rem.px-to-rem(108px);
   display: flex;
   justify-content: center;
   align-items: center;
   border-width: 1px;
   border-style: solid;
-  border-color: lighten($text-1, 80%);
+  border-color: color.adjust(variables.$text-1, $lightness: 80%);
   // color: var(--surface-2);
 
   // a {
@@ -82,8 +87,8 @@
   justify-content: flex-start;
   align-items: flex-end;
   color: var(--surface-2);
-  border-color: lighten($text-1, 50%);
-  min-height: px-to-rem(144px);
+  border-color: color.adjust(variables.$text-1, $lightness: 50%);
+  min-height: px-to-rem.px-to-rem(144px);
 
   a {
     color: var(--surface-2);
@@ -99,7 +104,7 @@
 }
 
 .index-list__item-first {
-  min-height: px-to-rem(216px);
+  min-height: px-to-rem.px-to-rem(216px);
 
   :where(p) {
     font-weight: inherit;
@@ -108,17 +113,17 @@
   }
 
   &.index-list__item--picture {
-    min-height: px-to-rem(450px);
+    min-height: px-to-rem.px-to-rem(450px);
   }
 }
 
-@include respond-to('small') {
+@include respond-to.respond-to('small') {
   .index-list__item {
-    min-height: px-to-rem(270px);
+    min-height: px-to-rem.px-to-rem(270px);
   }
 
   .index-list__item-first {
-    min-height: px-to-rem(270px);
+    min-height: px-to-rem.px-to-rem(270px);
   }
 
   .index-list__item-small {
@@ -130,14 +135,14 @@
   }
 }
 
-@include respond-to('large') {
+@include respond-to.respond-to('large') {
   .index-list__item {
     // grid-column: unset;
-    min-height: px-to-rem(360px);
+    min-height: px-to-rem.px-to-rem(360px);
   }
 
   .index-list__item-first {
-    min-height: px-to-rem(396px);
+    min-height: px-to-rem.px-to-rem(396px);
   }
 }
 

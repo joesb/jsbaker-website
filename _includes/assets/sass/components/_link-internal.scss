@@ -1,8 +1,11 @@
+@use "sass:color";
+@use "../common/variables";
+
 .link--internal {
   box-shadow: var(--shadow-1);
   border-width: 1px;
   border-style: solid;
-  border-color: lighten($text-1, 75%);
+  border-color: color.adjust(variables.$text-1, $lightness: 75%);
   margin-block: 1rem;
   display: grid;
   grid-auto-flow: row;
@@ -12,7 +15,7 @@
   grid-template-columns: 3fr 1fr;
 
   &:hover {
-    border-color: lighten($text-1, 67%);
+    border-color: color.adjust(variables.$text-1, $lightness: 67%);
     box-shadow: var(--shadow-3);
   }
 }

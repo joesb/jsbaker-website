@@ -1,5 +1,9 @@
+@use "../common/variables";
+@use "../tools/mixins";
+@use "../tools/px-to-rem";
+
 .pagination {
-  margin-top: px-to-rem(2 * $mobile-space);
+  margin-top: px-to-rem.px-to-rem(2 * variables.$mobile-space);
 
   ol {
     display: flex;
@@ -13,11 +17,11 @@
 
   .pagination-item {
     position: relative;
-    margin: px-to-rem(9px);
-    height: px-to-rem(27px);
+    margin: px-to-rem.px-to-rem(9px);
+    height: px-to-rem.px-to-rem(27px);
 
     span {
-      @include hide-text;
+      @include mixins.hide-text;
 
       &::before {
         cursor: not-allowed;
@@ -76,6 +80,6 @@
   }
 
   .current {
-    font-weight: $base-font-weight-bold;
+    font-weight: variables.$base-font-weight-bold;
   }
 }

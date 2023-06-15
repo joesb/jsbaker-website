@@ -1,3 +1,6 @@
+@use "../tools/px-to-rem";
+@use "../tools/respond-to";
+
 .footer-main {
   background-color: var(--surface-3);
 }
@@ -10,7 +13,7 @@
     "right"
   ;
 
-  @include respond-to('medium') {
+  @include respond-to.respond-to('medium') {
     grid-template-areas:
       "left .... right"
     ;
@@ -58,8 +61,8 @@
     mask-size: contain;
     mask-repeat: no-repeat;
     background: var(--surface-teal);
-    height: px-to-rem(24px);
-    width: px-to-rem(32px);
+    height: px-to-rem.px-to-rem(24px);
+    width: px-to-rem.px-to-rem(32px);
     transition: 0.2s;
   }
 

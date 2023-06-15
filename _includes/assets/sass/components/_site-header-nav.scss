@@ -1,3 +1,5 @@
+@use "../tools/mixins";
+
 .css-nav {
-  @include visually-hidden;
+  @include mixins.visually-hidden;
 }

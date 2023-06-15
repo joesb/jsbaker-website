@@ -1,6 +1,10 @@
+@use "../common/base-variables";
+
 ////
 /// @group tools/unit-conversion
 ////
+
+@use "sass:math";
 
 /// Convert pixels to rem
 ///
@@ -12,9 +16,9 @@
 /// @access public
 
 @function px-to-rem($value) {
-  @if (unitless($value)) {
+  @if (math.is-unitless($value)) {
     $value: $value * 1px;
   }
 
-  @return $value / $root-font-size * 1rem;
+  @return math.div($value, base-variables.$root-font-size) * 1rem;
 }

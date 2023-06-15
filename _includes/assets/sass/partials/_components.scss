@@ -2,21 +2,21 @@
 COMPONENTS
 ========================================================================== */
 
-@import "../components/site-header";
-@import "../components/site-header-nav";
-@import "../components/site-content";
-@import "../components/site-footer";
-@import "../components/content_canvas";
-@import "../components/faux-block-link";
-@import "../components/page";
-@import "../components/metadata";
-@import "../components/picture";
-@import "../components/link-internal";
-@import "../components/jumbotron";
+@use "../components/site-header";
+@use "../components/site-header-nav";
+@use "../components/site-content";
+@use "../components/site-footer";
+@use "../components/content_canvas";
+@use "../components/faux-block-link";
+@use "../components/page";
+@use "../components/metadata";
+@use "../components/picture";
+@use "../components/link-internal";
+@use "../components/jumbotron";
 
 // Index pages
-@import "../components/index-list";
-@import "../components/pagination";
+@use "../components/index-list";
+@use "../components/pagination";
 
 // Other
-@import "../components/glyphicon";
+@use "../components/glyphicon";

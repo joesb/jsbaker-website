@@ -1,3 +1,5 @@
+@use "../tools/respond-to";
+
 .header-main {
   position: sticky;
   top: 0;
@@ -28,7 +30,7 @@
   }
 }
 
-@include respond-to('medium') {
+@include respond-to.respond-to('medium') {
   .header-main__inner {
     padding: 1rem 1.5rem;
     display: grid;
