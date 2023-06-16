@@ -1,3 +1,7 @@
+@use "sass:color";
+@use "../common/variables";
+@use "../tools/px-to-rem";
+
 .page {
   position: relative;
 
@@ -6,7 +10,7 @@
     padding-block: var(--size-3);
     border-width: 0 0 1px 0;
     border-style: solid;
-    border-color: lighten($text-1, 67%);
+    border-color: color.adjust(variables.$text-1, $lightness: 67%);
   }
 
   >* {
@@ -40,8 +44,8 @@
 }
 
 .page-title {
-  padding: px-to-rem($mobile-space) 0;
-  margin-block-end: px-to-rem($mobile-space);
+  padding: px-to-rem.px-to-rem(variables.$mobile-space) 0;
+  margin-block-end: px-to-rem.px-to-rem(variables.$mobile-space);
 }
 
 .page-title__heading {
@@ -58,7 +62,7 @@
     min-height: 60vh;
     color: var(--surface-1);
     display: flex;
-    padding: px-to-rem(2 * $mobile-space) 0;
+    padding: px-to-rem.px-to-rem(2 * variables.$mobile-space) 0;
     margin-block-end: 0;
   }
 

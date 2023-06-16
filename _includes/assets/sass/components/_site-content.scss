@@ -1,12 +1,16 @@
+@use "../common/variables";
+@use "../tools/px-to-rem";
+@use "../tools/respond-to";
+
 /* ==========================================================================
 SITE CONTENT
 ========================================================================== */
 
 .site-content {
   padding: 1.5rem 0;
-  margin-bottom: px-to-rem($mobile-space);
+  margin-bottom: px-to-rem.px-to-rem(variables.$mobile-space);
 
-  @include respond-to('medium') {
+  @include respond-to.respond-to('medium') {
     padding: 4rem 0;
   }
 }
@@ -14,7 +18,7 @@ SITE CONTENT
 .site-content--small-padding {
   padding-block: 1rem;
 
-  @include respond-to('medium') {
+  @include respond-to.respond-to('medium') {
     padding-block: 2rem;
   }
 }
@@ -22,7 +26,7 @@ SITE CONTENT
 .site-content--zero-padding {
   padding: 0;
 
-  @include respond-to('medium') {
+  @include respond-to.respond-to('medium') {
     padding: 0;
   }
 }
@@ -30,7 +34,7 @@ SITE CONTENT
 .site-content--zero-top-padding {
   padding-top: 0;
 
-  @include respond-to('medium') {
+  @include respond-to.respond-to('medium') {
     padding-top: 0;
   }
 }
@@ -38,7 +42,7 @@ SITE CONTENT
 .site-content--zero-bottom-padding {
   padding-bottom: 0;
 
-  @include respond-to('medium') {
+  @include respond-to.respond-to('medium') {
     padding-bottom: 0;
   }
 }

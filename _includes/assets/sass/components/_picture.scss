@@ -1,4 +1,6 @@
-@import "./images";
+@use "sass:color";
+@use "images";
+@use "../common/variables";
 
 :where(figcaption) {
   font-size: var(--font-size-0);
@@ -12,7 +14,7 @@
 .picture--outline {
   border-width: 1px;
   border-style: solid;
-  border-color: lighten($text-1, 67%);
+  border-color: color.adjust(variables.$text-1, $lightness: 67%);
 }
 
 .picture--hero,

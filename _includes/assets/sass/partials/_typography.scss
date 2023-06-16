@@ -1,3 +1,7 @@
+@use "../common/variables";
+@use "../tools/mixins";
+@use "../tools/px-to-rem";
+
 /* ==========================================================================
 TYPOGRAPHY
 ========================================================================== */
@@ -5,9 +9,9 @@ TYPOGRAPHY
 p,
 .body-style {
   width: 100%;
-  font-family: $primary-font;
+  font-family: variables.$primary-font;
   font-size: var(--font-size-fluid-01);
-  font-weight: $base-font-weight-regular;
+  font-weight: variables.$base-font-weight-regular;
   line-height: var(--font-lineheight-3);
   font-style: normal;
   color: inherit;
@@ -15,11 +19,11 @@ p,
 }
 
 .secondary-font {
-  font-family: $secondary-font;
+  font-family: variables.$secondary-font;
 }
 
 .headings-font {
-  font-family: $headings-font;
+  font-family: variables.$headings-font;
 }
 
 /* Shared styles */
@@ -36,8 +40,8 @@ h6,
 .h5-style,
 .h6-style {
   color: inherit;
-  font-family: $headings-font;
-  font-weight: $headings-font-weight;
+  font-family: variables.$headings-font;
+  font-weight: variables.$headings-font-weight;
   font-style: normal;
   font-stretch: normal;
   letter-spacing: normal;
@@ -108,7 +112,7 @@ h4,
 
 // Helpers - Additions to help with reuseable code approach. Add classes to achieve styles rather than nesting.
 .bold {
-  font-weight: $base-font-weight-bold;
+  font-weight: variables.$base-font-weight-bold;
 }
 
 .centered {
@@ -116,15 +120,15 @@ h4,
 }
 
 .hide-text {
-  @include hide-text;
+  @include mixins.hide-text;
 }
 
 .visually-hidden {
-  @include visually-hidden;
+  @include mixins.visually-hidden;
 }
 
 .do-not-display {
-  @include do-not-display;
+  @include mixins.do-not-display;
 }
 
 .no-margin {
@@ -133,8 +137,8 @@ h4,
 
 .header-highlight {
   border-left: 2px solid ;
-  padding-left: px-to-rem(20px);
-  margin: px-to-rem(34px) 0;
+  padding-left: px-to-rem.px-to-rem(20px);
+  margin: px-to-rem.px-to-rem(34px) 0;
 
   blockquote {
     margin: 0;
@@ -145,12 +149,12 @@ h4,
   &.section-header--narrow {
     width: 100%;
 
-    @media only screen and (min-width: $mobile) {
-      max-width: px-to-rem(400px);
+    @media only screen and (min-width: variables.$mobile) {
+      max-width: px-to-rem.px-to-rem(400px);
     }
 
-    @media only screen and (min-width: $desktop) {
-      max-width: px-to-rem(534px);
+    @media only screen and (min-width: variables.$desktop) {
+      max-width: px-to-rem.px-to-rem(534px);
 
       @supports (-ms-ime-align:auto) {
         width: 100%;
@@ -160,30 +164,30 @@ h4,
 }
 
 .section-header__text {
-  font-size: px-to-rem(31px);
-  line-height: px-to-rem(57px);
-  font-family: $primary-font;
+  font-size: px-to-rem.px-to-rem(31px);
+  line-height: px-to-rem.px-to-rem(57px);
+  font-family: variables.$primary-font;
   margin: 0;
   position: relative;
   text-align: left;
   overflow: hidden;
-  padding-top: px-to-rem(23px);
-  padding-bottom: px-to-rem(23px);
+  padding-top: px-to-rem.px-to-rem(23px);
+  padding-bottom: px-to-rem.px-to-rem(23px);
 
-  @media only screen and (min-width: $desktop) {
-    font-size: px-to-rem(48px);
-    line-height: px-to-rem(73px);
+  @media only screen and (min-width: variables.$desktop) {
+    font-size: px-to-rem.px-to-rem(48px);
+    line-height: px-to-rem.px-to-rem(73px);
   }
 
   span {
-    padding: px-to-rem(23px) px-to-rem(20px);
-    padding-top: px-to-rem(23px);
-    padding-bottom: px-to-rem(23px);
+    padding: px-to-rem.px-to-rem(23px) px-to-rem.px-to-rem(20px);
+    padding-top: px-to-rem.px-to-rem(23px);
+    padding-bottom: px-to-rem.px-to-rem(23px);
     -webkit-box-decoration-break: clone;
     box-decoration-break: clone;
 
-    @media only screen and (min-width: $desktop) {
-      padding: px-to-rem(23px) px-to-rem(44px);
+    @media only screen and (min-width: variables.$desktop) {
+      padding: px-to-rem.px-to-rem(23px) px-to-rem.px-to-rem(44px);
     }
   }
 }
@@ -191,22 +195,22 @@ h4,
 
 
 .caption {
-  font-family: $primary-font;
+  font-family: variables.$primary-font;
   font-style: normal;
   font-weight: normal;
-  font-size: px-to-rem(12px);
-  line-height: px-to-rem(16px);
+  font-size: px-to-rem.px-to-rem(12px);
+  line-height: px-to-rem.px-to-rem(16px);
   text-align: center;
 }
 
 .supporting-text {
-  font-size: px-to-rem(12px);
-  line-height: px-to-rem(16px);
-  margin-top: px-to-rem(10.45px);
+  font-size: px-to-rem.px-to-rem(12px);
+  line-height: px-to-rem.px-to-rem(16px);
+  margin-top: px-to-rem.px-to-rem(10.45px);
 
-  @media only screen and (min-width: $tablet) {
-    font-size: px-to-rem(14px);
-    line-height: px-to-rem(20px);
+  @media only screen and (min-width: variables.$tablet) {
+    font-size: px-to-rem.px-to-rem(14px);
+    line-height: px-to-rem.px-to-rem(20px);
   }
 }
 
@@ -215,13 +219,13 @@ h4,
 }
 
 .large-body-text {
-  font-size: $lg-body-font-size-mobile;
-  line-height: $lg-body-line-height-mobile;
-  font-weight: $base-font-weight-regular;
+  font-size: variables.$lg-body-font-size-mobile;
+  line-height: variables.$lg-body-line-height-mobile;
+  font-weight: variables.$base-font-weight-regular;
 
-  @media only screen and (min-width: $tablet) {
-    font-size: $lg-body-font-size;
-    line-height: $lg-body-line-height;
+  @media only screen and (min-width: variables.$tablet) {
+    font-size: variables.$lg-body-font-size;
+    line-height: variables.$lg-body-line-height;
   }
 }
 

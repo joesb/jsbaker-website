@@ -2,15 +2,17 @@
 /*--------------------------------------------------------------
 # Variables
 --------------------------------------------------------------*/
-@import "./common/variables";
+@use "common/base-variables";
+@use "common/variables";
 
 /* --------------------------------------------------------------
 # Tools
 -------------------------------------------------------------- */
-@import "./tools/tools";
+@use "tools/tools";
+@use "tools/respond-to";
 
 .home-layout__item--dark-cyan {
-  background-color: $dark-cyan;
+  background-color: variables.$dark-cyan;
   color: var(--surface-1);
 }
 
@@ -29,7 +31,7 @@
 }
 
 
-@include respond-to('medium') {
+@include respond-to.respond-to('medium') {
   .home-layout {
     display: grid;
     grid-auto-flow: row;

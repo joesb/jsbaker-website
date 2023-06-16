@@ -1,3 +1,6 @@
+@use "../common/variables";
+@use "../tools/respond-to";
+
 .content-canvas {
   display: grid;
   column-gap: var(--size-fluid-3);
@@ -7,7 +10,7 @@
     [wide-start]
       minmax(0, 15ch)
     [main-start]
-      minmax(10ch, calc(#{$break-medium} - 3rem))
+      minmax(10ch, calc(#{variables.$break-medium} - 3rem))
     [main-mid]
       minmax(10ch, auto)
     [main-end]
@@ -18,7 +21,7 @@
   grid-auto-flow: row;
 }
 
-@include respond-to('large') {
+@include respond-to.respond-to('large') {
   .content-canvas {
     grid-template-columns: 
       [full-start]
@@ -26,9 +29,9 @@
       [wide-start]
         minmax(10vw,  15ch)
       [main-start]
-        minmax(calc(#{$break-very-small} - 3rem), calc((#{$break-small} - 3rem) * 3 / 5))
+        minmax(calc(#{variables.$break-very-small} - 3rem), calc((#{variables.$break-small} - 3rem) * 3 / 5))
       [main-mid]
-        minmax(20ch, calc((#{$break-small} - 3rem) * 2 / 5))
+        minmax(20ch, calc((#{variables.$break-small} - 3rem) * 2 / 5))
       [main-end]
         minmax(10vw, 15ch)
       [wide-end]
@@ -63,7 +66,7 @@
 .content-canvas-item-wide-left {
   grid-column: wide-start/main-end;
   
-  @include respond-to('large') {
+  @include respond-to.respond-to('large') {
     grid-column: wide-start/main-mid;
   }
 }
@@ -72,7 +75,7 @@
   grid-column: full-start/full-end;
 }
 
-@include respond-to('medium') {
+@include respond-to.respond-to('medium') {
   .content-canvas-item-left {
     grid-column: main-start/main-mid;
   }
@@ -155,7 +158,7 @@
       + * + * + * + .content-canvas-item-wide-left {
         grid-column: wide-start/main-end;
         
-        @include respond-to('large') {
+        @include respond-to.respond-to('large') {
           grid-column: wide-start/main-mid;
         }
       }
