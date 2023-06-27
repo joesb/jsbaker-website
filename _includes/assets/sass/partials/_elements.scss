@@ -152,6 +152,7 @@ a {
 blockquote {
   border-color: var(--surface-teal);
   max-inline-size: var(--size-content-3);
+  padding-block: 0;
 
   &.bq-alt{ 
     border-inline-start-width: 0;
