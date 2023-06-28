@@ -1,11 +1,14 @@
 ---
 title: "What is a story?"
-description: "We know how to spot one, but how?"
+description: "We can always spot one, but … how?"
 layout: page.njk
 date: 2023-06-27
 promoted: true
 order: 1
+page:
+  class: "page--writing--dark page--summary--wide"
 tags:
+  - 'On writing'
   - '#writing'
 ---
 

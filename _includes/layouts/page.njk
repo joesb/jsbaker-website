@@ -20,10 +20,10 @@ section: page
 {% endfor %}
 
 	{% if description %}
-	<div class="page__summary{% if page.class and page.class.includes('page--with-hero') %} content-canvas-item-full content-canvas site-content site-content--zero-spacing{% else %} content-canvas-item-wide-left{% endif %}{% if tags | hasTag('#writing') and page.class and page.class.includes('page--writing--light') !== true %} site-content--surface-black-light site-content--surface-dark{% endif %}">
+	<div class="page__summary{% if page.class %}{% if page.class.includes('page--summary--wide') %} content-canvas-item-full content-canvas site-content--small-padding{% elif page.class.includes('page--with-hero') %} content-canvas-item-full content-canvas site-content site-content--zero-spacing{% else %} content-canvas-item-wide-left{% endif %}{% endif %}{% if tags | hasTag('#writing') and page.class and page.class.includes('page--writing--light') !== true %} site-content--surface-black-light site-content--surface-dark{% endif %}">
 
 		{% if tags | hasTag('#writing') %}
-		<div class="metadata{% if page.class and page.class.includes('page--with-hero') %} content-canvas-item-wide-left{% endif %}">
+		<div class="metadata{% if page.class and (page.class.includes('page--with-hero') or page.class.includes('page--summary--wide')) %} content-canvas-item-wide-left{% endif %}">
 			<div class="metadata__tags">
 				{%- for topic in pageTags %}
 				{% set t = topic | slug %}
@@ -36,7 +36,7 @@ section: page
 			</div>
 		</div>
 		{% endif %}
-		<div class="page__summary__content{% if page.class and page.class.includes('page--with-hero') %} content-canvas-item-wide-left{% endif %}">
+		<div class="page__summary__content{% if page.class and (page.class.includes('page--with-hero') or page.class.includes('page--summary--wide')) %} content-canvas-item-wide-left{% endif %}">
 			{{ description | markdown | safe }}
 		</div>
 	</div>
