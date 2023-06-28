@@ -12,7 +12,6 @@
     "wdebug": "set DEBUG=Eleventy* & eleventy",
     "sass:build": "sass --style=compressed _includes/assets/sass/:_includes/assets/css/  & npx postcss _includes/assets/css/*.css --use autoprefixer -d _includes/assets/css/build",
     "sass:dev": "sass --watch --update --style=expanded _includes/assets/sass/:_includes/assets/css/",
-    "sass:watch": "node-sass --watch _includes/assets/sass/ -o _includes/assets/css/ & npx postcss --watch _includes/assets/css/*.css --use autoprefixer -d _includes/assets/css/build & stylelint _includes/assets/**/*.scss",
     "lint:scss": "stylelint \"_includes/assets/sass/**/*.scss\"",
     "npf": "npx postcss _includes/assets/css/styles.css --use autoprefixer -d _includes/assets/css/build"
   },
@@ -50,7 +49,6 @@
   },
   "dependencies": {
     "@11ty/eleventy-img": "^3.1.0",
-    "node-sass": "^9.0",
     "uglify-es": "^3.3.9"
   }
 }
