@@ -20,14 +20,14 @@ section: page
 {% endfor %}
 
 	{% if description %}
-	<div class="page__summary{% if page.class and page.class.includes('page--with-hero') %} content-canvas-item-full content-canvas site-content site-content--zero-spacing{% else %} content-canvas-item-wide-left{% endif %}{% if tags | hasTag('#writing') and page.class and page.class.includes('page--writing--light') !== true %} site-content--surface-black-light site-content--surface-dark{% endif %}">
+	<div class="page__summary{% if page.class %}{% if page.class.includes('page--summary--wide') %} content-canvas-item-full content-canvas site-content--small-padding{% elif page.class.includes('page--with-hero') %} content-canvas-item-full content-canvas site-content site-content--zero-spacing{% else %} content-canvas-item-wide-left{% endif %}{% endif %}{% if tags | hasTag('#writing') and page.class %}{% if summary.class %} {{ summary.class }}{% elif page.class.includes('page--writing--light') %} site-content--surface-black-light site-content--surface-dark{% endif %}{% endif %}">
 
 		{% if tags | hasTag('#writing') %}
-		<div class="metadata{% if page.class and page.class.includes('page--with-hero') %} content-canvas-item-wide-left{% endif %}">
+		<div class="metadata{% if page.class and (page.class.includes('page--with-hero') or page.class.includes('page--summary--wide')) %} content-canvas-item-wide-left{% endif %}">
 			<div class="metadata__tags">
 				{%- for topic in pageTags %}
 				{% set t = topic | slug %}
-					<span class="metadata__tags__tag"><a href="{{ ['/tag/', t] | join | url }}" class="light">{{ topic }}</a></span>
+					<span class="metadata__tags__tag"><a href="{{ ['/tag/', t] | join | url }}"{% if page.class and page.class.includes('page--writing--light')%} class="light"{% endif %}>{{ topic }}</a></span>
 						{% if loop.last !== true %}
 					<span class="metadata__divider divider"></span>
 					{% endif %}
@@ -36,7 +36,7 @@ section: page
 			</div>
 		</div>
 		{% endif %}
-		<div class="page__summary__content{% if page.class and page.class.includes('page--with-hero') %} content-canvas-item-wide-left{% endif %}">
+		<div class="page__summary__content{% if page.class and (page.class.includes('page--with-hero') or page.class.includes('page--summary--wide')) %} content-canvas-item-wide-left{% endif %}">
 			{{ description | markdown | safe }}
 		</div>
 	</div>
