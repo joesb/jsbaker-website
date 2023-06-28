@@ -10,7 +10,7 @@ tags:
   - Short Story
   - '#writing'
 page:
-  class: "page--with-hero page--writing"
+  class: "page--with-hero page--writing page--writing--light"
 image:
   path: "https://live.staticflickr.com/4345/37283402336_2dfad389a1_k.jpg"
   alt: "Peregrine falcon and prey, Caloundra"

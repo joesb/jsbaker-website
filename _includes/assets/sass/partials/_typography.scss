@@ -47,6 +47,7 @@ h6,
   letter-spacing: normal;
   margin: 0;
   mix-blend-mode: normal;
+  margin-block: 1.5rem 0.75rem;
 }
 
 h1,
@@ -139,6 +140,15 @@ h5,
 
 .no-margin {
   margin: 0;
+}
+
+.small {
+  font-size: var(--font-size-fluid-000);
+  line-height: var(--font-lineheight-2) !important;
+}
+
+.large {
+  font-size: var(--font-size-fluid-1);
 }
 
 .header-highlight {
