@@ -79,3 +79,9 @@
     font-weight: 600;
   }
 }
+
+.page--writing--light {
+  .page__summary {
+    color: var(--surface-1);    
+  }
+}

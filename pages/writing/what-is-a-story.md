@@ -6,7 +6,9 @@ date: 2023-06-27
 promoted: true
 order: 1
 page:
-  class: "page--writing--dark page--summary--wide"
+  class: "page--summary--wide page--writing--light"
+summary:
+  class: "site-content--surface-teal"
 tags:
   - 'On writing'
   - '#writing'
