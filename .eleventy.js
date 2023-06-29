@@ -1,5 +1,7 @@
 const { DateTime } = require("luxon");
 const CleanCSS = require('clean-css');
+const autoprefixer = require('autoprefixer');
+const postCSS = require('postcss');
 const UglifyJS = require('uglify-es');
 const htmlmin = require('html-minifier');
 const pluginRss = require('@11ty/eleventy-plugin-rss');
@@ -112,7 +114,8 @@ module.exports = function (eleventyConfig) {
 
   // Minify CSS
   eleventyConfig.addFilter('cssmin', function (code) {
-    return new CleanCSS({}).minify(code).styles;
+    css = new CleanCSS({}).minify(code).styles;
+    return postCSS([ autoprefixer ]).process(css).css;
   });
 
   // Minify JS
@@ -319,6 +322,7 @@ module.exports = function (eleventyConfig) {
 
   eleventyConfig.addPassthroughCopy('static/');
   eleventyConfig.addPassthroughCopy('CNAME');
+  eleventyConfig.addWatchTarget('./src/sass/');
 
   return {
     templateFormats: ['md', 'njk', 'html', 'liquid'],

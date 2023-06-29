@@ -4,15 +4,15 @@
   "description": "The website for J S Baker",
   "main": "index.js",
   "scripts": {
-    "build": "(npm run sass:build) && npx eleventy",
-    "build:dryrun": "(npm run sass:build) && npx eleventy --dryrun",
+    "build": "(npm run sass:build) && npx @11ty/eleventy",
+    "build:dryrun": "(npm run sass:build) && npx @11ty/eleventy --dryrun",
     "watch": "npx eleventy --watch",
-    "serve": "(npm run sass:build) && (npx eleventy --dryrun) && npx eleventy --serve & sass --watch _includes/assets/sass/:_includes/assets/css/ & npx postcss --watch _includes/assets/css/*.css --use autoprefixer -d _includes/assets/css/build",
+    "serve": "(npm run sass:build) && (npx eleventy --dryrun) && npx @11ty/eleventy --serve & sass --watch src/sass/:_includes/assets/css/",
     "debug": "DEBUG=* npx eleventy",
     "wdebug": "set DEBUG=Eleventy* & eleventy",
-    "sass:build": "sass --style=compressed _includes/assets/sass/:_includes/assets/css/  & npx postcss _includes/assets/css/*.css --use autoprefixer -d _includes/assets/css/build",
-    "sass:dev": "sass --watch --update --style=expanded _includes/assets/sass/:_includes/assets/css/",
-    "lint:scss": "stylelint \"_includes/assets/sass/**/*.scss\"",
+    "sass:build": "sass --style=compressed src/sass/:_includes/assets/css/",
+    "sass:dev": "sass --watch --update --style=expanded src/sass/:_includes/assets/css/",
+    "lint:scss": "stylelint \"src/sass/**/*.scss\"",
     "npf": "npx postcss _includes/assets/css/styles.css --use autoprefixer -d _includes/assets/css/build"
   },
   "repository": {

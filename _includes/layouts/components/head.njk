@@ -24,13 +24,13 @@
   <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,300;0,500;0,700;1,300;1,500;1,700&family=PT+Serif:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
   
   {% set css %}
-    {% include "assets/css/build/styles.css" %}
+    {% include "assets/css/styles.css" %}
   {% endset %}
   <style>{{ css | cssmin | safe }}</style>
 
   {% if styles %}
     {% for style in styles %}
-      {% set include_style %}assets/css/build/{{ style }}{% endset %}
+      {% set include_style %}assets/css/{{ style }}{% endset %}
       {% set include_css %}
         {% include include_style %}
       {% endset %}
