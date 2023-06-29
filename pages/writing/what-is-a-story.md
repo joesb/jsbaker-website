@@ -9,6 +9,8 @@ page:
   class: "page--summary--wide page--writing--light"
 summary:
   class: "site-content--surface-teal"
+image: 
+  social: https://images.pexels.com/photos/5088149/pexels-photo-5088149.jpeg
 tags:
   - 'On Writing'
   - '#writing'
