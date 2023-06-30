@@ -40,10 +40,18 @@
   object-position: center center;
 }
 
+.image-obj-pos-top {
+  object-position: center top;
+}
+
 .image-obj-pos-higher {
   object-position: center 25%;
 }
 
 .image-obj-pos-lower {
   object-position: center 75%;
+}
+
+.image-obj-pos-bottom {
+  object-position: center bottom;
 }
