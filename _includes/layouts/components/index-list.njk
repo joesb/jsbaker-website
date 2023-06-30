@@ -32,7 +32,7 @@
           </div>
           {% endif %}
           <div class="metadata item-meta">
-            <time class="item-date">{{ item.date | readableDate("LLLL yyyy") }}</time>
+            <time class="item-date" datetime="{{ item.date | readableDate("yyyy-LL-dd") }}">{{ item.date | readableDate("LLLL yyyy") }}</time>
             <span class="divider"></span>
             <span class="item-reading-time">{{ item.content | timeToRead }} read</span></div>
         </div>
