@@ -1,6 +1,6 @@
 ---
 title: "Reading Recap, June 2023"
-description: "Thoughts on books I've read this month."
+description: "Prescient warning about gangster capitalism from a master of fiction, plus imperialism's shaping of modern Britain"
 layout: page.njk
 date: git Created
 promoted: true
