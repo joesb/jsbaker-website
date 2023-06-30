@@ -66,7 +66,7 @@ section: page
 		{% endif %}
 
 		<div class="metadata__info">
-			<time class="metadata__date">{{ page.date | readableDate("LLLL yyyy") }}</time>
+			<time class="metadata__date" datetime="{{ page.date | readableDate("yyyy-LL-dd") }}">{{ page.date | readableDate("LLLL yyyy") }}</time>
 			<span class="metadata__divider divider"></span>
 			<span class="metadata__reading-time">{{ content | timeToRead }} read</span>
 		</div>
