@@ -3,26 +3,27 @@
 
 .content-canvas {
   display: grid;
-  column-gap: var(--size-fluid-3);
+  column-gap: var(--size-fluid-1);
   grid-template-columns: 
     [full-start]
-      1fr
+      minmax(0, 2vw)
     [wide-start]
-      minmax(0, 15ch)
+      minmax(0, 2vw)
     [main-start]
       minmax(10ch, calc(#{variables.$break-medium} - 3rem))
     [main-mid]
       minmax(10ch, auto)
     [main-end]
-      minmax(0, 15ch)
+      minmax(0, 2vw)
     [wide-end]
-      1fr
+    minmax(0, 2vw)
     [full-end];
   grid-auto-flow: row;
 }
 
 @include respond-to.respond-to('large') {
   .content-canvas {
+    column-gap: var(--size-fluid-3);
     grid-template-columns: 
       [full-start]
         minmax(3vw, 1fr)
