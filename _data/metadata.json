@@ -12,6 +12,13 @@
   "page_count": 6,
   "social_site": [
     {
+      "name": "Bluesky",
+      "machine_name": "bluesky",
+      "no_icon": true,
+      "url": "https://bsky.app/profile/joesb.jsbaker.co.uk",
+      "alias": "@joesb.jsbaker.co.uk"
+    },
+    {
       "name": "Mastodon",
       "machine_name": "mastodon",
       "url": "https://mstdn.social/@joesb",
