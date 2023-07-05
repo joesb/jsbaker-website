@@ -52,20 +52,21 @@
   position: relative;
   padding-right: 2.5em;
 
-  &::after {
-    display: inline-block;
-    position: absolute;
-    top: 0;
-    right: 0;
-    content: ' ';
-    mask-size: contain;
-    mask-repeat: no-repeat;
-    background: var(--surface-teal);
-    height: px-to-rem.px-to-rem(24px);
-    width: px-to-rem.px-to-rem(32px);
-    transition: 0.2s;
+  &:not(.social-site--no-icon) {
+    &::after {
+      display: inline-block;
+      position: absolute;
+      top: 0;
+      right: 0;
+      content: ' ';
+      mask-size: contain;
+      mask-repeat: no-repeat;
+      background: var(--surface-teal);
+      height: px-to-rem.px-to-rem(24px);
+      width: px-to-rem.px-to-rem(32px);
+      transition: 0.2s;
+    }
   }
-
 
   &:hover {
     &::after {
