@@ -41,7 +41,7 @@
     "sass": "^1.63.3",
     "sass-autoprefixer": "^1.0.1",
     "sass-migrator": "^1.7.3",
-    "stylelint": "^15.7.0",
+    "stylelint": "^15.10.1",
     "stylelint-config-standard": "^33.0.0",
     "stylelint-config-standard-scss": "^9.0.0",
     "stylelint-prettier": "^3.0.0",
