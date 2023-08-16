@@ -4,7 +4,6 @@ description: "Prescient warning about gangster capitalism from a master of ficti
 layout: page.njk
 date: git Created
 promoted: true
-order: 3
 page:
   class: "page--with-hero"
 tags:
