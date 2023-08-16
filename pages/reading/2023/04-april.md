@@ -4,7 +4,7 @@ description: "Thoughts on books I've read this month."
 layout: page.njk
 date: 2023-04-30
 promoted: true
-order: 4
+order: 6
 page:
   class: "page--with-hero"
 tags:
