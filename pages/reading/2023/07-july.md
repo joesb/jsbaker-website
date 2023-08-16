@@ -5,14 +5,24 @@ layout: page.njk
 date: 2023-07-31
 promoted: true
 order: 3
-# page:
-#   class: "page--with-hero"
+page:
+  class: "page--with-hero"
 tags:
   - Reading
   - Novels
   - "#reading"
 image:
-  social: https://images.pexels.com/photos/17013921/pexels-photo-17013921/free-photo-of-woman-reading-a-book-in-a-hammock.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2
+  path: https://images.pexels.com/photos/17013921/pexels-photo-17013921/free-photo-of-woman-reading-a-book-in-a-hammock.jpeg
+  alt: "Woman reading a book in a hammock"
+  class: "image-obj-cover image-greyscale-75 image-darken-33"
+  # pictureClass: "content-canvas-item-right content-canvas-item-right--span-3"
+  pictureClass:
+    # page: "content-canvas-item-full picture--hero"
+    list: "index-list__item__picture"
+  figureClass:
+    page: "content-canvas-item-full figure--hero"
+  caption: "A woman reading a book in a hammock."
+  credit: 'Photo by <a href="https://www.pexels.com/@chris-f-38966/" rel="noopener nofollow" target="_blank">Chris F</a> on <a href="https://www.pexels.com/photo/woman-reading-a-book-in-a-hammock-17013921/" rel="noopener nofollow" target="_blank">Pexels</a>'
 ---
 
 ### [Nights of Plague](https://app.thestorygraph.com/books/8d1f34a8-ec35-4293-b425-09efdddabf1b){rel=noopener target=_blank}
@@ -36,9 +46,11 @@ I'm a big fan of Orhan Pamuk — *[My Name is Red](https://app.thestorygraph.com
 
 It's a biggy, at 255k words. I started reading it in early June and didn't finish until mid-July. I'm not a fast reader, but it was a veeerrry long read.
 
-The book itself is a proper fable about pandemic disease (the bubonic plague of the title), nationalism and propaganda. The story is set on a fictional Mediterranean island, Mingheria, with echoes of the histories of Cyprus and Crete but is different from them, also, but the non-existant island is found in our real world at the beginning of the Twentieth Century, and the world of the story exists in the shadow of the slowly-fading imperial powers of the time.
+The book itself is a proper fable, a story about pandemic disease (the bubonic plague of the title), nationalism and propaganda. The story is set on a fictional Mediterranean island, Mingheria, that echoes the histories of Cyprus and Crete but is different from them, also. The non-existant island is found in our real world, though, at the beginning of the Twentieth Century, and the world of the story exists in the shadow of the slowly-fading imperial powers of the time.
 
-[Apparently](https://www.newyorker.com/magazine/2022/10/31/outbreaks-and-uprisings-in-orhan-pamuks-nights-of-plague), Pamuk started writing the story in 2016, long before the Covid was part of our lives, but the story echoes the currents of the experience of the coranvirus pandemic, including the anti-science reactionism and consequent disaster for public health.
+[Apparently](https://www.newyorker.com/magazine/2022/10/31/outbreaks-and-uprisings-in-orhan-pamuks-nights-of-plague), Pamuk started writing the story in 2016, long before the Covid was part of our lives, but the story echoes the currents of the experience of the coranvirus pandemic, including the anti-science reactionism and consequent disaster for public health. The other main theme, nationalism, is also astonishingly prescient (Pamuk, being Turkish, has witnessed some of this close up, of course), and speaks great volumes to our world where that trait has once again taken a firm hold.
+
+I found the mythical form of the language quite hard work, frustrating even, and especially at first, with the narrator continually over-explaining things — so much exposition! But in the end that mythical tone gave wings to the themes that it explores, enabling them to fly in a way that a more polemic or literary form of language, say, could have done.
 
 ### [The Old Man and the Sea](https://app.thestorygraph.com/books/d90a2b60-d7c5-4133-981d-21fd88144993){rel=noopener target=_blank}
 
@@ -57,7 +69,11 @@ The book itself is a proper fable about pandemic disease (the bubonic plague of 
 - **Diverse cast of characters?** No
 - **Flaws of characters a main focus?** It's complicated
 
-Proin rhoncus volutpat mi nec condimentum. Suspendisse dolor ipsum, vulputate nec eros sed, mollis condimentum nulla. Morbi quis lacinia mi. Donec a porta orci. Proin tristique quam id gravida vulputate. Nulla interdum auctor dignissim. Donec efficitur accumsan massa a commodo. Praesent dapibus molestie odio. Nullam erat urna, placerat et justo nec, mollis facilisis libero. Integer tristique, neque sed gravida pharetra, erat nulla varius sem, ac pulvinar dolor nulla non diam. Sed malesuada finibus est vitae convallis. Quisque tempor tempor libero vel euismod.
+I think this is my first ever Hemingway, I think. Amazing: all plot, so little character, even less symbolism.
+
+It's a short novel, in stark contrast to *Nights of Plague*, and Hemingway's terse and economical prose here, and his aversion to the symbolic strata (*'The sea is the sea. The old man is an old man. The boy is a boy and the fish is a fish.'* etc., in a [letter to critic Bernard Berenson](https://quoteinvestigator.com/2022/06/17/old-man/)), is similarly at the other end of some sort of spectrum from Pamuk's mythical plague-ravaged island.
+
+The plot is brilliantly told: a powerful tragedy portrayed in lucid, laconic language. But I felt like I never really knew the old man, his hopes and flaws, nor cared too much for his tragedy.
 
 ### [Still Born](https://app.thestorygraph.com/books/d90a2b60-d7c5-4133-981d-21fd88144993){rel=noopener target=_blank}
 
@@ -76,7 +92,9 @@ Proin rhoncus volutpat mi nec condimentum. Suspendisse dolor ipsum, vulputate ne
 - **Diverse cast of characters?** Yes
 - **Flaws of characters a main focus?** Yes
 
-Vivamus ac velit sapien. Fusce vitae commodo quam. Nullam lobortis, justo sit amet iaculis elementum, nunc risus varius justo, a aliquam nulla augue eget nunc. Aliquam at ante aliquam, congue est eu, consectetur justo. Donec nec ullamcorper ante, a convallis sapien. Etiam nunc libero, blandit non est quis, accumsan consectetur nisi. Nam lobortis congue fringilla. Nulla efficitur iaculis mi, ut convallis nulla maximus id. Quisque volutpat posuere sem id molestie. Mauris dolor enim, finibus ac massa ut, dapibus elementum diam.
+This novel explores a decision with massive consequences: whether or not to have children. Told through the lives of two close friends, Laura, who chooses to be sterilised, and Alina, who slowly realises she wants to become a mother. Alina's pregnancy reveals medical complications with her baby that leads to a difficult family life. An interesting, sensitive exploration of maternal ambivalence and motherhood.
+
+In the end, I was little disappointed. Laura tells the story, yet too often she is a spectator to Alina's struggles (and frequently at something of a distance) yet somehow knows and understands the depths of her friend's experience and internal world.
 
 ### [Blood Meridian](https://app.thestorygraph.com/books/29ad6af6-32aa-4c4b-83c5-73481ad6dfc6){rel=noopener target=_blank}
 
@@ -95,7 +113,11 @@ adventurous; challenging; dark; emotional; informative; sad; tense; slow-paced
 - **Diverse cast of characters?** Yes
 - **Flaws of characters a main focus?** Yes
 
-Integer sit amet dapibus elit, eget imperdiet arcu. Sed sollicitudin egestas dapibus. Vivamus rhoncus arcu augue, ac facilisis neque auctor eu. Pellentesque quis magna lorem. Phasellus a est cursus, placerat neque in, elementum diam. Praesent interdum ultrices velit. Mauris tristique at magna sit amet vehicula. Donec scelerisque posuere urna ac congue. Aenean dignissim est eget ligula dictum sagittis. Vivamus nec dolor risus. Suspendisse ultricies laoreet lacus at imperdiet.
+This is such a famous novel, McCarthy's profound anti-Western story that removes any romanticism about the heroes of the Wild West, and I was a little concerned about reading it and not liking it. I had been pre-warned about the brutality of the novel, in particular — even that warning wasn't enough, though. Everyone dies. Everyone kills. People die suddenly, without any regret or reticence or even that many consequences.
+
+It is an amazing novel and I highly recommend it, for McCarthy's prose alone … though do take the warning of the savagery seriously — there is *a lot* of death, *a lot* of blood.
+
+That said, at the end I was left with one big question — is it a story? Lots of things happen, lots of events. But the sense of causation, that this thing results in that, that this things happens because that thing happened first and this is the consequence — that all seemed lost to me, lost in a sea of blood and death. No one learns. No one grows. There are no consequences. Maybe that was McCarthy's point — the West was base and amoral, and utterly inhumane. Yet it was still populated by humans, who struggle with these things. So.
 
 ### [Cuddy](https://app.thestorygraph.com/books/2e6b0a6d-c544-4bbf-af4e-ce71f0989feb){rel=noopener target=_blank}
 
@@ -114,4 +136,8 @@ adventurous; challenging; dark; emotional; hopeful; informative; inspiring; myst
 - **Diverse cast of characters?** Yes
 - **Flaws of characters a main focus?** Yes
 
-Curabitur elementum ut odio a euismod. Pellentesque interdum risus nec enim pellentesque, nec ullamcorper justo lobortis. Nulla non commodo turpis, quis pulvinar massa. Praesent mollis quam ac mi fermentum hendrerit. Donec eget magna non lectus rhoncus porta. Quisque hendrerit iaculis justo vitae condimentum. Curabitur laoreet, libero a mollis viverra, velit metus tempor sem, at imperdiet tellus diam ac ipsum. Suspendisse ultricies pulvinar ex, non fringilla enim ultricies eget. Aliquam imperdiet ornare dui in facilisis. Fusce in commodo nulla. Mauris interdum porttitor scelerisque. In non sapien facilisis sem ultrices ultrices vitae in tortor. Aliquam euismod hendrerit lectus, sit amet molestie leo consectetur vitae. Nullam suscipit egestas vulputate.
+I'm a huge Ben Myers fan, ever since reading *[The Gallows Pole](https://app.thestorygraph.com/books/47c789d4-8256-4231-9181-01938184248c)* a few years ago. I was very excited to read his latest, especially given its subject.
+
+The novel explores the ongoing consequences of the life of Cuthbert, the celtic monk, known affectionately as 'Cuddy' by his followers, unfolding over centuries in a myriad of voices. It touches down in six eras — from Cuddy's own time in the prologue, through the visions and building of the great cathedral to house his remains in Durham, its use as a prison under Cromwell, one of Cuddy's several exhumations, all the way up to our modern times — and, with compassion and humour and beautiful language, finds threads that connect historical truth and strange legend in the many, many lives that Cuthbert has touched.
+
+A beautiful book.
