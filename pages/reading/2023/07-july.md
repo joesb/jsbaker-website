@@ -140,4 +140,4 @@ I'm a huge Ben Myers fan, ever since reading *[The Gallows Pole](https://app.the
 
 The novel explores the ongoing consequences of the life of Cuthbert, the celtic monk, known affectionately as 'Cuddy' by his followers, unfolding over centuries in a myriad of voices. It touches down in six eras — from Cuddy's own time in the prologue, through the visions and building of the great cathedral to house his remains in Durham, its use as a prison under Cromwell, one of Cuddy's several exhumations, all the way up to our modern times — and, with compassion and humour and beautiful language, finds threads that connect historical truth and strange legend in the many, many lives that Cuthbert has touched.
 
-A beautiful book.
+A beautiful book. A little disappointed it didn't make it onto the Booker 2023 long list.
