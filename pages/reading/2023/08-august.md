@@ -42,6 +42,8 @@ tags:
 - **Diverse cast of characters?** No
 - **Flaws of characters a main focus?** Yes
 
+Very glad this made the Booker Prixe 2023 long list, a bit sad it wasn't on the short list.
+
 ---
 
 ### [Women Talking](https://app.thestorygraph.com/books/080de4a1-011d-45a3-96d7-9e8ebaf08166){rel=noopener target=_blank}
