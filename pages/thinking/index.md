@@ -1,7 +1,6 @@
 ---
 title: Thinking
 layout: list.njk
-
 eleventyNavigation:
   key: Thinking
   order: 3
