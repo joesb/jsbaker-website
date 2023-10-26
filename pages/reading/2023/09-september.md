@@ -5,24 +5,24 @@ layout: page.njk
 date: 2023-09-30
 promoted: true
 order: 3
-# page:
-#   class: "page--with-hero"
+page:
+  class: "page--with-hero"
 tags:
   - Reading
   - Novels
   - "#reading"
-# image:
-#   path: https://images.pexels.com/photos/17013921/pexels-photo-17013921/free-photo-of-woman-reading-a-book-in-a-hammock.jpeg
-#   alt: "Woman reading a book in a hammock"
-#   class: "image-obj-cover image-greyscale-75 image-darken-33"
-#   # pictureClass: "content-canvas-item-right content-canvas-item-right--span-3"
-#   pictureClass:
-#     # page: "content-canvas-item-full picture--hero"
-#     list: "index-list__item__picture"
-#   figureClass:
-#     page: "content-canvas-item-full figure--hero"
-#   caption: "A woman reading a book in a hammock."
-#   credit: 'Photo by <a href="https://www.pexels.com/@chris-f-38966/" rel="noopener nofollow" target="_blank">Chris F</a> on <a href="https://www.pexels.com/photo/woman-reading-a-book-in-a-hammock-17013921/" rel="noopener nofollow" target="_blank">Pexels</a>'
+image:
+  path: https://images.pexels.com/photos/6138494/pexels-photo-6138494.jpeg
+  alt: "Stylish mature man reading book on waterfront"
+  class: "image-obj-cover image-greyscale-75 image-darken-33"
+  # pictureClass: "content-canvas-item-right content-canvas-item-right--span-3"
+  pictureClass:
+    # page: "content-canvas-item-full picture--hero"
+    list: "index-list__item__picture"
+  figureClass:
+    page: "content-canvas-item-full figure--hero"
+  caption: "Stylish mature man reading book on waterfront."
+  credit: 'Photo by <a href="https://www.pexels.com/@furkanfdemir/" rel="noopener nofollow" target="_blank">Furkan Demir</a> on <a href="https://www.pexels.com/photo/stylish-mature-man-reading-book-on-waterfront-6138494/" rel="noopener nofollow" target="_blank">Pexels</a>'
 ---
 
 ### [The Inheritance of Loss](https://app.thestorygraph.com/books/fcda3111-9720-496b-822a-db8c35d74c59){rel=noopener target=_blank}
