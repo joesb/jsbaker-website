@@ -2,7 +2,6 @@
 title: Joe Baker
 description: My writer's journal, for my writing projects, as well as the reading and thinking that support them.
 pageTitle: Writer
-permalink: /
 eleventyNavigation:
   key: Home
 layout: home.njk
