@@ -5,24 +5,24 @@ layout: page.njk
 date: 2023-08-31
 promoted: true
 order: 3
-# page:
-#   class: "page--with-hero"
+page:
+  class: "page--with-hero"
 tags:
   - Reading
   - Novels
   - "#reading"
-# image:
-#   path: https://images.pexels.com/photos/17013921/pexels-photo-17013921/free-photo-of-woman-reading-a-book-in-a-hammock.jpeg
-#   alt: "Woman reading a book in a hammock"
-#   class: "image-obj-cover image-greyscale-75 image-darken-33"
-#   # pictureClass: "content-canvas-item-right content-canvas-item-right--span-3"
-#   pictureClass:
-#     # page: "content-canvas-item-full picture--hero"
-#     list: "index-list__item__picture"
-#   figureClass:
-#     page: "content-canvas-item-full figure--hero"
-#   caption: "A woman reading a book in a hammock."
-#   credit: 'Photo by <a href="https://www.pexels.com/@chris-f-38966/" rel="noopener nofollow" target="_blank">Chris F</a> on <a href="https://www.pexels.com/photo/woman-reading-a-book-in-a-hammock-17013921/" rel="noopener nofollow" target="_blank">Pexels</a>'
+image:
+  path: https://images.pexels.com/photos/6309900/pexels-photo-6309900.jpeg
+  alt: "Elderly ethnic man reading interesting book in nature"
+  class: "image-obj-cover image-greyscale-75 image-darken-33"
+  # pictureClass: "content-canvas-item-right content-canvas-item-right--span-3"
+  pictureClass:
+    # page: "content-canvas-item-full picture--hero"
+    list: "index-list__item__picture"
+  figureClass:
+    page: "content-canvas-item-full figure--hero"
+  caption: "Man reading interesting book in nature."
+  credit: 'Photo by <a href="https://www.pexels.com/@furkanfdemir/" rel="noopener nofollow" target="_blank">Furkan Demir</a> on <a href="https://www.pexels.com/photo/elderly-ethnic-man-reading-interesting-magazine-in-nature-6309900/" rel="noopener nofollow" target="_blank">Pexels</a>'
 ---
 
 ### [Old God's Time](https://app.thestorygraph.com/books/89d6f971-7b6b-4e58-9de5-c8c410a0c043){rel=noopener target=_blank}
