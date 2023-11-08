@@ -51,9 +51,9 @@ section: page
 				{% set t = topic | slug %}
 				<span class="metadata__tags__tag">
 					{% if topic in ['Reading', 'Writing', 'Thinking'] %}
-					<a href="/{{ t | url }}">{{ topic }}</a>
+					<a href="/{{ t | url }}/">{{ topic }}</a>
 					{% else %}
-					<a href="{{ ['/tag/', t] | join | url }}">{{ topic }}</a>
+					<a href="{{ ['/tag/', t] | join | url }}/">{{ topic }}</a>
 					{% endif %}
 				</span>
 					{% if loop.last !== true %}
