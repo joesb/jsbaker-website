@@ -3,8 +3,8 @@ title: "Reading Recap, August 2023"
 description: "A month of more holiday reading"
 layout: page.njk
 date: 2023-08-31
-promoted: true
-order: 3
+promoted: false
+order: 0
 page:
   class: "page--with-hero"
 tags:

@@ -4,7 +4,7 @@ description: "Reading from Autumn into Winter — building a boat, saving a hos
 layout: review.njk
 date: 2023-11-30
 promoted: true
-order: 3
+order: 2
 page:
   class: "page--with-hero"
 tags:

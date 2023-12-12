@@ -5,7 +5,7 @@ layout: page.njk
 date: 2019-04-18
 canonical: https://joesb.medium.com/sicily-9e1989b53000
 promoted: true
-order: 4
+order: 5
 tags:
   - Short Story
   - '#writing'

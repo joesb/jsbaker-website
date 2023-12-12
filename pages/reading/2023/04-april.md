@@ -3,7 +3,7 @@ title: "Reading Recap, April 2023"
 description: "Thoughts on books I've read this month."
 layout: page.njk
 date: 2023-04-30
-promoted: true
+promoted: false
 order: 6
 page:
   class: "page--with-hero"

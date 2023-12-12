@@ -3,7 +3,7 @@ title: "Reading Recap, June 2023"
 description: "Prescient warning about gangster capitalism from a master of fiction, plus imperialism's shaping of modern Britain"
 layout: page.njk
 date: 2023-06-30
-promoted: true
+promoted: false
 order: 4
 page:
   class: "page--with-hero"

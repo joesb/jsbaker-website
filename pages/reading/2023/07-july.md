@@ -3,7 +3,7 @@ title: "Reading Recap, July 2023"
 description: "A bumper month of holiday reading"
 layout: page.njk
 date: 2023-07-31
-promoted: true
+promoted: false
 order: 3
 page:
   class: "page--with-hero"
