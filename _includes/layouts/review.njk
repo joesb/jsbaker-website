@@ -1,0 +1,77 @@
+---
+layout: page.njk
+is_review: true
+---
+
+	{# {% from 'layouts/macros/reading-review.njk' import readingReview %} #}
+	{% for review in reviews %}
+		{# {{ readingReview(review) }} #}
+		{# {% include 'layouts/md/components/reading-review.njk'%} #}
+
+		<div class="review-key-data content-canvas-item-wide-left">
+			<h3>
+				<a href="{{ review.urls.book }}" rel="noopener" target="_blank">{{ review.title }}</a>
+				<a class="direct-link visually-hidden" href="#{{ review.title | slugify }}" aria-hidden="true">#</a>
+			{% if review.audiobook %}
+				<em class="small">(audiobook)</em>
+			{% endif %}
+			</h3>
+			{% if review.subtitle %}
+			<p class="bold smaller"><em>{{ review.subtitle }}</em></p>
+			{% endif %}
+
+			<p>
+				<em>by {{ review.author }}</em><br/>
+				{% if review.author_extras %}
+				<em class="small">with {% for extra in review.author_extras %}{{ extra.name }} ({{ extra.role }}){% if not loop.last %}, {% endif %}{% endfor %}</em><br />
+				{% endif %}
+			</p>
+			<p>
+				{{ review.rating }} ⭐️
+			</p>
+		</div>
+
+		{% if review.urls.cover %}
+		<figure class="content-canvas-item-wide-right content-canvas-item-right--span-2 picture--block">
+			{% set imageUrl = review.urls.cover %}
+			{% set imageAlt = [review.title, " book cover"] | join %}
+			{% image imageUrl, imageAlt, "picture--outline", "", "(min-width: 25em) 50vw, 100vw", [250, 500] %}
+		</figure>
+		{% endif %}
+
+		<div class="review-meta content-canvas-item-wide-left">
+			{% if review.moods %}
+			<p class="review-meta--moods">
+				<em>{{ review.moods }}</em>
+			</p>
+			{% endif %}
+			{% if review.questions %}
+			<ul class="review-meta--character-questions-list">
+					<li>
+							<strong>Plot- or character-driven?</strong>
+							{{ review.questions.driven }}</li>
+					<li>
+							<strong>Strong character development?</strong>
+							{{ review.questions.development }}</li>
+					<li>
+							<strong>Loveable characters?</strong>
+							{{ review.questions.loveable }}</li>
+					<li>
+							<strong>Diverse cast of characters?</strong>
+							{{ review.questions.diverse }}</li>
+					<li>
+							<strong>Flaws of characters a main focus?</strong>
+							{{ review.questions.flaws }}</li>
+			</ul>
+			{% endif %}
+		</div>
+
+		{% if review.text %}
+		<div class="review-text">
+			{{ review.text | markdown | safe }}
+		</div>
+		{% endif %}
+		{% if not loop.last %}
+		<hr>
+		{% endif %}
+	{% endfor %}
