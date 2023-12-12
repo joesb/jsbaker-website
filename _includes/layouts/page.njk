@@ -73,7 +73,7 @@ section: page
 	</div>
 	{% endif %}
 
-	<div class="layout-content item-fade-in item-fade-in-1-5 item-fade-in-delay-mdl">
+	<div class="layout-content item-fade-in item-fade-in-1-5 item-fade-in-delay-mdl{% if is_review %} content-canvas-item-full content-canvas{% endif %}">
 		{{ layoutContent | safe }}
 	</div>
 

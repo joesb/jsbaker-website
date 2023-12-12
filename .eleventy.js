@@ -11,6 +11,7 @@ const markdownIt = require("markdown-it");
 const markdownItAnchor = require("markdown-it-anchor");
 const markdownItAttrs = require('markdown-it-attrs');
 const markdownItSmall = require('markdown-it-small');
+const markdownIt11tyImage = require('markdown-it-eleventy-img');
 const inspect = require("util").inspect;
 const timeToRead = require('eleventy-plugin-time-to-read');
 const embedEverything = require("eleventy-plugin-embed-everything");
@@ -313,7 +314,7 @@ module.exports = function (eleventyConfig) {
       level: [1,2,3,4],
     }),
     slugify: eleventyConfig.getFilter("slug")
-  }).use(markdownItAttrs).use(markdownItSmall);
+  }).use(markdownItAttrs).use(markdownItSmall).use(markdownIt11tyImage);
   eleventyConfig.setLibrary("md", markdownLibrary);
 
   eleventyConfig.addFilter("markdown", (content) => {
