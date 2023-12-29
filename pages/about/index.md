@@ -9,14 +9,14 @@ eleventyNavigation:
 metadata:
   show: false
 image:
-  path: static/images/home/jsb-001.jpeg
-  alt: "Some text here"
+  path: static/images/home/jsb-2023-12-29-01.jpeg
+  alt: "Me, Joe Baker, walking beside a canal"
   class: ""
   # pictureClass: "content-canvas-item-right content-canvas-item-right--span-3"
   # pictureClass:
     # page: "content-canvas-item-full picture--hero"
     # list: "index-list__item__picture"
-  caption: "Me, in the park"
+  caption: "Me, by a canal"
   figureClass:
     page: "content-canvas-item-wide-right content-canvas-item-right--span-5 content-canvas-span-start-content-top"
 ---
