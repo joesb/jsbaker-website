@@ -13,7 +13,7 @@
     {%- for entry in navPages %}
     {% if entry.url != "/" %}
       <li>
-        <a {% activepath entry.url, page.url %} href="{{ entry.url }}">{{ entry.title }}</a>
+        <a {% activepath entry.url, page.url %} href="{{ entry.url }}" class="main-nav--list--item-link">{{ entry.title }}</a>
       </li>
     {% endif %}
     {%- endfor %}

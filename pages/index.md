@@ -6,11 +6,9 @@ eleventyNavigation:
   key: Home
 layout: home.njk
 image: 
-  # path: static/images/home/jsb-002.jpeg
-  path: static/images/home/jsb-2023-12-29-00.jpeg
-  # social: static/images/home/jsb-002-social-card.jpeg
-  social: static/images/home/jsb-2023-12-29-00-social-card.jpeg
-  alt: "Me, Joe Baker, Winter 2023"
+  path: static/images/home/jsb-003.jpg
+  social: static/images/home/jsb-003-social-card.jpg
+  alt: "Me, Joe Baker"
 pagination:
   data: collections.promotedContent
   size: 11
