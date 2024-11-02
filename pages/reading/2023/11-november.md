@@ -46,7 +46,7 @@ reviews:
     subtitle: "Slough House Thriller 3"
     urls:
       book: https://app.thestorygraph.com/books/8413e620-c68f-4ea4-8085-12e8ecb1ee19
-      cover: https://cdn.thestorygraph.com/f1ptdmeegiw20v3po4p8e6c0ob85
+      cover: https://cdn.thestorygraph.com/mlvj2q8ybtym4eluf6sfafo83ikr
     rating: 3.5
     moods: adventurous; dark; mysterious; tense; fast-paced
     questions:
