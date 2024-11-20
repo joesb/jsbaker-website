@@ -2,11 +2,11 @@
 			{% if not primary and not list %}
 			<div class="site-content content-canvas page{% if page.class %} {{ page.class }}{% endif %}">
 				{% include "layouts/components/title-bar.njk" %}
-				{{ layoutContent | safe }}
+				{{ content | safe }}
 			</div>
 			{% else %}
 
-				{{ layoutContent | safe }}
+				{{ content | safe }}
 
 			{% endif %}
 		</main>

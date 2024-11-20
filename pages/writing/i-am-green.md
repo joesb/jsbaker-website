@@ -63,7 +63,7 @@ But I have escaped, and so now I run.
 Leg it.
 I stretch. My legs stretch, slowly stretch, and I leg it.
 Things return to my mind and I work out which way is up. No, I don’t think. I don’t need to think because up, the way up, is in me, a knowledge before thought, consciousness before synapse, impulse without need for transmission. It is instinct; it is innate. Up is up. It just is. My thin legs, my delicate green that's as pale and pinched as my recollections, turns upwards, through soil and silt and sand, through thick, heavy clay, finding cracks, circumventing stones, caressing boulders, and upwards, always upwards.
-There is something else in this dark place. An impression. 
+There is something else in this dark place. An impression.
 Others.
 In underland.
 I feel it: my self.
@@ -100,7 +100,7 @@ A damp roof beam.
 I am all and I am green.
 I grow.
 I am green.
-And I grow. 
+And I grow.
 I grow and some of me darkens. As I get taller and wider some of me darkens and my green is reminiscent of the sea, the swirling, wild waters under heavy clouds, darkening and turning, turning to the sallowest of green, a green that is brown, all manner of brown. I am a brown-green, pale and pitch, strong and sturdy, firm and flexible, reliable and resilient.
 But that is not the only thing. I am listening and I am hearing things, in my many voices that resound throughout underland, stories that are told between ourselves, about illness, about disorder.
 I know about sickness.
@@ -120,7 +120,7 @@ I listen now to myself, and I hear.
 I hear me, and I realise what I’m hearing.
 It’s mournful.
 What I hear is sad.
-It’s a sad song that can be heard on the strands here below, these hyphae, this hyphenated web that binds me to myself to I who am, who is green. 
+It’s a sad song that can be heard on the strands here below, these hyphae, this hyphenated web that binds me to myself to I who am, who is green.
 It is sad.
 And more than sad: it is a lament.
 There is a keening.
@@ -134,11 +134,11 @@ The threads grow quieter, the voices broken, broken, broken off. The voices are 
 I know how to survive, it is part of me, an instinct. I am green.
 But I am not immortal, I am not ever-living. And if I go my gift will be gone too, my gift to you, my world-breath, my gift for you while you call this place home, it will leave with me.
 The song grows quieter. The lament can be heard, it is sung still. It grows quieter, dimmer, yet I hear it more clearly now.
-It is a requiem, a funeral song. 
+It is a requiem, a funeral song.
 A weeping for the ones who are no more.
-I am weakening. 
+I am weakening.
 I feel it.
-I am green but I am weaker now, weaker than I have been before. I am a blanched green, pale and thinning, not the vibrant, energetic white-green of my days underneath, but a pallid green, ashen and leached of colour. I am bleaching in the unflinching sunlight that was my friend, my playmate, who made the water to rain down but has somehow forgotten our pact, our joint promise to each other, and now I am too thin, too tired, without the tickling wet.
+I am green but I am weaker now, weaker than I have been before. I am a blanched green, pale and thinning, not the vibrant, energetic white-green of my days underneath, but a pallid green, ashen and leached of colour. I am bleaching in the unflinching sunlight that was my friend, my playmate, who made the water to rain down but has somehow forgotten our pact, our joint promise to each other, and now I am too thin, too tired, without the tickling wet.
 It is draining away, my green, and this, this hot-dry is too much, too much.
 I am a fading green, fading away.
 I am washed of green.

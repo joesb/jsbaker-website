@@ -74,7 +74,7 @@ section: page
 	{% endif %}
 
 	<div class="layout-content item-fade-in item-fade-in-1-5 item-fade-in-delay-mdl{% if is_review %} content-canvas-item-full content-canvas{% endif %}">
-		{{ layoutContent | safe }}
+		{{ content | safe }}
 	</div>
 
 	{% include "layouts/components/page-footer.njk" %}
