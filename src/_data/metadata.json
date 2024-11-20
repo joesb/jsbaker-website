@@ -14,22 +14,8 @@
     {
       "name": "Bluesky",
       "machine_name": "bluesky",
-      "no_icon": true,
       "url": "https://bsky.app/profile/jsbaker.co.uk",
       "alias": "@jsbaker.co.uk"
-    },
-    {
-      "name": "Mastodon",
-      "machine_name": "mastodon",
-      "url": "https://mstdn.social/@joesb",
-      "alias": "mstdn.social/@joesb",
-      "rel": "me"
-    },
-    {
-      "name": "Twitter",
-      "machine_name": "twitter",
-      "url": "https://twitter.com/joesb",
-      "alias": "@joesb"
     },
     {
       "name": "Instagram",
