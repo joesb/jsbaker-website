@@ -9,6 +9,7 @@ const isProd = environment === PROD_ENV;
 export default {
   environment,
   isProd,
+  baseUrl,
   base: {
       site: baseUrl,
   },
