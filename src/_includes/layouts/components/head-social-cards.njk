@@ -1,7 +1,5 @@
 {% set cardType %}summary_large_image{% endset %}
 
-{% set absoluteUrl %}{{ page.url | url | absoluteUrl(metadata.url) }}{% endset %}
-
 {% if permalink == '/' %}
 {% set cardTitle %}{{ metadata.title }} — {{ metadata.alt_title }}{% endset %}
 {% set ogType %}website{% endset %}
@@ -26,7 +24,7 @@
   <meta property="twitter:image" content="{{ metadata.url }}{% if image.social %}{% imageData image.social %}{% else %}{% imageData image.path %}{% endif %}" />
   {% endif %}
   <meta property="twitter:site" content="{{ metadata.twitter }}" />
-  <meta property="og:url" content="{{ absoluteUrl }}" />
+  <meta property="og:url" content="{{ page.url | htmlBaseUrl }}" />
   <meta property="og:title" content="{{cardTitle}}" />
   <meta property="og:description" content="{% if excerpt %}{{excerpt}}{% else %}{{metadata.summary}}{% endif %}" />
   {% if image.social or image.path %}

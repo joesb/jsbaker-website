@@ -8,6 +8,7 @@ import pluginRss from "@11ty/eleventy-plugin-rss";
 import eleventyNavigationPlugin from "@11ty/eleventy-navigation";
 import Image from "@11ty/eleventy-img";
 import { eleventyImageOnRequestDuringServePlugin } from "@11ty/eleventy-img";
+import { EleventyHtmlBasePlugin } from "@11ty/eleventy";
 import markdownIt from "markdown-it";
 import markdownItAnchor from "markdown-it-anchor";
 import markdownItAttrs from "markdown-it-attrs";
@@ -16,6 +17,7 @@ import markdownIt11tyImage from "markdown-it-eleventy-img";
 import { inspect } from "util";
 import timeToRead  from "eleventy-plugin-time-to-read";
 import embedEverything from "eleventy-plugin-embed-everything";
+import env from "./src/_data/env.js";
 
 /** @param {import("@11ty/eleventy").UserConfig} eleventyConfig */
 export default async function(eleventyConfig) {
@@ -29,6 +31,18 @@ export default async function(eleventyConfig) {
   eleventyConfig.addPlugin(embedEverything);
   eleventyConfig.addFilter("debug", (content) => `<pre>${inspect(content)}</pre>`);
   eleventyConfig.addPlugin(eleventyImageOnRequestDuringServePlugin);
+  console.log(env.baseUrl);
+  eleventyConfig.addPlugin(EleventyHtmlBasePlugin, {
+		// The base URL: defaults to Path Prefix
+		// baseHref: eleventyConfig.pathPrefix,
+
+		// But you could use a full URL here too:
+		baseHref: env.baseUrl,
+
+		// Comma separated list of output file extensions to apply
+		// our transform to. Use `false` to opt-out of the transform.
+		extensions: "html",
+	});
 
   // Return active path attributes
   eleventyConfig.addShortcode('activepath', function (itemUrl, currentUrl) {
