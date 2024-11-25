@@ -6,8 +6,8 @@ section: page
 	{% if image.path %}
 			<figure class="{{ image.figureClass.page }} item-fade-in item-fade-in-1-5">
 			{% image image.path, image.alt, image.class, image.pictureClass.page %}
-			{% if image.caption %}
-			<figcaption>{{ image.caption | safe }}{% if image.credit %} {{ image.credit | safe }}{% endif %}</figcaption>
+			{% if image.caption or image.credit %}
+			<figcaption>{{ image.caption | safe }}{% if image.credit and image.caption %} | {% endif %}{% if image.credit %}{{ image.credit | safe }}{% endif %}</figcaption>
 			{% endif %}
 			</figure>
 	{% endif %}

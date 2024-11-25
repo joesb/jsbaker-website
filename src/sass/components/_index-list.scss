@@ -63,6 +63,7 @@
     position: relative;
     z-index: 1;
     // align-self: flex-end;
+    max-inline-size: var(--size-content-2);
   }
 
   h2 {
@@ -80,6 +81,10 @@
     // img {
     //   block-size: 100%;
     // }
+  }
+
+  .metadata {
+    font-size: var(--font-size-fluid-000);
   }
 }
 
