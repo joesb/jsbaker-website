@@ -4,6 +4,7 @@ description: "Along with plot, characters are essential elements of stories. See
 layout: page.njk
 date: 2019-02-18
 promoted: true
+sharePage: true
 order: 2
 canonical: https://figuration.al/all-surface-and-little-depth-characters-character-and-stories-3c8c75ff9037
 tags:

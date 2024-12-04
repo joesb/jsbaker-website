@@ -27,3 +27,39 @@
   margin-block: 0.5rem;
   font-size: var(--font-size-fluid-000);
 }
+
+.metadata__share_item {
+  display: inline-block;
+  position: relative;
+  width: var(--size-3);
+  height: var(--size-3);
+
+  a {
+    &::after {
+      display: inline-block;
+      position: absolute;
+      top: 0;
+      right: 0;
+      content: " ";
+      width: var(--size-3);
+      height: var(--size-3);
+      mask-size: contain;
+      mask-repeat: no-repeat;
+      background-color: var(--surface-teal);
+      transition: (.2s);
+    }
+
+    &:hover {
+      &::after {
+        background-color: var(--surface-violet);
+        transition: (.2s);
+      }
+    }
+
+    &.bluesky {
+      &::after {
+        mask-image: url("/static/images/icons/bluesky.svg");
+      }
+    }
+  }
+}

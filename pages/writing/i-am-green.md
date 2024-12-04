@@ -4,6 +4,7 @@ description: ""
 layout: page.njk
 date: 2023-10-10
 promoted: true
+sharePage: true
 order: 1
 tags:
   - '#writing'

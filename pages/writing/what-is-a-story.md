@@ -5,6 +5,7 @@ layout: page.njk
 # date: 2023-06-27
 date: git Created
 promoted: true
+sharePage: true
 order: 2
 page:
   class: "page--summary--wide page--writing--light"

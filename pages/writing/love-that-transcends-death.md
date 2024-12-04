@@ -5,6 +5,7 @@ layout: page.njk
 date: 2018-01-05
 canonical: "https://joesb.medium.com/a-love-that-transcends-death-fb3725eb0c8a"
 promoted: true
+sharePage: true
 order: 4
 tags:
   - '#writing'
