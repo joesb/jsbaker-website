@@ -55,16 +55,20 @@ But the reader is also looking for novelty, hunting out surprises. In the act of
 
 Every reader has a different capacity for this, but it's how the reader enjoys the pleasure of the text.
 
----
+## Complete the work{.h3-style}
 
-## Complete the work, change reality{.h3-style}
+Without a reader,  story is unfinished, a shadow of itself, a sketch for what it could be. In reading, the reader completes the work.
 
-Without a reader, then, a story is unfinished, a shadow of itself, a sketch for what it could be.
-
-In reading, the reader completes the work.
+The reader, then, has one more thing the can do that the writer cannot — they can restore life to hibernating narrative.
 
 That means that writers and readers are collaborators, co-conspirators in the huge earth-altering scheme to make sense of the world.
 
-In reading, the reader returns the story to the real world of acting and suffering, to the reader's own world, puts the two face-on and asks what the world of the text has to say about the real world of the reader. And both are altered in their intersection.
+---
 
-Literature alters everyday experience, and writers and readers are responsible it.
+## In front of the text
+
+The reader only has the text. At the moment of reading, the reader cannot quiz the writer to ask questions, to clarify things or understand the avenues and cul-de-sacs of the story. All they have is the text as a sketch for reading and they sit in front of it, naked, their own world, their own experience, their own creative and imaginative capacities brought to bear in reading.
+
+In reading, the reader returns the story to the real world of acting and suffering, to the reader's own world, puts the two face-on and asks what the world of the text has to say about the real world of the reader. Can it help to understand? Can it refresh our eyes, widen our expectations? Or does it offer a false view, a disturbing alternative? The world of the text and the world of the reader examine each other, and both are altered in their intersection.
+
+Literature alters everyday experience, and writers and readers are both responsible for it.
