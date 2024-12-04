@@ -1,13 +1,14 @@
 ---
 layout: base.njk
 section: page
+sharePage: false
 ---
 
 	{% if image.path %}
 			<figure class="{{ image.figureClass.page }} item-fade-in item-fade-in-1-5">
 			{% image image.path, image.alt, image.class, image.pictureClass.page %}
-			{% if image.caption %}
-			<figcaption>{{ image.caption | safe }}{% if image.credit %} {{ image.credit | safe }}{% endif %}</figcaption>
+			{% if image.caption or image.credit %}
+			<figcaption>{{ image.caption | safe }}{% if image.credit and image.caption %} | {% endif %}{% if image.credit %}{{ image.credit | safe }}{% endif %}</figcaption>
 			{% endif %}
 			</figure>
 	{% endif %}
@@ -69,6 +70,14 @@ section: page
 			<time class="metadata__date" datetime="{{ page.date | readableDate("yyyy-LL-dd") }}">{{ page.date | readableDate("LLLL yyyy") }}</time>
 			<span class="metadata__divider divider"></span>
 			<span class="metadata__reading-time">{{ content | timeToRead }} read</span>
+			{% if sharePage %}
+			<span class="metadata__divider divider"></span>
+				{% set pageUri %}{{ page.url }}?referrer=bsky.app{% endset %}
+				{% set pageURL %}{{ pageUri | url | absoluteUrl(env.prodUrl) }}{% endset %}
+				{% set pageTitle %}‘{{ title }}’{% endset %}
+				{% set encodable = ["I'm reading", pageTitle, "by @jsbaker.co.uk:\n", pageURL] %}
+			<span class="metadata__share_item"><a href="https://bsky.app/intent/compose?text={{ encodable | join(' ') | encodeUri }}" class="bluesky" target="_blank" rel="nofollow ugc noopener" title="Share to Bluesky"><span class="visually-hidden">Share to Bluesky</span></a></span>
+			{% endif %}
 		</div>
 	</div>
 	{% endif %}

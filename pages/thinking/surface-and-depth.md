@@ -4,7 +4,8 @@ description: "Along with plot, characters are essential elements of stories. See
 layout: page.njk
 date: 2019-02-18
 promoted: true
-order: 1
+sharePage: true
+order: 2
 canonical: https://figuration.al/all-surface-and-little-depth-characters-character-and-stories-3c8c75ff9037
 tags:
   - Thinking
@@ -24,7 +25,7 @@ image:
   figureClass:
     page: "content-canvas-item-full picture--hero"
   caption: ""
-  credit: "Image by <a href=\"https://pixabay.com/users/tortugadatacorp-5195555/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2391461\">Varun Kulkarni</a> from <a href=\"https://pixabay.com//?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2391461\">Pixabay</a>"
+  credit: 'Image by <a href="https://pixabay.com/users/tortugadatacorp-5195555/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2391461" target="_blank" rel="noopener ugc nofollow">Varun Kulkarni</a> from <a href="https://pixabay.com//?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2391461" target="_blank" rel="noopener ugc nofollow">Pixabay</a>'
 ---
 
 Characters are at the core of stories. The events in characters’ lives, and the reasons those events are connected, unfurl the patterned cloth of the plot. Without characters in whatever form they take, animal, vegetable or mineral, events happen without meaning. Characters have a point of view; characters are able to make meaning; characters have and express feelings; characters can and do suffer. Characters allow writers and readers to express their creative imagination in perceiving another’s life, to transgress the limitations of their own life and to realise the finite quality of their life.¹ Characters allow us to see life from someone else’s perspective, to live in another’s shoes.

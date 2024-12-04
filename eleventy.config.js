@@ -167,6 +167,11 @@ export default async function(eleventyConfig) {
   eleventyConfig.addFilter('fromJson', JSON.parse);
   eleventyConfig.addFilter('toJson', JSON.stringify);
 
+   // Encode a URL string
+   eleventyConfig.addFilter('encodeUri', (text) => {
+    return encodeURI(text);
+  });
+
   eleventyConfig.addFilter("hasTag", (tags, tag, not = true) => {
     return (tags || []).includes(tag) === not;
   });

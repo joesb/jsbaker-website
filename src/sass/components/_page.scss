@@ -26,19 +26,39 @@
   }
 
   :where(h2),
-  :where(h3) {
-    margin-block: var(--size-6) var(--size-2);
+  :where(h3),
+  .h2-style,
+  .h3-style {
+    margin-block: var(--size-7) var(--size-2);
 
     +p {
       margin-block-start: 0;
     }
   }
 
-  :where(h4) {
+  :where(h4),
+  .h4-style {
     margin-block: var(--size-5) var(--size-2);
 
     +p {
       margin-block-start: 0;
+    }
+  }
+
+  hr {
+    background-color: unset;
+    height: unset;
+    display: grid;
+    justify-content: center;
+    margin-block: var(--size-fluid-3);
+
+    &:after {
+      content: "•••";
+      letter-spacing: var(--size-3);
+      font-size: var(--font-size-2);
+      line-height: var(--font-lineheight-1);
+      color: var(--color-brand-primary);
+      margin-inline: auto;
     }
   }
 }

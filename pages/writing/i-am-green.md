@@ -4,7 +4,8 @@ description: ""
 layout: page.njk
 date: 2023-10-10
 promoted: true
-order: 0
+sharePage: true
+order: 1
 tags:
   - '#writing'
   - Short Story

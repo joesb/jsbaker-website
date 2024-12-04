@@ -10,6 +10,7 @@ export default {
   environment,
   isProd,
   baseUrl,
+  prodUrl,
   base: {
       site: baseUrl,
   },
