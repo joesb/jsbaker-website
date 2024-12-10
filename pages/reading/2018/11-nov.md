@@ -5,7 +5,6 @@ layout: page.njk
 date: 2018-11-02
 promoted: false
 # order: 3
-canonical: "https://medium.com/post-phd-world/reading-recap-november-2018-pt-1-2ebacab50c55"
 page:
   class: "page--with-hero"
 tags:

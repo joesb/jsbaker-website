@@ -3,7 +3,6 @@ title: Sicily
 description: "Dreams and hopes fold and refold over a coffee. A short story."
 layout: page.njk
 date: 2019-04-18
-canonical: https://joesb.medium.com/sicily-9e1989b53000
 promoted: true
 sharePage: true
 order: 5

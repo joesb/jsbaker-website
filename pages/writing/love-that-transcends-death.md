@@ -3,7 +3,6 @@ title: "A Love That Transcends Death"
 description: "Ben’s chance glimpse of his father on a Tube train is strange, especially since his father has been dead for years, and causes him to reappraise his life and relationships."
 layout: page.njk
 date: 2018-01-05
-canonical: "https://joesb.medium.com/a-love-that-transcends-death-fb3725eb0c8a"
 promoted: true
 sharePage: true
 order: 4

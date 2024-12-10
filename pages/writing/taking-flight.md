@@ -6,7 +6,6 @@ date: 2018-02-26
 promoted: true
 sharePage: true
 order: 3
-canonical: "https://joesb.medium.com/taking-flight-e39f100e73a2"
 tags:
   - Short Story
   - '#writing'
