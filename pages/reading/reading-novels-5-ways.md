@@ -3,7 +3,6 @@ title: 5 ways to catch up on reading novels
 description: "Novels are magical. In a novel, you get lost in another world. No two people read the same story; no two readings are the same. Now, finally, I can get back to reading novels again."
 layout: page.njk
 date: 2017-08-21
-canonical: https://medium.com/post-phd-world/5-ways-to-catch-up-on-reading-novels-5a468efbc3e4
 page:
   class: "page--with-hero page--reading"
 image:
