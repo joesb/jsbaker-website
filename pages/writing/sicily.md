@@ -9,6 +9,7 @@ order: 5
 tags:
   - Short Story
   - '#writing'
+canonical: https://www.jsbaker.co.uk/writing/sicily/
 page:
   class: "page--with-hero page--writing page--writing--light"
 image:

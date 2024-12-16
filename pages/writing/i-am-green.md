@@ -9,6 +9,7 @@ order: 1
 tags:
   - '#writing'
   - Short Story
+canonical: https://www.jsbaker.co.uk/writing/i-am-green/
 page:
   class: "page--with-hero page--writing page--writing--light"
 image:

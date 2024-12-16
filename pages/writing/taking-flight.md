@@ -9,6 +9,7 @@ order: 3
 tags:
   - Short Story
   - '#writing'
+canonical: https://www.jsbaker.co.uk/writing/taking-flight/
 page:
   class: "page--with-hero page--writing page--writing--light"
 image:

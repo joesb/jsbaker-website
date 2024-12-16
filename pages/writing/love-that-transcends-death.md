@@ -9,6 +9,7 @@ order: 4
 tags:
   - '#writing'
   - Short Story
+canonical: https://www.jsbaker.co.uk/writing/love-that-transcends-death/
 page:
   class: "page--with-hero page--writing page--writing--light"
 image:
