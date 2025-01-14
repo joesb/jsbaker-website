@@ -3,7 +3,6 @@ import CleanCSS from "clean-css";
 import postCSS from "postcss";
 import autoprefixer from "autoprefixer";
 import UglifyJS from "uglify-js";
-import htmlmin from "html-minifier";
 import pluginRss from "@11ty/eleventy-plugin-rss";
 import eleventyNavigationPlugin from "@11ty/eleventy-navigation";
 import Image from "@11ty/eleventy-img";
@@ -18,6 +17,7 @@ import { inspect } from "util";
 import timeToRead  from "eleventy-plugin-time-to-read";
 import embedEverything from "eleventy-plugin-embed-everything";
 import env from "./src/_data/env.js";
+import { minify } from "html-minifier-terser";
 
 /** @param {import("@11ty/eleventy").UserConfig} eleventyConfig */
 export default async function(eleventyConfig) {
@@ -146,22 +146,25 @@ export default async function(eleventyConfig) {
     return minified.code;
   });
 
+  // Minify HTML
+  eleventyConfig.addTransform("htmlmin", function (content) {
+		if ((this.page.outputPath || "").endsWith(".html")) {
+			let minified = minify(content, {
+				useShortDoctype: true,
+				removeComments: true,
+				collapseWhitespace: true,
+			});
+
+			return minified;
+		}
+
+		// If not an HTML output, return content as-is
+		return content;
+	});
+
   // Check a string starts with a character.
   eleventyConfig.addFilter('starts_with', function(str, prefix, not = false) {
     return str.startsWith(prefix) !== not;
-  });
-
-  // Minify HTML output
-  eleventyConfig.addTransform('htmlmin', function (content, outputPath) {
-    if (outputPath && outputPath.indexOf('.html') > -1) {
-        let minified = htmlmin.minify(content, {
-        useShortDoctype: true,
-        removeComments: true,
-        collapseWhitespace: true,
-        });
-        return minified;
-    }
-    return content;
   });
 
   eleventyConfig.addFilter('fromJson', JSON.parse);
