@@ -127,4 +127,11 @@
       mask-image: url("/static/images/icons/bluesky.svg");
     }
   }
+
+  &.website,
+  &.worksite {
+    &::after {
+      mask-image: url("/static/images/icons/globe.svg");
+    }
+  }
 }

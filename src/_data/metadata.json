@@ -28,6 +28,18 @@
       "machine_name": "medium",
       "url": "https://joesb.medium.com/",
       "alias": "@joesb"
+    },
+    {
+      "name": "Website",
+      "machine_name": "website",
+      "url": "https://www.jsbaker.co.uk/",
+      "alias": "jsbaker.co.uk"
+    },
+    {
+      "name": "Work site",
+      "machine_name": "worksite",
+      "url": "https://helios360.co.uk/",
+      "alias": "helios360.co.uk"
     }
   ]
 }
