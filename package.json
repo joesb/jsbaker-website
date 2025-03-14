@@ -6,7 +6,7 @@
   "main": "index.js",
   "scripts": {
     "build": "(npm run sass:build) && npx @11ty/eleventy",
-    "build:full": "(yarn clean) && (yarn sass:build) && (npx @11ty/eleventy --dryrun) && (npx @11ty/eleventy)",
+    "build:full": "(yarn sass:build) && (npx @11ty/eleventy --dryrun) && (npx @11ty/eleventy)",
     "build:dryrun": "(npm run sass:build) && npx @11ty/eleventy --dryrun",
     "clean": "npx rimraf -v _site/*",
     "watch": "npx eleventy --watch",
