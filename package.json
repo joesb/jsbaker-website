@@ -14,7 +14,7 @@
     "go": "yarn serve",
     "debug": "DEBUG=* npx eleventy",
     "wdebug": "set DEBUG=Eleventy* & eleventy",
-    "sass:build": "sass --style=compressed src/_sass/:src/_includes/assets/css/  & npx postcss src/_includes/assets/css/*.css --use autoprefixer -d src/_includes/assets/css",
+    "sass:build": "sass --style=compressed ./src/_sass/:./src/_includes/assets/css/  && npx postcss ./src/_includes/assets/css/*.css --use autoprefixer -d ./src/_includes/assets/css",
     "sass:dev": "sass --watch --update --style=expanded src/_sass/:src/_includes/assets/css/",
     "lint:scss": "stylelint \"src/_sass/**/*.scss\"",
     "npf": "npx postcss src/_includes/assets/css/styles.css --use autoprefixer -d src/_includes/assets/css/build"
