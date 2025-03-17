@@ -6,6 +6,7 @@ eleventyNavigation:
   order: 10
 # page:
 #   class: "page--with-hero"
+date: 2025-03-17T14:45:00Z
 metadata:
   show: false
 image:
