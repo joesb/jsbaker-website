@@ -277,6 +277,10 @@ export default async function(eleventyConfig) {
     });
   }
 
+  eleventyConfig.addFilter('sort_by_date', function (collection) {
+    return sortByDate(collection);
+  });
+
   function sortByTitle(collection) {
     return collection.sort((a, b) => {
       if (a.data.title < b.data.title) return -1;
