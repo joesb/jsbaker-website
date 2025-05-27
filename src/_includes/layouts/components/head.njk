@@ -50,7 +50,5 @@
 
   {% include "layouts/components/head-social-cards.njk" %}
 
-  {% if canonical %}
-  <link rel="canonical" href="{{ canonical }}" />
-  {% endif %}
+  <link rel="canonical" href="{% if canonical %}{{ canonical }}{% else %}{{ page.url | url | absoluteUrl(metadata.url) }}{% endif %}" />
 </head>
