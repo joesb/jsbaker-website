@@ -2721,7 +2721,7 @@ __metadata:
     stylelint-config-standard: ^36.0.1
     stylelint-config-standard-scss: ^13.1.0
     stylelint-prettier: ^5.0.3
-    stylelint-scss: ^6.11.1
+    stylelint-scss: ^6.12.1
     uglify-js: ^3.19.3
   languageName: unknown
   linkType: soft
@@ -2810,6 +2810,13 @@ __metadata:
   version: 0.35.0
   resolution: "known-css-properties@npm:0.35.0"
   checksum: 8ab9550a605f9113cb6dc9059e86f109c1a4a3cb12107bd2a89855bd17472001459180a710b59cb8e097d1d55f36cb08980424a26a59e2b11422934f124ba944
+  languageName: node
+  linkType: hard
+
+"known-css-properties@npm:^0.36.0":
+  version: 0.36.0
+  resolution: "known-css-properties@npm:0.36.0"
+  checksum: 2b231ae0ef90a9825f3798a585077c6948c119e091df8900ae07f52e5928122835ac1ad0b50629fe1e2357a608b17428181d5c63d02a623ffe84de5204f5f4fa
   languageName: node
   linkType: hard
 
@@ -3026,10 +3033,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"mdn-data@npm:^2.15.0":
-  version: 2.18.0
-  resolution: "mdn-data@npm:2.18.0"
-  checksum: d3c1d090ef291608f55b6f7131a1106575118a3ba6f849c3b72d6393cff83c540c69187af4faaaab1a06b1b523d3cc36eb877dbf252d2bdba75480cdb67f6159
+"mdn-data@npm:^2.21.0":
+  version: 2.24.0
+  resolution: "mdn-data@npm:2.24.0"
+  checksum: c98a6dbfa1dded2da474ee7475eb5ccac2e4ac85620db9a4607725df0e36bdfa42258300475e87568e58a9b501280614d19c5f4171c9ca5397db27eb4f3aa676
   languageName: node
   linkType: hard
 
@@ -4453,21 +4460,21 @@ __metadata:
   languageName: node
   linkType: hard
 
-"stylelint-scss@npm:^6.11.1":
-  version: 6.11.1
-  resolution: "stylelint-scss@npm:6.11.1"
+"stylelint-scss@npm:^6.12.1":
+  version: 6.12.1
+  resolution: "stylelint-scss@npm:6.12.1"
   dependencies:
     css-tree: ^3.0.1
     is-plain-object: ^5.0.0
-    known-css-properties: ^0.35.0
-    mdn-data: ^2.15.0
+    known-css-properties: ^0.36.0
+    mdn-data: ^2.21.0
     postcss-media-query-parser: ^0.2.3
     postcss-resolve-nested-selector: ^0.1.6
     postcss-selector-parser: ^7.1.0
     postcss-value-parser: ^4.2.0
   peerDependencies:
     stylelint: ^16.0.2
-  checksum: befd240f569debd360904311e2eb508da49fddcd030d0709e1d140b088fffd5dce2bd11122eff7f4eec260f8fee0cb75901a9fea3b6c57bbf23c34150420aa8b
+  checksum: 17a217b5a7ec3539f9cc7b2fc0cee3d7a49ea36bc9047973b54cbb19b263877dabb14e62e7f9f4f9db009e1595b64ee9d7fc8e35ea2e98d9efa66b82a7189883
   languageName: node
   linkType: hard
 
