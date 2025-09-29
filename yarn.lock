@@ -2715,7 +2715,7 @@ __metadata:
     react-dom: ^19.0.0
     resend: ^4.8.0
     rimraf: ^6.0.1
-    sass: ^1.85.1
+    sass: ^1.93.2
     sass-autoprefixer: ^1.0.1
     stylelint: ^16.15.0
     stylelint-config-standard: ^36.0.1
@@ -4000,9 +4000,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"sass@npm:^1.85.1":
-  version: 1.85.1
-  resolution: "sass@npm:1.85.1"
+"sass@npm:^1.93.2":
+  version: 1.93.2
+  resolution: "sass@npm:1.93.2"
   dependencies:
     "@parcel/watcher": ^2.4.1
     chokidar: ^4.0.0
@@ -4013,7 +4013,7 @@ __metadata:
       optional: true
   bin:
     sass: sass.js
-  checksum: e38fa3992c99aa0270cc7577c9b38f576907a11ea01571d8e4ff2cb11b00606b33f650344d21082aba1c9ef6588ca088a5b84f82a8f8c32f9865c3159161ab89
+  checksum: ae466ac93687ee84a427e2e7600df3a3adde74c1ddb72ec793f6276933d96ecea373467b342bc9059f6ead71b2786041a05f12221ed0044f1e6b65223a399e8e
   languageName: node
   linkType: hard
 
