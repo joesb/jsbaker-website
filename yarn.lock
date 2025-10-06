@@ -2711,7 +2711,7 @@ __metadata:
     postcss-cli: ^11.0.1
     posthtml: ^0.16.6
     prettier: ^3.5.3
-    react: ^19.0.0
+    react: ^19.2.0
     react-dom: ^19.0.0
     resend: ^4.8.0
     rimraf: ^6.0.1
@@ -3837,10 +3837,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react@npm:^19.0.0":
-  version: 19.0.0
-  resolution: "react@npm:19.0.0"
-  checksum: 86de15d85b2465feb40297a90319c325cb07cf27191a361d47bcfe8c6126c973d660125aa67b8f4cbbe39f15a2f32efd0c814e98196d8e5b68c567ba40a399c6
+"react@npm:^19.2.0":
+  version: 19.2.0
+  resolution: "react@npm:19.2.0"
+  checksum: 33dd01bf699e1c5040eb249e0f552519adf7ee90b98c49d702a50bf23af6852ea46023a5f7f93966ab10acd7a45428fa0f193c686ecdaa7a75a03886e53ec3fe
   languageName: node
   linkType: hard
 
