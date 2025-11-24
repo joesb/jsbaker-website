@@ -2778,7 +2778,7 @@ __metadata:
     prettier: ^3.6.2
     react: ^19.2.0
     react-dom: ^19.2.0
-    resend: ^6.5.0
+    resend: ^6.5.2
     rimraf: ^6.1.0
     sass: ^1.94.1
     sass-autoprefixer: ^1.0.1
@@ -3977,9 +3977,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"resend@npm:^6.5.0":
-  version: 6.5.0
-  resolution: "resend@npm:6.5.0"
+"resend@npm:^6.5.2":
+  version: 6.5.2
+  resolution: "resend@npm:6.5.2"
   dependencies:
     svix: 1.76.1
   peerDependencies:
@@ -3987,7 +3987,7 @@ __metadata:
   peerDependenciesMeta:
     "@react-email/render":
       optional: true
-  checksum: b18b77d6b728eaf000b92ad4561caf3df9c850e5aeaf1f1ff6c5c9db685a42f76cf995bcd051dcabd61aa1aa82d6147eb6dc8078332cd5111f60a8aa3ffd73b5
+  checksum: 145dce49397d020dbc341ef920645f3e0f3202c16bfd3acaf338135b3ebd0ef1429ea4aec94385f7e1c53d5f95079eb3e715f7c38dbf4a1bf098cbf6f3844cb6
   languageName: node
   linkType: hard
 
