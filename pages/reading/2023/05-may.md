@@ -11,8 +11,9 @@ tags:
   - Reading
   - Novels
   - "#reading"
+is_review: true
 image:
-  path: "https://images.unsplash.com/photo-1522211988038-6fcbb8c12c7e"
+  path: "static/images/source/matthew-feeney-Nwkh-n6l25w-unsplash.jpg"
   alt: "Person wearing black and gray jacket in front of bookshelf"
   class: "image-obj-cover image-greyscale-75 image-darken-33"
   # pictureClass: "content-canvas-item-right content-canvas-item-right--span-3"
@@ -21,14 +22,13 @@ image:
     list: "index-list__item__picture"
   figureClass:
     page: "content-canvas-item-full figure--hero"
-  caption: "Person wearing black and gray jacket in front of bookshelf"
   credit: 'Photo by <a href="https://unsplash.com/de/@matt__feeney?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">matthew Feeney</a> on <a href="https://unsplash.com/photos/Nwkh-n6l25w?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>'
 ---
 
 ### [The Gathering](https://app.thestorygraph.com/books/cd530645-4fc0-4582-899e-284f79159f19){rel=noopener target=_blank}
 
 <figure class="content-canvas-item-right content-canvas-item-right--span-4 picture--block">
-  {% image "https://cdn.thestorygraph.com/rq72c3twfombw37nni08hkpzamdx", "The Gathering book cover", "picture--outline", %}
+  {% image "static/images/source/books/enright-the-gathering.jpeg", "The Gathering book cover", "picture--outline", %}
 </figure>
 
 *by Anne Enright*
@@ -49,7 +49,7 @@ It's a beautiful and painful story told in beautiful and unflinching language. I
 ### [Open Water](https://app.thestorygraph.com/books/a23084b2-bdbf-4993-98a8-a1efca4b5bc4){rel=noopener target=_blank}
 
 <figure class="content-canvas-item-right content-canvas-item-right--span-4 picture--block">
-  {% image "https://cdn.thestorygraph.com/p9x1661iahp59l5cu0kaojeay2l0", "Open Water book cover", "picture--outline", %}
+  {% image "static/images/source/books/nelson-open-water.jpeg", "Open Water book cover", "picture--outline", %}
 </figure>
 
 *by Caleb Azumah Nelson*
@@ -73,7 +73,7 @@ This is a fabulous debut novel, and I really look forward to reading more by Cal
 *(audiobook)*
 
 <figure class="content-canvas-item-right content-canvas-item-right--span-4 picture--block">
-  {% image "https://cdn.thestorygraph.com/ayn6cbrtkislmp8uo87x6aaq2y0n", "Buddenbrooks book cover", "picture--outline", %}
+  {% image "static/images/source/books/mann-buddenbrooks.jpeg", "Buddenbrooks book cover", "picture--outline", %}
 </figure>
 
 *by Thomas Mann*
@@ -98,7 +98,7 @@ I enjoyed the story a lot, though the language and narrative style felt quite da
 *(audiobook)*
 
 <figure class="content-canvas-item-right content-canvas-item-right--span-4 picture--block">
-  {% image "https://cdn.thestorygraph.com/cyknoood50qvwpj6kvunn8n0d6ik", "Raptor book cover", "picture--outline", %}
+  {% image "static/images/source/books/lockhart-raptor.jpeg", "Raptor book cover", "picture--outline", %}
 </figure>
 
 *by James Macdonald Lockhart*
