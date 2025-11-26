@@ -2,8 +2,7 @@
 title: "What is a story?"
 description: "We can always spot one, but … how?"
 layout: page.njk
-# date: 2023-06-27
-date: git Created
+date: 2023-06-27
 promoted: true
 sharePage: true
 order: 2
