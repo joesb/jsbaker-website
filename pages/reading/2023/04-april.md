@@ -7,12 +7,13 @@ promoted: false
 order: 6
 page:
   class: "page--with-hero"
+is_review: true
 tags:
   - Reading
   - Novels
   - "#reading"
 image:
-  path: "https://images.pexels.com/photos/4861363/pexels-photo-4861363.jpeg"
+  path: "static/images/source/pexels-cottonbro-4861363.jpg"
   alt: "Man in White Dress Shirt Standing Beside Brown Wooden Book Shelf"
   class: "image-obj-cover image-greyscale-75 image-darken-33"
   # pictureClass: "content-canvas-item-right content-canvas-item-right--span-3"
@@ -21,14 +22,13 @@ image:
     list: "index-list__item__picture"
   figureClass:
     page: "content-canvas-item-full figure--hero"
-  caption: "Man in White Dress Shirt Standing Beside Brown Wooden Book Shelf"
   credit: '<a href="https://www.pexels.com/photo/man-in-white-dress-shirt-standing-beside-brown-wooden-book-shelf-4861363/" rel="noopener" target="_blank">Photo</a> by cottonbro studio on Pexels'
 ---
 
 ### [Lessons in Chemistry](https://app.thestorygraph.com/books/23e8c51d-c931-4a47-bd90-0b4addf744c6){rel=noopener target=_blank}
 
 <figure class="content-canvas-item-right content-canvas-item-right--span-4 picture--block">
-  {% image "https://cdn.thestorygraph.com/xrakh1n87cfh78d51x3cawp09mae", "Lessons in Chemistry book cover", "picture--outline", %}
+  {% image "static/images/source/books/garmus-lessons-in-chemistry.jpeg", "Lessons in Chemistry book cover", "picture--outline", %}
 </figure>
 
 *by Bonnie Garmus*
@@ -47,7 +47,7 @@ It was fine, but not really my thing to be honest. I didn't really buy several a
 ### [Grief is the Thing with Feathers](https://app.thestorygraph.com/books/abc7effc-1342-4eb6-915b-c8429edac8c1){rel=noopener target=_blank}
 
 <figure class="content-canvas-item-right content-canvas-item-right--span-4 picture--block">
-  {% image "https://cdn.thestorygraph.com/h667abfaqref2znewwuxminghntc", "Grief is the Thing with Feathers book cover", "picture--outline", %}
+  {% image "static/images/source/books/porter-grief-is-the-thing-with-feathers.jpeg", "Grief is the Thing with Feathers book cover", "picture--outline", %}
 </figure>
 
 *by Max Porter*
@@ -66,7 +66,7 @@ An astonishing book, with grief embodied as a crow.
 ### [Bad Relations](https://app.thestorygraph.com/books/c2ff8f2c-2110-4ae2-aebc-09179c9b63ee){rel=noopener target=_blank}
 
 <figure class="content-canvas-item-right content-canvas-item-right--span-4 picture--block">
-  {% image "https://cdn.thestorygraph.com/9atpf0pp6gogz4a3bebl15m0m93h", "Bad Relations book cover", "picture--outline", %}
+  {% image "static/images/source/books/connolly-bad-relations.jpeg", "Bad Relations book cover", "picture--outline", %}
 </figure>
 
 *by Cressida Connolly*
@@ -85,7 +85,7 @@ An interesting story of a family in three eras — one in the era of the Crimean
 ### [Spring](https://app.thestorygraph.com/books/30c0d188-4e13-4b0f-968c-b823cfd6e3b8){rel=noopener target=_blank} <small>(Seasonal Quartet #3)</small>
 
 <figure class="content-canvas-item-right content-canvas-item-right--span-4 picture--block">
-  {% image "https://cdn.thestorygraph.com/hhv3mvqg90obh4hzja0wehsfbzx9", "Spring book cover", "picture--outline", %}
+  {% image "static/images/source/books/smith-spring.jpeg", "Spring book cover", "picture--outline", %}
 </figure>
 
 *by Ali Smith*
