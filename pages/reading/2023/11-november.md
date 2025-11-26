@@ -11,8 +11,9 @@ tags:
   - Reading
   - Novels
   - "#reading"
+is_review: true
 image:
-  path: https://images.unsplash.com/photo-1649220058039-e81e690e28ef?q=80&w=3205&auto=format&fit=crop&ixlib=rb-4.0.3
+  path: static/images/source/zero-take-M5Fq1UcaUmI-unsplash.jpg
   alt: "A woman sitting in a chair reading a book"
   class: "image-obj-cover"
   # pictureClass: "content-canvas-item-right content-canvas-item-right--span-3"
@@ -28,7 +29,7 @@ reviews:
     author: Elaine Feeney
     urls: 
       book: https://app.thestorygraph.com/books/b928016f-5df9-43bb-9cdb-3b88688dbdfc
-      cover: https://cdn.thestorygraph.com/bxwhyk3sixom1oauurg6nimg19fo
+      cover: static/images/source/books/feeney-how-to-build-a-boat.jpeg
     rating: 3.5
     moods: emotional; reflective; medium-paced
     questions:
@@ -46,7 +47,7 @@ reviews:
     subtitle: "Slough House Thriller 3"
     urls:
       book: https://app.thestorygraph.com/books/8413e620-c68f-4ea4-8085-12e8ecb1ee19
-      cover: https://cdn.thestorygraph.com/mlvj2q8ybtym4eluf6sfafo83ikr
+      cover: static/images/source/books/herron-real-tigers.jpeg
     rating: 3.5
     moods: adventurous; dark; mysterious; tense; fast-paced
     questions:
@@ -67,7 +68,7 @@ reviews:
     subtitle: "McNulty Family, Part 1"
     urls:
       book: https://app.thestorygraph.com/books/ac93e797-db95-46f9-a584-174e085d6079
-      cover: https://cdn.thestorygraph.com/81alub0etx8pixaeb6dxaedfqlmm
+      cover: static/images/source/books/barry-the-whereabouts-of-eneas-mcnulty.jpeg
     rating: 4.5
     moods: adventurous; dark; emotional; mysterious; reflective; sad; tense; medium-paced
     questions:
@@ -87,7 +88,7 @@ reviews:
     author: Max Porter
     urls:
       book: https://app.thestorygraph.com/books/73c84f23-8b75-4a0d-a238-ab1f49cdbebb
-      cover: https://cdn.thestorygraph.com/2lhyij8vyu7ejd0vsehomjjswrtz
+      cover: static/images/source/books/porter-lanny.jpeg
     rating: 4.0
     moods: adventurous; dark; emotional; mysterious; tense; medium-paced
     questions:
