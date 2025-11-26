@@ -13,7 +13,7 @@ canonical: https://www.jsbaker.co.uk/writing/i-am-green/
 page:
   class: "page--with-hero page--writing page--writing--light"
 image:
-  path: "https://images.pexels.com/photos/113338/pexels-photo-113338.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+  path: "static/images/source/pexels-markusspiske-113338.jpg"
   alt: "Bird's eye view of a green forest, trees"
   class: "image-obj-cover image-darken-33"
   # pictureClass: "content-canvas-item-right content-canvas-item-right--span-3"
@@ -22,7 +22,8 @@ image:
     list: "index-list__item__picture"
   figureClass:
     page: "content-canvas-item-full figure--hero"
-  caption: "Bird's eye view of a green forest, trees. Photo by : <a href=\"https://www.pexels.com/photo/bird-s-eye-view-nature-forest-trees-113338/\" rel=\"noopener ugc nofollow\" target=\"_blank\">Markus Spiske</a> on <a href=\"https://pexels.com/\" rel=\"noopener ugc nofollow\" target=\"_blank\">Pexels</a>"
+  caption: "Bird's eye view of a green forest, trees."
+  credit: "Photo by : <a href=\"https://www.pexels.com/photo/bird-s-eye-view-nature-forest-trees-113338/\" rel=\"noopener ugc nofollow\" target=\"_blank\">Markus Spiske</a> on <a href=\"https://pexels.com/\" rel=\"noopener ugc nofollow\" target=\"_blank\">Pexels</a>"
 ---
 
 I am green. You do not know that yet for I am hidden.

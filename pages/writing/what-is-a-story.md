@@ -2,8 +2,7 @@
 title: "What is a story?"
 description: "We can always spot one, but … how?"
 layout: page.njk
-# date: 2023-06-27
-date: git Created
+date: 2023-06-27
 promoted: true
 sharePage: true
 order: 2
@@ -12,7 +11,7 @@ page:
 summary:
   class: "site-content--surface-teal"
 image: 
-  social: https://images.pexels.com/photos/5088149/pexels-photo-5088149.jpeg
+  social: static/images/source/pexels-photo-5088149.jpeg
 tags:
   - 'On Writing'
   - '#writing'

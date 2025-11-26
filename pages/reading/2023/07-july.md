@@ -11,8 +11,9 @@ tags:
   - Reading
   - Novels
   - "#reading"
+is_review: true
 image:
-  path: https://images.pexels.com/photos/17013921/pexels-photo-17013921/free-photo-of-woman-reading-a-book-in-a-hammock.jpeg
+  path: static/images/source/pexels-chris-f-38966-17013921.jpg
   alt: "Woman reading a book in a hammock"
   class: "image-obj-cover image-greyscale-75 image-darken-33"
   # pictureClass: "content-canvas-item-right content-canvas-item-right--span-3"
@@ -28,7 +29,7 @@ image:
 ### [Nights of Plague](https://app.thestorygraph.com/books/8d1f34a8-ec35-4293-b425-09efdddabf1b){rel=noopener target=_blank}
 
 <figure class="content-canvas-item-right content-canvas-item-right--span-4 picture--block">
-  {% image "https://cdn.thestorygraph.com/jvdssntdni2s7k1nxpdv1543l5p8", "Nights of Plague book cover", "picture--outline", %}
+  {% image "static/images/source/books/pamuk-nights-of-plague.jpeg", "Nights of Plague book cover", "picture--outline", %}
 </figure>
 
 *by Orhan Pamuk*
@@ -55,7 +56,7 @@ I found the mythical form of the language quite hard work, frustrating even, and
 ### [The Old Man and the Sea](https://app.thestorygraph.com/books/d90a2b60-d7c5-4133-981d-21fd88144993){rel=noopener target=_blank}
 
 <figure class="content-canvas-item-right content-canvas-item-right--span-4 picture--block">
-  {% image "https://cdn.thestorygraph.com/h5qf35mowo710so61ila6eq2u10k", "The Old Man and the Sea book cover", "picture--outline", %}
+  {% image "static/images/source/books/hemmingway-the-old-man-and-the-sea.jpeg", "The Old Man and the Sea book cover", "picture--outline", %}
 </figure>
 
 *by Ernest Hemingway*
@@ -78,7 +79,7 @@ The plot is brilliantly told: a powerful tragedy portrayed in lucid, laconic lan
 ### [Still Born](https://app.thestorygraph.com/books/d90a2b60-d7c5-4133-981d-21fd88144993){rel=noopener target=_blank}
 
 <figure class="content-canvas-item-right content-canvas-item-right--span-4 picture--block">
-  {% image "https://cdn.thestorygraph.com/pmy3w0htly97tb7lst285bm17pjl", "Still Born book cover", "picture--outline", %}
+  {% image "static/images/source/books/nettel-still-born.jpeg", "Still Born book cover", "picture--outline", %}
 </figure>
 
 *by Guadalupe Nettel*
@@ -99,7 +100,7 @@ In the end, I was little disappointed. Laura tells the story, yet too often she 
 ### [Blood Meridian](https://app.thestorygraph.com/books/29ad6af6-32aa-4c4b-83c5-73481ad6dfc6){rel=noopener target=_blank}
 
 <figure class="content-canvas-item-right content-canvas-item-right--span-4 picture--block">
-  {% image "https://cdn.thestorygraph.com/viktjuf0iqdbnsogea8xbzcgvlpf", "Blood Meridian book cover", "picture--outline", %}
+  {% image "static/images/source/books/mccarthy-blood-meridian.jpeg", "Blood Meridian book cover", "picture--outline", %}
 </figure>
 
 *by Cormac McCarthy*
@@ -122,7 +123,7 @@ That said, at the end I was left with one big question — is it a story? Lots o
 ### [Cuddy](https://app.thestorygraph.com/books/2e6b0a6d-c544-4bbf-af4e-ce71f0989feb){rel=noopener target=_blank}
 
 <figure class="content-canvas-item-right content-canvas-item-right--span-4 picture--block">
-  {% image "https://cdn.thestorygraph.com/c5oiepnp271x5ait7yyzdh2gvgy7", "Cuddy book cover", "picture--outline", %}
+  {% image "static/images/source/books/myers-cuddy.jpeg", "Cuddy book cover", "picture--outline", %}
 </figure>
 
 *by Benjamin Myers*

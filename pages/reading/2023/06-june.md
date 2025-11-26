@@ -7,12 +7,13 @@ promoted: false
 order: 4
 page:
   class: "page--with-hero"
+is_review: true
 tags:
   - Reading
   - Novels
   - "#reading"
 image:
-  path: "https://images.pexels.com/photos/9784030/pexels-photo-9784030.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+  path: "static/images/source/pexels-mikhail-nilov-9784030.jpg"
   alt: "Person wearing black and gray jacket in front of bookshelf"
   class: "image-obj-cover image-greyscale-75 image-darken-33 image-obj-pos-bottom"
   # pictureClass: "content-canvas-item-right content-canvas-item-right--span-3"
@@ -21,14 +22,13 @@ image:
     list: "index-list__item__picture"
   figureClass:
     page: "content-canvas-item-full figure--hero"
-  caption: "A woman reading a book while sitting on the ground in a garden."
   credit: 'Photo by <a href="https://www.pexels.com/@mikhail-nilov/" rel="noopener nofollow" target="_blank">Mikhail Nilov</a> on <a href="https://www.pexels.com/photo/a-woman-reading-a-book-while-sitting-on-the-ground-in-a-garden-9784030/" rel="noopener nofollow" target="_blank">Pexels</a>'
 ---
 
 ### [Single & Single](https://app.thestorygraph.com/books/b99d9a47-11f7-4024-95b1-f502d9f2d1ae){rel=noopener target=_blank}
 
 <figure class="content-canvas-item-right content-canvas-item-right--span-4 picture--block">
-  {% image "https://cdn.thestorygraph.com/tum18p7o28oxxg1d5jbq3pus36x6", "Single & Single book cover", "picture--outline", %}
+  {% image "static/images/source/books/le-carre-single+single.jpeg", "Single & Single book cover", "picture--outline", %}
 </figure>
 
 *by John le Carré*
@@ -55,7 +55,7 @@ The book depicts the ramifications of the collapse of the USSR, the looting of s
 *(audiobook)*
 
 <figure class="content-canvas-item-right content-canvas-item-right--span-4 picture--block">
-  {% image "https://cdn.thestorygraph.com/x43ilbvuyf978uxwlhjnhkz2k8vl", "Empireland book cover", "picture--outline", %}
+  {% image "static/images/source/books/sanghera-empireland.jpeg", "Empireland book cover", "picture--outline", %}
 </figure>
 
 *by Sathnam Sanghera*

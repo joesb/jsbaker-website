@@ -39,7 +39,7 @@ Problems arise, though, in confusing which way round these two things should go 
 The surface of a story is what it says, the words on the page, the prose and dialogue, the cut and thrust.
 
 <figure class="picture--block">
-  {% image "https://images.unsplash.com/40/10294420724_0300cf921d_o.jpg?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2970&q=80", "Jumping into the pool: man jump in mid air on body of water", "picture--outline", %}
+  {% image "static/images/source/brooklyn-morgan-vlSyS1VLCoQ-unsplash.jpg", "Jumping into the pool: man jump in mid air on body of water", "picture--outline", %}
   <figcaption>Photo by <a href="https://unsplash.com/@brooklynmorgan?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Brooklyn Morgan</a> on <a href="https://unsplash.com/photos/vlSyS1VLCoQ?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></figcaption>
 </figure>
 
@@ -64,7 +64,7 @@ At the surface, we see a person.
 If the surface is what the story says, the depths of a story is what it is talking about, the themes and ideas, the questions and problems that it is wrestling with.
 
 <figure class="picture--block">
-  {% image "https://images.unsplash.com/photo-1533672998268-7f4124cf03fc?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2976&q=80", "Two people scuba diving", "picture--outline", %}
+  {% image "static/images/source/jacob-waldrop-7RAem-MijmY-unsplash.jpg", "Two people scuba diving", "picture--outline", %}
   <figcaption>Photo by <a href="https://unsplash.com/@jwaldrop?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Jacob Waldrop</a> on <a href="https://unsplash.com/photos/7RAem-MijmY?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></figcaption>
 </figure>
 
@@ -81,7 +81,7 @@ In the depths are traits, qualities, types and tropes that help the reader and t
 However, the way the depths and the surface interact causes all manner of problems. Pareidolia, our subconscious urge to find the familiar, leads us to jump to conclusions that are maybe unjustified. When we spot a pattern it’s all too easy to leap, without justification, to asserting that the pattern is everywhere.
 
 <figure class="picture--block">
-  {% image "https://images.unsplash.com/photo-1540351071155-e5d9e8c7cc75?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=3174&q=80", "Deep in the sea: underwater photo of person diving", "picture--outline", %}
+  {% image "static/images/source/almos-bechtold-Sp7-SbM1EtQ-unsplash.jpg", "Deep in the sea: underwater photo of person diving", "picture--outline", %}
   <figcaption>Photo by <a href="https://unsplash.com/@almosbech?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Almos Bechtold</a> on <a href="https://unsplash.com/photos/Sp7-SbM1EtQ?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></figcaption>
 </figure>
 
@@ -130,7 +130,7 @@ To this day, writers, courses and critics continue to [assess films and novels a
 ### Life At the Extremes: When Heroes Fail
 
 <figure class="picture--block">
-  {% image "https://images.unsplash.com/photo-1476988673625-d06c2302681b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=3087&q=80", "man jumping waterfalls", "picture--outline", %}
+  {% image "static/images/source/jakob-owens-XzW8TtPnxy8-unsplash.jpg", "man jumping waterfalls", "picture--outline", %}
   <figcaption>Photo by <a href="https://unsplash.com/@jakobowens1?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Jakob Owens</a> on <a href="https://unsplash.com/photos/XzW8TtPnxy8?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></figcaption>
 </figure>
 
@@ -179,7 +179,7 @@ Similarly, brilliant stories that do not have any sense of a heroic journey nor 
 ### Coming Up for Air
 
 <figure class="picture--block">
-  {% image "https://images.unsplash.com/photo-1500238595829-20885b38c441?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2927&q=80", "woman swimming on body of water during daytime", "picture--outline", %}
+  {% image "static/images/source/jordan-whitfield-fCmj9r7e6BU-unsplash.jpg", "woman swimming on body of water during daytime", "picture--outline", %}
   <figcaption>Photo by <a href="https://unsplash.com/es/@whitfieldjordan?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Jordan Whitfield</a> on <a href="https://unsplash.com/photos/fCmj9r7e6BU?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></figcaption>
 </figure>
 

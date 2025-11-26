@@ -6,7 +6,7 @@ date: 2017-08-21
 page:
   class: "page--with-hero page--reading"
 image:
-  path: "https://images.unsplash.com/photo-1431608660976-4fe5bcc2112c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=3270&q=80"
+  path: "static/images/source/glen-noble-o4-YyGi5JBc-unsplash.jpg"
   alt: "Pathway in the middle of piled books"
   class: "image-obj-cover image-greyscale-75 image-darken-33"
   # pictureClass: "content-canvas-item-right content-canvas-item-right--span-3"

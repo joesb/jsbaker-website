@@ -10,8 +10,9 @@ page:
 tags:
   - "Reading"
   - "#reading"
+is_review: true
 image:
-  path: "https://images.unsplash.com/photo-1518336751805-17d4ea1ba5a0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=3269&q=80"
+  path: "static/images/source/chuttersnap-b2Rmlyz7n3I-unsplash.jpg"
   alt: "Books on bookshelves"
   class: "image-obj-cover image-greyscale-75 image-darken-33"
   # pictureClass: "content-canvas-item-right content-canvas-item-right--span-3"
@@ -20,7 +21,8 @@ image:
     list: "index-list__item__picture"
   figureClass:
     page: "content-canvas-item-full figure--hero"
-  caption: 'books on bookshelf” by <a class="af ne" href="https://unsplash.com/@chuttersnap?utm_source=medium&amp;utm_medium=referral" rel="noopener nofollow" target="_blank">chuttersnap</a> on <a class="af ne" href="https://unsplash.com?utm_source=medium&amp;utm_medium=referral" rel="noopener nofollow" target="_blank">Unsplash</a>'
+  caption: 'Photo by <a href="https://unsplash.com/@chuttersnap?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" rel="noopener nofollow" target="_blank">CHUTTERSNAP</a> on <a href="https://unsplash.com/photos/books-on-bookshelf-b2Rmlyz7n3I?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" rel="noopener nofollow" target="_blank">Unsplash</a>'
+    
 ---
 
 I wrote a blog post last year about getting back to reading fiction again after finishing my PhD, and reading novels in particular:
@@ -32,15 +34,15 @@ I use [Goodreads](http://goodreads.com/){rel=noopener target=_blank} to keep a t
 Goodreads has a ‘reading challenge’ feature that I used to keep tabs on my progress across the year, a number of books to aim to read in a calendar year.
 
 I set myself a modest reading target in 2017 of reading 20 novels in the year, knowing that:
-a) I’m not a very fast reader,
-b) work and family life is full, and so,
-c) my reading each day would probably be limited the 10 minutes or so in bed before my eyelids drooped and the light had to be switched off.
+
+1. I’m not a very fast reader,
+2. work and family life is full, and so,
+3. my reading each day would probably be limited the 10 minutes or so in bed before my eyelids drooped and the light had to be switched off.
+{type=a}
 
 I managed to hit my target with around 2 weeks left of the year, and was very pleased with myself.
 
 This year, 2018, I thought I’d be a little bit more ambitious with my reading challenge and set it for 24 books in the year. That’s still slightly less than a book a fortnight, of course, and so still felt manageable within the constraints of life. Much to my surprise, I managed to hit my target on the 4th of September and I’m already onto book 30 (*[American Pastoral](https://www.goodreads.com/book/show/11650.American_Pastoral){rel=noopener target=_blank}*, by Philip Roth).
-
-https://twitter.com/joesb/status/1037062460082212864
 
 So, here below is a list, with some notes, on the books I’ve read since my post last year.
 
@@ -53,7 +55,7 @@ I’ve given each a star-rated vote. I’m aware that my ratings are weighted to
 #### [Sapiens: A Brief History of Humankind](https://www.goodreads.com/book/show/25004163-sapiens){rel=noopener target=_blank}
 
 <figure class="content-canvas-item-right content-canvas-item-right--span-3 picture--block">
-  {% image "https://m.media-amazon.com/images/I/41voLKA8u4L._SL500_.jpg", "Sapiens audiobook cover", "picture--outline", %}
+  {% image "static/images/source/books/harari-sapiens.jpg", "Sapiens audiobook cover", "picture--outline", %}
 </figure>
 
 *By Yuval Noah Harari*
@@ -67,7 +69,7 @@ A stimulating and provocative high-level and long-timescale view of the history 
 #### [Winter in Madrid](https://www.goodreads.com/book/show/891671.Winter_in_Madrid){rel=noopener target=_blank}
 
 <figure class="content-canvas-item-right content-canvas-item-right--span-3 picture--block">
-  {% image "https://m.media-amazon.com/images/I/416Q5-g6KrL._SX330_BO1,204,203,200_.jpg", "Winter in Madird book cover", "picture--outline", %}
+  {% image "static/images/source/books/sansom-winter-in-madrid.jpg", "Winter in Madird book cover", "picture--outline", %}
 </figure>
 
 *By C.J. Sansom*
@@ -78,7 +80,7 @@ Sansom is most famous for his Shardlake series, I believe, though I’ve not rea
 #### [Homage to Catalonia](https://www.goodreads.com/book/show/22382742-homage-to-catalonia){rel=noopener target=_blank}
 
 <figure class="content-canvas-item-right content-canvas-item-right--span-4 picture--block">
-  {% image "https://m.media-amazon.com/images/I/81BeFs0yZnL.jpg", "Homage to Catalonia book cover", "picture--outline", %}
+  {% image "static/images/source/books/orwell-homage-to-catalonia.jpg", "Homage to Catalonia book cover", "picture--outline", %}
 </figure>
 
 *By George Orwell*
@@ -99,7 +101,7 @@ In fact, Orwell writes frustratingly little about Catalan life in the era, which
 #### [The Essex Serpent](https://www.goodreads.com/book/show/32075861-the-essex-serpent){rel=noopener target=_blank}
 
 <figure class="content-canvas-item-right content-canvas-item-right--span-4 picture--block">
-  {% image "https://m.media-amazon.com/images/I/A1qcKSUCXYL.jpg", "The Essex Serpent book cover", "picture--outline", %}
+  {% image "static/images/source/books/perry-the-essex-serpent.jpg", "The Essex Serpent book cover", "picture--outline", %}
 </figure>
 
 *By Sarah Perry*
@@ -112,7 +114,7 @@ I’m a sucker for a novel where the reading of it is a sensory experience itsel
 #### [The New Life](https://www.goodreads.com/book/show/28013084-the-new-life){rel=noopener target=_blank}
 
 <figure class="content-canvas-item-right content-canvas-item-right--span-4 picture--block">
-  {% image "https://m.media-amazon.com/images/I/91K6V3YrXHL.jpg", "The New Life book cover", "picture--outline", %}
+  {% image "static/images/source/books/pamuk-the-new-life.jpg", "The New Life book cover", "picture--outline", %}
 </figure>
 
 *By Orhan Pamuk*
@@ -125,7 +127,7 @@ I got a little lost in places in the middle, losing the book a star, but Pamuk�
 #### [The Remains of the Day](https://www.goodreads.com/book/show/8492776-the-remains-of-the-day){rel=noopener target=_blank}
 
 <figure class="content-canvas-item-right content-canvas-item-right--span-4 picture--block">
-  {% image "https://m.media-amazon.com/images/I/61hvxj9yj5L.jpg", "The Remains of the Day book cover", "picture--outline", %}
+  {% image "static/images/source/books/ishiguro-the-remains-of-the-day.jpg", "The Remains of the Day book cover", "picture--outline", %}
 </figure>
 
 *By Kazuo Ishiguro*
@@ -138,7 +140,7 @@ Stevens’s dedicated life of self-restraint in preference for Lord Darlington a
 #### [The Dalkey Archive](https://www.goodreads.com/book/show/984096.The_Dalkey_Archive){rel=noopener target=_blank}
 
 <figure class="content-canvas-item-right content-canvas-item-right--span-4 picture--block">
-  {% image "https://i.harperapps.com/covers/9780007247196/y648.jpg", "The Dalkey Archive book cover", "picture--outline", %}
+  {% image "static/images/source/books/obrien-the-dalkey-archive.jpg", "The Dalkey Archive book cover", "picture--outline", %}
 </figure>
 
 *By Flann O’Brien*
@@ -149,7 +151,7 @@ Mad scientist and theologian, De Selby, plots to destroy the world by removing a
 #### [Any Human Heart](https://www.goodreads.com/book/show/7544887-any-human-heart){rel=noopener target=_blank}
 
 <figure class="content-canvas-item-right content-canvas-item-right--span-4 picture--block">
-  {% image "https://m.media-amazon.com/images/I/71ihyc3+L8L.jpg", "Any Human Heart book cover", "picture--outline", %}
+  {% image "static/images/source/books/boyd-any-human-heart.jpg", "Any Human Heart book cover", "picture--outline", %}
 </figure>
 
 *by William Boyd*

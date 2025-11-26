@@ -5,6 +5,7 @@ layout: page.njk
 date: 2023-02-28
 promoted: false
 # order: 2
+is_review: true
 page:
   class: "page--with-hero"
 tags:
@@ -12,7 +13,7 @@ tags:
   - Novels
   - "#reading"
 image:
-  path: "https://images.pexels.com/photos/12333745/pexels-photo-12333745.jpeg"
+  path: "static/images/source/pexels-satuvision-digital-agency-200022395-12333745.jpg"
   alt: "Young Man in Blue and Black Polo Shirt Reading a Book"
   class: "image-obj-cover image-darken-33 image-obj-pos-lower"
   # pictureClass: "content-canvas-item-right content-canvas-item-right--span-3"
@@ -21,8 +22,7 @@ image:
     list: "index-list__item__picture"
   figureClass:
     page: "content-canvas-item-full figure--hero"
-  caption: "Young Man in Blue and Black Polo Shirt Reading a Book"
-  credit: '<a href="https://www.pexels.com/photo/young-man-in-blue-and-black-polo-shirt-reading-a-book-12333745/" rel="noopener" target="_blank">Photo</a> by SATUVISION Digital Agency from Pexels'
+  credit: '<a href="https://www.pexels.com/photo/young-man-in-blue-and-black-polo-shirt-reading-a-book-12333745/" rel="noopener nofollow" target="_blank">Photo</a> by <a href="https://www.pexels.com/@satuvision-digital-agency-200022395/" rel="noopener nofollow" target="_blank">SATUVISION Digital Agency</a> from Pexels'
 ---
 
 I only managed to complete one novel this month, for some reason. 
@@ -36,7 +36,7 @@ Ah well.
 ### [The Light Years](https://app.thestorygraph.com/books/112b6ed5-7619-4720-99f0-c6cf34b1c54f){rel=noopener target=_blank} <small>(Cazalet Chronicles #1)</small>
 
 <figure class="content-canvas-item-right content-canvas-item-right--span-4 picture--block">
-  {% image "https://cdn.thestorygraph.com/unf6qygk3edoabtopqe66jjj7tcd", "The Light Years book cover", "picture--outline", %}
+  {% image "static/images/source/books/howard-the-light-years.jpeg", "The Light Years book cover", "picture--outline", %}
 </figure>
 
 *by Elizabeth Jane Howard*

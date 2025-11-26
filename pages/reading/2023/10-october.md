@@ -11,8 +11,9 @@ tags:
   - Reading
   - Novels
   - "#reading"
+is_review: true
 image:
-  path: https://images.pexels.com/photos/7545138/pexels-photo-7545138.jpeg
+  path: static/images/source/pexels-shvets-production-7545138.jpg
   alt: "Older man reading a book in living room"
   class: "image-obj-cover image-greyscale-75 image-darken-33"
   # pictureClass: "content-canvas-item-right content-canvas-item-right--span-3"
@@ -28,7 +29,7 @@ reviews:
     author: William Faulkner
     urls:
       book: https://app.thestorygraph.com/books/e1ecc77d-59f0-43aa-befe-8721d1908e22
-      cover: https://cdn.thestorygraph.com/lyyokoqxqxv00lbs71v7eiqnznw4
+      cover: static/images/source/books/faulkner-as-i-lay-dying.jpeg
     rating: 4.25
     moods: dark; emotional; mysterious; reflective; medium-paced
     questions:
@@ -71,7 +72,7 @@ This is a great novel. A must-read.
         role: Translator
     urls:
       book: https://app.thestorygraph.com/books/912b3b72-797a-4de7-9183-735df9e867f2
-      cover: https://cdn.thestorygraph.com/o26004vpk07l67xx5z94j4fajebr
+      cover: static/images/source/books/murakami-novelist-as-vocation.png
     rating: 3.75
     moods: emotional; informative; inspiring; reflective; medium-paced
     text: "*Novelist as a Vocation* is a collection of Haruki Murakami's essays on his experience of being a novelist. Of course, many of the essays, especially the earlier ones, are very autobiographical and tell his story of becoming and being a novelist. He turns also to his ruminations, his perspective and his observations on the work and life of being an author of fiction.
@@ -82,7 +83,7 @@ It's a riveting and detailed book, honest and self-effacing throughout. With its
     author: John Fowles
     urls:
       book: https://app.thestorygraph.com/books/13990cd7-7a1d-4edc-8fe8-6949df70ff77
-      cover: https://cdn.thestorygraph.com/e1uvaf6a6ebzn9pmefz7xmbjo4kc
+      cover: static/images/source/books/fowles-the-french-lieutenants-woman.jpeg
     rating: 4.5
     moods: emotional; informative; mysterious; sad; medium-paced
     questions:

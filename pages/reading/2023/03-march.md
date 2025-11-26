@@ -7,12 +7,13 @@ promoted: false
 # order: 2
 page:
   class: "page--with-hero"
+is_review: true
 tags:
   - Reading
   - Novels
   - "#reading"
 image:
-  path: "https://images.pexels.com/photos/4353719/pexels-photo-4353719.jpeg"
+  path: "static/images/source/pexels-arthousestudio-4353719.jpg"
   alt: "Cozy interior with bookshelves and fireplace"
   class: "image-obj-cover image-greyscale-75 image-darken-33"
   # pictureClass: "content-canvas-item-right content-canvas-item-right--span-3"
@@ -21,14 +22,13 @@ image:
     list: "index-list__item__picture"
   figureClass:
     page: "content-canvas-item-full figure--hero"
-  caption: "Cozy interior with bookshelves and fireplace"
   credit: '<a href="https://www.pexels.com/photo/cozy-interior-with-bookshelves-and-fireplace-4353719/" rel="noopener" target="_blank">Photo</a> by ArtHouse Studio from Pexels'
 ---
 
 ### [Autumn](https://app.thestorygraph.com/books/96765343-01cb-48ed-92a6-89d583df2de0){rel=noopener target=_blank} <small>(Seasonal Quartet #1)</small>
 
 <figure class="content-canvas-item-right content-canvas-item-right--span-4 picture--block">
-  {% image "https://cdn.thestorygraph.com/jr7l1ktcupekb8c5n67p9z4oym1o", "Autumn book cover", "picture--outline", %}
+  {% image "static/images/source/books/smith-autumn.jpeg", "Autumn book cover", "picture--outline", %}
 </figure>
 
 *by Ali Smith*
@@ -49,7 +49,7 @@ This is part 1 of Smith's 'Seasonal Quartet'. Apparently, there's no need to rea
 ### [Winter: A Berlin Family, 1899-1945](https://app.thestorygraph.com/books/70addce9-6f88-4f4c-b0dc-0ce3c53795eb){rel=noopener target=_blank}
 
 <figure class="content-canvas-item-right content-canvas-item-right--span-4 picture--block">
-  {% image "https://cdn.thestorygraph.com/t82jaz23v272kmy2ompxb18kr1se", "Winter: A Berlin Family, 1899-1945 book cover", "picture--outline", %}
+  {% image "static/images/source/books/deighton-winter.jpeg", "Winter: A Berlin Family, 1899-1945 book cover", "picture--outline", %}
 </figure>
 
 *by Len Deighton*
