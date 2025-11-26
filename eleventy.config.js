@@ -31,13 +31,12 @@ export default async function(eleventyConfig) {
   eleventyConfig.addPlugin(embedEverything);
   eleventyConfig.addFilter("debug", (content) => `<pre>${inspect(content)}</pre>`);
   eleventyConfig.addPlugin(eleventyImageOnRequestDuringServePlugin);
-  console.log(env.baseUrl);
   eleventyConfig.addPlugin(EleventyHtmlBasePlugin, {
 		// The base URL: defaults to Path Prefix
 		// baseHref: eleventyConfig.pathPrefix,
 
 		// But you could use a full URL here too:
-		baseHref: env.baseUrl,
+		// baseHref: env.baseUrl,
 
 		// Comma separated list of output file extensions to apply
 		// our transform to. Use `false` to opt-out of the transform.
