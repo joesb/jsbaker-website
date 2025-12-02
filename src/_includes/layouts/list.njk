@@ -8,12 +8,14 @@ list: true
 		<div class="site-content{% if pageClass %} {{ pageClass }} {% else %} site-content--surface-teal site-content--surface-dark{% endif %} jumbotron content-canvas-item-full content-canvas item-fade-in item-fade-in-1-5">
 
 			{% include "layouts/components/title-bar.njk" %}
-			
-			{{ content | safe }}
 
 		</div>
-
-
+		{% if content %}
+		<div class="site-content content-canvas-item-full content-canvas">
+			
+			{{ content | safe }}
+		</div>
+		{% endif %}
 		<div class="site-content content-canvas-item-wide item-fade-in item-fade-in-1-5 item-fade-in-delay-md">
 
 			{% include "layouts/components/index-list.njk" %}

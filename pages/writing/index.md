@@ -1,5 +1,7 @@
 ---
 title: Writing
+description: My writing, and my writing about writing.
+date: 2025-12-02T11:53:17Z
 eleventyNavigation:
   key: Writing
   order: 1
@@ -9,5 +11,3 @@ pagination:
   size: 11
   alias: items
 ---
-
-My writing, and my writing about writing.
