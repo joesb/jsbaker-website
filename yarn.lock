@@ -2695,7 +2695,7 @@ __metadata:
     stylelint-config-standard: ^39.0.1
     stylelint-config-standard-scss: ^16.0.0
     stylelint-prettier: ^5.0.3
-    stylelint-scss: ^6.12.1
+    stylelint-scss: ^6.13.0
     uglify-js: ^3.19.3
   languageName: unknown
   linkType: soft
@@ -3000,7 +3000,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"mdn-data@npm:^2.21.0":
+"mdn-data@npm:^2.21.0, mdn-data@npm:^2.25.0":
   version: 2.25.0
   resolution: "mdn-data@npm:2.25.0"
   checksum: b90b4d3ad7d983be31e36af802b59bec9c861ff7617afe89049ed25a2e8fed31ed3979b699c03ba7ba5d83a780d564594a84ef9d6835d0c394b0809377dcd2aa
@@ -3627,6 +3627,16 @@ __metadata:
     cssesc: ^3.0.0
     util-deprecate: ^1.0.2
   checksum: 1300e7871dd60a5132ee5462cc6e94edd4f3df28462b2495ca9ff025bd83768a908e892a18fde62cae63ff63524641baa6d58c64120f04fe6884b916663ce737
+  languageName: node
+  linkType: hard
+
+"postcss-selector-parser@npm:^7.1.1":
+  version: 7.1.1
+  resolution: "postcss-selector-parser@npm:7.1.1"
+  dependencies:
+    cssesc: ^3.0.0
+    util-deprecate: ^1.0.2
+  checksum: 36d71bd8e1c9db9c3d4ecefd3f8c30aace141a3a1a266473bc9a1b7a0c1c2dfbaef2ac20cc8ea287b17131cbb3690c1c0fe7a4d9272db9f09b136da2413bc3ea
   languageName: node
   linkType: hard
 
@@ -4435,6 +4445,24 @@ __metadata:
   peerDependencies:
     stylelint: ^16.0.2
   checksum: 17a217b5a7ec3539f9cc7b2fc0cee3d7a49ea36bc9047973b54cbb19b263877dabb14e62e7f9f4f9db009e1595b64ee9d7fc8e35ea2e98d9efa66b82a7189883
+  languageName: node
+  linkType: hard
+
+"stylelint-scss@npm:^6.13.0":
+  version: 6.13.0
+  resolution: "stylelint-scss@npm:6.13.0"
+  dependencies:
+    css-tree: ^3.0.1
+    is-plain-object: ^5.0.0
+    known-css-properties: ^0.37.0
+    mdn-data: ^2.25.0
+    postcss-media-query-parser: ^0.2.3
+    postcss-resolve-nested-selector: ^0.1.6
+    postcss-selector-parser: ^7.1.1
+    postcss-value-parser: ^4.2.0
+  peerDependencies:
+    stylelint: ^16.8.2
+  checksum: f108472f944eb43394d3c111c98a9f4bbffc8edd95ddf3ebbab754afab1e5c91259e8f32dde14979bd667ed0dae79ffa23f7d29e6a28a8071b15a8c90ff3fb65
   languageName: node
   linkType: hard
 
