@@ -1251,12 +1251,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"chokidar@npm:^4.0.0":
-  version: 4.0.1
-  resolution: "chokidar@npm:4.0.1"
+"chokidar@npm:^5.0.0":
+  version: 5.0.0
+  resolution: "chokidar@npm:5.0.0"
   dependencies:
-    readdirp: ^4.0.1
-  checksum: 193da9786b0422a895d59c7552195d15c6c636e6a2293ae43d09e34e243e24ccd02d693f007c767846a65abbeae5fea6bfacb8fc2ddec4ea4d397620d552010d
+    readdirp: ^5.0.0
+  checksum: 48c0d510d84c228acae24dcf4418d55193ae0fd6cf2d114a3cf893ea68cca95f1876e1b02353a275b0b0b5f933f7c5b5bf126063211c0c8c30b213dd03328897
   languageName: node
   linkType: hard
 
@@ -2689,7 +2689,7 @@ __metadata:
     react-dom: ^19.2.0
     resend: ^6.5.2
     rimraf: ^6.1.2
-    sass: ^1.94.2
+    sass: ^1.94.3
     sass-autoprefixer: ^1.0.1
     stylelint: ^16.26.1
     stylelint-config-standard: ^39.0.1
@@ -3817,10 +3817,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"readdirp@npm:^4.0.1":
-  version: 4.0.2
-  resolution: "readdirp@npm:4.0.2"
-  checksum: 309376e717f94fb7eb61bec21e2603243a9e2420cd2e9bf94ddf026aefea0d7377ed1a62f016d33265682e44908049a55c3cfc2307450a1421654ea008489b39
+"readdirp@npm:^5.0.0":
+  version: 5.0.0
+  resolution: "readdirp@npm:5.0.0"
+  checksum: 3c8ddf1a08fa0adf8f14685a373dd205ada0f2de980e7e77f9846026f331acbc6035040ba204d22b368a0dc8eb7bee2d737fb19f398d73c716c510ce3b2e5583
   languageName: node
   linkType: hard
 
@@ -3976,12 +3976,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"sass@npm:^1.94.2":
-  version: 1.94.2
-  resolution: "sass@npm:1.94.2"
+"sass@npm:^1.94.3":
+  version: 1.94.3
+  resolution: "sass@npm:1.94.3"
   dependencies:
     "@parcel/watcher": ^2.4.1
-    chokidar: ^4.0.0
+    chokidar: ^5.0.0
     immutable: ^5.0.2
     source-map-js: ">=0.6.2 <2.0.0"
   dependenciesMeta:
@@ -3989,7 +3989,7 @@ __metadata:
       optional: true
   bin:
     sass: sass.js
-  checksum: 75460a0d24f0ab1054bb1b88cb71cc51b592b48461ec540be9275fd4010b3b708ed734bfd337399bd8ec9c8a56942482eff6c372a3ffb0154417b6f4494522b5
+  checksum: 745d0d77bdd06b7d18c0a1ca1379f94f07886260f7581551a488c7a72aa6c23d9e441084f712035ea01bb6d5500ca6358348d28d96b43523502e1fb7c0374236
   languageName: node
   linkType: hard
 
