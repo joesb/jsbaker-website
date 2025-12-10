@@ -2685,17 +2685,17 @@ __metadata:
     postcss-cli: ^11.0.1
     posthtml: ^0.16.7
     prettier: ^3.7.4
-    react: ^19.2.0
-    react-dom: ^19.2.0
-    resend: ^6.5.2
+    react: ^19.2.1
+    react-dom: ^19.2.1
+    resend: ^6.6.0
     rimraf: ^6.1.2
-    sass: ^1.94.2
+    sass: ^1.95.1
     sass-autoprefixer: ^1.0.1
     stylelint: ^16.26.1
     stylelint-config-standard: ^39.0.1
     stylelint-config-standard-scss: ^16.0.0
     stylelint-prettier: ^5.0.3
-    stylelint-scss: ^6.12.1
+    stylelint-scss: ^6.13.0
     uglify-js: ^3.19.3
   languageName: unknown
   linkType: soft
@@ -3000,7 +3000,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"mdn-data@npm:^2.21.0":
+"mdn-data@npm:^2.21.0, mdn-data@npm:^2.25.0":
   version: 2.25.0
   resolution: "mdn-data@npm:2.25.0"
   checksum: b90b4d3ad7d983be31e36af802b59bec9c861ff7617afe89049ed25a2e8fed31ed3979b699c03ba7ba5d83a780d564594a84ef9d6835d0c394b0809377dcd2aa
@@ -3630,6 +3630,16 @@ __metadata:
   languageName: node
   linkType: hard
 
+"postcss-selector-parser@npm:^7.1.1":
+  version: 7.1.1
+  resolution: "postcss-selector-parser@npm:7.1.1"
+  dependencies:
+    cssesc: ^3.0.0
+    util-deprecate: ^1.0.2
+  checksum: 36d71bd8e1c9db9c3d4ecefd3f8c30aace141a3a1a266473bc9a1b7a0c1c2dfbaef2ac20cc8ea287b17131cbb3690c1c0fe7a4d9272db9f09b136da2413bc3ea
+  languageName: node
+  linkType: hard
+
 "postcss-value-parser@npm:^4.2.0":
   version: 4.2.0
   resolution: "postcss-value-parser@npm:4.2.0"
@@ -3790,21 +3800,21 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react-dom@npm:^19.2.0":
-  version: 19.2.0
-  resolution: "react-dom@npm:19.2.0"
+"react-dom@npm:^19.2.1":
+  version: 19.2.1
+  resolution: "react-dom@npm:19.2.1"
   dependencies:
     scheduler: ^0.27.0
   peerDependencies:
-    react: ^19.2.0
-  checksum: b6ec952f68a29dcc847143ad48974477e1d3b95cb0a6e0039dd93c7fe64d0ef51f2ca09a19c5eb892ba625ba88c4bcc6f8bc3bdd1c33ccc3f6f17acabbb4882f
+    react: ^19.2.1
+  checksum: 45a7c57696b6fcc9f018a1626a0c5f6da7085510bcebb9ab585414ea1b73061df1139d57b4384ece47c0a53d46045c28b93fe85e249771eca8cfac8d3e613833
   languageName: node
   linkType: hard
 
-"react@npm:^19.2.0":
-  version: 19.2.0
-  resolution: "react@npm:19.2.0"
-  checksum: 33dd01bf699e1c5040eb249e0f552519adf7ee90b98c49d702a50bf23af6852ea46023a5f7f93966ab10acd7a45428fa0f193c686ecdaa7a75a03886e53ec3fe
+"react@npm:^19.2.1":
+  version: 19.2.1
+  resolution: "react@npm:19.2.1"
+  checksum: 9b32ace5c532ed78bc5a907bfec77d966c8f117049d9bf06b627c4cebe5ef2c899f18ed283f8ed5b85346176b5ccc5328ab6fae0b389f2936a87575ce0e47670
   languageName: node
   linkType: hard
 
@@ -3877,9 +3887,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"resend@npm:^6.5.2":
-  version: 6.5.2
-  resolution: "resend@npm:6.5.2"
+"resend@npm:^6.6.0":
+  version: 6.6.0
+  resolution: "resend@npm:6.6.0"
   dependencies:
     svix: 1.76.1
   peerDependencies:
@@ -3887,7 +3897,7 @@ __metadata:
   peerDependenciesMeta:
     "@react-email/render":
       optional: true
-  checksum: 145dce49397d020dbc341ef920645f3e0f3202c16bfd3acaf338135b3ebd0ef1429ea4aec94385f7e1c53d5f95079eb3e715f7c38dbf4a1bf098cbf6f3844cb6
+  checksum: b5dea00eb03fecaa4da2c90a8533eae74a6cc8010fd389b29b24ba26ea845ce0497b511405ebadfa05e424207d70e82e85b26830b4220f58f09b0306084dda41
   languageName: node
   linkType: hard
 
@@ -3976,9 +3986,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"sass@npm:^1.94.2":
-  version: 1.94.2
-  resolution: "sass@npm:1.94.2"
+"sass@npm:^1.95.1":
+  version: 1.95.1
+  resolution: "sass@npm:1.95.1"
   dependencies:
     "@parcel/watcher": ^2.4.1
     chokidar: ^4.0.0
@@ -3989,7 +3999,7 @@ __metadata:
       optional: true
   bin:
     sass: sass.js
-  checksum: 75460a0d24f0ab1054bb1b88cb71cc51b592b48461ec540be9275fd4010b3b708ed734bfd337399bd8ec9c8a56942482eff6c372a3ffb0154417b6f4494522b5
+  checksum: 80863e5da78a41c4f2bbb620d72feb6f0110c3aa264a259865a9e2aed196f58edd4c50f6f4624bb52ef0ae28731ec647f717f8980da742aa68d4507ce8b95d68
   languageName: node
   linkType: hard
 
@@ -4435,6 +4445,24 @@ __metadata:
   peerDependencies:
     stylelint: ^16.0.2
   checksum: 17a217b5a7ec3539f9cc7b2fc0cee3d7a49ea36bc9047973b54cbb19b263877dabb14e62e7f9f4f9db009e1595b64ee9d7fc8e35ea2e98d9efa66b82a7189883
+  languageName: node
+  linkType: hard
+
+"stylelint-scss@npm:^6.13.0":
+  version: 6.13.0
+  resolution: "stylelint-scss@npm:6.13.0"
+  dependencies:
+    css-tree: ^3.0.1
+    is-plain-object: ^5.0.0
+    known-css-properties: ^0.37.0
+    mdn-data: ^2.25.0
+    postcss-media-query-parser: ^0.2.3
+    postcss-resolve-nested-selector: ^0.1.6
+    postcss-selector-parser: ^7.1.1
+    postcss-value-parser: ^4.2.0
+  peerDependencies:
+    stylelint: ^16.8.2
+  checksum: f108472f944eb43394d3c111c98a9f4bbffc8edd95ddf3ebbab754afab1e5c91259e8f32dde14979bd667ed0dae79ffa23f7d29e6a28a8071b15a8c90ff3fb65
   languageName: node
   linkType: hard
 
