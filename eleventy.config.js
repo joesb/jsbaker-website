@@ -351,7 +351,7 @@ export default async function(eleventyConfig) {
 
   eleventyConfig.addPassthroughCopy('static/');
   // eleventyConfig.addPassthroughCopy('CNAME');
-  eleventyConfig.addWatchTarget('./src/sass/');
+  eleventyConfig.addWatchTarget('./src/_sass/');
 };
 
 export const config = {
