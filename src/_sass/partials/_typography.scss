@@ -142,6 +142,10 @@ h5,
   margin: 0;
 }
 
+.smaller {
+  font-size: var(--font-size-fluid-00);
+}
+
 .small {
   font-size: var(--font-size-fluid-000);
   line-height: var(--font-lineheight-2) !important;
@@ -207,8 +211,6 @@ h5,
     }
   }
 }
-
-
 
 .caption {
   font-family: variables.$primary-font;

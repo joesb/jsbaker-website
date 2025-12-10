@@ -21,4 +21,4 @@ I'm currently reading:
 - Andrew O'Hagan, [*On Friendship*](https://app.thestorygraph.com/books/9ba26358-3a84-4fcf-be54-f1fb45845b8e){target=_blank rel="noopener noreferrer"}
 - John Banville, [*The Infinities*](https://app.thestorygraph.com/books/c5c5c6d4-3dbf-42ad-a564-35bcd0723c82){target=_blank rel="noopener noreferrer"}
 
-I'm on [StoryGraph](https://app.thestorygraph.com/profile/joesb){target=_blank rel="noopener noreferrer"} and [GoodReads](https://www.goodreads.com/jsbaker){target=_blank rel="noopener noreferrer"}.
+I'm on [StoryGraph](https://app.thestorygraph.com/profile/joesb){target=_blank rel="noopener noreferrer"} and [GoodReads](https://www.goodreads.com/jsbaker){target=_blank rel="noopener noreferrer"}.{.smaller}
