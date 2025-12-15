@@ -2454,7 +2454,7 @@ __metadata:
     posthtml: ^0.16.7
     prettier: ^3.7.4
     react: ^19.2.1
-    react-dom: ^19.2.1
+    react-dom: ^19.2.3
     resend: ^6.6.0
     rimraf: ^6.1.2
     sass: ^1.95.1
@@ -3477,14 +3477,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react-dom@npm:^19.2.1":
-  version: 19.2.1
-  resolution: "react-dom@npm:19.2.1"
+"react-dom@npm:^19.2.3":
+  version: 19.2.3
+  resolution: "react-dom@npm:19.2.3"
   dependencies:
     scheduler: ^0.27.0
   peerDependencies:
-    react: ^19.2.1
-  checksum: 45a7c57696b6fcc9f018a1626a0c5f6da7085510bcebb9ab585414ea1b73061df1139d57b4384ece47c0a53d46045c28b93fe85e249771eca8cfac8d3e613833
+    react: ^19.2.3
+  checksum: cb1f95df052802f5332cae78303b7fc6f58092d5c7f8d01f0401188b2e0157c1d273a041b900fcc4801f730c70ed17249bd5af170038692878ebe257f641488b
   languageName: node
   linkType: hard
 
