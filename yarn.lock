@@ -2463,13 +2463,13 @@ __metadata:
     react-dom: ^19.2.3
     resend: ^6.6.0
     rimraf: ^6.1.2
-    sass: ^1.97.0
+    sass: ^1.97.2
     sass-autoprefixer: ^1.0.1
     stylelint: ^16.26.1
     stylelint-config-standard: ^39.0.1
     stylelint-config-standard-scss: ^16.0.0
     stylelint-prettier: ^5.0.3
-    stylelint-scss: ^6.13.0
+    stylelint-scss: ^6.14.0
     uglify-js: ^3.19.3
   languageName: unknown
   linkType: soft
@@ -3651,9 +3651,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"sass@npm:^1.97.0":
-  version: 1.97.0
-  resolution: "sass@npm:1.97.0"
+"sass@npm:^1.97.2":
+  version: 1.97.2
+  resolution: "sass@npm:1.97.2"
   dependencies:
     "@parcel/watcher": ^2.4.1
     chokidar: ^4.0.0
@@ -3664,7 +3664,7 @@ __metadata:
       optional: true
   bin:
     sass: sass.js
-  checksum: d626ba7eca647a72b401f032d4ca9d58dc4b1626329e4949ef174b8ba597a444097fcbcce340049f1c40f67a632cec00020c5453720d4c3ad14d03e7653c4bc4
+  checksum: d0cdc2fb82a6eabe59d386f939ff265b9b98c53a4622feae1354014dc9413eb6e020aac9c5b450d387ed88328dc883242530401428af777b63a32fa581f7b1d8
   languageName: node
   linkType: hard
 
@@ -4027,7 +4027,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"stylelint-scss@npm:^6.12.1, stylelint-scss@npm:^6.13.0":
+"stylelint-scss@npm:^6.12.1":
   version: 6.13.0
   resolution: "stylelint-scss@npm:6.13.0"
   dependencies:
@@ -4042,6 +4042,24 @@ __metadata:
   peerDependencies:
     stylelint: ^16.8.2
   checksum: f108472f944eb43394d3c111c98a9f4bbffc8edd95ddf3ebbab754afab1e5c91259e8f32dde14979bd667ed0dae79ffa23f7d29e6a28a8071b15a8c90ff3fb65
+  languageName: node
+  linkType: hard
+
+"stylelint-scss@npm:^6.14.0":
+  version: 6.14.0
+  resolution: "stylelint-scss@npm:6.14.0"
+  dependencies:
+    css-tree: ^3.0.1
+    is-plain-object: ^5.0.0
+    known-css-properties: ^0.37.0
+    mdn-data: ^2.25.0
+    postcss-media-query-parser: ^0.2.3
+    postcss-resolve-nested-selector: ^0.1.6
+    postcss-selector-parser: ^7.1.1
+    postcss-value-parser: ^4.2.0
+  peerDependencies:
+    stylelint: ^16.8.2
+  checksum: 08dd304a0a2505f52491c479ab084bd7ab57b7fb0fcebc94f503d0b485c79e57ba27b65f0c0fc426dcdad994bc25f6650dc5aee2895a563f34e1357ca774b75f
   languageName: node
   linkType: hard
 
