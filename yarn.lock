@@ -2469,7 +2469,7 @@ __metadata:
     stylelint-config-standard: ^39.0.1
     stylelint-config-standard-scss: ^16.0.0
     stylelint-prettier: ^5.0.3
-    stylelint-scss: ^6.14.0
+    stylelint-scss: ^7.0.0
     uglify-js: ^3.19.3
   languageName: unknown
   linkType: soft
@@ -4045,9 +4045,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"stylelint-scss@npm:^6.14.0":
-  version: 6.14.0
-  resolution: "stylelint-scss@npm:6.14.0"
+"stylelint-scss@npm:^7.0.0":
+  version: 7.0.0
+  resolution: "stylelint-scss@npm:7.0.0"
   dependencies:
     css-tree: ^3.0.1
     is-plain-object: ^5.0.0
@@ -4058,8 +4058,8 @@ __metadata:
     postcss-selector-parser: ^7.1.1
     postcss-value-parser: ^4.2.0
   peerDependencies:
-    stylelint: ^16.8.2
-  checksum: 08dd304a0a2505f52491c479ab084bd7ab57b7fb0fcebc94f503d0b485c79e57ba27b65f0c0fc426dcdad994bc25f6650dc5aee2895a563f34e1357ca774b75f
+    stylelint: ^16.8.2 || ^17.0.0
+  checksum: 51140235feaab2a9629e7d11d565dcb8b6cab68c044212b854decac1ee7cdce80cdc519ba2ca29ef2b099f9b4411237f3e6c04b690e2763b64ab2f783302c73d
   languageName: node
   linkType: hard
 
