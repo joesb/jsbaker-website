@@ -376,6 +376,10 @@ export default async function(eleventyConfig) {
     return markdownLibrary.render(content);
   });
 
+  eleventyConfig.addPairedShortcode("Markdown", function(content, ril = false) {
+    return ril ? markdownLibrary.renderInline(content) : markdownLibrary.render(content);
+  });
+
   eleventyConfig.addPassthroughCopy('pages/static/');
   // eleventyConfig.addPassthroughCopy('CNAME');
   eleventyConfig.addWatchTarget('./src/_sass/');

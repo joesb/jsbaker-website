@@ -1,0 +1,35 @@
+@use "../tools/respond-to" as rt;
+
+.review-meta--type {
+  font-size: var(--font-size-fluid-00);
+  margin-block-start: 0;
+  margin-inline-start: var(--size-5);
+  font-style: italic;
+}
+
+@include rt.respond-to('medium') {
+    
+  .review-item-mini {
+    display: grid;
+    align-content: start;
+    column-gap: var(--size-fluid-1);
+    grid-template-columns: 1fr 1fr;
+    margin-block-end: var(--size-5);
+
+    .review-item-title {
+      grid-column: 1;
+      grid-row: 1 / span 2;
+
+      h3 {
+        margin-block-start: var(--size-2);
+      }
+    }
+
+    .review-item-author {
+      grid-column: 2;
+    }
+    .review-item-meta {
+      grid-column: 2;
+    }
+  }
+}

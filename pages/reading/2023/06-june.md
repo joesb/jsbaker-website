@@ -32,7 +32,7 @@ image:
 ### [Single & Single](https://app.thestorygraph.com/books/b99d9a47-11f7-4024-95b1-f502d9f2d1ae){rel=noopener target=_blank}
 
 <figure class="content-canvas-item-right content-canvas-item-right--span-4 picture--block">
-  !["Single & Single book cover"]("/static/images/source/books/le-carre-single+single.jpeg"){.picture--outline}
+  {% Markdown true %}!["Single & Single book cover"](/static/images/source/books/le-carre-single+single.jpeg){.picture--outline}{% endMarkdown %}
 </figure>
 
 *by John le Carré*
@@ -59,7 +59,7 @@ The book depicts the ramifications of the collapse of the USSR, the looting of s
 *(audiobook)*
 
 <figure class="content-canvas-item-right content-canvas-item-right--span-4 picture--block">
-  !["Empireland book cover"]("/static/images/source/books/sanghera-empireland.jpeg"){.picture--outline}
+  {% Markdown true %}!["Empireland book cover"](/static/images/source/books/sanghera-empireland.jpeg){.picture--outline}{% endMarkdown %}
 </figure>
 
 *by Sathnam Sanghera*

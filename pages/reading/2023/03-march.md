@@ -31,7 +31,7 @@ image:
 ### [Autumn](https://app.thestorygraph.com/books/96765343-01cb-48ed-92a6-89d583df2de0){rel=noopener target=_blank} <small>(Seasonal Quartet #1)</small>
 
 <figure class="content-canvas-item-right content-canvas-item-right--span-4 picture--block">
-  !["Autumn book cover"]("/static/images/source/books/smith-autumn.jpeg"){.picture--outline}
+  {% Markdown true %}!["Autumn book cover"](/static/images/source/books/smith-autumn.jpeg){.picture--outline}{% endMarkdown %}
 </figure>
 
 *by Ali Smith*
@@ -52,7 +52,7 @@ This is part 1 of Smith's 'Seasonal Quartet'. Apparently, there's no need to rea
 ### [Winter: A Berlin Family, 1899-1945](https://app.thestorygraph.com/books/70addce9-6f88-4f4c-b0dc-0ce3c53795eb){rel=noopener target=_blank}
 
 <figure class="content-canvas-item-right content-canvas-item-right--span-4 picture--block">
-  !["Winter: A Berlin Family, 1899-1945 book cover"]("/static/images/source/books/deighton-winter.jpeg"){.picture--outline}
+  {% Markdown true %}!["Winter: A Berlin Family, 1899-1945 book cover"](/static/images/source/books/deighton-winter.jpeg){.picture--outline}{% endMarkdown %}
 </figure>
 
 *by Len Deighton*

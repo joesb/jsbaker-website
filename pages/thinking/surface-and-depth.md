@@ -41,7 +41,7 @@ Problems arise, though, in confusing which way round these two things should go 
 The surface of a story is what it says, the words on the page, the prose and dialogue, the cut and thrust.
 
 <figure class="picture--block">
-  !["Jumping into the pool: man jump in mid air on body of water"]("/static/images/source/brooklyn-morgan-vlSyS1VLCoQ-unsplash.jpg"){.picture--outline}
+  {% Markdown true %}!["Jumping into the pool: man jump in mid air on body of water"](/static/images/source/brooklyn-morgan-vlSyS1VLCoQ-unsplash.jpg){.picture--outline}{% endMarkdown %}
   <figcaption>Photo by <a href="https://unsplash.com/@brooklynmorgan?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Brooklyn Morgan</a> on <a href="https://unsplash.com/photos/vlSyS1VLCoQ?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></figcaption>
 </figure>
 
@@ -66,7 +66,7 @@ At the surface, we see a person.
 If the surface is what the story says, the depths of a story is what it is talking about, the themes and ideas, the questions and problems that it is wrestling with.
 
 <figure class="picture--block">
-  !["Two people scuba diving"]("/static/images/source/jacob-waldrop-7RAem-MijmY-unsplash.jpg"){.picture--outline}
+  {% Markdown true %}!["Two people scuba diving"](/static/images/source/jacob-waldrop-7RAem-MijmY-unsplash.jpg){.picture--outline}{% endMarkdown %}
   <figcaption>Photo by <a href="https://unsplash.com/@jwaldrop?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Jacob Waldrop</a> on <a href="https://unsplash.com/photos/7RAem-MijmY?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></figcaption>
 </figure>
 
@@ -83,7 +83,7 @@ In the depths are traits, qualities, types and tropes that help the reader and t
 However, the way the depths and the surface interact causes all manner of problems. Pareidolia, our subconscious urge to find the familiar, leads us to jump to conclusions that are maybe unjustified. When we spot a pattern it’s all too easy to leap, without justification, to asserting that the pattern is everywhere.
 
 <figure class="picture--block">
-  !["Deep in the sea: underwater photo of person diving"]("/static/images/source/almos-bechtold-Sp7-SbM1EtQ-unsplash.jpg"){.picture--outline}
+  {% Markdown true %}!["Deep in the sea: underwater photo of person diving"](/static/images/source/almos-bechtold-Sp7-SbM1EtQ-unsplash.jpg){.picture--outline}{% endMarkdown %}
   <figcaption>Photo by <a href="https://unsplash.com/@almosbech?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Almos Bechtold</a> on <a href="https://unsplash.com/photos/Sp7-SbM1EtQ?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></figcaption>
 </figure>
 
@@ -132,7 +132,7 @@ To this day, writers, courses and critics continue to [assess films and novels a
 ### Life At the Extremes: When Heroes Fail
 
 <figure class="picture--block">
-  !["Man jumping waterfalls"]("/static/images/source/jakob-owens-XzW8TtPnxy8-unsplash.jpg"){.picture--outline}
+  {% Markdown true %}!["Man jumping waterfalls"](/static/images/source/jakob-owens-XzW8TtPnxy8-unsplash.jpg){.picture--outline}{% endMarkdown %}
   <figcaption>Photo by <a href="https://unsplash.com/@jakobowens1?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Jakob Owens</a> on <a href="https://unsplash.com/photos/XzW8TtPnxy8?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></figcaption>
 </figure>
 
@@ -181,7 +181,7 @@ Similarly, brilliant stories that do not have any sense of a heroic journey nor 
 ### Coming Up for Air
 
 <figure class="picture--block">
-  !["Woman swimming on body of water during daytime"]("/static/images/source/jordan-whitfield-fCmj9r7e6BU-unsplash.jpg"){.picture--outline}
+  {% Markdown true %}!["Woman swimming on body of water during daytime"](/static/images/source/jordan-whitfield-fCmj9r7e6BU-unsplash.jpg){.picture--outline}{% endMarkdown %}
   <figcaption>Photo by <a href="https://unsplash.com/es/@whitfieldjordan?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Jordan Whitfield</a> on <a href="https://unsplash.com/photos/fCmj9r7e6BU?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></figcaption>
 </figure>
 

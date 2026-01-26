@@ -32,7 +32,7 @@ image:
 ### [Nights of Plague](https://app.thestorygraph.com/books/8d1f34a8-ec35-4293-b425-09efdddabf1b){rel=noopener target=_blank}
 
 <figure class="content-canvas-item-right content-canvas-item-right--span-4 picture--block">
-  !["Nights of Plague book cover"]("/static/images/source/books/pamuk-nights-of-plague.jpeg"){.picture--outline}
+  {% Markdown true %}!["Nights of Plague book cover"](/static/images/source/books/pamuk-nights-of-plague.jpeg){.picture--outline}{% endMarkdown %}
 </figure>
 
 *by Orhan Pamuk*
@@ -59,7 +59,7 @@ I found the mythical form of the language quite hard work, frustrating even, and
 ### [The Old Man and the Sea](https://app.thestorygraph.com/books/d90a2b60-d7c5-4133-981d-21fd88144993){rel=noopener target=_blank}
 
 <figure class="content-canvas-item-right content-canvas-item-right--span-4 picture--block">
-  !["The Old Man and the Sea book cover"]("/static/images/source/books/hemmingway-the-old-man-and-the-sea.jpeg"){.picture--outline}
+  {% Markdown true %}!["The Old Man and the Sea book cover"](/static/images/source/books/hemmingway-the-old-man-and-the-sea.jpeg){.picture--outline}{% endMarkdown %}
 </figure>
 
 *by Ernest Hemingway*
@@ -82,7 +82,7 @@ The plot is brilliantly told: a powerful tragedy portrayed in lucid, laconic lan
 ### [Still Born](https://app.thestorygraph.com/books/d90a2b60-d7c5-4133-981d-21fd88144993){rel=noopener target=_blank}
 
 <figure class="content-canvas-item-right content-canvas-item-right--span-4 picture--block">
-  !["Still Born book cover"]("/static/images/source/books/nettel-still-born.jpeg"){.picture--outline}
+  {% Markdown true %}!["Still Born book cover"](/static/images/source/books/nettel-still-born.jpeg){.picture--outline}{% endMarkdown %}
 </figure>
 
 *by Guadalupe Nettel*
@@ -103,7 +103,7 @@ In the end, I was little disappointed. Laura tells the story, yet too often she 
 ### [Blood Meridian](https://app.thestorygraph.com/books/29ad6af6-32aa-4c4b-83c5-73481ad6dfc6){rel=noopener target=_blank}
 
 <figure class="content-canvas-item-right content-canvas-item-right--span-4 picture--block">
-  !["Blood Meridian book cover"]("/static/images/source/books/mccarthy-blood-meridian.jpeg"){.picture--outline}
+  {% Markdown true %}!["Blood Meridian book cover"](/static/images/source/books/mccarthy-blood-meridian.jpeg){.picture--outline}{% endMarkdown %}
 </figure>
 
 *by Cormac McCarthy*
@@ -126,7 +126,7 @@ That said, at the end I was left with one big question — is it a story? Lots o
 ### [Cuddy](https://app.thestorygraph.com/books/2e6b0a6d-c544-4bbf-af4e-ce71f0989feb){rel=noopener target=_blank}
 
 <figure class="content-canvas-item-right content-canvas-item-right--span-4 picture--block">
-  !["Cuddy book cover"]("/static/images/source/books/myers-cuddy.jpeg"){.picture--outline}
+  {% Markdown true %}!["Cuddy book cover"](/static/images/source/books/myers-cuddy.jpeg){.picture--outline}{% endMarkdown %}
 </figure>
 
 *by Benjamin Myers*

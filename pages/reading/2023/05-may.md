@@ -31,7 +31,7 @@ image:
 ### [The Gathering](https://app.thestorygraph.com/books/cd530645-4fc0-4582-899e-284f79159f19){rel=noopener target=_blank}
 
 <figure class="content-canvas-item-right content-canvas-item-right--span-4 picture--block">
-  ![The Gathering book cover]("/static/images/source/books/enright-the-gathering.jpeg"){.picture--outline}
+  {% Markdown true %}![The Gathering book cover](/static/images/source/books/enright-the-gathering.jpeg){.picture--outline}{% endMarkdown %}
 </figure>
 
 *by Anne Enright*
@@ -52,7 +52,7 @@ It's a beautiful and painful story told in beautiful and unflinching language. I
 ### [Open Water](https://app.thestorygraph.com/books/a23084b2-bdbf-4993-98a8-a1efca4b5bc4){rel=noopener target=_blank}
 
 <figure class="content-canvas-item-right content-canvas-item-right--span-4 picture--block">
-  !["Open Water book cover"]("/static/images/source/books/nelson-open-water.jpeg"){.picture--outline}
+  {% Markdown true %}!["Open Water book cover"](/static/images/source/books/nelson-open-water.jpeg){.picture--outline}{% endMarkdown %}
 </figure>
 
 *by Caleb Azumah Nelson*
@@ -76,7 +76,7 @@ This is a fabulous debut novel, and I really look forward to reading more by Cal
 *(audiobook)*
 
 <figure class="content-canvas-item-right content-canvas-item-right--span-4 picture--block">
-  !["Buddenbrooks book cover"]("/static/images/source/books/mann-buddenbrooks.jpeg"{.picture--outline}
+  {% Markdown true %}!["Buddenbrooks book cover"](/static/images/source/books/mann-buddenbrooks.jpeg){.picture--outline}{% endMarkdown %}
 </figure>
 
 *by Thomas Mann*
@@ -101,7 +101,7 @@ I enjoyed the story a lot, though the language and narrative style felt quite da
 *(audiobook)*
 
 <figure class="content-canvas-item-right content-canvas-item-right--span-4 picture--block">
-  !["Raptor book cover"]("/static/images/source/books/lockhart-raptor.jpeg"){.picture--outline}
+  {% Markdown true %}!["Raptor book cover"](/static/images/source/books/lockhart-raptor.jpeg){.picture--outline}{% endMarkdown %}
 </figure>
 
 *by James Macdonald Lockhart*

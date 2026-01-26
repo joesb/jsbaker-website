@@ -39,7 +39,7 @@ Ah well.
 ### [The Light Years](https://app.thestorygraph.com/books/112b6ed5-7619-4720-99f0-c6cf34b1c54f){rel=noopener target=_blank} <small>(Cazalet Chronicles #1)</small>
 
 <figure class="content-canvas-item-right content-canvas-item-right--span-4 picture--block">
-  !["The Light Years book cover"]("/static/images/source/books/howard-the-light-years.jpeg"){.picture--outline}
+  {% Markdown true %}!["The Light Years book cover"](/static/images/source/books/howard-the-light-years.jpeg){.picture--outline}{% endMarkdown %}
 </figure>
 
 *by Elizabeth Jane Howard*

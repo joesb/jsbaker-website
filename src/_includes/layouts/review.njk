@@ -1,100 +1,176 @@
 ---
 layout: page.njk
 is_review: true
+styles:
+  - reviews.css
 image:
   figClasses:
-    - content-canvas-item-wide-right
-    - content-canvas-item-right--span-2
     - picture--block
 ---
 
-	<div class="content-canvas-item-full content-canvas">
-		{{ content | safe }}
-	</div>
+  <div class="content-canvas-item-full content-canvas">
+    {{ content | safe }}
+  </div>
 
 {% macro reviewItem(review) %}
-		<div class="review-key-data content-canvas-item-wide-left">
-			<h3>
-				<a href="{{ review.urls.book }}" rel="noopener" target="_blank">{{ review.title }}</a>
-				<a class="direct-link visually-hidden" href="#{{ review.title | slugify }}" aria-hidden="true">#</a>
-			{% if review.audiobook %}
-				<em class="small">(audiobook)</em>
-			{% endif %}
-			</h3>
-			{% if review.subtitle %}
-			<p class="bold smaller"><em>{{ review.subtitle }}</em></p>
-			{% endif %}
+    <div class="review-item review-key-data content-canvas-item-wide-left">
+      <h3 class="heading-v-wide">
+        <a href="{{ review.urls.book }}" rel="noopener noreferrer" target="_blank">{{ review.title }}</a>
+        <a class="direct-link visually-hidden" href="#{{ review.title | slugify }}" aria-hidden="true">#</a>
+      {% if review.audiobook %}
+        <em class="small">(audiobook)</em>
+      {% endif %}
+      </h3>
+      {% if review.subtitle %}
+      <p class="bold smaller"><em>{{ review.subtitle }}</em></p>
+      {% endif %}
 
-			<p>
-				<em>by {{ review.author }}</em><br/>
-				{% if review.author_extras %}
-				<em class="small">with {% for extra in review.author_extras %}{{ extra.name }} ({{ extra.role }}){% if not loop.last %}, {% endif %}{% endfor %}</em><br />
-				{% endif %}
-			</p>
-			<p>
-				{{ review.rating }} ⭐️
-			</p>
-		</div>
+      <p>
+        <em>by {{ review.author }}</em><br/>
+        {% if review.author_extras %}
+        <em class="small">with {% for extra in review.author_extras %}{{ extra.name }} ({{ extra.role }}){% if not loop.last %}, {% endif %}{% endfor %}</em><br />
+        {% endif %}
+      </p>
+      {% if review.rating %}
+      <p>
+        {{ review.rating }} ⭐️
+      </p>
+      {% endif %}
+    </div>
 
-		{% if review.urls.cover %}
-		{# <figure class="content-canvas-item-wide-right content-canvas-item-right--span-2 picture--block"> #}
-			{% set imagePath = review.urls.cover %}
-			{% set imageAlt = [review.title, " book cover"] | join %}
-			{# {% image imageUrl, imageAlt, "picture--outline", "", "(min-width: 25em) 50vw, 100vw", [250, 500] %} #}
-		{# </figure> #}
-		{% ImgFigure "", image.figClasses %}![{{ imageAlt }}]({{ imagePath }}){.image-rounded eleventy:widths="[250, 500]" eleventy:formats="webp,jpg"}{% endImgFigure %}
-		{% endif %}
+    {% if review.urls.cover %}
+    {# <figure class="content-canvas-item-wide-right content-canvas-item-right--span-2 picture--block"> #}
+      {% set imagePath = review.urls.cover %}
+      {% set imageAlt = [review.title, " book cover"] | join %}
+      {# {% image imageUrl, imageAlt, "picture--outline", "", "(min-width: 25em) 50vw, 100vw", [250, 500] %} #}
+    {# </figure> #}
+    <a href="{{ review.urls.book }}" rel="noopener noreferrer" target="_blank" class="content-canvas-item-wide-right content-canvas-item-right--span-2">{% ImgFigure "", image.figClasses %}![{{ imageAlt }}]({{ imagePath }}){.image-rounded eleventy:widths="100,200" eleventy:formats="webp,jpg"}{% endImgFigure %}</a>
+    {% endif %}
 
-		<div class="review-meta content-canvas-item-wide-left">
-			{% if review.moods %}
-			<p class="review-meta--moods">
-				<em>{{ review.moods }}</em>
-			</p>
-			{% endif %}
-			{% if review.questions %}
-			<ul class="review-meta--character-questions-list">
-					<li>
-							<strong>Plot- or character-driven?</strong>
-							{{ review.questions.driven }}</li>
-					<li>
-							<strong>Strong character development?</strong>
-							{{ review.questions.development }}</li>
-					<li>
-							<strong>Loveable characters?</strong>
-							{{ review.questions.loveable }}</li>
-					<li>
-							<strong>Diverse cast of characters?</strong>
-							{{ review.questions.diverse }}</li>
-					<li>
-							<strong>Flaws of characters a main focus?</strong>
-							{{ review.questions.flaws }}</li>
-			</ul>
-			{% endif %}
-		</div>
+    {% if  review.type or review.moods or review.questions %}
+    <div class="review-meta content-canvas-item-wide-left">
+      {% if review.type %}
+      <p class="review-meta--type">
+        ({{ review.type }})
+      </p>
+      {% endif %}
+      {% if review.moods %}
+      <p class="review-meta--moods">
+        <em>{{ review.moods }}</em>
+      </p>
+      {% endif %}
+      {% if review.questions %}
+      <ul class="review-meta--character-questions-list">
+          <li>
+              <strong>Plot- or character-driven?</strong>
+              {{ review.questions.driven }}</li>
+          <li>
+              <strong>Strong character development?</strong>
+              {{ review.questions.development }}</li>
+          <li>
+              <strong>Loveable characters?</strong>
+              {{ review.questions.loveable }}</li>
+          <li>
+              <strong>Diverse cast of characters?</strong>
+              {{ review.questions.diverse }}</li>
+          <li>
+              <strong>Flaws of characters a main focus?</strong>
+              {{ review.questions.flaws }}</li>
+      </ul>
+      {% endif %}
+    </div>
+    {% endif %}
 
-		{% if review.text %}
-		<div class="review-text">
-			{{ review.text | markdown | safe }}
-		</div>
-		{% endif %}
+    {% if review.text %}
+    <div class="review-text">
+      {{ review.text | markdown | safe }}
+    </div>
+    {% endif %}
 
 {% endmacro %}
 
-	{# {% from 'layouts/macros/reading-review.njk' import readingReview %} #}
+{% macro reviewItemMini(review) %}
+<div class="review-item review-item-mini review-key-data content-canvas-item-wide">
+    <div class="review-item-title">
+      <h3 class="heading-v-wide">
+        <a href="{{ review.urls.book }}" rel="noopener noreferrer" target="_blank">{{ review.title }}</a>
+        <a class="direct-link visually-hidden" href="#{{ review.title | slugify }}" aria-hidden="true">#</a>
+      {% if review.audiobook %}
+        <em class="small">(audiobook)</em>
+      {% endif %}
+      </h3>
 
-	{% if reviews.top | length %}
-		{% if reviews.top.fiction | length %}
-		{% endif %}
-	{% else %}
-		{% set reviewsList = reviews %}
-	{% endif %}
+      {% if review.subtitle %}
+      <p class="bold headings-font">— {{ review.subtitle }}</p>
+      {% endif %}
+    </div>
+    <p class="review-item-author">
+      <em>by {{ review.author }}</em><br/>
+      {% if review.author_extras %}
+      <em class="small">with {% for extra in review.author_extras %}{{ extra.name }} ({{ extra.role }}){% if not loop.last %}, {% endif %}{% endfor %}</em><br />
+      {% endif %}
+    </p>
+    {% if review.type %}
+    <div class="review-item-meta review-meta">
+      {% if review.type %}
+      <p class="review-meta--type">
+        ({{ review.type }})
+      </p>
+      {% endif %}
+    </div>
+    {% endif %}
+</div>
+{% endmacro %}
 
-	{% for review in reviewsList %}
-		
-		{{ reviewItem(review) }}
+  {# {% from 'layouts/macros/reading-review.njk' import readingReview %} #}  
 
-		{% if not loop.last %}
-		<hr>
-		{% endif %}
-	{% endfor %}
+  {% if reviews.top | length %}
+    {% if reviews.top.fiction | length %}
+{% Markdown %}
+## {{ reviews.top.fiction.title | default("Best Fiction") }}{.content-canvas-item-wide}
+{% endMarkdown %}
+      {% for review in reviews.top.fiction.list %}
+        {{ reviewItem(review) }}
+
+        {% if not loop.last %}
+        <hr>
+        {% elif reviews.top.nonFiction | length %}
+        <hr>
+        {% endif %}
+      {% endfor %}
+    {% endif %}
+    {% if reviews.top.nonFiction | length %}
+{% Markdown %}
+## {{ reviews.top.nonFiction.title | default("Best Non-Fiction") }}{.content-canvas-item-wide}
+{% endMarkdown %}
+      {% for review in reviews.top.nonFiction.list %}
+        {{ reviewItem(review) }}
+
+        {% if not loop.last %}
+        <hr>
+        {% elif reviews.others | length %}
+        <hr>
+        {% endif %}
+      {% endfor %}
+    {% endif %}
+    {% if reviews.others | length %}
+{% Markdown %}
+## {{ reviews.others.title | default("The Rest") }}{.content-canvas-item-wide}
+{% endMarkdown %}
+      {% for review in reviews.others.list %}
+        {{ reviewItemMini(review) }}
+      {% endfor %}
+    {% endif %}
+  {% else %}
+    {% set reviewsList = reviews.list %}
+  {% endif %}
+
+  {% for review in reviewsList %}
+    
+    {{ reviewItem(review) }}
+
+    {% if not loop.last %}
+    <hr>
+    {% endif %}
+  {% endfor %}
 
