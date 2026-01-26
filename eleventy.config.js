@@ -145,7 +145,7 @@ export default async function(eleventyConfig) {
 
   eleventyConfig.addAsyncShortcode("imageData", async function(src) {
     var picture = await getPictureData(src, [800]);
-    return picture.jpeg[0].outputPath;
+    return picture.jpeg[0].url;
   });
 
   // Minify CSS
@@ -339,8 +339,9 @@ export default async function(eleventyConfig) {
 	};
   
   async function getPictureData(src, widths = [300, 600, 1000, 1980]) {
-    let metadata = await Image(src, {
-			widths: widths,
+    let metadata = await Image('./pages' + src, {
+			returnType: 'object',
+      widths: widths,
 			formats: ['jpeg'],
       urlPath: "/static/img/",
       outputDir: "./_site/static/img/"

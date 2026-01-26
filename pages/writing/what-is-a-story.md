@@ -11,7 +11,7 @@ page:
 summary:
   class: "site-content--surface-teal"
 image: 
-  social: pages/static/images/source/pexels-photo-5088149.jpeg
+  social: /static/images/source/pexels-photo-5088149.jpeg
 tags:
   - 'On Writing'
   - '#writing'
