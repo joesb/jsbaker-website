@@ -162,6 +162,13 @@ image:
 {% Markdown %}
 ## {{ reviews.others.title | default("The Rest") }}{.content-canvas-item-wide}
 {% endMarkdown %}
+
+{% if reviews.others.text | length %}
+{% Markdown %}
+{{ reviews.others.text }}{.margin-block-vlg}
+{% endMarkdown %}
+{% endif %}
+
       {% for review in reviews.others.list %}
         {{ reviewItemMini(review) }}
       {% endfor %}
