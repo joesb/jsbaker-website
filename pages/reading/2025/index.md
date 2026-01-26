@@ -97,7 +97,7 @@ reviews:
   others:
     title: The Rest of 2025
     text: |
-      Loads of the other books I read in 2025 were great, too.
+      Loads of the other books I read in 2025 were great, too (though not all!).
     list:
       - 
         title: My Friends
