@@ -37,15 +37,17 @@
 .link--internal__image {
   grid-area: pic;
   overflow: hidden;
+  position: relative;
 
   picture {
-    display: block;
-    min-height: 100%;
-    display: flex;
-    justify-content: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    height: 100%;
+    overflow: hidden;
 
     img {
-      max-inline-size: unset;
       height: 100%;
       object-fit: cover;
       object-position: center center;

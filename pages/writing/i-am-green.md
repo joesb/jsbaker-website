@@ -13,9 +13,11 @@ canonical: https://www.jsbaker.co.uk/writing/i-am-green/
 page:
   class: "page--with-hero page--writing page--writing--light"
 image:
-  path: "static/images/source/pexels-markusspiske-113338.jpg"
+  path: "/static/images/source/pexels-markusspiske-113338.jpg"
   alt: "Bird's eye view of a green forest, trees"
-  class: "image-obj-cover image-darken-33"
+  class:
+    - image-obj-cover
+    - image-darken-33
   # pictureClass: "content-canvas-item-right content-canvas-item-right--span-3"
   pictureClass:
     # page: "content-canvas-item-full picture--hero"

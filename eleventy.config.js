@@ -7,17 +7,20 @@ import pluginRss from "@11ty/eleventy-plugin-rss";
 import eleventyNavigationPlugin from "@11ty/eleventy-navigation";
 import Image from "@11ty/eleventy-img";
 import { eleventyImageOnRequestDuringServePlugin } from "@11ty/eleventy-img";
+import { eleventyImageTransformPlugin } from "@11ty/eleventy-img";
 import { EleventyHtmlBasePlugin } from "@11ty/eleventy";
 import markdownIt from "markdown-it";
 import markdownItAnchor from "markdown-it-anchor";
 import markdownItAttrs from "markdown-it-attrs";
 import markdownItSmall from "markdown-it-small";
-import markdownIt11tyImage from "markdown-it-eleventy-img";
+// import markdownIt11tyImage from "markdown-it-eleventy-img";
 import { inspect } from "util";
 import timeToRead  from "eleventy-plugin-time-to-read";
 import embedEverything from "eleventy-plugin-embed-everything";
 import env from "./src/_data/env.js";
 import { minify } from "html-minifier-terser";
+
+import path from 'path';
 
 /** @param {import("@11ty/eleventy").UserConfig} eleventyConfig */
 export default async function(eleventyConfig) {
@@ -54,36 +57,49 @@ export default async function(eleventyConfig) {
     return '';
   });
 
+  eleventyConfig.addPlugin(eleventyImageTransformPlugin, {
+		// which file extensions to process
+		extensions: "html",
+
+		// Add any other Image utility options here:
+
+		// optional, output image formats
+		formats: ["webp", "jpeg"],
+		// formats: ["auto"],
+
+		// optional, output image widths
+		widths: [800, 500, 300],
+
+    urlPath: "/static/img/",
+    outputDir: "./_site/static/img/",
+
+		// optional, attributes assigned on <img> override these values.
+		defaultAttributes: {
+			loading: "lazy",
+			decoding: "async",
+			sizes: "auto",
+		},
+
+    filenameFormat: (id, src, width, format) => {
+      const { name } = path.parse(src);
+      return `${name}-${width}w.${format}`;
+    },
+	});
+
   // Return responsive images
-  eleventyConfig.addShortcode("image", async function(src, alt, cls, pictureCls = "", sizes = "(min-width: 30em) 50vw, 100vw", widths = [300, 600, 1000, 1980]) {
+  eleventyConfig.addShortcode("image", async function(src, alt, cls = [], pictureCls = "", sizes = "auto", widths = [300, 600, 1000, 1980]) {
 		if(alt === undefined) {
 			// You bet we throw an error on missing alt (alt="" works okay)
 			throw new Error(`Missing \`alt\` on responsiveimage from: ${src}`);
 		}
 
-		let metadata = await Image(src, {
-			widths: widths,
-			formats: ['webp', 'jpeg'],
-      urlPath: "/static/img/",
-      outputDir: "./static/img/"
-		});
+    let imgClass = cls.length ? cls.map(s => `.${s}`).join(' ') : '';
 
-		let lowsrc = metadata.jpeg[0];
-		let highsrc = metadata.jpeg[metadata.jpeg.length - 1];
+    let content = `![${alt}](${src}){${imgClass} eleventy:widths="${widths.join(',')}" eleventy:pictureattr:class="${pictureCls}"}`;
 
-		return `<picture class="${pictureCls}">
-			${Object.values(metadata).map(imageFormat => {
-				return `  <source type="${imageFormat[0].sourceType}" srcset="${imageFormat.map(entry => entry.srcset).join(", ")}" sizes="${sizes}">`;
-			}).join("\n")}
-				<img
-					src="${lowsrc.url}"
-					width="${highsrc.width}"
-					height="${highsrc.height}"
-          class="${cls}"
-					alt="${alt}"
-					loading="lazy"
-					decoding="async">
-			</picture>`;
+    content = markdownLibrary.renderInline(content);
+
+    return content;
 	});
 
     // // Collection of items promotoed
@@ -109,10 +125,13 @@ export default async function(eleventyConfig) {
       </div>`;
     if (thePage.data.image) {
       var image = thePage.data.image;
-      var picture = await getPictureMarkup(image.path, image.alt, image.class, "link--internal__image__picture", "(min-width: 30em) 50vw, 100vw", [100, 200]);
+      let widths = [100, 200, 300];
+      let imgClass = image.class.length ? image.class.map(s => `.${s}`).join(' ') : '';
+      let imgMd = `![${image.alt}](${image.path}){${imgClass} eleventy:widths="${widths.join(',')}" eleventy:pictureattr:class="${image.pictureClass.list}"}`;
+      imgMd = markdownLibrary.renderInline(imgMd);
       theEmbed += `
       <div class="link--internal__image">
-        ${picture}
+        ${imgMd}
       </div>
       `;
     }
@@ -298,7 +317,7 @@ export default async function(eleventyConfig) {
 			widths: widths,
 			formats: ['webp', 'jpeg'],
       urlPath: "/static/img/",
-      outputDir: "./static/img/"
+      outputDir: "./_site/static/img/"
 		});
 
 		let lowsrc = metadata.jpeg[0];
@@ -318,16 +337,23 @@ export default async function(eleventyConfig) {
 					decoding="async">
 			</picture>`;
 	};
-
+  
   async function getPictureData(src, widths = [300, 600, 1000, 1980]) {
     let metadata = await Image(src, {
 			widths: widths,
 			formats: ['jpeg'],
       urlPath: "/static/img/",
-      outputDir: "./static/img/"
+      outputDir: "./_site/static/img/"
 		});
     return metadata;
   };
+
+  eleventyConfig.addPairedShortcode("ImgFigure", function(content, caption = false, classes, md = true) {
+    if (caption) {
+      caption = '<figcaption>' + caption + '</figcaption>';
+    }
+    return '<figure' + (classes.length ? ' class="' + (classes instanceof Array ? classes.join(" ") : classes) + '"' : '') + '>' + (md ? markdownLibrary.renderInline(content) : content) + (caption ? caption : '') +'</figure>';
+  });
 
   // Customize Markdown library and settings:
   let markdownLibrary = markdownIt({
@@ -342,14 +368,14 @@ export default async function(eleventyConfig) {
       level: [1,2,3,4],
     }),
     slugify: eleventyConfig.getFilter("slug")
-  }).use(markdownItAttrs).use(markdownItSmall).use(markdownIt11tyImage);
+  }).use(markdownItAttrs).use(markdownItSmall);
   eleventyConfig.setLibrary("md", markdownLibrary);
 
   eleventyConfig.addFilter("markdown", (content) => {
     return markdownLibrary.render(content);
   });
 
-  eleventyConfig.addPassthroughCopy('static/');
+  eleventyConfig.addPassthroughCopy('pages/static/');
   // eleventyConfig.addPassthroughCopy('CNAME');
   eleventyConfig.addWatchTarget('./src/_sass/');
 };

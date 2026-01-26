@@ -153,9 +153,11 @@ a {
 
 blockquote {
   border-color: var(--surface-teal);
+  border-inline-start-width: var(--border-size-4);
   max-inline-size: var(--size-content-3);
   margin-block: var(--size-fluid-2);
   padding-block: 0;
+  font-style: italic;
 
   &.bq-alt{ 
     border-inline-start-width: 0;

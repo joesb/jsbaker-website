@@ -12,9 +12,12 @@ tags:
   - "#reading"
 is_review: true
 image:
-  path: "static/images/source/chuttersnap-b2Rmlyz7n3I-unsplash.jpg"
+  path: "/static/images/source/chuttersnap-b2Rmlyz7n3I-unsplash.jpg"
   alt: "Books on bookshelves"
-  class: "image-obj-cover image-greyscale-75 image-darken-33"
+  class:
+    - image-obj-cover
+    - image-greyscale-75 
+    - image-darken-33
   # pictureClass: "content-canvas-item-right content-canvas-item-right--span-3"
   pictureClass:
     # page: "content-canvas-item-full picture--hero"
@@ -55,7 +58,7 @@ I’ve given each a star-rated vote. I’m aware that my ratings are weighted to
 #### [Sapiens: A Brief History of Humankind](https://www.goodreads.com/book/show/25004163-sapiens){rel=noopener target=_blank}
 
 <figure class="content-canvas-item-right content-canvas-item-right--span-3 picture--block">
-  {% image "static/images/source/books/harari-sapiens.jpg", "Sapiens audiobook cover", "picture--outline", %}
+  !["Sapiens audiobook cover"]("/static/images/source/books/harari-sapiens.jpg"){.picture--outline}
 </figure>
 
 *By Yuval Noah Harari*
@@ -69,7 +72,7 @@ A stimulating and provocative high-level and long-timescale view of the history 
 #### [Winter in Madrid](https://www.goodreads.com/book/show/891671.Winter_in_Madrid){rel=noopener target=_blank}
 
 <figure class="content-canvas-item-right content-canvas-item-right--span-3 picture--block">
-  {% image "static/images/source/books/sansom-winter-in-madrid.jpg", "Winter in Madird book cover", "picture--outline", %}
+  !["Winter in Madird book cover"]("/static/images/source/books/sansom-winter-in-madrid.jpg"){.picture--outline}
 </figure>
 
 *By C.J. Sansom*
@@ -80,7 +83,7 @@ Sansom is most famous for his Shardlake series, I believe, though I’ve not rea
 #### [Homage to Catalonia](https://www.goodreads.com/book/show/22382742-homage-to-catalonia){rel=noopener target=_blank}
 
 <figure class="content-canvas-item-right content-canvas-item-right--span-4 picture--block">
-  {% image "static/images/source/books/orwell-homage-to-catalonia.jpg", "Homage to Catalonia book cover", "picture--outline", %}
+  !["Homage to Catalonia book cover"]("/static/images/source/books/orwell-homage-to-catalonia.jpg"){.picture--outline"}
 </figure>
 
 *By George Orwell*
@@ -101,7 +104,7 @@ In fact, Orwell writes frustratingly little about Catalan life in the era, which
 #### [The Essex Serpent](https://www.goodreads.com/book/show/32075861-the-essex-serpent){rel=noopener target=_blank}
 
 <figure class="content-canvas-item-right content-canvas-item-right--span-4 picture--block">
-  {% image "static/images/source/books/perry-the-essex-serpent.jpg", "The Essex Serpent book cover", "picture--outline", %}
+  !["The Essex Serpent book cover"]("/static/images/source/books/perry-the-essex-serpent.jpg"){.picture--outline}
 </figure>
 
 *By Sarah Perry*
@@ -114,7 +117,7 @@ I’m a sucker for a novel where the reading of it is a sensory experience itsel
 #### [The New Life](https://www.goodreads.com/book/show/28013084-the-new-life){rel=noopener target=_blank}
 
 <figure class="content-canvas-item-right content-canvas-item-right--span-4 picture--block">
-  {% image "static/images/source/books/pamuk-the-new-life.jpg", "The New Life book cover", "picture--outline", %}
+  !["The New Life book cover"]("/static/images/source/books/pamuk-the-new-life.jpg"){.picture--outline}
 </figure>
 
 *By Orhan Pamuk*
@@ -127,7 +130,7 @@ I got a little lost in places in the middle, losing the book a star, but Pamuk�
 #### [The Remains of the Day](https://www.goodreads.com/book/show/8492776-the-remains-of-the-day){rel=noopener target=_blank}
 
 <figure class="content-canvas-item-right content-canvas-item-right--span-4 picture--block">
-  {% image "static/images/source/books/ishiguro-the-remains-of-the-day.jpg", "The Remains of the Day book cover", "picture--outline", %}
+  !["The Remains of the Day book cover"]("/static/images/source/books/ishiguro-the-remains-of-the-day.jpg"){.picture--outline}
 </figure>
 
 *By Kazuo Ishiguro*
@@ -140,7 +143,7 @@ Stevens’s dedicated life of self-restraint in preference for Lord Darlington a
 #### [The Dalkey Archive](https://www.goodreads.com/book/show/984096.The_Dalkey_Archive){rel=noopener target=_blank}
 
 <figure class="content-canvas-item-right content-canvas-item-right--span-4 picture--block">
-  {% image "static/images/source/books/obrien-the-dalkey-archive.jpg", "The Dalkey Archive book cover", "picture--outline", %}
+  !["The Dalkey Archive book cover"]("/static/images/source/books/obrien-the-dalkey-archive.jpg"){.picture--outline}
 </figure>
 
 *By Flann O’Brien*
@@ -151,7 +154,7 @@ Mad scientist and theologian, De Selby, plots to destroy the world by removing a
 #### [Any Human Heart](https://www.goodreads.com/book/show/7544887-any-human-heart){rel=noopener target=_blank}
 
 <figure class="content-canvas-item-right content-canvas-item-right--span-4 picture--block">
-  {% image "static/images/source/books/boyd-any-human-heart.jpg", "Any Human Heart book cover", "picture--outline", %}
+  !["Any Human Heart book cover"]("/static/images/source/books/boyd-any-human-heart.jpg"){.picture--outline}
 </figure>
 
 *by William Boyd*

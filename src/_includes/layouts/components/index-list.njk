@@ -1,6 +1,7 @@
     <ul class="index-list">
     {% set cls = cycler("odd", "even") %}
     {% set sze = cycler("large","small") %}
+    {% set imgSizes = [300, 650, 1100] %}
     {% for item in items %}
       {% set vr = cls.next() %}
       {% if loop.index != 1 and vr == "even" %}
@@ -38,7 +39,7 @@
         </div>
         <a href="{{ item.url | url }}"{% activepath item.url, page.url %} class="faux-block-link"><span class="hide-text" aria-hidden="true">{{ item.data.title }}</span></a>
         {% if item.data.image.path %}
-          {% image item.data.image.path, item.data.image.alt, item.data.image.class, item.data.image.pictureClass.list %}
+          {% image item.data.image.path, item.data.image.alt, item.data.image.class, item.data.image.pictureClass.list, 'auto', imgSizes %}
         {% endif %}
       </li>
     {% endfor %}

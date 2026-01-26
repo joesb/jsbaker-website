@@ -1,13 +1,18 @@
 ---
 layout: page.njk
 is_review: true
+image:
+  figClasses:
+    - content-canvas-item-wide-right
+    - content-canvas-item-right--span-2
+    - picture--block
 ---
 
-	{# {% from 'layouts/macros/reading-review.njk' import readingReview %} #}
-	{% for review in reviews %}
-		{# {{ readingReview(review) }} #}
-		{# {% include 'layouts/md/components/reading-review.njk'%} #}
+	<div class="content-canvas-item-full content-canvas">
+		{{ content | safe }}
+	</div>
 
+{% macro reviewItem(review) %}
 		<div class="review-key-data content-canvas-item-wide-left">
 			<h3>
 				<a href="{{ review.urls.book }}" rel="noopener" target="_blank">{{ review.title }}</a>
@@ -32,11 +37,12 @@ is_review: true
 		</div>
 
 		{% if review.urls.cover %}
-		<figure class="content-canvas-item-wide-right content-canvas-item-right--span-2 picture--block">
-			{% set imageUrl = review.urls.cover %}
+		{# <figure class="content-canvas-item-wide-right content-canvas-item-right--span-2 picture--block"> #}
+			{% set imagePath = review.urls.cover %}
 			{% set imageAlt = [review.title, " book cover"] | join %}
-			{% image imageUrl, imageAlt, "picture--outline", "", "(min-width: 25em) 50vw, 100vw", [250, 500] %}
-		</figure>
+			{# {% image imageUrl, imageAlt, "picture--outline", "", "(min-width: 25em) 50vw, 100vw", [250, 500] %} #}
+		{# </figure> #}
+		{% ImgFigure "", image.figClasses %}![{{ imageAlt }}]({{ imagePath }}){.image-rounded eleventy:widths="[250, 500]" eleventy:formats="webp,jpg"}{% endImgFigure %}
 		{% endif %}
 
 		<div class="review-meta content-canvas-item-wide-left">
@@ -71,7 +77,24 @@ is_review: true
 			{{ review.text | markdown | safe }}
 		</div>
 		{% endif %}
+
+{% endmacro %}
+
+	{# {% from 'layouts/macros/reading-review.njk' import readingReview %} #}
+
+	{% if reviews.top | length %}
+		{% if reviews.top.fiction | length %}
+		{% endif %}
+	{% else %}
+		{% set reviewsList = reviews %}
+	{% endif %}
+
+	{% for review in reviewsList %}
+		
+		{{ reviewItem(review) }}
+
 		{% if not loop.last %}
 		<hr>
 		{% endif %}
 	{% endfor %}
+

@@ -13,9 +13,11 @@ canonical: https://www.jsbaker.co.uk/writing/sicily/
 page:
   class: "page--with-hero page--writing page--writing--light"
 image:
-  path: "static/images/source/jason-briscoe-fugfJRW18jM-unsplash.jpg"
+  path: "/static/images/source/jason-briscoe-fugfJRW18jM-unsplash.jpg"
   alt: "Person drinking tea"
-  class: "image-obj-cover image-darken-10"
+  class:
+    - image-obj-cover
+    - image-darken-10
   # pictureClass: "content-canvas-item-right content-canvas-item-right--span-3"
   pictureClass:
     # page: "content-canvas-item-full picture--hero"
