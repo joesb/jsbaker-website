@@ -6,8 +6,8 @@ eleventyNavigation:
   key: Home
 layout: home.njk
 image: 
-  path: static/images/home/jsb-003.jpg
-  social: static/images/home/jsb-003-social-card.jpg
+  path: /static/images/home/jsb-003.jpg
+  social: /static/images/home/jsb-003-social-card.jpg
   alt: "Me, Joe Baker"
 pagination:
   data: collections.promotedContent

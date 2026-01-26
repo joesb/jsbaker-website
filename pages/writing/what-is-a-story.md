@@ -5,13 +5,13 @@ layout: page.njk
 date: 2023-06-27
 promoted: true
 sharePage: true
-order: 2
+order: 1
 page:
   class: "page--summary--wide page--writing--light"
 summary:
   class: "site-content--surface-teal"
 image: 
-  social: static/images/source/pexels-photo-5088149.jpeg
+  social: /static/images/source/pexels-photo-5088149.jpeg
 tags:
   - 'On Writing'
   - '#writing'

@@ -13,9 +13,13 @@ tags:
   - Novels
   - "#reading"
 image:
-  path: "static/images/source/pexels-mikhail-nilov-9784030.jpg"
+  path: "/static/images/source/pexels-mikhail-nilov-9784030.jpg"
   alt: "Person wearing black and gray jacket in front of bookshelf"
-  class: "image-obj-cover image-greyscale-75 image-darken-33 image-obj-pos-bottom"
+  class:
+    - image-obj-cover
+    - image-greyscale-75 
+    - image-darken-33
+    - image-obj-pos-bottom
   # pictureClass: "content-canvas-item-right content-canvas-item-right--span-3"
   pictureClass:
     # page: "content-canvas-item-full picture--hero"
@@ -28,7 +32,7 @@ image:
 ### [Single & Single](https://app.thestorygraph.com/books/b99d9a47-11f7-4024-95b1-f502d9f2d1ae){rel=noopener target=_blank}
 
 <figure class="content-canvas-item-right content-canvas-item-right--span-4 picture--block">
-  {% image "static/images/source/books/le-carre-single+single.jpeg", "Single & Single book cover", "picture--outline", %}
+  {% Markdown true %}!["Single & Single book cover"](/static/images/source/books/le-carre-single+single.jpeg){.picture--outline}{% endMarkdown %}
 </figure>
 
 *by John le Carré*
@@ -55,7 +59,7 @@ The book depicts the ramifications of the collapse of the USSR, the looting of s
 *(audiobook)*
 
 <figure class="content-canvas-item-right content-canvas-item-right--span-4 picture--block">
-  {% image "static/images/source/books/sanghera-empireland.jpeg", "Empireland book cover", "picture--outline", %}
+  {% Markdown true %}!["Empireland book cover"](/static/images/source/books/sanghera-empireland.jpeg){.picture--outline}{% endMarkdown %}
 </figure>
 
 *by Sathnam Sanghera*

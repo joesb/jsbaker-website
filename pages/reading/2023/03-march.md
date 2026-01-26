@@ -13,9 +13,12 @@ tags:
   - Novels
   - "#reading"
 image:
-  path: "static/images/source/pexels-arthousestudio-4353719.jpg"
+  path: "/static/images/source/pexels-arthousestudio-4353719.jpg"
   alt: "Cozy interior with bookshelves and fireplace"
-  class: "image-obj-cover image-greyscale-75 image-darken-33"
+  class:
+    - image-obj-cover
+    - image-greyscale-75 
+    - image-darken-33
   # pictureClass: "content-canvas-item-right content-canvas-item-right--span-3"
   pictureClass:
     # page: "content-canvas-item-full picture--hero"
@@ -28,7 +31,7 @@ image:
 ### [Autumn](https://app.thestorygraph.com/books/96765343-01cb-48ed-92a6-89d583df2de0){rel=noopener target=_blank} <small>(Seasonal Quartet #1)</small>
 
 <figure class="content-canvas-item-right content-canvas-item-right--span-4 picture--block">
-  {% image "static/images/source/books/smith-autumn.jpeg", "Autumn book cover", "picture--outline", %}
+  {% Markdown true %}!["Autumn book cover"](/static/images/source/books/smith-autumn.jpeg){.picture--outline}{% endMarkdown %}
 </figure>
 
 *by Ali Smith*
@@ -49,7 +52,7 @@ This is part 1 of Smith's 'Seasonal Quartet'. Apparently, there's no need to rea
 ### [Winter: A Berlin Family, 1899-1945](https://app.thestorygraph.com/books/70addce9-6f88-4f4c-b0dc-0ce3c53795eb){rel=noopener target=_blank}
 
 <figure class="content-canvas-item-right content-canvas-item-right--span-4 picture--block">
-  {% image "static/images/source/books/deighton-winter.jpeg", "Winter: A Berlin Family, 1899-1945 book cover", "picture--outline", %}
+  {% Markdown true %}!["Winter: A Berlin Family, 1899-1945 book cover"](/static/images/source/books/deighton-winter.jpeg){.picture--outline}{% endMarkdown %}
 </figure>
 
 *by Len Deighton*

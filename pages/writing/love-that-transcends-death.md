@@ -13,9 +13,11 @@ canonical: https://www.jsbaker.co.uk/writing/love-that-transcends-death/
 page:
   class: "page--with-hero page--writing page--writing--light"
 image:
-  path: "static/images/source/filippo-andolfatto-X63Vc5OZKlo-unsplash.jpg"
+  path: "/static/images/source/filippo-andolfatto-X63Vc5OZKlo-unsplash.jpg"
   alt: "Grayscale shot of people's hands on steel bar photo"
-  class: "image-obj-cover image-darken-33"
+  class:
+    - image-obj-cover
+    - image-darken-33
   # pictureClass: "content-canvas-item-right content-canvas-item-right--span-3"
   pictureClass:
     # page: "content-canvas-item-full picture--hero"

@@ -13,9 +13,12 @@ tags:
   - Novels
   - "#reading"
 image:
-  path: "static/images/source/pexels-satuvision-digital-agency-200022395-12333745.jpg"
+  path: /static/images/source/pexels-satuvision-digital-agency-200022395-12333745.jpg
   alt: "Young Man in Blue and Black Polo Shirt Reading a Book"
-  class: "image-obj-cover image-darken-33 image-obj-pos-lower"
+  class:
+    - image-obj-cover
+    - image-darken-33
+    - image-obj-pos-lower
   # pictureClass: "content-canvas-item-right content-canvas-item-right--span-3"
   pictureClass:
     # page: "content-canvas-item-full picture--hero"
@@ -25,7 +28,7 @@ image:
   credit: '<a href="https://www.pexels.com/photo/young-man-in-blue-and-black-polo-shirt-reading-a-book-12333745/" rel="noopener nofollow" target="_blank">Photo</a> by <a href="https://www.pexels.com/@satuvision-digital-agency-200022395/" rel="noopener nofollow" target="_blank">SATUVISION Digital Agency</a> from Pexels'
 ---
 
-I only managed to complete one novel this month, for some reason. 
+I only managed to complete one novel this month, for some reason.
 
 That said, I'm trying to read some bigger books this year, rather than focusing on numbers for my [reading goal](https://app.thestorygraph.com/books-read/joesb?year=2023){rel=noopener target=_blank} for the year, as I have done previously. I'm not a that fast a reader, and I guess tackling a bigger book that I found less engaging just meant it took me a while to get through it.
 
@@ -36,7 +39,7 @@ Ah well.
 ### [The Light Years](https://app.thestorygraph.com/books/112b6ed5-7619-4720-99f0-c6cf34b1c54f){rel=noopener target=_blank} <small>(Cazalet Chronicles #1)</small>
 
 <figure class="content-canvas-item-right content-canvas-item-right--span-4 picture--block">
-  {% image "static/images/source/books/howard-the-light-years.jpeg", "The Light Years book cover", "picture--outline", %}
+  {% Markdown true %}!["The Light Years book cover"](/static/images/source/books/howard-the-light-years.jpeg){.picture--outline}{% endMarkdown %}
 </figure>
 
 *by Elizabeth Jane Howard*

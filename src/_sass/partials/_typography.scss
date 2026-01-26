@@ -13,7 +13,6 @@ p,
   font-size: var(--font-size-fluid-01);
   font-weight: variables.$base-font-weight-regular;
   line-height: var(--font-lineheight-3);
-  font-style: normal;
   color: inherit;
   margin-block: 0.75rem;
 }
@@ -48,6 +47,25 @@ h6,
   margin: 0;
   mix-blend-mode: normal;
   margin-block: 1.5rem 0.75rem;
+}
+
+:where(h1,h2,h3,h4,h5,h6) {
+  line-height: var(--font-lineheight-0);
+
+  &.heading-wide {
+    max-inline-size: var(--size-header-3);
+  }
+
+  &.heading-v-wide {
+    max-inline-size: var(--size-header-4);
+  }
+
+  &.heading-vv-wide {
+    max-inline-size: var(--size-header-5);
+  }
+  &.heading-full {
+    max-inline-size: unset;
+  }
 }
 
 h1,
@@ -143,7 +161,7 @@ h5,
 }
 
 .smaller {
-  font-size: var(--font-size-fluid-00);
+  font-size: var(--font-size-fluid-0);
 }
 
 .small {

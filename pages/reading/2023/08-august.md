@@ -13,9 +13,12 @@ tags:
   - "#reading"
 is_review: true
 image:
-  path: static/images/source/pexels-furkanfdemir-6309900.jpg
+  path: /static/images/source/pexels-furkanfdemir-6309900.jpg
   alt: "Elderly ethnic man reading interesting book in nature"
-  class: "image-obj-cover image-greyscale-75 image-darken-33"
+  class:
+    - image-obj-cover
+    - image-greyscale-75 
+    - image-darken-33
   # pictureClass: "content-canvas-item-right content-canvas-item-right--span-3"
   pictureClass:
     # page: "content-canvas-item-full picture--hero"
@@ -29,7 +32,7 @@ image:
 ### [Old God's Time](https://app.thestorygraph.com/books/89d6f971-7b6b-4e58-9de5-c8c410a0c043){rel=noopener target=_blank}
 
 <figure class="content-canvas-item-right content-canvas-item-right--span-4 picture--block">
-  {% image "static/images/source/books/barry-old-gods-time.jpeg", "Old God's Time book cover", "picture--outline", %}
+  {% Markdown true %}!["Old God's Time book cover"](/static/images/source/books/barry-old-gods-time.jpeg){.picture--outline}{% endMarkdown %}
 </figure>
 
 *by Sebastian Barry*
@@ -50,7 +53,7 @@ I really enjoyed reading this one, a man haunted by a history he's tried to forg
 ### [Women Talking](https://app.thestorygraph.com/books/080de4a1-011d-45a3-96d7-9e8ebaf08166){rel=noopener target=_blank}
 
 <figure class="content-canvas-item-right content-canvas-item-right--span-4 picture--block">
-  {% image "static/images/source/books/toews-women-talking.jpeg", "Women Talking book cover", "picture--outline", %}
+  {% Markdown true %}!["Women Talking book cover"](/static/images/source/books/toews-women-talking.jpeg){.picture--outline}{% endMarkdown %}
 </figure>
 
 *by Miriam Toews*
@@ -71,7 +74,7 @@ I have a connection of sorts to the Mennonite world, and understood the power of
 ### [Trust](https://app.thestorygraph.com/books/e7d77964-4417-420f-9da9-6fe02ecefa64){rel=noopener target=_blank}
 
 <figure class="content-canvas-item-right content-canvas-item-right--span-4 picture--block">
-  {% image "static/images/source/books/diaz-trust.jpeg", "Trust book cover", "picture--outline", %}
+  {% Markdown true %}!["Trust book cover"](/static/images/source/books/diaz-trust.jpeg){.picture--outline}{% endMarkdown %}
 </figure>
 
 *by Hernán Díaz*
@@ -92,7 +95,7 @@ I was rather disappointed by this story. I guess I had high hopes, as a 2023 Pul
 ### [The Colony](https://app.thestorygraph.com/books/e7d77964-4417-420f-9da9-6fe02ecefa64){rel=noopener target=_blank}
 
 <figure class="content-canvas-item-right content-canvas-item-right--span-4 picture--block">
-  {% image "static/images/source/books/magee-the-colony.jpeg", "The Colony book cover", "picture--outline", %}
+  {% Markdown true %}!["The Colony book cover"](/static/images/source/books/magee-the-colony.jpeg){.picture--outline}{% endMarkdown %}
 </figure>
 
 *by Audrey Magee*

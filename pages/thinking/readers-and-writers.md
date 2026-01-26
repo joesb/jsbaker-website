@@ -9,9 +9,11 @@ order: 0
 page:
   class: "page--with-hero page--thinking"
 image:
-  path: ./static/images/thinking/pexels-koolshooters-6621610.jpg
+  path: /static/images/thinking/pexels-koolshooters-6621610.jpg
   alt: "Photo of a shirtless man holding a book in a bathtub"
-  class: "image-obj-cover image-darken-10"
+  class:
+    - image-obj-cover
+    - image-darken-10
   # pictureClass: "content-canvas-item-right content-canvas-item-right--span-3"
   pictureClass:
     page: "content-canvas-item-full picture--hero"

@@ -13,9 +13,12 @@ tags:
   - "#reading"
 is_review: true
 image:
-  path: static/images/source/pexels-furkanfdemir-6138494.jpg
+  path: /static/images/source/pexels-furkanfdemir-6138494.jpg
   alt: "Stylish mature man reading book on waterfront"
-  class: "image-obj-cover image-greyscale-75 image-darken-33"
+  class:
+    - image-obj-cover
+    - image-greyscale-75 
+    - image-darken-33
   # pictureClass: "content-canvas-item-right content-canvas-item-right--span-3"
   pictureClass:
     # page: "content-canvas-item-full picture--hero"
@@ -29,7 +32,7 @@ image:
 ### [The Inheritance of Loss](https://app.thestorygraph.com/books/fcda3111-9720-496b-822a-db8c35d74c59){rel=noopener target=_blank}
 
 <figure class="content-canvas-item-right content-canvas-item-right--span-4 picture--block">
-  {% image "static/images/source/books/desai-the-inheritance-of-loss.jpeg", "The Inheritance of Loss book cover", "picture--outline", %}
+  {% Markdown true %}!["The Inheritance of Loss book cover"](/static/images/source/books/desai-the-inheritance-of-loss.jpeg){.picture--outline}{% endMarkdown %}
 </figure>
 
 *by Kiran Desai*
@@ -50,7 +53,7 @@ image:
 ### [Food for Life: The New Science of Eating Well](https://app.thestorygraph.com/books/cb5e0050-2288-48b9-b1d5-0480de9e2865){rel=noopener target=_blank} *(audiobook)*{.small}
 
 <figure class="content-canvas-item-right content-canvas-item-right--span-4 picture--block">
-  {% image "static/images/source/books/spector-food-for-life.jpeg", "Food for Life book cover", "picture--outline",%}
+  {% Markdown true %}!["Food for Life book cover"](/static/images/source/books/spector-food-for-life.jpeg){.picture--outline}{% endMarkdown %}
 </figure>
 
 *by Tim Spector*
@@ -67,7 +70,7 @@ This book is the summary of Tim Spector's years of medical science research on f
 ### [The Nightingale](https://app.thestorygraph.com/books/ee4dacca-6002-477e-84f1-b368ee1f0bb7){rel=noopener target=_blank} *(audiobook)*{.small}
 
 <figure class="content-canvas-item-right content-canvas-item-right--span-4 picture--block">
-  {% image "static/images/source/books/hannah-the-nightingale.jpeg", "The Nightingale book cover", "picture--outline",%}
+  {% Markdown true %}!["The Nightingale book cover"](/static/images/source/books/hannah-the-nightingale.jpeg){.picture--outline}{% endMarkdown %}
 </figure>
 
 *by Kristin Hannah*
@@ -89,7 +92,7 @@ I bought this as an audiobook to listen on the long journey to our summer holida
 ### [The Bee Sting](https://app.thestorygraph.com/books/82d91615-aa9b-4b7a-8238-36d0c2bc7086){rel=noopener target=_blank}
 
 <figure class="content-canvas-item-right content-canvas-item-right--span-4 picture--block">
-  {% image "static/images/source/books/murray-the-bee-sting.jpeg", "The Bee Sting book cover", "picture--outline",%}
+  {% Markdown true %}!["The Bee Sting book cover"](/static/images/source/books/murray-the-bee-sting.jpeg){.picture--outline}{% endMarkdown %}
 </figure>
 
 *by Paul Murray*

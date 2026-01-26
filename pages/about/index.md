@@ -10,7 +10,7 @@ date: 2025-03-21T14:45:00Z
 metadata:
   show: false
 image:
-  path: static/images/home/jsb-2024-04-14.jpeg
+  path: /static/images/home/jsb-2024-04-14.jpeg
   alt: "Me, Joe Baker, in the sunshine"
   class: ""
   # pictureClass: "content-canvas-item-right content-canvas-item-right--span-3"
