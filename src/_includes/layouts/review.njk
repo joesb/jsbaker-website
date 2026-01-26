@@ -39,11 +39,8 @@ image:
     </div>
 
     {% if review.urls.cover %}
-    {# <figure class="content-canvas-item-wide-right content-canvas-item-right--span-2 picture--block"> #}
       {% set imagePath = review.urls.cover %}
       {% set imageAlt = [review.title, " book cover"] | join %}
-      {# {% image imageUrl, imageAlt, "picture--outline", "", "(min-width: 25em) 50vw, 100vw", [250, 500] %} #}
-    {# </figure> #}
     <a href="{{ review.urls.book }}" rel="noopener noreferrer" target="_blank" class="content-canvas-item-wide-right content-canvas-item-right--span-2">{% ImgFigure "", image.figClasses %}![{{ imageAlt }}]({{ imagePath }}){.image-rounded eleventy:widths="100,200" eleventy:formats="webp,jpg"}{% endImgFigure %}</a>
     {% endif %}
 
@@ -90,9 +87,9 @@ image:
 {% endmacro %}
 
 {% macro reviewItemMini(review) %}
-<div class="review-item review-item-mini review-key-data content-canvas-item-wide">
+<div class="review-item review-item-mini{% if review.urls.cover %} review-item-mini-with-cover{% endif %} review-key-data content-canvas-item-wide">
     <div class="review-item-title">
-      <h3 class="heading-v-wide">
+      <h3 class="heading-v-wide h4-style">
         <a href="{{ review.urls.book }}" rel="noopener noreferrer" target="_blank">{{ review.title }}</a>
         <a class="direct-link visually-hidden" href="#{{ review.title | slugify }}" aria-hidden="true">#</a>
       {% if review.audiobook %}
@@ -117,6 +114,14 @@ image:
         ({{ review.type }})
       </p>
       {% endif %}
+    </div>
+    {% endif %}
+
+    {% if review.urls.cover %}
+    <div class="review-item-cover">
+      {% set imagePath = review.urls.cover %}
+      {% set imageAlt = [review.title, " book cover"] | join %}
+      <a href="{{ review.urls.book }}" rel="noopener noreferrer" target="_blank" class="content-canvas-item-wide-right content-canvas-item-right--span-2">{% ImgFigure "", image.figClasses %}![{{ imageAlt }}]({{ imagePath }}){.image-rounded eleventy:widths="80,120" eleventy:formats="webp,jpg"}{% endImgFigure %}</a>
     </div>
     {% endif %}
 </div>
