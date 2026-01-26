@@ -2,7 +2,7 @@
 title: "The Best Books of 2025"
 description: "The best books I read in 2025, fiction and non-fiction … plus the other stuff as well"
 layout: review.njk
-date: 2026-01-25T15:15:15Z
+date: 2026-01-26T17:35:15Z
 order: 1
 page:
   class: "page--with-hero"
