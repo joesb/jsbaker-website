@@ -77,7 +77,7 @@ reviews:
             book: https://app.thestorygraph.com/books/3cc737ce-c073-4bf6-aaff-1deecb223ba6
             cover: /static/images/source/books/judt-postwar.jpeg
           text: |
-            Truly life-changing. The huge view with which Judt paints the currents and counter-currents that have shaped Europe since the end of World War 2 is brilliant. My understanding of this place in history in this continent will never be the same.
+            Truly life-changing. Judt paints a huge view of the currents and counter-currents that have shaped Europe since the end of World War 2 — and it's brilliant. My understanding of the current place and time in history on this continent (and the wider world) will never be the same.
         -
           title: "Enshittification: Why Everything Suddenly Got Worse and What to Do About It"
           author: Cory Doctorow
