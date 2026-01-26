@@ -32,3 +32,7 @@
     clear: both;
   }
 }
+
+@mixin border($direction, $width: 1px, $style: solid, $color: var(--color-brand-white)) {
+  border-#{$direction}: $width $style $color;
+}

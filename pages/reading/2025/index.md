@@ -96,6 +96,8 @@ reviews:
             A beautiful book of lyrical essays on the many forms of friendship. One of my favourite authors and a master of the essay form gives us a collection of deep reflections and meditations on the yearning for companionship and our need to come together, and how much richer we are because we do.
   others:
     title: The Rest of 2025
+    text: |
+      Loads of the other books I read in 2025 were great, too (though not all!).
     list:
       - 
         title: My Friends
