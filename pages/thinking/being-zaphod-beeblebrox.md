@@ -66,3 +66,5 @@ Tom Junod, author of the famous [*The Falling Man* essay](https://www.esquire.co
 The same consistent truth governs the personal scale. Relationships between individuals are fraught with difficulties, where so much is confusing or cryptic or impenetrable. We hurt each other, and we are hurt by each other, and we carry on hurting each other.
 
 And yet, we do not despair. Despite all of this, we rarely lose hope. We rise, and we rise again the next day and we get on with 
+
+Why?
