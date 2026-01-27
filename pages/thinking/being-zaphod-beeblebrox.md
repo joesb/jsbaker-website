@@ -1,5 +1,5 @@
 ---
-title: "Being Zaphod Beeblebrox, or: How We Learned to Survive the Total Perspective Vortex"
+title: "Being Zaphod Beeblebrox, or: How We Learned to Cope in the Total Perspective Vortex"
 description: |
   The universe is vast and baffling and we are insignificant specs within it.
   
