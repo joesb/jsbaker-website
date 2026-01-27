@@ -57,6 +57,12 @@ Think back a bit in your family history. Do you know who your great, great grand
 
 And how about us — will our great, great grandchildren remember us?
 
-That is just existing. What about living? Living as a human is hard.
+But that is just existing. What about living? Living as a human is hard.
 
-The world is a bewildering and baffling place, confusing and difficult, a continual experience of triumph and adversity, joy and pain, suffering and surviving.
+The world is a bewildering and baffling place, confusing and difficult, a continual experience of triumph and adversity, joy and pain and hope, a place that begins and ends in suffering and surviving.
+
+Tom Junod, author of the famous [*The Falling Man* essay](https://www.esquire.com/news-politics/a48031/the-falling-man-tom-junod/){target=_blank rel="nofollow noopener"} in Esquire magazine (originally published in the September 2003 issue), [talks powerfully of our tragic fallibility](https://www.youtube.com/watch?v=JnHTUyZjwiY&t=3870s){target=_blank rel="nofollow noopener"}. The long epic of human history, he says, tells its own story, a story in which everything humanity does is wrong. We fuck up. We fuck up again, and again, and again. Any piece of technology we keep getting from or putting to use in war; our religion, our politics, inevitably becomes a tool of tyranny. We fuck up again, and again, and again.
+
+The same consistent truth governs the personal scale. Relationships between individuals are fraught with difficulties, where so much is confusing or cryptic or impenetrable. We hurt each other, and we are hurt by each other, and we carry on hurting each other.
+
+And yet, we do not despair. Despite all of this, we rarely lose hope. We rise, and we rise again the next day and we get on with 
