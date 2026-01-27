@@ -295,8 +295,14 @@ export default async function(eleventyConfig) {
     });
   }
 
-  eleventyConfig.addFilter('sort_by_date', function (collection) {
-    return sortByDate(collection);
+  eleventyConfig.addFilter('sortByDate', (collection, andSticky = true) => {
+    return sortByDate(collection, andSticky);
+  });
+
+  eleventyConfig.addFilter('excludePages', (collection, excludedURLs = []) => {
+    return collection.filter((item) => {
+      return excludedURLs.includes(item.url) ? 0 : 1;
+    });
   });
 
   function sortByTitle(collection) {
@@ -383,6 +389,13 @@ export default async function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy('pages/static/');
   // eleventyConfig.addPassthroughCopy('CNAME');
   eleventyConfig.addWatchTarget('./src/_sass/');
+
+  // IndexNow key
+  eleventyConfig.addPassthroughCopy('pages/0b89ad8fab89407a9fdc6b3ef69202e1.txt');
+
+  if (process.env.ELEVENTY_ENV !== 'local') {
+    eleventyConfig.ignores.add('pages/indexnow.njk');
+  }
 };
 
 export const config = {
