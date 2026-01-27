@@ -355,9 +355,9 @@ export default async function(eleventyConfig) {
     return metadata;
   };
 
-  eleventyConfig.addPairedShortcode("ImgFigure", function(content, caption = false, classes, md = true) {
+  eleventyConfig.addPairedShortcode("ImgFigure", function(content, caption = false, classes = [], md = true) {
     if (caption) {
-      caption = '<figcaption>' + caption + '</figcaption>';
+      caption = '<figcaption>' + (md ? markdownLibrary.renderInline(caption) : caption) + '</figcaption>';
     }
     return '<figure' + (classes.length ? ' class="' + (classes instanceof Array ? classes.join(" ") : classes) + '"' : '') + '>' + (md ? markdownLibrary.renderInline(content) : content) + (caption ? caption : '') +'</figure>';
   });

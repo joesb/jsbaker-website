@@ -7,7 +7,7 @@
 			<div class="container">
 				<h1 class="page-title__heading">{{ title }}</h1>
 			</div>
-			{% if description and not is_review %}
+			{% if description and not (is_review or tbHideDescription) %}
 			<div class="container">
 				{{ description | markdown | safe }}
 			</div>

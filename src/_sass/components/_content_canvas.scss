@@ -1,5 +1,5 @@
 @use "../common/variables";
-@use "../tools/respond-to";
+@use "../tools/respond-to" as rt;
 
 .content-canvas {
   display: grid;
@@ -8,33 +8,33 @@
     [full-start]
       minmax(0, 2vw)
     [wide-start]
-      minmax(0, 2vw)
+      minmax(0, 15vw)
     [main-start]
       minmax(10ch, calc(#{variables.$break-medium} - 3rem))
     [main-mid]
       minmax(10ch, auto)
     [main-end]
-      minmax(0, 2vw)
+      minmax(0, 15vw)
     [wide-end]
     minmax(0, 2vw)
     [full-end];
   grid-auto-flow: row;
 }
 
-@include respond-to.respond-to('large') {
+@include rt.respond-to('large') {
   .content-canvas {
     column-gap: var(--size-fluid-3);
     grid-template-columns: 
       [full-start]
         minmax(3vw, 1fr)
       [wide-start]
-        minmax(10vw,  15ch)
+        minmax(15vw,  20ch)
       [main-start]
         minmax(calc(#{variables.$break-very-small} - 3rem), calc((#{variables.$break-small} - 3rem) * 3 / 5))
       [main-mid]
         minmax(20ch, calc((#{variables.$break-small} - 3rem) * 2 / 5))
       [main-end]
-        minmax(10vw, 15ch)
+        minmax(15vw, 20ch)
       [wide-end]
         minmax(3vw, 1fr)
       [full-end];
@@ -67,7 +67,7 @@
 .content-canvas-item-wide-left {
   grid-column: wide-start/main-end;
   
-  @include respond-to.respond-to('large') {
+  @include rt.respond-to('large') {
     grid-column: wide-start/main-mid;
   }
 }
@@ -76,9 +76,29 @@
   grid-column: full-start/full-end;
 }
 
-@include respond-to.respond-to('medium') {
+@include rt.respond-to('medium') {
   .content-canvas-item-left {
     grid-column: main-start/main-mid;
+  }
+
+  .content-canvas-item-full-left {
+    grid-column: full-start/main-start;
+  }
+
+  .content-canvas-item-wl-ms {
+    grid-column: full-start/main-start;
+  }
+
+  .content-canvas-item-span-2 {
+    grid-row: span 2;
+  }
+
+  .content-canvas-item-span-3 {
+    grid-row: span 3;
+  }
+
+  .content-canvas-item-span-4 {
+    grid-row: span 4;
   }
 
   .content-canvas-item-right,
@@ -159,7 +179,7 @@
       + * + * + * + .content-canvas-item-wide-left {
         grid-column: wide-start/main-end;
         
-        @include respond-to.respond-to('large') {
+        @include rt.respond-to('large') {
           grid-column: wide-start/main-mid;
         }
       }
@@ -179,5 +199,11 @@
   .pull-right + * + *,
   .pull-right + * + * + * {
     grid-column: main-start/main-mid;
+  }
+}
+
+@include rt.respond-to('largest') {
+  .content-canvas-item-wl-ms {
+    grid-column: wide-start/main-start;
   }
 }
