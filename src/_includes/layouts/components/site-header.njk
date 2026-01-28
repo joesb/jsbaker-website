@@ -2,10 +2,10 @@
 			<div class="header-main__inner container container--wide container--flex">
 				<div class="header-main__logo">
 					{% if page.url !== '/' %}<a href="{{ '/' | url }}" class="site-logo">
-						<h1>{{ metadata.title }}</h1>
+						<div class="h1-style">{{ metadata.title }}</div>
 					</a>
 					{% else %}
-					<h1>{{ metadata.title }}</h1>
+					<div class="h1-style">{{ metadata.title }}</div>
 					{% endif %}
 				</div>
 				<div class="header-main__nav">
