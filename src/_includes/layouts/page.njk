@@ -25,7 +25,7 @@ image:
 	{% endif %}
 {% endfor %}
 
-	{% if description %}
+	{% if description and not hideDescriptionPage %}
 	<div class="page__summary{% if page.class %}{% if page.class.includes('page--summary--wide') %} content-canvas-item-full content-canvas site-content--small-padding{% elif page.class.includes('page--with-hero') %} content-canvas-item-full content-canvas site-content site-content--zero-spacing{% else %} content-canvas-item-wide-left{% endif %}{% endif %}{% if tags | hasTag('#writing') and page.class %}{% if summary.class %} {{ summary.class }}{% elif page.class.includes('page--writing--light') %} site-content--surface-black-light site-content--surface-dark{% endif %}{% endif %} item-fade-in item-fade-in-1-5 item-fade-in-delay-sm">
 
 		{% if tags | hasTag('#writing') %}
@@ -87,7 +87,7 @@ image:
 	</div>
 	{% endif %}
 
-	<div class="layout-content item-fade-in item-fade-in-1-5 item-fade-in-delay-mdl{% if is_review %} content-canvas-item-full content-canvas{% endif %}">
+	<div class="layout-content item-fade-in item-fade-in-1-5 item-fade-in-delay-mdl{% if is_review or (tags | hasTag('#thinking')) %} content-canvas-item-full content-canvas{% endif %}">
 		{{ content | safe }}
 	</div>
 
