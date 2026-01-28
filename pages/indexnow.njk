@@ -9,8 +9,8 @@ curl -i -X POST https://api.indexnow.org/IndexNow \
   -H "Content-Type: application/json; charset=utf-8" \
   -d '{
     "host": "{{ metadata.host }}",
-    "key":"0b89ad8fab89407a9fdc6b3ef69202e1",
-    "keyLocation": "{{ "0b89ad8fab89407a9fdc6b3ef69202e1.txt" | url | absoluteUrl(metadata.url) }}",
+    "key":"6dd0adccd3e14999ba095d10ba53874e",
+    "keyLocation": "{{ "6dd0adccd3e14999ba095d10ba53874e.txt" | url | absoluteUrl(metadata.url) }}",
     "urlList": [{% for page in collections.all | excludePages(excludeURLs) | sortByDate(false) | reverse %}{% if page.data.pending !== true %}
       "{{ page.url | url | absoluteUrl(metadata.url) }}"{% if not loop.last %},{% endif %}{% endif %}{% endfor %}
     ]

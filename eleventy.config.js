@@ -391,7 +391,7 @@ export default async function(eleventyConfig) {
   eleventyConfig.addWatchTarget('./src/_sass/');
 
   // IndexNow key
-  eleventyConfig.addPassthroughCopy('pages/0b89ad8fab89407a9fdc6b3ef69202e1.txt');
+  eleventyConfig.addPassthroughCopy('pages/6dd0adccd3e14999ba095d10ba53874e.txt');
 
   if (process.env.ELEVENTY_ENV !== 'local') {
     eleventyConfig.ignores.add('pages/indexnow.njk');
