@@ -2,7 +2,7 @@
 
 {% set absolutePostUrl %}{{ page.url | url | absoluteUrl(metadata.url) }}{% endset %}
 
-{% if permalink == '/' %}
+{% if page.url == '/' %}
 {% set cardTitle %}{{ metadata.title }} — {{ metadata.alt_title }}{% endset %}
 {% set ogType %}website{% endset %}
 {% else %}
@@ -36,3 +36,4 @@
     {% endif %}
   {% endif %}
   <meta property="og:type" content="{{ogType}}" />
+  <meta property="og:site_name" content="{{ metadata.title }}" />
