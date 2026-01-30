@@ -197,6 +197,11 @@ export default async function(eleventyConfig) {
     return (tags || []).includes(tag) === not;
   });
 
+  // Check if a thing is a string
+  eleventyConfig.addFilter('is_string', function(obj) {
+    return typeof obj == 'string'
+  });
+
   eleventyConfig.addFilter("readableDate", (dateObj, format, zone) => {
 		// Formatting tokens for Luxon: https://moment.github.io/luxon/#/formatting?id=table-of-tokens
 		return DateTime.fromJSDate(dateObj, { zone: zone || "utc" }).toFormat(format || "dd LLLL yyyy");

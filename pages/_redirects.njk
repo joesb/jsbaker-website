@@ -1,0 +1,9 @@
+---
+permalink: /_redirects
+layout:
+eleventyExcludeFromCollections: true
+globalRedirects:
+tagFilter:
+    - all
+---
+{% for page in collections.all %}{% if page.url and page.data.redirectFrom %}{% if page.data.redirectFrom | is_string %}{{ page.data.redirectFrom }} {{ page.url }} {{ page.data.redirect_code or '301'}}{{ '\n' }}{% else %}{% for oldUrl in page.data.redirectFrom %}{{ oldUrl }} {{ page.url }} {{ page.data.redirect_code or '301'}}{{ '\n' }}{% endfor %}{% endif %}{% endif %}{% endfor %}

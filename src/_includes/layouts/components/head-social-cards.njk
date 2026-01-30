@@ -18,7 +18,7 @@
   {% set cardImage %}{{ metadata.url }}{% imageData image.path %}{% endset %}
 {% endif %} #}
   <meta name="twitter:card" content="{{cardType}}" />
-  <meta name="twitter:site" content="{{ metadata.twitter }}" />
+  <meta name="twitter:site" content="{{ metadata.title }}" />
   <meta name="twitter:creator" content="{{ metadata.author.name }}" />
   <meta property="twitter:title" content="{{cardTitle}}" />
   <meta property="twitter:description" content="{% if excerpt %}{{excerpt}}{% else %}{{metadata.summary}}{% endif %}" />
