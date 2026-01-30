@@ -26,6 +26,8 @@ image:
   figureClass:
     page: "content-canvas-item-full figure--hero"
   credit: 'Photo by <a href="https://unsplash.com/de/@matt__feeney?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">matthew Feeney</a> on <a href="https://unsplash.com/photos/Nwkh-n6l25w?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>'
+redirectFrom:
+  - /reading/2023/06-may/
 ---
 
 ### [The Gathering](https://app.thestorygraph.com/books/cd530645-4fc0-4582-899e-284f79159f19){rel=noopener target=_blank}

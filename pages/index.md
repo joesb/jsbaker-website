@@ -14,8 +14,6 @@ pagination:
   data: collections.promotedContent
   size: 11
   alias: items
-redirectFrom:
-  - /reading/2023/06-may/
 ---
 
 My writer's journal, for my [writing](/writing){.light} projects, as well as the [reading](/reading){.light} and [thinking](/thinking){.light} that support them.
