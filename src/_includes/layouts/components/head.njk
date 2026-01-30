@@ -6,7 +6,15 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   
+  {% if page.url == '/' %}
+  <title>{{ metadata.title }} | {{ pageTitle or title or renderData.title or metadata.title }}</title>
+  {% else %}
   <title>{{ pageTitle or title or renderData.title or metadata.title }} | {{ metadata.title }}</title>
+  {% endif %}
+
+  <!-- meta -->
+  <meta name="author" itemprop="author" content="{{ metadata.author.name }}">
+  <meta name="description" itemprop="description" content="{{ description }}">
 
   <!-- meta -->
   <meta name="author" itemprop="author" content="{{ metadata.author.name }}">
