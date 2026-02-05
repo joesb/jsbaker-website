@@ -9,7 +9,7 @@
 .item-meta,
 .metadata__tags {
   display: flex;
-  justify-content: flex-start;
+  justify-content: flex-end;
   align-items: center;
   gap: px-to-rem.px-to-rem(10px);
 }

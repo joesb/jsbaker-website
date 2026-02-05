@@ -383,8 +383,8 @@ export default async function(eleventyConfig) {
   }).use(markdownItAttrs).use(markdownItSmall);
   eleventyConfig.setLibrary("md", markdownLibrary);
 
-  eleventyConfig.addFilter("markdown", (content) => {
-    return markdownLibrary.render(content);
+  eleventyConfig.addFilter("markdown", (content, ril = false) => {
+    return ril ? markdownLibrary.renderInline(content): markdownLibrary.render(content);
   });
 
   eleventyConfig.addPairedShortcode("Markdown", function(content, ril = false) {

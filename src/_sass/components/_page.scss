@@ -29,9 +29,9 @@
   :where(h3),
   .h2-style,
   .h3-style {
-    margin-block: var(--size-7) var(--size-2);
+    margin-block: var(--size-7) var(--size-3);
 
-    +p {
+    + p {
       margin-block-start: 0;
     }
   }

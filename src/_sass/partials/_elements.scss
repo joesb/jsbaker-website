@@ -159,6 +159,11 @@ blockquote {
   margin-block: var(--size-fluid-2);
   padding-block: 0;
   font-style: italic;
+  gap: var(--size-2);
+
+  em {
+    font-style: normal;
+  }
 
   &.bq-alt{ 
     border-inline-start-width: 0;
