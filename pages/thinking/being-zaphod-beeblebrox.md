@@ -43,7 +43,7 @@ Scale that up to the continent, to the world — there's [8.3 billion people cur
 
 And this planet we're on — that's tiny, too. Have you seen the pale blue dot photo?
 
-{% ImgFigure "NASA's [pale blue dot image](https://science.nasa.gov/mission/voyager/voyager-1s-pale-blue-dot){target=_blank rel=\"noreferrer noopener\"} taken beyond Neptune, 6 billion kilometres out from the Sun.", classes.figClasses %}
+{% ImgFigure "NASA's [pale blue dot image](https://science.nasa.gov/mission/voyager/voyager-1s-pale-blue-dot){target=_blank rel=\"noreferrer noopener\"} of Earth taken beyond Neptune, 6 billion kilometres out from the Sun.", classes.figClasses %}
 !["Earth as a pale blue dot in the universe"](/static/images/source/nasa-pale-blue-dot-revised.jpg)
 {% endImgFigure %}
 
@@ -55,16 +55,24 @@ Now, think of some names — of people who are generally well-known amongst that
 
 Think back a bit in your family history. Do you know who your great, great grandparents were? That's your grandparents' grandparents, that's all — not that far back in your lineage, probably sometime around the end of the 1800s, the first part of the 1900s, or thereabouts. Do you know much about them? Do you know anything about them? Do you even know their names? You're directly descended from them — you of all people should be someone who remembers them, even if no one else in that 8.3 billion does. No?
 
-And how about us — will our great, great grandchildren remember us?
+And how about us — *will our great, great grandchildren remember us?*
 
-But that is just existing. What about living? Living as a human is hard.
+But this is just about existing. What about living?
+
+Living as a human is hard.
 
 The world is a bewildering and baffling place, confusing and difficult, a continual experience of triumph and adversity, joy and pain and hope, a place that begins and ends in suffering and surviving.
 
-Tom Junod, author of the famous [*The Falling Man* essay](https://www.esquire.com/news-politics/a48031/the-falling-man-tom-junod/){target=_blank rel="nofollow noopener"} in Esquire magazine (originally published in the September 2003 issue), [talks powerfully of our tragic fallibility](https://www.youtube.com/watch?v=JnHTUyZjwiY&t=3870s){target=_blank rel="nofollow noopener"}. The long epic of human history, he says, tells its own story, a story in which everything humanity does is wrong. We fuck up. We fuck up again, and again, and again. Any piece of technology we keep getting from or putting to use in war; our religion, our politics, inevitably becomes a tool of tyranny. We fuck up again, and again, and again.
+Tom Junod, author of the famous [*The Falling Man* essay](https://www.esquire.com/news-politics/a48031/the-falling-man-tom-junod/){target=_blank rel="nofollow noopener"} in Esquire magazine (originally published in the September 2003 issue), [talks powerfully of our tragic fallibility](https://www.youtube.com/watch?v=JnHTUyZjwiY&t=3870s){target=_blank rel="nofollow noopener"}. The long epic of human history, he says, tells its own story, a story in which everything humanity does is wrong. We fuck up. We fuck up again, and again, and again. Any piece of technology we get from or put to use in war, and we keep doing it. Our religion, our politics, inevitably becomes a tool of tyranny, he says. We fuck up. We fuck up again, and again, and again.
 
 The same consistent truth governs the personal scale. Relationships between individuals are fraught with difficulties, where so much is confusing or cryptic or impenetrable. We hurt each other, and we are hurt by each other, and we carry on hurting each other.
 
-And yet, we do not despair. Despite all of this, we rarely lose hope. We rise, and we rise again the next day and we get on with 
+And yet, we do not despair. Despite all of this, we rarely lose hope. We rise, and we rise again the next day and we get on with living, with moving forward, through the suffering and the confusion and the bewilderment.
 
-Why?
+Why? And how?
+
+Because we tell stories.
+
+Stories are the unique and distinctive power we have over the universe. Stories are an alchemy of two source elements — language, and experience — and they are combined together to resist the implacable, unyielding, remorseless passage of the cosmos, untouched by the to-and-fro of humanity.
+
+Narrated time changes the very structure of the cosmos, and in doing so makes its shape more human.
