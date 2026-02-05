@@ -75,7 +75,7 @@ Why? And how?
 
 ## Entering the Total Perspective Vortex
 
-Douglas Adams's brilliant series *The Hitchhiker's Guide to the Galaxy* includes terrible torture device called *The Total Perspective Vortex*. In the *Hitchhiker's* novels, the Vortex was described in *The Restaurant at the End of the Universe*:
+Douglas Adams's brilliant series *The Hitchhiker's Guide to the Galaxy* includes terrible torture device called the "Total Perspective Vortex". In the *Hitchhiker's* novels, the Vortex was described in *The Restaurant at the End of the Universe*:
 
 > … when you are put into the Vortex you are given just one momentary glimpse of the entire unimaginable infinity of creation, and somewhere in it a tiny little marker, a microscopic dot on a microscopic dot, which says ‘You are here.’
 >
