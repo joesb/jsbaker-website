@@ -46,7 +46,7 @@ h6,
   letter-spacing: normal;
   margin: 0;
   mix-blend-mode: normal;
-  margin-block: 1.5rem 0.75rem;
+  margin-block: 1.5rem 1rem;
 }
 
 :where(h1,h2,h3,h4,h5,h6) {
@@ -160,17 +160,23 @@ h5,
   margin: 0;
 }
 
-.smaller {
+.smaller,
+blockquote .smaller {
   font-size: var(--font-size-fluid-0);
 }
 
-.small {
+.small,
+blockquote .small {
   font-size: var(--font-size-fluid-000);
   line-height: var(--font-lineheight-2) !important;
 }
 
 .large {
   font-size: var(--font-size-fluid-1);
+}
+
+.larger {
+  font-size: var(--font-size-fluid-011);
 }
 
 .header-highlight {

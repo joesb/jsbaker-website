@@ -360,9 +360,9 @@ export default async function(eleventyConfig) {
     return metadata;
   };
 
-  eleventyConfig.addPairedShortcode("ImgFigure", function(content, caption = false, classes, md = true) {
+  eleventyConfig.addPairedShortcode("ImgFigure", function(content, caption = false, classes = [], md = true) {
     if (caption) {
-      caption = '<figcaption>' + caption + '</figcaption>';
+      caption = '<figcaption>' + (md ? markdownLibrary.renderInline(caption) : caption) + '</figcaption>';
     }
     return '<figure' + (classes.length ? ' class="' + (classes instanceof Array ? classes.join(" ") : classes) + '"' : '') + '>' + (md ? markdownLibrary.renderInline(content) : content) + (caption ? caption : '') +'</figure>';
   });
@@ -383,8 +383,8 @@ export default async function(eleventyConfig) {
   }).use(markdownItAttrs).use(markdownItSmall);
   eleventyConfig.setLibrary("md", markdownLibrary);
 
-  eleventyConfig.addFilter("markdown", (content) => {
-    return markdownLibrary.render(content);
+  eleventyConfig.addFilter("markdown", (content, ril = false) => {
+    return ril ? markdownLibrary.renderInline(content): markdownLibrary.render(content);
   });
 
   eleventyConfig.addPairedShortcode("Markdown", function(content, ril = false) {

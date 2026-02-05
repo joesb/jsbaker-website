@@ -44,7 +44,8 @@ ELEMENTS
     --font-size-fluid-000: clamp(#{variables.$body-v-sml-font-size-mobile}, 1.3vw, #{variables.$body-v-sml-font-size});
     --font-size-fluid-00: clamp(#{variables.$body-sml-font-size-mobile}, 1.4vw, #{variables.$body-sml-font-size});
     --font-size-fluid-0: clamp(#{variables.$body-font-size-mobile}, 1.5vw, #{variables.$body-font-size});
-    --font-size-fluid-01: clamp(#{variables.$h4-font-size-mobile}, 1.75vw, #{variables.$h3-font-size});
+    --font-size-fluid-01: clamp(0.85rem, 2vw, 1.1rem);
+    --font-size-fluid-011: clamp(1rem, 2.5vw, 1.25rem);
     --font-size-fluid-21: clamp(#{variables.$h2-font-size-mobile}, 2.5vw, #{variables.$h2-font-size});
     --font-size-fluid-3: clamp(#{variables.$h1-font-size-mobile}, 4vw, #{variables.$h1-font-size});
     --font-size-fluid-4: clamp(#{variables.$h1-lg-font-size-mobile}, 6vw, #{variables.$h1-lg-font-size});
@@ -158,6 +159,11 @@ blockquote {
   margin-block: var(--size-fluid-2);
   padding-block: 0;
   font-style: italic;
+  gap: var(--size-2);
+
+  em {
+    font-style: normal;
+  }
 
   &.bq-alt{ 
     border-inline-start-width: 0;

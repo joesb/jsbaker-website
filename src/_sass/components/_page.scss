@@ -29,9 +29,9 @@
   :where(h3),
   .h2-style,
   .h3-style {
-    margin-block: var(--size-7) var(--size-2);
+    margin-block: var(--size-7) var(--size-3);
 
-    +p {
+    + p {
       margin-block-start: 0;
     }
   }
@@ -70,6 +70,7 @@
 
 .page-title__heading {
   font-size: var(--font-size-fluid-3);
+  max-inline-size: var(--size-header-2);
 }
 
 .page--with-hero {

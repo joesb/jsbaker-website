@@ -5,6 +5,8 @@ layout: page.njk
 date: 2024-11-21
 promoted: true
 sharePage: true
+hideDescriptionTB: false
+hideDescriptionPage: true
 order: 0
 page:
   class: "page--with-hero page--thinking"
