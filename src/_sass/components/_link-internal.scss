@@ -1,5 +1,6 @@
 @use "sass:color";
 @use "../common/variables";
+@use "../tools/px-to-rem" as ptr;
 
 .link--internal {
   box-shadow: var(--shadow-1);
@@ -51,6 +52,48 @@
       height: 100%;
       object-fit: cover;
       object-position: center center;
+    }
+  }
+}
+
+.single-meta-back,
+.single-meta-forward {
+  position: relative;
+  display: inline-block;
+
+  &:hover {
+    &::before {
+      // background-color: $mako;
+      transform: translateX(-5px);
+    }
+  }
+}
+
+.single-meta-back {
+  padding-inline-start: ptr.px-to-rem(24px);
+  margin-inline-start: calc(-1 * ptr.px-to-rem(24px));
+
+  &::before {
+    position: absolute;
+    content: "\23F4";
+    top: calc(50% - 8px);
+    left: 0;
+    padding-inline-start: calc(-1 * var(--size-4));
+    font-size: var(--size-3);
+    height: ptr.px-to-rem(18px);
+    width: ptr.px-to-rem(18px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.2s;
+  }
+
+  &.smaller {
+    &::before {
+      top: calc(50% - 7px);
+      font-size: var(--size-2-5);
+      height: ptr.px-to-rem(14px);
+      width: ptr.px-to-rem(14px);
     }
   }
 }

@@ -26,7 +26,7 @@
           {% endfor %}
           </div>
           {% endif %}
-          <h2><a href="{{ item.url | url }}"{% activepath item.url, page.url %}>{{ item.data.title }}</a></h2>
+          <h2><a href="{{ item.url | url }}"{% activepath item.url, page.url %}>{{ item.data.title | markdown | safe }}</a></h2>
           {% if loop.first and item.data.description %}
           <div class="h5-style">
           {{ item.data.description | markdown | safe }}
