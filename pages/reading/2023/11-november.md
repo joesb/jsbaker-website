@@ -24,7 +24,7 @@ image:
   figureClass:
     page: "content-canvas-item-full figure--hero"
   caption: "A woman sitting in a chair reading a book."
-  credit: 'Photo by <a href="https://unsplash.com/@zerotake" rel="noopener nofollow" target="_blank">zero take</a> on <a href="https://unsplash.com/photos/a-woman-sitting-in-a-chair-reading-a-book-M5Fq1UcaUmI" rel="noopener nofollow" target="_blank">Unsplash</a>'
+  credit: 'Photo by <a href="https://unsplash.com/@zerotake" rel="noopener nofollow" target="_blank">zero take</a> on <a href="https://unsplash.com/photos/a-woman-sitting-in-a-chair-reading-a-book-M5Fq1UcaUmI" rel="noopener noreferrer" target="_blank">Unsplash</a>'
 reviews:
   list:
     - title: How to Build a Boat
@@ -79,7 +79,7 @@ reviews:
         loveable: It's complicated
         diverse: Yes
         flaws: Yes
-      text: "This is a special novel. I can't believe that I've only just discovered Sebastian Barry this year (reading [*Old God's Time*](/reading/2023/08-august/#old-god's-time) because it was on the 2023 Booker Prize longlist).
+      text: "This is a special novel. I can't believe that I've only just discovered Sebastian Barry this year (reading [*Old God's Time*](/reading/2023/08-august/#old-god's-time){target=_blank rel=\"noopener noreferrer\"} because it was on the 2023 Booker Prize longlist).
       
       
       Eneas McNulty grows up in Sligo, on the west coast of Ireland, at the beginning of the 20th Century. One simple choice of a naive young man during depressed times, to go to work in the British merchant navy, defines the whole of the rest of his life as the rise of Irish nationalism and the struggle for freedom from British rule begets violence and conflict. Returning from the ships to a lack of work and a cold shoulder, Eneas joins the Royal Irish Constabulary, becomes an unfortunate witness to a killing. He's branded traitor and forced to flee Ireland, his home, his family, and Viv, the woman he loves. Though he tries to return later when he hopes that memories have faded, he discovers there will never be a place for him in Sligo.

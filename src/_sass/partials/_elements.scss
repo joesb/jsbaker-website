@@ -40,6 +40,7 @@ ELEMENTS
     --surface-rose: #{variables.$surface-rose};
     --color-brand-primary: var(--surface-teal);
     --color-brand-secondary: var(--surface-violet);
+    --color-brand-white: #{variables.$white};
 
     --font-size-fluid-000: clamp(#{variables.$body-v-sml-font-size-mobile}, 1.3vw, #{variables.$body-v-sml-font-size});
     --font-size-fluid-00: clamp(#{variables.$body-sml-font-size-mobile}, 1.4vw, #{variables.$body-sml-font-size});
