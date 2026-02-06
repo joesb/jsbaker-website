@@ -8,7 +8,7 @@ layout: page.njk
 date: 2026-01-27T11:38:44Z
 promoted: true
 sharePage: true
-tbHideDescription: true
+hideDescription: true
 order: 0
 tags:
   - Thinking
