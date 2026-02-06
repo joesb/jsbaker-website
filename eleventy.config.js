@@ -68,7 +68,7 @@ export default async function(eleventyConfig) {
     // formats: ["auto"],
 
     // optional, output image widths
-    widths: [800, 500, 300],
+    widths: [1980, 1200, 800, 500, 300],
 
     urlPath: "/static/img/",
     outputDir: "./_site/static/img/",
