@@ -1,7 +1,7 @@
 ---
 title: "Tinker, Tailor, Soldier, Spy, by John le Carré"
 description: Have you ever read … Tinker, Tailor, Soldier, Spy by John le Carré?
-date: 2026-02-06T11:39:24Z
+date: 2026-02-06T15:39:24Z
 layout: page-oldbooks.njk
 page:
   class: "page--with-hero"
