@@ -35,16 +35,16 @@ export default async function(eleventyConfig) {
   eleventyConfig.addFilter("debug", (content) => `<pre>${inspect(content)}</pre>`);
   eleventyConfig.addPlugin(eleventyImageOnRequestDuringServePlugin);
   eleventyConfig.addPlugin(EleventyHtmlBasePlugin, {
-		// The base URL: defaults to Path Prefix
-		// baseHref: eleventyConfig.pathPrefix,
+    // The base URL: defaults to Path Prefix
+    // baseHref: eleventyConfig.pathPrefix,
 
-		// But you could use a full URL here too:
-		// baseHref: env.baseUrl,
+    // But you could use a full URL here too:
+    // baseHref: env.baseUrl,
 
-		// Comma separated list of output file extensions to apply
-		// our transform to. Use `false` to opt-out of the transform.
-		extensions: "html",
-	});
+    // Comma separated list of output file extensions to apply
+    // our transform to. Use `false` to opt-out of the transform.
+    extensions: "html",
+  });
 
   // Return active path attributes
   eleventyConfig.addShortcode('activepath', function (itemUrl, currentUrl) {
@@ -58,40 +58,40 @@ export default async function(eleventyConfig) {
   });
 
   eleventyConfig.addPlugin(eleventyImageTransformPlugin, {
-		// which file extensions to process
-		extensions: "html",
+    // which file extensions to process
+    extensions: "html",
 
-		// Add any other Image utility options here:
+    // Add any other Image utility options here:
 
-		// optional, output image formats
-		formats: ["webp", "jpeg"],
-		// formats: ["auto"],
+    // optional, output image formats
+    formats: ["webp", "jpeg"],
+    // formats: ["auto"],
 
-		// optional, output image widths
-		widths: [800, 500, 300],
+    // optional, output image widths
+    widths: [800, 500, 300],
 
     urlPath: "/static/img/",
     outputDir: "./_site/static/img/",
 
-		// optional, attributes assigned on <img> override these values.
-		defaultAttributes: {
-			loading: "lazy",
-			decoding: "async",
-			sizes: "auto",
-		},
+    // optional, attributes assigned on <img> override these values.
+    defaultAttributes: {
+      loading: "lazy",
+      decoding: "async",
+      sizes: "auto",
+    },
 
     filenameFormat: (id, src, width, format) => {
       const { name } = path.parse(src);
       return `${name}-${width}w.${format}`;
     },
-	});
+  });
 
   // Return responsive images
   eleventyConfig.addShortcode("image", async function(src, alt, cls = [], pictureCls = "", sizes = "auto", widths = [300, 600, 1000, 1980]) {
-		if(alt === undefined) {
-			// You bet we throw an error on missing alt (alt="" works okay)
-			throw new Error(`Missing \`alt\` on responsiveimage from: ${src}`);
-		}
+    if(alt === undefined) {
+      // You bet we throw an error on missing alt (alt="" works okay)
+      throw new Error(`Missing \`alt\` on responsiveimage from: ${src}`);
+    }
 
     let imgClass = cls.length ? cls.map(s => `.${s}`).join(' ') : '';
 
@@ -100,7 +100,7 @@ export default async function(eleventyConfig) {
     content = markdownLibrary.renderInline(content);
 
     return content;
-	});
+  });
 
     // // Collection of items promotoed
     // eleventyConfig.addCollection('promotedContent', (collection) => {
@@ -166,19 +166,19 @@ export default async function(eleventyConfig) {
 
   // Minify HTML
   eleventyConfig.addTransform("htmlmin", function (content) {
-		if ((this.page.outputPath || "").endsWith(".html")) {
-			let minified = minify(content, {
-				useShortDoctype: true,
-				removeComments: true,
-				collapseWhitespace: true,
-			});
+    if ((this.page.outputPath || "").endsWith(".html")) {
+      let minified = minify(content, {
+        useShortDoctype: true,
+        removeComments: true,
+        collapseWhitespace: true,
+      });
 
-			return minified;
-		}
+      return minified;
+    }
 
-		// If not an HTML output, return content as-is
-		return content;
-	});
+    // If not an HTML output, return content as-is
+    return content;
+  });
 
   // Check a string starts with a character.
   eleventyConfig.addFilter('starts_with', function(str, prefix, not = false) {
@@ -203,28 +203,28 @@ export default async function(eleventyConfig) {
   });
 
   eleventyConfig.addFilter("readableDate", (dateObj, format, zone) => {
-		// Formatting tokens for Luxon: https://moment.github.io/luxon/#/formatting?id=table-of-tokens
-		return DateTime.fromJSDate(dateObj, { zone: zone || "utc" }).toFormat(format || "dd LLLL yyyy");
-	});
+    // Formatting tokens for Luxon: https://moment.github.io/luxon/#/formatting?id=table-of-tokens
+    return DateTime.fromJSDate(dateObj, { zone: zone || "utc" }).toFormat(format || "dd LLLL yyyy");
+  });
 
-	eleventyConfig.addFilter('htmlDateString', (dateObj) => {
-		// dateObj input: https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#valid-date-string
-		return DateTime.fromJSDate(dateObj, {zone: 'utc'}).toFormat('yyyy-LL-dd');
-	});
+  eleventyConfig.addFilter('htmlDateString', (dateObj) => {
+    // dateObj input: https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#valid-date-string
+    return DateTime.fromJSDate(dateObj, {zone: 'utc'}).toFormat('yyyy-LL-dd');
+  });
 
-	// Return all the tags used in a collection
-	eleventyConfig.addFilter("getAllTags", collection => {
-		let tagSet = new Set();
-		for(let item of collection) {
-			(item.data.tags || []).forEach(tag => tagSet.add(tag));
-		}
-		 let tsArray = Array.from(tagSet);
+  // Return all the tags used in a collection
+  eleventyConfig.addFilter("getAllTags", collection => {
+    let tagSet = new Set();
+    for(let item of collection) {
+      (item.data.tags || []).forEach(tag => tagSet.add(tag));
+    }
+     let tsArray = Array.from(tagSet);
      return tsArray.sort();
-	});
+  });
 
-	eleventyConfig.addFilter("filterTagList", function filterTagList(tags) {
-		return (tags || []).filter(tag => ['all', 'nav', 'rss', '#reading', '#writing', '#thinking', 'Reading', 'Thinking', 'promotedContent', 'footerNav', 'footerSecondaryNav', 'mainNav', 'allContent', 'reading', 'writing', 'thinking'].indexOf(tag) === -1);
-	});
+  eleventyConfig.addFilter("filterTagList", function filterTagList(tags) {
+    return (tags || []).filter(tag => ['all', 'nav', 'rss', '#reading', '#writing', '#thinking', '#reading-oldbooks', 'Reading', 'Thinking', 'promotedContent', 'footerNav', 'footerSecondaryNav', 'mainNav', 'allContent', 'reading', 'writing', 'thinking'].indexOf(tag) === -1);
+  });
 
 
   // Sort footer menu items by 'order' field
@@ -278,6 +278,12 @@ export default async function(eleventyConfig) {
     return sortByDate(nav).reverse();
   });
 
+  // Sort reading old books pieces by 'order' field
+  eleventyConfig.addCollection('readingOldBooks', (collection) => {
+    var nav = collection.getFilteredByTag('#reading-oldbooks');
+    return sortByDate(nav).reverse();
+  });
+
   // Sort thinking pieces by 'order' field
   eleventyConfig.addCollection('thinking', (collection) => {
     var nav = collection.getFilteredByTag('#thinking');
@@ -319,44 +325,44 @@ export default async function(eleventyConfig) {
   }
 
   async function getPictureMarkup(src, alt, cls, pictureCls = "", sizes = "(min-width: 30em) 50vw, 100vw", widths = [300, 600, 1000, 1980]) {
-		if(alt === undefined) {
-			// You bet we throw an error on missing alt (alt="" works okay)
-			throw new Error(`Missing \`alt\` on responsiveimage from: ${src}`);
-		}
+    if(alt === undefined) {
+      // You bet we throw an error on missing alt (alt="" works okay)
+      throw new Error(`Missing \`alt\` on responsiveimage from: ${src}`);
+    }
 
-		let metadata = await Image(src, {
-			widths: widths,
-			formats: ['webp', 'jpeg'],
+    let metadata = await Image(src, {
+      widths: widths,
+      formats: ['webp', 'jpeg'],
       urlPath: "/static/img/",
       outputDir: "./_site/static/img/"
-		});
+    });
 
-		let lowsrc = metadata.jpeg[0];
-		let highsrc = metadata.jpeg[metadata.jpeg.length - 1];
+    let lowsrc = metadata.jpeg[0];
+    let highsrc = metadata.jpeg[metadata.jpeg.length - 1];
 
-		return `<picture class="${pictureCls}">
-			${Object.values(metadata).map(imageFormat => {
-				return `  <source type="${imageFormat[0].sourceType}" srcset="${imageFormat.map(entry => entry.srcset).join(", ")}" sizes="${sizes}">`;
-			}).join("\n")}
-				<img
-					src="${lowsrc.url}"
-					width="${highsrc.width}"
-					height="${highsrc.height}"
+    return `<picture class="${pictureCls}">
+      ${Object.values(metadata).map(imageFormat => {
+        return `  <source type="${imageFormat[0].sourceType}" srcset="${imageFormat.map(entry => entry.srcset).join(", ")}" sizes="${sizes}">`;
+      }).join("\n")}
+        <img
+          src="${lowsrc.url}"
+          width="${highsrc.width}"
+          height="${highsrc.height}"
           class="${cls}"
-					alt="${alt}"
-					loading="lazy"
-					decoding="async">
-			</picture>`;
-	};
+          alt="${alt}"
+          loading="lazy"
+          decoding="async">
+      </picture>`;
+  };
   
   async function getPictureData(src, widths = [300, 600, 1000, 1980]) {
     let metadata = await Image('./pages' + src, {
-			returnType: 'object',
+      returnType: 'object',
       widths: widths,
-			formats: ['jpeg'],
+      formats: ['jpeg'],
       urlPath: "/static/img/",
       outputDir: "./_site/static/img/"
-		});
+    });
     return metadata;
   };
 
@@ -384,7 +390,7 @@ export default async function(eleventyConfig) {
   eleventyConfig.setLibrary("md", markdownLibrary);
 
   eleventyConfig.addFilter("markdown", (content, ril = false) => {
-    return ril ? markdownLibrary.renderInline(content): markdownLibrary.render(content);
+    return ril ? markdownLibrary.renderInline(content) : markdownLibrary.render(content);
   });
 
   eleventyConfig.addPairedShortcode("Markdown", function(content, ril = false) {

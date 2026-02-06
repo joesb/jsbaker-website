@@ -1,16 +1,25 @@
-	<div class="page-title">
-	{%- if navtitle == "Home" -%}
-		<div class="title-bar title-bar--centered">
-	{% else %}
-		<div class="title-bar">
-	{% endif %}
-			<div class="container">
-				<h1 class="page-title__heading">{{ title }}</h1>
-			</div>
-			{% if description and not (is_review or tbHideDescription) %}
-			<div class="container">
-				{{ description | markdown | safe }}
-			</div>
-			{% endif %}
-		</div>
-	</div>
+  <div class="page-title">
+  {%- if navtitle == "Home" -%}
+    <div class="title-bar title-bar--centered">
+  {% else %}
+    <div class="title-bar">
+  {% endif %}
+      <div class="container">
+        {% if supertitle %}
+        <div class="h4-style not-bold uppercase title-bar--supertitle">{% if supertitleLinkBack %}<a href="{{ supertitleLinkBack }}" class="single-meta-back">{{ supertitle | safe }}</a>{% else %}{{ supertitle | safe }}{% endif %}</div>
+        {% endif %}
+        {% if type == 'oldbooks' %}
+        <div class="page-title--pre-title">
+          <p class="margin-block-start-vlg margin-block-end-nil">Yeah, sure, there’s loads of new books and all, but do you ever read old books?</p>
+          <p class="h4-style not-bold margin-block-start-nil">Have you ever read …</p>
+        </div>
+        {% endif %}
+        <h1 class="page-title__heading">{{ title | markdown(true) | safe }}</h1>
+      </div>
+      {% if description and not (is_review or hideDescription or type == "oldbooks") %}
+      <div class="container">
+        {{ description | markdown | safe }}
+      </div>
+      {% endif %}
+    </div>
+  </div>

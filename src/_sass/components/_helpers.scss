@@ -7,6 +7,13 @@
   margin-block-start: 0 !important;
 }
 
+.margin-block-start-nil {
+  margin-block-start: var(--size-2) !important;
+}
+.margin-block-end-nil {
+  margin-block-end: var(--size-2) !important;
+}
+
 .margin-sml {
   margin: var(--size-2) !important;
 }
