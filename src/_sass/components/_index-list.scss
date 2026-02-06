@@ -83,7 +83,9 @@
     // }
   }
 
+  .metadata__tags,
   .metadata {
+    justify-content: flex-start;
     font-size: var(--font-size-fluid-000);
   }
 }
