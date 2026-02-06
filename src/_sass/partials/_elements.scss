@@ -40,6 +40,7 @@ ELEMENTS
     --surface-rose: #{variables.$surface-rose};
     --color-brand-primary: var(--surface-teal);
     --color-brand-secondary: var(--surface-violet);
+    --color-brand-white: #{variables.$white};
 
     --font-size-fluid-000: clamp(#{variables.$body-v-sml-font-size-mobile}, 1.3vw, #{variables.$body-v-sml-font-size});
     --font-size-fluid-00: clamp(#{variables.$body-sml-font-size-mobile}, 1.4vw, #{variables.$body-sml-font-size});
@@ -48,6 +49,8 @@ ELEMENTS
     --font-size-fluid-21: clamp(#{variables.$h2-font-size-mobile}, 2.5vw, #{variables.$h2-font-size});
     --font-size-fluid-3: clamp(#{variables.$h1-font-size-mobile}, 4vw, #{variables.$h1-font-size});
     --font-size-fluid-4: clamp(#{variables.$h1-lg-font-size-mobile}, 6vw, #{variables.$h1-lg-font-size});
+
+    --size-content-1-1: 30ch;
 
     // --gradient-6: conic-gradient(from 90deg at bottom right, black, white);
     
