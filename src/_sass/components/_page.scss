@@ -88,6 +88,10 @@
 
   .title-bar {
     align-self: flex-end;
+
+    a {
+      color: var(--color-brand-white);
+    }
   }
 }
 
