@@ -17,7 +17,7 @@ image:
 tags:
   - Reading
   - Novels
-  - "Dr Baker's Library"
+  - "Dr B's Library"
   - "#reading-library"
 redirectFrom:
   - /reading/old-books/lecarre-tinker-tailor/
