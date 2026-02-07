@@ -47,7 +47,11 @@ And more questions, too:
 
 Nothing but confusion, from the start … and we're hooked! That's the way to do it. That's the way to write stuff, that's the way to start things off.
 
-The whole of the first chapter carries on that way, carries on the intrigue. Thursgood's is a school, it turns out, and Jim a new teacher. But John, you tell us hardly anything else, leave us guessing. And, we discover, Jim isn't even the novel's main character! What?!? What a bonkers way to start things off. That's proper daring, starting your novel that way. You have to be John le Carré to pull off something like that.
+The whole of the first chapter carries on that way, carries on the intrigue. Thursgood's is a school, it turns out, and Jim a new teacher. But John, you tell us hardly anything else, leave us guessing. And, we discover, Jim isn't even the novel's main character!
+
+What?!?
+
+What a bonkers way to start things off. That's proper daring, starting your novel that way. You have to be John le Carré to pull off something like that.
 
 ---
 
