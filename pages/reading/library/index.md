@@ -5,6 +5,7 @@ description: |
 date: 2026-02-06T11:39:24Z
 layout: list-library.njk
 hideDescriptions: true
+promoted: true
 eleventyNavigation:
   key: Library
   parent: Reading
