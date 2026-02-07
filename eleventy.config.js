@@ -19,6 +19,7 @@ import timeToRead  from "eleventy-plugin-time-to-read";
 import embedEverything from "eleventy-plugin-embed-everything";
 import env from "./src/_data/env.js";
 import { minify } from "html-minifier-terser";
+import slugify from "slugify";
 
 import path from 'path';
 
@@ -202,6 +203,10 @@ export default async function(eleventyConfig) {
     return typeof obj == 'string'
   });
 
+  eleventyConfig.addFilter("isTag", (str, tag) => {
+    return str === tag;
+  });
+
   eleventyConfig.addFilter("readableDate", (dateObj, format, zone) => {
     // Formatting tokens for Luxon: https://moment.github.io/luxon/#/formatting?id=table-of-tokens
     return DateTime.fromJSDate(dateObj, { zone: zone || "utc" }).toFormat(format || "dd LLLL yyyy");
@@ -223,9 +228,21 @@ export default async function(eleventyConfig) {
   });
 
   eleventyConfig.addFilter("filterTagList", function filterTagList(tags) {
-    return (tags || []).filter(tag => ['all', 'nav', 'rss', '#reading', '#writing', '#thinking', '#reading-oldbooks', 'Reading', 'Thinking', 'promotedContent', 'footerNav', 'footerSecondaryNav', 'mainNav', 'allContent', 'reading', 'writing', 'thinking'].indexOf(tag) === -1);
+    return (tags || []).filter(tag => ['all', 'nav', 'rss', '#reading', '#writing', '#thinking', '#reading-library', 'Reading', 'Thinking', 'promotedContent', 'footerNav', 'footerSecondaryNav', 'mainNav', 'allContent', 'reading', 'writing', 'thinking'].indexOf(tag) === -1);
   });
 
+  // Custom slug filter
+  eleventyConfig.addFilter("slug", (str) => {
+    if (!str) {
+      return;
+    }
+
+    return slugify(str, {
+      lower: true,
+      strict: true,
+      remove: /[']/g,
+    });
+  });
 
   // Sort footer menu items by 'order' field
   eleventyConfig.addCollection('footerNav', (collection) => {
@@ -279,8 +296,8 @@ export default async function(eleventyConfig) {
   });
 
   // Sort reading old books pieces by 'order' field
-  eleventyConfig.addCollection('readingOldBooks', (collection) => {
-    var nav = collection.getFilteredByTag('#reading-oldbooks');
+  eleventyConfig.addCollection('readingLibrary', (collection) => {
+    var nav = collection.getFilteredByTag('#reading-library');
     return sortByDate(nav).reverse();
   });
 
@@ -385,7 +402,7 @@ export default async function(eleventyConfig) {
       symbol: "#",
       level: [1,2,3,4],
     }),
-    slugify: eleventyConfig.getFilter("slug")
+    slugify: eleventyConfig.getFilter("slugify")
   }).use(markdownItAttrs).use(markdownItSmall);
   eleventyConfig.setLibrary("md", markdownLibrary);
 

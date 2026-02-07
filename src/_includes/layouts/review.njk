@@ -16,7 +16,7 @@ image:
     <div class="review-item review-key-data content-canvas-item-wide-left">
       <h3 class="heading-v-wide">
         <a href="{{ review.urls.book }}" rel="noopener noreferrer" target="_blank">{{ review.title }}</a>
-        <a class="direct-link visually-hidden" href="#{{ review.title | slugify }}" aria-hidden="true">#</a>
+        <a class="direct-link visually-hidden" href="#{{ review.title | slug }}" aria-hidden="true">#</a>
       {% if review.audiobook %}
         <em class="small">(audiobook)</em>
       {% endif %}
@@ -91,7 +91,7 @@ image:
     <div class="review-item-title">
       <h3 class="heading-v-wide h4-style">
         <a href="{{ review.urls.book }}" rel="noopener noreferrer" target="_blank">{{ review.title }}</a>
-        <a class="direct-link visually-hidden" href="#{{ review.title | slugify }}" aria-hidden="true">#</a>
+        <a class="direct-link visually-hidden" href="#{{ review.title | slug }}" aria-hidden="true">#</a>
       {% if review.audiobook %}
         <em class="small">(audiobook)</em>
       {% endif %}

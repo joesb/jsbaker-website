@@ -2,7 +2,7 @@
 title: "Tinker, Tailor, Soldier, Spy, by John le Carré"
 description: Have you ever read … Tinker, Tailor, Soldier, Spy by John le Carré?
 date: 2026-02-06T15:39:24Z
-layout: page-oldbooks.njk
+layout: page-library.njk
 page:
   class: "page--with-hero"
 image:
@@ -17,8 +17,11 @@ image:
 tags:
   - Reading
   - Novels
-  - Old Books
-  - "#reading-oldbooks"
+  - "Dr Baker's Library"
+  - "#reading-library"
+redirectFrom:
+  - /reading/old-books/lecarre-tinker-tailor/
+  - /lecarre-tinker-tailor/
 ---
 
 Here’s how it starts, the opening sentence …
