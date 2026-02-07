@@ -72,6 +72,10 @@
   font-size: var(--font-size-fluid-3);
 }
 
+.page-title--pre-title {
+  max-inline-size: var(--size-content-1-2);
+}
+
 .page--with-hero {
   padding-block-start: 60vh;
 
