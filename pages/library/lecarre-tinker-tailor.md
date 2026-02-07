@@ -1,7 +1,7 @@
 ---
 title: "Tinker, Tailor, Soldier, Spy, by John le Carré"
 description: Have you ever read … Tinker, Tailor, Soldier, Spy by John le Carré?
-date: 2026-02-06T15:39:24Z
+date: 2026-02-07T16:23:04Z
 layout: page-library.njk
 page:
   class: "page--with-hero"
@@ -43,9 +43,13 @@ Even before we were ready, even before we were paying attention, he’s gone, sh
 And more questions, too:
 
 - Who on Earth is Jim?
-- And where is Thursgood's?
+- And what — or where! — is Thursgood's?
 
 Nothing but confusion, from the start … and we're hooked! That's the way to do it. That's the way to write stuff, that's the way to start things off.
+
+The whole of the first chapter carries on that way, carries on the intrigue. Thursgood's is a school, it turns out, and Jim a new teacher. But John, you tell us hardly anything else, leave us guessing. And, we discover, Jim isn't even the novel's main character! What?!? What a bonkers way to start things off. That's proper daring, starting your novel that way. You have to be John le Carré to pull off something like that.
+
+---
 
 Everyone thinks *Tinker, Tailor* is a spy novel, but it's not really. Well, yes, it is set in the world of spies and spying, that's certainly true, but it's not really about espionage at all. There's certainly precious little actual spycraft in the story, and if you're looking for wild adventures you might want to look elsewhere, an Ian Fleming or a Len Deighton, maybe. We never escape from the language and idiom of the spy world, but that is only the habitat in which these characters live.
 
@@ -59,6 +63,8 @@ The novel follows George Smiley, John le Carré's most enduring character, now a
 
 Smiley was forced out of the service after a botched operation that resulted in the capture and torture of Jim Prideaux, the Jim of that opening sentence. The question is, who betrayed him? Suspicion falls on 5 men at the top of MI6, friends and ex-colleagues.
 
+---
+
 It's said that the novel is le Carré's examination of his own life and experiences, the people he knew when he was a spy himself. The 1950s and ’60s saw a bunch of revelations that exposed the [Cambridge Five traitors](https://en.wikipedia.org/wiki/Cambridge_Five#In_popular_culture){target=_blank rel="noopener noreferrer"}, many of whom le Carré had known and worked with, people who had deeply covered all that they were doing to undermine everything he stood for. Le Carré was coming to terms with people he knew who were two things, diametrically opposed, at once. One character, Roy Bland, is drinking with Smiley at a bar:
 
 > ‘You’re an educated sort of swine,’ he announced easily as he sat down again. ‘An artist is a bloke who can hold two fundamentally opposing views and still function: who dreamed that one up?’
@@ -66,6 +72,8 @@ It's said that the novel is le Carré's examination of his own life and experien
 > {.bq-alt}
 
 In the same way, the book leads the reader to do the same — to leave naïvety behind, to examine one's own motives and those of one's friends, to understand what we believe in, what we are committed to, and why. The novel puts me face-to-face with my fragilities and false hopes, and asks me to be honest with them and with myself.
+
+---
 
 Reading *Tinker, Tailor* is an exquisite experience. Le Carré's language and his use of language is beautiful.
 
@@ -88,6 +96,8 @@ Chapter 37, the penultimate chapter, opens with a sentence of such sublime and g
 > {.bq-alt}
 
 How can you do that, John? How can you take words, simple English words, and make them do such perfect things, help us understand ourselves and the world we inhabit?
+
+---
 
 {% ImgFigure "Gary Oldman plays intelligence officer George Smiley in Tomas Alfredson’s screen adaptation (2011). Image courtesy of [Mere Orthodoxy](https://mereorthodoxy.com/were-all-george-smiley-now){target=_blank rel=\"noopener noreferrer\"}.", "margin-block-vlg content-canvas-item-wide" %}![Gary Oldman as George Smiley](/static/images/oldbooks/lecarre-tinker-tailor-oldman.jpg){% endImgFigure %}
 
