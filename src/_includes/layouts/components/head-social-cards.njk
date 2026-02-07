@@ -10,7 +10,7 @@
 {% set ogType %}article{% endset %}
 {% endif %}
 
-{% if description and excerpt|length == 0 %}
+{% if description and excerpt | length == 0 %}
 {% set excerpt = description %}
 {% endif %}
 
