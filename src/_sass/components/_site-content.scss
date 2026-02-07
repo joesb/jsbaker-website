@@ -103,8 +103,10 @@ SITE CONTENT
   transition: all 0.25s ease;
   background-color: var(--surface-rose);
 
-  &:hover {
-    transition: all 0.25s ease;
-    background-color: var(--surface-rose-darker);
+  &.faux-block-link-parent {
+    &:hover {
+      transition: all 0.25s ease;
+      background-color: var(--surface-rose-darker);
+    }
   }
 }
