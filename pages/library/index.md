@@ -1,5 +1,5 @@
 ---
-title: Dr Baker's Library
+title: Dr B's Library
 description: |
   Yeah, sure, there’s plenty of new books, but do you ever read old books?
   
@@ -9,7 +9,7 @@ layout: list-library.njk
 hideDescriptions: true
 promoted: true
 eleventyNavigation:
-  key: Dr Baker's Library
+  key: Dr B's Library
   order: 4
 pagination:
   data: collections.readingLibrary
@@ -21,7 +21,7 @@ tags:
   '#reading'
 order: -1
 image:
-  social: /static/images/oldbooks/anthony-fomin-_J4qf8fEaro-unsplash.jpg
+  social: /static/images/oldbooks/pexels-tima-miroshnichenko-9572619.jpg
 redirectFrom:
   - /reading/old-books/
 ---

@@ -1,7 +1,7 @@
 ---
 layout: base.njk
 sharePage: true
-supertitle: Dr Baker's Library
+supertitle: Dr B's Library
 supertitleLinkBack: /library/
 type: oldbooks
 hideDescription: true
@@ -61,7 +61,7 @@ image:
         <span class="metadata__tags__tag">
           {% if topic in ['Reading', 'Writing', 'Thinking'] %}
           <a href="/{{ t | url }}/">{{ topic }}</a>
-          {% elif topic in ["Dr Baker's Library"] %}
+          {% elif topic in ["Dr B's Library"] %}
           <a href="/reading/library/">{{ topic }}</a>
           {% else %}
           <a href="{{ ['/tag/', t] | join | url }}/">{{ topic }}</a>
