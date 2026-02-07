@@ -7,9 +7,8 @@ layout: list-library.njk
 hideDescriptions: true
 promoted: true
 eleventyNavigation:
-  key: Library
-  parent: Reading
-  order: 1
+  key: Dr Baker's Library
+  order: 4
 pagination:
   data: collections.readingLibrary
   size: 11
@@ -19,6 +18,8 @@ indexListClass: "site-content--surface-dark site-content--surface-rose"
 tags:
   '#reading'
 order: -1
+image:
+  social: /static/images/oldbooks/anthony-fomin-_J4qf8fEaro-unsplash.jpg
 redirectFrom:
   - /reading/old-books/
 ---
