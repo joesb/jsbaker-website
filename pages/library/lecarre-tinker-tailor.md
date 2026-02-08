@@ -1,6 +1,6 @@
 ---
 title: "Tinker, Tailor, Soldier, Spy, by John le Carré"
-description: Have you ever read … John le Carré classic spy novel about betrayal and living double lives
+description: Have you ever read … John le Carré's classic spy novel of betrayal and living double lives
 date: 2026-02-07T16:23:04Z
 layout: page-library.njk
 page:
