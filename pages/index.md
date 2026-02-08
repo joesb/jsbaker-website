@@ -2,7 +2,7 @@
 title: Joe Baker
 description: My writer's journal, for my writing projects, as well as the reading and thinking that support them.
 pageTitle: Writer
-date: 2026-01-25T12:34:21Z
+date: 2026-02-08T10:40:21Z
 eleventyNavigation:
   key: Home
 layout: home.njk
