@@ -19,7 +19,7 @@ pageClass: "site-content--surface-dark site-content--surface-rose"
 indexListClass: "site-content--surface-dark site-content--surface-rose"
 tags:
   '#reading'
-order: -1
+order: -10
 image:
   social: /static/images/oldbooks/pexels-tima-miroshnichenko-9572619.jpg
 redirectFrom:
