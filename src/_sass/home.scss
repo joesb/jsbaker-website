@@ -26,7 +26,7 @@
 
   :where(p) {
     font-size: var(--font-size-fluid-1);
-    line-height: 2rem;
+    line-height: 1.5rem;
   }
 }
 
@@ -47,6 +47,29 @@
 
   .home-layout__item--right {
     grid-area: right;
+  }
+
+  .home-layout__item__inner {
+    padding: clamp(1.5rem, 6vw, 12rem) clamp(2rem, 6vw, 6rem);
+
+  }
+
+  .home-layout__item__inner__content {
+    :where(p) {
+      line-height: 1.75rem;
+    }
+  }
+}
+
+@include respond-to.respond-to('extra-large') {
+  .home-layout__item__inner {
+    padding: clamp(1.5rem, 6vw, 12rem) clamp(2rem, 12vw, 12rem);
+  }
+
+  .home-layout__item__inner__content {
+    :where(p) {
+      line-height: 2rem;
+    }
   }
 }
 
