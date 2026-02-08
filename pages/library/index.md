@@ -7,7 +7,7 @@ description: |
 date: 2026-02-06T11:39:24Z
 layout: list-library.njk
 hideDescriptions: true
-promoted: true
+promoted: false
 eleventyNavigation:
   key: Dr B's Library
   order: 4
