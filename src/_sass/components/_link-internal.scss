@@ -97,3 +97,39 @@
     }
   }
 }
+
+.single-meta-forward {
+  padding-inline-end: var(--size-4);
+  text-decoration: underline 0.1em transparent;
+
+  &::after {
+    position: absolute;
+    // content: '\2B9E';
+    content: "\23F5";
+    top: calc(50% - 9px);
+    right: 0;
+    font-size: var(--size-3);
+    height: ptr.px-to-rem(18px);
+    width: ptr.px-to-rem(18px);
+    transition: 0.2s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &:hover {
+    &::after {
+      // background-color: $mako;
+      transform: translateX(5px);
+    }
+  }
+
+  &.smaller {
+    &::after {
+      top: calc(50% - 7px);
+      font-size: var(--size-2-5);
+      height: ptr.px-to-rem(14px);
+      width: ptr.px-to-rem(14px);
+    }
+  }
+}

@@ -2,7 +2,7 @@
 title: Joe Baker
 description: My writer's journal, for my writing projects, as well as the reading and thinking that support them.
 pageTitle: Writer
-date: 2026-02-08T10:40:21Z
+date: 2026-02-08T13:20:21Z
 eleventyNavigation:
   key: Home
 layout: home.njk
@@ -17,3 +17,12 @@ pagination:
 ---
 
 My writer's journal, for my [writing](/writing){.light} projects, as well as the [reading](/reading){.light} and [thinking](/thinking){.light} that support them.
+
+---{.margin-block-start-vlg}
+
+**And also …**{.bold} Yeah, sure, there’s plenty of new books, but do you ever read old books?
+{.margin-block-start-vlg}
+
+Welcome to [Dr B's Library](/library/){.light .single-meta-forward .bold}
+
+Let's pick one off the shelf.
