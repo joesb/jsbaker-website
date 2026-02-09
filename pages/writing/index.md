@@ -1,7 +1,7 @@
 ---
 title: Writing
-description: My writing, and my writing about writing.
-date: 2025-12-02T11:53:17Z
+description: My writing, and my writing about writing — short stories, being a writer, and other stuff.
+date: 2026-02-09T10:50:17Z
 eleventyNavigation:
   key: Writing
   order: 1
