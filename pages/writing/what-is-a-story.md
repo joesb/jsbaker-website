@@ -41,7 +41,7 @@ A story is more than just that, though, more than just a sequence of things that
 
 **First**, in a story the set of things that happen has been selected.
 
-In the time-world of the story, Saunders's linear-temporal phenomenon, many things have happen. Indeed, many other things did happen, but a load of them are missed out. They happened but we don't know about them because they're not included in the story, omitted from the tale as told. For some reason, the story's author chose not to include them.
+In the time-world of the story, Saunders's linear-temporal phenomenon, many things have happened. Indeed, many other things did happen, but a load of them are missed out. They happened but we don't know about them because they're not included in the story, omitted from the tale as told. For some reason, the story's author chose not to include them.
 
 Those things are left out because, one way or another, they're not relevant. Cleaning teeth. Folding down boxes for the recycling. Mowing the lawn. Having left-overs for lunch. Noticing a blackbird mimicking a car alarm. They're too boring, probably, or too inconsequential, too tangential or surreal, or maybe even they're too irritating and prevent the story from getting where it's going. Whatever the reason, they're left out.
 
