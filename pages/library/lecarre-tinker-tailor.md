@@ -1,7 +1,7 @@
 ---
 title: "Tinker, Tailor, Soldier, Spy, by John le Carré"
 description: Have you ever read … John le Carré's classic spy novel of betrayal and living double lives
-date: 2026-02-07T16:23:04Z
+date: 2026-02-07T18:23:04Z
 layout: page-library.njk
 promoted: true
 order: -1
@@ -71,7 +71,7 @@ Smiley was forced out of the service after a botched operation that resulted in 
 
 ---
 
-It's said that the novel is le Carré's examination of his own life and experiences, the people he knew when he was a spy himself. The 1950s and ’60s saw a bunch of revelations that exposed the [Cambridge Five traitors](https://www.theguardian.com/books/2014/apr/18/cambridge-spy-ring-what-biographers-say){target=_blank rel="noopener noreferrer"}, many of whom [le Carré had known and worked with](https://theconversation.com/john-le-carre-authentic-spy-fiction-that-wrote-the-wrongs-of-post-war-british-intelligence-152055){target=_blank rel="noopener noreferrer"}, people who had deeply covered all that they were doing to undermine everything he stood for. Le Carré was coming to terms with people he knew who were two things, diametrically opposed, at once. One character, Roy Bland, is drinking with Smiley at a bar:
+It's said that the novel is le Carré's examination of his own life and experiences, the people he knew when he was a spy himself. The 1950s and ’60s saw a bunch of revelations that exposed the [Cambridge Five traitors](https://www.theguardian.com/books/2014/apr/18/cambridge-spy-ring-what-biographers-say){target=_blank rel="noopener noreferrer"}, many of whom [le Carré had known and worked with](https://theconversation.com/john-le-carre-authentic-spy-fiction-that-wrote-the-wrongs-of-post-war-british-intelligence-152055){target=_blank rel="noopener noreferrer"}, people who had deeply covered over all that they were doing to undermine everything he stood for. Le Carré was coming to terms with discovering people he knew and trusted were two things, diametrically opposed, at once. One character, Roy Bland, is drinking with Smiley at a bar:
 
 > ‘You’re an educated sort of swine,’ he announced easily as he sat down again. ‘An artist is a bloke who can hold two fundamentally opposing views and still function: who dreamed that one up?’
 > *pg. 167*{.small}
