@@ -32,4 +32,6 @@ So, let's check out how it starts. Well, the book begins with a prologue, always
 
 Oh my. A death, before we've even picked it up. What are you doing, Donna? Really, how can you do that? A story, before the actual story. What are you doing?
 
-Now I want to know. Who is Bunny? And what kind of a name is that? Is that an actual bunny rabbit, called Bunny, weirdly? Or is it the name of a real human person?
+Now I want to know. Who is Bunny? And what kind of a name is that? Is that an actual bunny rabbit, called Bunny, weirdly? Or is it the name of a real human person? The next few sentences tell us — there's a huge manhunt, involving police and FBI, but snow falls after the death and covers the body where it lies at the bottom of a ravine, and there's footsteps in the mud leading down there. And then we discover it's a story in the first person, and the narrator says they are partly to blame for the death – and we're not even off the first page!
+
+Woah.
