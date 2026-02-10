@@ -1,7 +1,7 @@
 ---
 title: "Tinker, Tailor, Soldier, Spy, by John le Carré"
 description: Have you ever read … John le Carré's classic spy novel of betrayal and living double lives
-date: 2026-02-07T16:23:04Z
+date: 2026-02-07T18:23:04Z
 layout: page-library.njk
 promoted: true
 order: -1
@@ -51,7 +51,7 @@ Nothing but confusion, from the start … and we're hooked! That's the way to do
 
 The whole of the first chapter carries on that way, carries on the intrigue. Thursgood's is a school, it turns out, and Jim a new teacher. But John, you tell us hardly anything else, leave us guessing. And, we discover, Jim isn't even the novel's main character!
 
-What?!?
+What?
 
 What a bonkers way to start things off. That's proper daring, starting your novel that way. You have to be John le Carré to pull off something like that.
 
@@ -71,7 +71,7 @@ Smiley was forced out of the service after a botched operation that resulted in 
 
 ---
 
-It's said that the novel is le Carré's examination of his own life and experiences, the people he knew when he was a spy himself. The 1950s and ’60s saw a bunch of revelations that exposed the [Cambridge Five traitors](https://en.wikipedia.org/wiki/Cambridge_Five#In_popular_culture){target=_blank rel="noopener noreferrer"}, many of whom le Carré had known and worked with, people who had deeply covered all that they were doing to undermine everything he stood for. Le Carré was coming to terms with people he knew who were two things, diametrically opposed, at once. One character, Roy Bland, is drinking with Smiley at a bar:
+It's said that the novel is le Carré's examination of his own life and experiences, the people he knew when he was a spy himself. The 1950s and ’60s saw a bunch of revelations that exposed the [Cambridge Five traitors](https://www.theguardian.com/books/2014/apr/18/cambridge-spy-ring-what-biographers-say){target=_blank rel="noopener noreferrer"}, many of whom [le Carré had known and worked with](https://theconversation.com/john-le-carre-authentic-spy-fiction-that-wrote-the-wrongs-of-post-war-british-intelligence-152055){target=_blank rel="noopener noreferrer"}, people who had deeply covered over all that they were doing to undermine everything he stood for. Le Carré was coming to terms with discovering people he knew and trusted were two things, diametrically opposed, at once. One character, Roy Bland, is drinking with Smiley at a bar:
 
 > ‘You’re an educated sort of swine,’ he announced easily as he sat down again. ‘An artist is a bloke who can hold two fundamentally opposing views and still function: who dreamed that one up?’
 > *pg. 167*{.small}
@@ -107,6 +107,6 @@ How can you do that, John? How can you take words, simple English words, and mak
 
 {% ImgFigure "Gary Oldman plays intelligence officer George Smiley in Tomas Alfredson’s screen adaptation (2011). Image courtesy of [Mere Orthodoxy](https://mereorthodoxy.com/were-all-george-smiley-now){target=_blank rel=\"noopener noreferrer\"}.", "margin-block-vlg content-canvas-item-wide" %}![Gary Oldman as George Smiley](/static/images/oldbooks/lecarre-tinker-tailor-oldman.jpg){% endImgFigure %}
 
-A great triumph of this book's brilliance is that it has been given new lives — turned into a [series for TV on the BBC](https://en.wikipedia.org/wiki/Tinker_Tailor_Soldier_Spy_(TV_series)){target=_blank rel="noopener noreferrer"} in 1979, staring Alec Guinness as George Smiley, and more recently for cinema in a [film of Tinker, Tailor](https://en.wikipedia.org/wiki/Tinker_Tailor_Soldier_Spy_(film)){target=_blank rel="noopener noreferrer"} with Gary Oldman in the main role. Both actors have breathed Smiley into existence in their own astonishing way. Both are testaments to the story's power, accolades and deepest compliments.
+A great triumph of this book's brilliance is that it has been given new lives — turned into a [series for TV on the BBC](https://www.imdb.com/title/tt0080297/){target=_blank rel="noopener noreferrer"} in 1979, staring Alec Guinness as George Smiley, and more recently for cinema in a [film of Tinker, Tailor](https://www.imdb.com/title/tt1340800/){target=_blank rel="noopener noreferrer"} with Gary Oldman in the main role. Both actors have breathed Smiley into existence in their own astonishing way. Both are testaments to the story's power, accolades and deepest compliments.
 
 But the greatest experience is in the reading. So go on, get hold of *Tinker, Tailor, Soldier, Spy* for yourself.
