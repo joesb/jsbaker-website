@@ -5,7 +5,7 @@ layout: page.njk
 date: 2024-11-21
 promoted: true
 sharePage: true
-order: 0
+order: 1
 page:
   class: "page--with-hero page--thinking"
 image:

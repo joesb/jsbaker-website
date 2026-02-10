@@ -5,7 +5,7 @@ layout: page.njk
 date: 2019-02-18
 promoted: true
 sharePage: true
-order: 2
+order: 3
 canonical: https://figuration.al/what/the-surface-and-the-depths/
 tags:
   - Thinking

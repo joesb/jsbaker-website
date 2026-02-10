@@ -1,7 +1,7 @@
 ---
 title: "The Secret History, by Donna Tartt"
 description: Have you ever read … Donna Tartt's modern classic of academic elitism and moral decay
-date: 2026-02-09T10:23:04Z
+date: 2026-02-10T16:23:04Z
 layout: page-library.njk
 promoted: true
 order: -1

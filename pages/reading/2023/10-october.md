@@ -3,8 +3,7 @@ title: "Reading Recap, October 2023"
 description: "Reading further into the Autumn"
 layout: review.njk
 date: 2023-10-31
-promoted: true
-order: 4
+promoted: false
 page:
   class: "page--with-hero"
 tags:

@@ -3,8 +3,7 @@ title: "Reading Recap, November 2023"
 description: "Reading from Autumn into Winter — building a boat, saving a hostage, never being able to return home, and waking a spirit slumbering in the woods."
 layout: review.njk
 date: 2023-11-30
-promoted: true
-order: 2
+promoted: false
 page:
   class: "page--with-hero"
 tags:
