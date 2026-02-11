@@ -95,7 +95,7 @@ In Chapter 2, at the beginning of the story as Smiley is still trying to deciphe
 
 I read that and I feel it with him, feel all the lethargy and terrible resignation that builds up but is still vulnerable and can be punctured with the right needling words.
 
-Chapter 37, the penultimate chapter, opens with a sentence of such sublime and gentle revelation:
+Chapter 37, the penultimate chapter, opens with a sentence of such elegant and gentle revelation:
 
 > There are moments which are made up of too much stuff for them to be lived at the time they occur.
 > *pg. 381*{.small}
