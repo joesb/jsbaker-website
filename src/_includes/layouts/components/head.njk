@@ -8,6 +8,8 @@
   
   {% if page.url == '/' %}
   <title>{{ metadata.title }} | {{ pageTitle or title or renderData.title or metadata.title }}</title>
+  {% elif layout == "page-library.njk" %}
+  <title>Dr B's Library: {{ pageTitle or title or renderData.title or metadata.title }} | {{ metadata.title }}</title>
   {% else %}
   <title>{{ pageTitle or title or renderData.title or metadata.title }} | {{ metadata.title }}</title>
   {% endif %}
