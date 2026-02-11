@@ -1,6 +1,6 @@
 ---
 title: "The Secret History, by Donna Tartt"
-description: Have you ever read … Donna Tartt's modern classic of academic elitism and moral decay
+description: Have you ever read … Donna Tartt's modern classic of academic elitism and moral decay?
 date: 2026-02-10T17:23:04Z
 layout: page-library.njk
 promoted: true
@@ -12,7 +12,7 @@ image:
   alt: 'Cover of The Secret History, by Donna Tartt'
   class:
     - image-obj-cover
-    - image-darken-33
+    - image-darken-50
     - image-obj-pos-lower
   figureClass:
       page: "content-canvas-item-full figure--hero"
