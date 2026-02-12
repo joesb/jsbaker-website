@@ -36,7 +36,7 @@ Beginning at Chapter 1:
 > {.margin-block-start-nil}
 > {.bq-alt}
 
-Stop it. Douglas Coupland, just stop it.
+Stop it, [Douglas Coupland](https://coupland.com/){target=_blank rel="noopener noreferrer"}, just stop it.
 
 Getting us hooked in just one sentence. Stop it, now.
 
@@ -52,4 +52,6 @@ Oh, come on. You're referencing Bill Gates? That Bill? So you're setting this in
 > &nbsp; Bill, Be My Friend … *Please!*
 > {.bq-alt}
 
-Actual Mr B. Gates? Come on, now.
+Actual Mr B. Gates? Come on now.
+
+So, *Microserfs* is a written as a diary. And it's not just a [roman à clef](https://www.masterclass.com/articles/what-is-a-roman-a-clef){target=_blank rel="noopener noreferrer"}, with fictious names for real people — you're going ahead and naming actual people and putting them in your actual novel, Mr Coupland? Come on now.
