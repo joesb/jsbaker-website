@@ -54,4 +54,4 @@ Oh, come on. You're referencing Bill Gates? That Bill? So you're setting this in
 
 Actual Mr B. Gates? Come on now.
 
-So, *Microserfs* is a written as a diary. And it's not just a [roman à clef](https://www.masterclass.com/articles/what-is-a-roman-a-clef){target=_blank rel="noopener noreferrer"}, with fictitious names swapped for real people — you're going ahead and naming actual people and putting them in your actual novel, Mr Coupland? Come on now.
+*Microserfs* is written as a diary by Daniel, a software tester at Microsoft (yes, that's right — actual Microsoft!), 'to try to see the patterns in my life' *(pg. 4)*{.small}. So it's not just a [roman à clef](https://www.masterclass.com/articles/what-is-a-roman-a-clef){target=_blank rel="noopener noreferrer"}, with fictitious names swapped for real people and places — you're going ahead and naming actual them and putting them in your actual novel, Mr Coupland? Come on now.
