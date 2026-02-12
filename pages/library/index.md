@@ -6,7 +6,7 @@ description: |
   Let's pick one off the shelf.
 date: 2026-02-10T15:39:24Z
 layout: list-library.njk
-hideDescriptions: true
+hideDescriptions: false
 promoted: false
 eleventyNavigation:
   key: Dr B's Library
