@@ -53,7 +53,7 @@ The whole of the first chapter carries on that way, carries on the intrigue. Thu
 
 What?
 
-What a bonkers way to start things off. That's proper daring, starting your novel that way. You have to be John le Carré to pull off something like that.
+What a bonkers way to start things off. That's proper daring, starting your novel that way. You have to be [John le Carré](https://johnlecarre.com/){target=_blank rel="noopener noreferrer"} to pull off something like that.
 
 ---
 
