@@ -4,7 +4,7 @@ description: Have you ever read … Donna Tartt's modern classic of academic eli
 date: 2026-02-10T17:23:04Z
 layout: page-library.njk
 promoted: true
-order: -1
+order: 0
 page:
   class: "page--with-hero"
 image:
@@ -25,7 +25,7 @@ redirectFrom:
   - /tartt-secret-history/
 ---
 
-So, *The Secret History* by Donna Tartt — let's see how it starts.
+So, *The Secret History* by [Donna Tartt](https://www.curtisbrown.co.uk/client/donna-tartt){target=_blank rel="noopener noreferrer"} — let's see how it starts.
 
 Well, the book begins with a prologue, always an interesting place to kick off.
 
@@ -89,7 +89,7 @@ Book II takes us into the terrible aftermath of Bunny's death — the early sear
 
 At its heart, the book is a devastating critique of the pursuit of beauty and appearance, the picturesque, at the expense of all else, how it can metastasise into a driven obsession that destroys anything and everything else.
 
-Beyond that, though, and more powerfully, the novel explores the experience of the in-crowd. Donna Tartt herself was part of a clique of the gifted like the one in *The Secret History* — she started on the novel while she was at Bennington College, yes, in Vermont, with [Jonathan Lethem](https://jonathanlethem.com/){target=_blank rel="noopener noreferrer"} (*Motherless Brooklyn*, etc.), [Jill Eisenstadt](https://jilleisenstadt.com/){target=_blank rel="noopener noreferrer"} (*From Rockaway*, etc.), and [Bret Easton Ellis](https://www.breteastonellis.com/){target=_blank rel="noopener noreferrer"} (*American Psycho*, etc.). Ironically, Tartt's created an in- and out-crowd with her readers, with those who are students of the classics, and those who aren't.
+Beyond that, though, and more powerfully, the novel explores the experience of the in-crowd. Donna Tartt herself was part of a clique of the gifted like the one in *The Secret History* — she started on the novel while she was at [Bennington College](https://www.bennington.edu/){target=_blank rel="noopener noreferrer"}, yes, in Vermont, with [Jonathan Lethem](https://jonathanlethem.com/){target=_blank rel="noopener noreferrer"} (*Motherless Brooklyn*, etc.), [Jill Eisenstadt](https://jilleisenstadt.com/){target=_blank rel="noopener noreferrer"} (*From Rockaway*, etc.), and [Bret Easton Ellis](https://www.breteastonellis.com/){target=_blank rel="noopener noreferrer"} (*American Psycho*, etc.). Ironically, Tartt's created an in- and out-crowd with her readers, with those who are students of the classics, and those who aren't.
 
 Tartt has brushed off suggestions the book is based on her own life, but there is such vibrancy in the sensibilities portrayed: of trying, of desperate hope to measure up, of comparing yourself with the success of others, of a desperation for acceptance, confusion at being overlooked or worse, ostracised, that the book feels as thoroughly studied in the realm of human experience as in the world of Greek tragedy.
 

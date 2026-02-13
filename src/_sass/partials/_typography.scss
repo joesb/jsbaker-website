@@ -17,14 +17,6 @@ p,
   margin-block: 0.75rem;
 }
 
-.secondary-font {
-  font-family: variables.$secondary-font;
-}
-
-.headings-font {
-  font-family: variables.$headings-font;
-}
-
 /* Shared styles */
 h1,
 h2,
@@ -134,6 +126,14 @@ h5,
 //     line-height: $h4-line-height;
 //   }
 // }
+
+.secondary-font {
+  font-family: variables.$secondary-font;
+}
+
+.headings-font {
+  font-family: variables.$headings-font;
+}
 
 // Helpers - Additions to help with reuseable code approach. Add classes to achieve styles rather than nesting.
 .bold {
