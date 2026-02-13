@@ -6,7 +6,7 @@
 {% set cardTitle %}{{ metadata.title }} — {{ metadata.alt_title }}{% endset %}
 {% set ogType %}website{% endset %}
 {% elif layout == "page-library.njk" %}
-  {% set cardTitle %}Dr B's Library: {{ title }} | {{ metadata.title }} {% endset %}
+  {% set cardTitle %}Dr B's Library: {{ title }} {% endset %}
 {% else %}
 {% set cardTitle %}{{ title }} | {{ metadata.title }}{% endset %}
 {% set ogType %}article{% endset %}
