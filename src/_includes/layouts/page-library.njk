@@ -62,7 +62,7 @@ image:
           {% if topic in ['Reading', 'Writing', 'Thinking'] %}
           <a href="/{{ t | url }}/">{{ topic }}</a>
           {% elif topic in ["Dr B's Library"] %}
-          <a href="/reading/library/">{{ topic }}</a>
+          <a href="/library/">{{ topic }}</a>
           {% else %}
           <a href="{{ ['/tag/', t] | join | url }}/">{{ topic }}</a>
           {% endif %}
