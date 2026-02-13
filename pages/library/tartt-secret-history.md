@@ -4,7 +4,7 @@ description: Have you ever read … Donna Tartt's modern classic of academic eli
 date: 2026-02-10T17:23:04Z
 layout: page-library.njk
 promoted: true
-order: -1
+order: 0
 page:
   class: "page--with-hero"
 image:

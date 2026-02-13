@@ -4,7 +4,7 @@ description: Have you ever read … Douglas Coupland's story of yearning for pur
 date: 2026-02-11T12:23:04Z
 layout: page-library.njk
 promoted: true
-order: 0
+order: -1
 page:
   class: "page--with-hero"
 image:
