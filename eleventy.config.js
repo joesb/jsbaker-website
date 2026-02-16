@@ -416,7 +416,7 @@ export default async function(eleventyConfig) {
   });
 
   eleventyConfig.addShortcode("bookshopOrgFeatured", (widget) => {
-    return '<div class="content-canvas-item-full-right content-canvas-item--span-4">' + widget + '</div>';
+    return '<div class="content-canvas-item-full-right content-canvas-item--span-3 content-canvas-item-hide-mobile">' + widget + '</div>';
   });
 
   // Customize Markdown library and settings:

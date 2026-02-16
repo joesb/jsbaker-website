@@ -21,12 +21,12 @@
   grid-auto-flow: row;
 }
 
-@include respond-to.respond-to('large') {
+@include respond-to.respond-to('medium') {
   .content-canvas {
     column-gap: var(--size-fluid-3);
     grid-template-columns: 
       [full-start]
-        minmax(3vw, 1fr)
+        minmax(3vw, auto)
       [wide-start]
         minmax(10vw, 15ch)
       [main-start]
@@ -36,7 +36,7 @@
       [main-end]
         minmax(10vw, 15ch)
       [wide-end]
-        minmax(3vw, 1fr)
+        minmax(3vw, auto)
       [full-end];
     // grid-template-rows: fit-content(25ch);
   }
@@ -60,6 +60,10 @@
   } 
 }
 
+.content-canvas-item-hide-mobile {
+  display: none;
+}
+
 .content-canvas-item-wide {
   grid-column: wide-start/wide-end;
 }
@@ -80,7 +84,15 @@
   grid-column: full-start/full-end;
 }
 
+.content-canvas-item-full-right {
+  grid-column: main-start/main-end;
+}
+
 @include respond-to.respond-to('medium') {
+  .content-canvas-item-hide-mobile {
+    display: initial;
+  }
+
   .content-canvas-item-left {
     grid-column: main-start/main-mid;
   }
@@ -174,10 +186,6 @@
     grid-column: main-mid/wide-end;
   }
 
-  .content-canvas-item-full-right {
-    grid-column: main-end/full-end;
-  }
-
   .pull-right {
     grid-column: main-mid/main-end;
     grid-row: span 4;
@@ -201,4 +209,48 @@
     grid-row: span 4;
   }
 
+  .content-canvas-item-full-right {
+    grid-column: main-mid/wide-end;
+
+    &.content-canvas-item--span-3 {
+      + *,
+      + * + *,
+      + * + * + * {
+        grid-column: wide-start/main-mid;
+      }
+    }
+
+    &.content-canvas-item--span-4 {
+      + *,
+      + * + *,
+      + * + * + *,
+      + * + * + * + * {
+        grid-column: wide-start/main-mid;
+      }
+    }
+  }
+}
+
+@include respond-to.respond-to('large') {
+  .content-canvas-item-full-right {
+    grid-column: main-end/full-end;
+
+
+    &.content-canvas-item--span-3 {
+      + *,
+      + * + *,
+      + * + * + * {
+        grid-column: main-start/main-end;
+      }
+    }
+
+    &.content-canvas-item--span-4 {
+      + *,
+      + * + *,
+      + * + * + *,
+      + * + * + * + * {
+        grid-column: main-start/main-end;
+      }
+    }
+  }
 }
