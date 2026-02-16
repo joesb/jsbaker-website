@@ -9,7 +9,8 @@ eleventyNavigation:
 showTags: false
 listFooter: |
   ---
-  *This site contains affiliate links. As a Bookshop.org affiliate, I earn a little something from qualifying purchases.{.small .italic}
+
+  *This site contains affiliate links. As a [Bookshop.org affiliate](https://uk.bookshop.org/shop/drbslibrary), I earn a little something from qualifying purchases.{.small .italic}
 pagination:
   data: collections.reading
   size: 11
