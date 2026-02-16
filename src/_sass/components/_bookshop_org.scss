@@ -1,0 +1,11 @@
+.bookshop-org-widget {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &.bookshop-org-widget--book {
+    > * {
+      min-width: 450px;
+}
+  }
+}

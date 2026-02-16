@@ -1,6 +1,6 @@
 @use "sass:color";
-@use "../common/base-variables";
-@use "../common/variables";
+@use "../common/base-variables" as bvar;
+@use "../common/variables" as var;
 @use "../tools/px-to-rem";
 
 /* ==========================================================================
@@ -17,49 +17,66 @@ ELEMENTS
  */
 
  :root {
-    font-size: base-variables.$root-font-size;
+    font-size: bvar.$root-font-size;
   }
   
   html {
-    --surface-1: #{variables.$surface-1};
-    --surface-2: #{variables.$surface-2};
-    --surface-3: #{variables.$surface-3};
-    --surface-4: #{variables.$surface-4};
-    --surface-1-rgb: #{variables.$surface-1-rgb};
-    --surface-2-rgb: #{variables.$surface-2-rgb};
-    --surface-3-rgb: #{variables.$surface-3-rgb};
-    --surface-4-rgb: #{variables.$surface-4-rgb};
-    --text-1: #{variables.$text-1};
-    --text-alt-1: #{variables.$text-alt-1};
-    --text-highlight-1: #{variables.$text-highlight-1};
-    --surface-black: #{variables.$eerie-black};
-    --surface-black-light: #{variables.$eerie-black-light};
-    --surface-black-pale: #{variables.$eerie-black-pale};
-    --surface-teal: #{variables.$surface-teal};
-    --surface-violet: #{variables.$surface-violet};
-    --surface-rose: #{variables.$surface-rose};
-    --surface-rose-darker: #{variables.$french-rose-darker};
+    //Colours
+    --color-floral-white: #{var.$floral-white};
+    --color-cosmic-latte: #{var.$cosmic-latte};
+    --color-parchment: #{var.$parchment};
+    --color-eerie-black: #{var.$eerie-black};
+    --color-english-violet: #{var.$english-violet};
+    --color-dark-cyan: #{var.$dark-cyan};
+    --color-french-rose: #{var.$french-rose};
+    --color-white: #{var.$white};
+    --color-black: var(--color-eerie-black);
+
+    //Shades
+    --color-eerie-black-light: #{var.$eerie-black-light};
+    --color-eerie-black-pale: #{var.$eerie-black-pale};
+    --color-french-rose-darker: #{var.$french-rose-darker};
+
+    --surface-1: var(--color-white);
+    --surface-2: var(--color-floral-white);
+    --surface-3: var(--color-cosmic-latte);
+    --surface-4: var(--color-parchment);
+    --surface-1-rgb: #{var.$surface-1-rgb};
+    --surface-2-rgb: #{var.$surface-2-rgb};
+    --surface-3-rgb: #{var.$surface-3-rgb};
+    --surface-4-rgb: #{var.$surface-4-rgb};
+    --text-1: var(--color-black);
+    --text-alt-1: var(--surface-violet);
+    --text-highlight-1: var(--color-dark-cyan);
+    --surface-black: var(--color-eerie-black);
+    --surface-black-light: var(--surface-black-light);
+    --surface-black-pale: var(--surface-black-pale);
+    --surface-teal: var(--color-dark-cyan);
+    --surface-violet: var(--color-english-violet);
+    --surface-rose: var(--surface-rose);
+    --surface-rose-darker: var(--surface-rose-darker);
     --color-brand-primary: var(--surface-teal);
     --color-brand-secondary: var(--surface-violet);
-    --color-brand-white: #{variables.$white};
+    --color-brand-white: var(--color-white);
+    --color-brand-black: var(--color-black);
 
-    --font-size-fluid-000: clamp(#{variables.$body-v-sml-font-size-mobile}, 1.3vw, #{variables.$body-v-sml-font-size});
-    --font-size-fluid-00: clamp(#{variables.$body-sml-font-size-mobile}, 1.4vw, #{variables.$body-sml-font-size});
-    --font-size-fluid-0: clamp(#{variables.$body-font-size-mobile}, 1.5vw, #{variables.$body-font-size});
-    --font-size-fluid-01: clamp(#{variables.$h4-font-size-mobile}, 1.75vw, #{variables.$h3-font-size});
-    --font-size-fluid-21: clamp(#{variables.$h2-font-size-mobile}, 2.5vw, #{variables.$h2-font-size});
-    --font-size-fluid-3: clamp(#{variables.$h1-font-size-mobile}, 4vw, #{variables.$h1-font-size});
-    --font-size-fluid-4: clamp(#{variables.$h1-lg-font-size-mobile}, 6vw, #{variables.$h1-lg-font-size});
+    --font-size-fluid-000: clamp(#{var.$body-v-sml-font-size-mobile}, 1.3vw, #{var.$body-v-sml-font-size});
+    --font-size-fluid-00: clamp(#{var.$body-sml-font-size-mobile}, 1.4vw, #{var.$body-sml-font-size});
+    --font-size-fluid-0: clamp(#{var.$body-font-size-mobile}, 1.5vw, #{var.$body-font-size});
+    --font-size-fluid-01: clamp(#{var.$h4-font-size-mobile}, 1.75vw, #{var.$h3-font-size});
+    --font-size-fluid-21: clamp(#{var.$h2-font-size-mobile}, 2.5vw, #{var.$h2-font-size});
+    --font-size-fluid-3: clamp(#{var.$h1-font-size-mobile}, 4vw, #{var.$h1-font-size});
+    --font-size-fluid-4: clamp(#{var.$h1-lg-font-size-mobile}, 6vw, #{var.$h1-lg-font-size});
 
     --size-content-1-1: 30ch;
     --size-content-1-2: 35ch;
 
     // --gradient-6: conic-gradient(from 90deg at bottom right, black, white);
     
-    font-family: variables.$primary-font;
-    font-size: base-variables.$root-font-size;
-    font-weight: variables.$base-font-weight-regular;
-    line-height: variables.$base-line-height;
+    font-family: var.$primary-font;
+    font-size: bvar.$root-font-size;
+    font-weight: var.$base-font-weight-regular;
+    line-height: var.$base-line-height;
     box-sizing: border-box;
     min-height: 100%; /* [2] */
     overflow-y: scroll; /* [1] */
@@ -80,7 +97,7 @@ ELEMENTS
   
   a,
   a:visited {
-    color: variables.$english-violet;
+    color: var.$english-violet;
   }
   
   a:hover,
@@ -95,13 +112,13 @@ ELEMENTS
   
   ul,
   ol {
-    font-family: variables.$secondary-font;
+    font-family: var.$secondary-font;
     margin: 0;
     padding: 0;
   
     li {
       font-size: var(--font-size-fluid-0);
-      font-weight: variables.$base-font-weight-regular;
+      font-weight: var.$base-font-weight-regular;
   
       &:last-child {
         margin-bottom: 0px;
@@ -146,7 +163,7 @@ a {
     color: var(--surface-1);
 
     &:hover {
-      color: color.adjust(variables.$surface-2, $lightness: -33%);
+      color: color.adjust(var.$surface-2, $lightness: -33%);
     }
   }
 }
@@ -172,4 +189,15 @@ blockquote {
       line-height: var(--font-lineheight-2) !important;
     }
   }
+}
+
+// Center things
+.text-center {
+  text-align: center;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

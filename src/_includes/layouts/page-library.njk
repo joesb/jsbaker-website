@@ -9,6 +9,8 @@ image:
   caption:
   figureClass:
     page:
+styles:
+  - dbl.css
 ---
 
   {% if image.path %}
@@ -95,5 +97,25 @@ image:
   <div class="layout-content item-fade-in item-fade-in-1-5 item-fade-in-delay-mdl content-canvas-item-full content-canvas">
     {{ content | safe }}
   </div>
+
+{% if bookshopOrg.widgets and bookshopOrg.widgetChoose != false %}
+  <div class="layout-affiliate item-fade-in item-fade-in-1-5 item-fade-in-delay-lg margin-block-vlg padding-block-start-vlg">
+    {% if bookshopOrg.widgets.book and bookshopOrg.widgetChoose == "book" %}
+    <div class="bookshop-org-widget bookshop-org-widget--book">
+      {{ bookshopOrg.widgets.book | safe }}
+    </div>
+    {% endif %}
+    {% if bookshopOrg.widgets.button and bookshopOrg.widgetChoose == "button" %}
+    <div class="bookshop-org-widget bookshop-org-widget--button">
+      {{ bookshopOrg.widgets.button | safe }}
+    </div>
+    {% endif %}
+    {% if bookshopOrg.widgets.featured and bookshopOrg.widgetChoose == "featured" %}
+    <div class="bookshop-org-widget bookshop-org-widget--featured">
+      {{ bookshopOrg.widgets.featured | safe }}
+    </div>
+    {% endif %}
+  </div>
+{% endif %}
 
   {% include "layouts/components/page-footer.njk" %}
