@@ -21,6 +21,16 @@ tags:
   - Novels
   - "Dr B's Library"
   - "#reading-library"
+bookshopOrg:
+  link: https://uk.bookshop.org/a/17006/9780007179817
+  widgetChoose: "book"
+  widgets:
+    book: |
+      <script src=https://uk.bookshop.org/widgets.js data-type="book" data-affiliate-id="17006" data-sku="9780007179817"></script>
+    button: |
+      <script src=https://uk.bookshop.org/widgets.js data-type="book_button" data-affiliate-id="17006" data-sku="9780007179817"></script>
+    featured: |
+      <script src=https://uk.bookshop.org/widgets.js data-type="featured" data-full-info="true" data-affiliate-id="17006" data-sku="9780007179817"></script>
 redirectFrom:
   - /coupland-microserfs/
 ---
@@ -57,6 +67,8 @@ Actual Mr B. Gates? Come on now.
 *Microserfs* is written as a diary by Daniel, a software tester at Microsoft (yes, that's right — actual Microsoft!), ‘to try to see the patterns in my life’ *(pg. 4)*{.small}. So this book is not just a [roman à clef](https://www.masterclass.com/articles/what-is-a-roman-a-clef){target=_blank rel="noopener noreferrer"}, with fictitious names swapped for real people and places — you're going ahead and naming actual them and putting them in your actual novel, Mr Coupland? Come on now.
 
 ---
+
+{% bookshopOrgFeatured bookshopOrg.widgets.featured %}
 
 *Microserfs* is about the search for meaning, about yearning for purpose in a world becoming saturated with technology. Programmers, coders, testers — they've got hip jobs and eye-watering pay at one of the biggest names in tech, but Daniel and his friends are rapidly heading nowhere however hard they work. Bored and desperately frustrated, something's got to give.
 
@@ -109,7 +121,7 @@ Dan's mother becomes a surrogate mother to the Oop! squad. She suffers a stroke,
 
 Coupland's book, published in 1995, is a powerful prefiguring of the future we're living in.
 
-Dan's journal is written on an [Apple PowerBook](https://www.computinghistory.org.uk/det/6675/Apple-Macintosh-PowerBook-180/){target=_blank rel="noopener noreferrer"}, and a Coupland uses this to play with the form and style of the novel. In doing so, Coupland pre-empts the blog format that emerged a decade later.
+Dan's journal is written on an [Apple PowerBook](https://www.computinghistory.org.uk/det/6675/Apple-Macintosh-PowerBook-180/){target=_blank rel="noopener noreferrer"} where he also lists the random words and phrases that come to his mind, to understand his subconscious in any patterns, and a Coupland uses this to play with the form and style of the novel. In doing so, Coupland pre-empts the blog format that emerged a decade later.
 
 {% ImgFigure "Machine code on pg. 20", "content-canvas-item-wide-left margin-block-end-md" %}!["Machine code on pgs. 20–21 of Microserfs, by Douglas Coupland"](/static/images/oldbooks/microserfs/ms-01.jpeg){eleventy:widths=300,600}{% endImgFigure %}
 {% ImgFigure "Dan's subconscious writing in bold on pg. 93", "content-canvas-item-wide-right margin-block-end-md" %}!["Bold writing on pgs. 92–93 of Microserfs, by Douglas Coupland"](/static/images/oldbooks/microserfs/ms-02.jpeg){eleventy:widths=300,600}{% endImgFigure %}

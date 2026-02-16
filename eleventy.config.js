@@ -415,6 +415,10 @@ export default async function(eleventyConfig) {
     return '<figure' + (classes.length ? ' class="' + (classes instanceof Array ? classes.join(" ") : classes) + '"' : '') + '>' + (md ? markdownLibrary.renderInline(content) : content) + (caption ? caption : '') +'</figure>';
   });
 
+  eleventyConfig.addShortcode("bookshopOrgFeatured", (widget) => {
+    return '<div class="content-canvas-item-full-right content-canvas-item--span-4">' + widget + '</div>';
+  });
+
   // Customize Markdown library and settings:
   let markdownLibrary = markdownIt({
     html: true,

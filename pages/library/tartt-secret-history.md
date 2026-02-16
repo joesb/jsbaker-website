@@ -21,6 +21,16 @@ tags:
   - Novels
   - "Dr B's Library"
   - "#reading-library"
+bookshopOrg:
+  link: https://uk.bookshop.org/a/17006/9780140167771
+  widgetChoose: "book"
+  widgets:
+    book: |
+      <script src=https://uk.bookshop.org/widgets.js data-type="book" data-affiliate-id="17006" data-sku="9780140167771"></script>
+    button: |
+      <script src=https://uk.bookshop.org/widgets.js data-type="book_button" data-affiliate-id="17006" data-sku="9780140167771"></script>
+    featured: |
+      <script src=https://uk.bookshop.org/widgets.js data-type="featured" data-full-info="true" data-affiliate-id="17006" data-sku="9780140167771"></script>
 redirectFrom:
   - /tartt-secret-history/
 ---
@@ -62,6 +72,8 @@ Well, yes.
 No surprise there. Coz it's already so chilling, so terrible, and you've made sure I'm in on the secret — and I'm totally and utterly hooked.
 
 ---
+
+{% bookshopOrgFeatured bookshopOrg.widgets.featured %}
 
 The story is told in two parts — Book I, and Book II — roughly the same size, and it's quickly clear that Book I has fallen back in time from the world of the prologue. Sort of. We read and we discover that the narrator is a young man called Richard Papen who, at the age of twenty-eight, is telling us his story as a kind of confession.
 

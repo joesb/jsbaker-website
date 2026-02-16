@@ -21,6 +21,16 @@ tags:
   - Novels
   - "Dr B's Library"
   - "#reading-library"
+bookshopOrg:
+  link: https://uk.bookshop.org/a/17006/9780241323410
+  widgetChoose: "book"
+  widgets:
+    book: |
+      <script src=https://uk.bookshop.org/widgets.js data-type="book" data-affiliate-id="17006" data-sku="9780241323410"></script>
+    button: |
+      <script src=https://uk.bookshop.org/widgets.js data-type="book_button" data-affiliate-id="17006" data-sku="9780241323410"></script>
+    featured: |
+      <script src=https://uk.bookshop.org/widgets.js data-type="featured" data-full-info="true" data-affiliate-id="17006" data-sku="9780241323410"></script>
 redirectFrom:
   - /reading/old-books/lecarre-tinker-tailor/
   - /lecarre-tinker-tailor/
@@ -57,7 +67,9 @@ What a bonkers way to start things off. That's proper daring, starting your nove
 
 ---
 
-Everyone thinks *Tinker, Tailor* is a spy novel, but it's not really. Well, yes, it is set in the world of spies and spying, that's certainly true, but it's not really about espionage at all. There's certainly precious little actual spycraft in the story, and if you're looking for wild adventures you might want to look elsewhere, an Ian Fleming or a Len Deighton, maybe. We never escape from the language and idiom of the spy world, but that is only the habitat in which these characters live.
+{% bookshopOrgFeatured bookshopOrg.widgets.featured %}
+
+Everyone thinks *Tinker, Tailor, Soldier, Spy* is a spy novel, but it's not really. Well, yes, it is set in the world of spies and spying, that's certainly true, but it's not really about espionage at all. There's certainly precious little actual spycraft in the story, and if you're looking for wild adventures you might want to look elsewhere, an Ian Fleming or a Len Deighton, maybe. We never escape from the language and idiom of the spy world, but that is only the habitat in which these characters live.
 
 In truth, *Tinker, Tailor* is about betrayal, about friendship and its failures. It's a story about men, driven men, about the destructive power of ambition, and how it's easy for truth to hide inside us. And it's about the yearning for purpose and meaning when what we thought was true is shown to be false or empty.
 
@@ -81,7 +93,7 @@ In the same way, the book leads the reader to do the same — to leave naïvety 
 
 ---
 
-Reading *Tinker, Tailor* is an exquisite experience. Le Carré's language and his use of language is beautiful.
+Reading *[Tinker, Tailor, Soldier, Spy](https://uk.bookshop.org/a/17006/9780241323410){target=_blank rel="noopener noreferrer"}* is an exquisite experience. Le Carré's language and his use of language is beautiful.
 
 > Few men can resist expressing their appetites when they are making a fantasy about themselves.
 > *pg. 227*{.small}

@@ -29,5 +29,5 @@ I'm on [The StoryGraph](https://app.thestorygraph.com/profile/joesb){target=_bla
 - **January**
   - Arundhati Roy, *[Mother Mary Comes To Me](https://app.thestorygraph.com/books/e1b64482-44ed-408d-adbf-254e289642d2){target=_blank rel="noopener noreferrer"}*
   - John Banville, *[The Untouchable](https://app.thestorygraph.com/books/3f1c814b-f957-42e4-88cd-fc6a73fc8268){target=_blank rel="noopener noreferrer"}*
-  - Yanis Varoufakis, *[Technofeudalism: What Killed Capitalism](https://app.thestorygraph.com/books/aefd26e9-255d-4520-a9ef-dba634333429){target=_blank rel="noopener noreferrer"}*
+  - Yanis Varoufakis, *[Technofeudalism: What Killed Capitalism](https://uk.bookshop.org/a/17006/9781529926095){target=_blank rel="noopener noreferrer"}*
   - John le Carré, *[Tinker, Tailor, Soldier, Spy](https://app.thestorygraph.com/books/9991c463-0086-48ba-ad22-8bdc072d9499){target=_blank rel="noopener noreferrer"}*
