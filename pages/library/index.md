@@ -20,6 +20,10 @@ indexListClass: "site-content--surface-dark site-content--surface-rose"
 tags:
   '#reading'
 order: -10
+listFooter: |
+  ---
+  
+  *This site contains affiliate links. As a Bookshop.org affiliate, I earn a little something from qualifying purchases.{.small .italic}
 image:
   social: /static/images/oldbooks/pexels-tima-miroshnichenko-9572619.jpg
 redirectFrom:

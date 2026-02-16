@@ -7,6 +7,9 @@ eleventyNavigation:
   key: Reading
   order: 2
 showTags: false
+listFooter: |
+  ---
+  *This site contains affiliate links. As a Bookshop.org affiliate, I earn a little something from qualifying purchases.{.small .italic}
 pagination:
   data: collections.reading
   size: 11

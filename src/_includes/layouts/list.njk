@@ -22,4 +22,11 @@ list: true
 
 		</div>
 
+		
+    {% if listFooter %}
+    <div class="list-footer margin-block-vlg">
+      {{ listFooter | markdown | safe }}
+    </div>
+    {% endif %}
+
 	</div>

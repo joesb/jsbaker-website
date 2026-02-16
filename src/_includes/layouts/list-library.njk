@@ -24,8 +24,10 @@ styles:
 
     </div>
 
-    <div class="lower">
-      <p class="small italic">*This site contains affiliate links. As a Bookshop.org affiliate, I earn a little something from qualifying purchases.</p>
+    {% if listFooter %}
+    <div class="list-footer margin-block-vlg">
+      {{ listFooter | markdown | safe }}
     </div>
+    {% endif %}
 
   </div>
