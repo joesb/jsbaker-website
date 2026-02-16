@@ -1,6 +1,7 @@
 @use "sass:color";
 @use "../common/variables";
 @use "../tools/px-to-rem";
+@use "../tools/respond-to" as rt;
 
 .page {
   position: relative;
@@ -63,10 +64,10 @@
   }
 }
 
-.page-title {
-  padding: px-to-rem.px-to-rem(variables.$mobile-space) 0;
-  margin-block-end: px-to-rem.px-to-rem(variables.$mobile-space);
-}
+// .page-title {
+//   padding: px-to-rem.px-to-rem(variables.$mobile-space) 0;
+//   margin-block-end: px-to-rem.px-to-rem(variables.$mobile-space);
+// }
 
 .page-title__heading {
   font-size: var(--font-size-fluid-3);
@@ -120,4 +121,28 @@
   border-top-width: 1px;
   border-top-style: solid;
   border-top-color: var(--color-dark-cyan);
+}
+
+
+@include rt.respond-to('medium') {
+  .link-affiliates {
+    grid-column: main-end/wide-end;
+    align-self: end;
+  }
+}
+
+.link-affiliates--link {
+  display: inline-block;
+
+  span {
+    display: inline-block;
+    content: " ";
+    width: var(--size-7);
+    height: var(--size-7);
+  }
+}
+
+.link-affiliates--link-bookshop-org {
+  background-image: url("/static/images/bookshop-org-logo.png");
+  background-size: contain;
 }
