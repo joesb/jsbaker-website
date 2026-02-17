@@ -68,9 +68,9 @@ Actual Mr B. Gates? Come on now.
 
 ---
 
-{% bookshopOrgFeatured bookshopOrg.widgets.featured %}
-
 *Microserfs* is about the search for meaning, about yearning for purpose in a world becoming saturated with technology. Programmers, coders, testers — they've got hip jobs and eye-watering pay at one of the biggest names in tech, but Daniel and his friends are rapidly heading nowhere however hard they work. Bored and desperately frustrated, something's got to give.
+
+{% bookshopOrgFeatured bookshopOrg.widgets.featured %}
 
 Don't believe me? Well, turn to page 15 (Sunday) — not even out of the first chapter.
 

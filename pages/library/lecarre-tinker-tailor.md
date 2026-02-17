@@ -67,9 +67,9 @@ What a bonkers way to start things off. That's proper daring, starting your nove
 
 ---
 
-{% bookshopOrgFeatured bookshopOrg.widgets.featured %}
-
 Everyone thinks *Tinker, Tailor, Soldier, Spy* is a spy novel, but it's not really. Well, yes, it is set in the world of spies and spying, that's certainly true, but it's not really about espionage at all. There's certainly precious little actual spycraft in the story, and if you're looking for wild adventures you might want to look elsewhere, an Ian Fleming or a Len Deighton, maybe. We never escape from the language and idiom of the spy world, but that is only the habitat in which these characters live.
+
+{% bookshopOrgFeatured bookshopOrg.widgets.featured %}
 
 In truth, *Tinker, Tailor* is about betrayal, about friendship and its failures. It's a story about men, driven men, about the destructive power of ambition, and how it's easy for truth to hide inside us. And it's about the yearning for purpose and meaning when what we thought was true is shown to be false or empty.
 
