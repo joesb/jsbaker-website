@@ -6,7 +6,7 @@ layout: page-library.njk
 promoted: true
 order: 0
 page:
-  class: "page--with-hero"
+  class: "page--with-hero dr-bs-library dr-bs-library--page"
 image:
   path: /static/images/oldbooks/lecarre-tinker-tailor.jpg
   alt: 'Cover of Tinker, Tailor, Soldier, Spy, by John le Carré'

@@ -6,7 +6,7 @@ layout: page-library.njk
 promoted: true
 order: 0
 page:
-  class: "page--with-hero"
+  class: "page--with-hero dr-bs-library dr-bs-library--page"
 image:
   path: /static/images/oldbooks/tartt-secret-history.jpg
   alt: 'Cover of The Secret History, by Donna Tartt'
