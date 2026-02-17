@@ -15,7 +15,7 @@ pagination:
   data: collections.reading
   size: 11
   alias: items
-pageClass: "site-content--surface-dark site-content--surface-violet"
+pageClass: "site-content--surface-dark site-content--surface-rose"
 ---
 
 I'm currently reading:
