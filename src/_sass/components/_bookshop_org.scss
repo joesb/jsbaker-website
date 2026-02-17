@@ -1,11 +1,23 @@
+@use "../tools/respond-to" as rt;
+
 .bookshop-org-widget {
   display: flex;
   justify-content: center;
   align-items: center;
-
-  &.bookshop-org-widget--book {
-    > * {
-      min-width: 450px;
 }
+
+.bookshop-org-widget--book {
+    > * {
+      max-width: 250px;
+    }
+  }
+
+
+@include rt.respond-to('small') {
+  .bookshop-org-widget--book {
+    > * {
+      max-width: none;
+      min-width: 450px;
+    }
   }
 }

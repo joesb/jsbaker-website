@@ -69,7 +69,7 @@
 }
 
 .content-canvas-item-wide-left {
-  grid-column: wide-start/main-end;
+  grid-column: main-start/main-end;
   
   @include respond-to.respond-to('large') {
     grid-column: wide-start/main-mid;
@@ -95,6 +95,10 @@
 
   .content-canvas-item-left {
     grid-column: main-start/main-mid;
+  }
+
+  .content-canvas-item-wide-left {
+    grid-column: wide-start/main-mid;
   }
 
   .content-canvas-item-right,
