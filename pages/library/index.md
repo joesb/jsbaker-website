@@ -15,7 +15,7 @@ pagination:
   data: collections.readingLibrary
   size: 11
   alias: items
-pageClass: "site-content--surface-dark site-content--surface-violet"
+pageClass: "site-content--surface-dark site-content--surface-violet dr-bs-library dr-bs-library--list"
 indexListClass: "site-content--surface-dark site-content--surface-violet"
 tags:
   '#reading'

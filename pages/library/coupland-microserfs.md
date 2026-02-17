@@ -6,7 +6,7 @@ layout: page-library.njk
 promoted: true
 order: -1
 page:
-  class: "page--with-hero"
+  class: "page--with-hero dr-bs-library dr-bs-library--page"
 image:
   path: /static/images/oldbooks/coupland-microserfs.jpg
   alt: 'Cover of Microserfs, by Douglas Coupland'
