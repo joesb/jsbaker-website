@@ -8,7 +8,7 @@ order: -1
 page:
   class: "page--with-hero"
 image:
-  path: /static/images/oldbooks/coupland-microserfs.jpeg
+  path: /static/images/oldbooks/coupland-microserfs.jpg
   alt: 'Cover of Microserfs, by Douglas Coupland'
   class:
     - image-obj-cover

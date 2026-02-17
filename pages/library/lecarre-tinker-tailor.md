@@ -8,7 +8,7 @@ order: 0
 page:
   class: "page--with-hero"
 image:
-  path: /static/images/oldbooks/lecarre-tinker-tailor.jpeg
+  path: /static/images/oldbooks/lecarre-tinker-tailor.jpg
   alt: 'Cover of Tinker, Tailor, Soldier, Spy, by John le Carré'
   class:
     - image-obj-cover

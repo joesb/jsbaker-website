@@ -8,7 +8,7 @@ order: 0
 page:
   class: "page--with-hero"
 image:
-  path: /static/images/oldbooks/tartt-secret-history.jpeg
+  path: /static/images/oldbooks/tartt-secret-history.jpg
   alt: 'Cover of The Secret History, by Donna Tartt'
   class:
     - image-obj-cover
