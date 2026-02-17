@@ -13,7 +13,6 @@ image:
   class:
     - image-obj-cover
     - image-darken-50
-    - image-obj-pos-bottom
   figureClass:
       page: "content-canvas-item-full figure--hero"
 tags:
