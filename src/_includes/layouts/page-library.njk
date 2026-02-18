@@ -9,6 +9,8 @@ image:
   caption:
   figureClass:
     page:
+bookshopOrg:
+  widgetChoose: "book"
 styles:
   - dbl.css
 ---
@@ -98,23 +100,11 @@ styles:
     {{ content | safe }}
   </div>
 
-{% if bookshopOrg.widgets and bookshopOrg.widgetChoose != false %}
+{% if bookshopOrg.isbn and bookshopOrg.widgetChoose != false %}
   <div class="layout-affiliate item-fade-in item-fade-in-1-5 item-fade-in-delay-lg margin-block-vlg padding-block-start-vlg">
-    {% if bookshopOrg.widgets.book and bookshopOrg.widgetChoose == "book" %}
-    <div class="bookshop-org-widget bookshop-org-widget--book">
-      {{ bookshopOrg.widgets.book | safe }}
+    <div class="bookshop-org-widget bookshop-org-widget--{{ bookshopOrg.widgetChoose }}">
+      {% bdoWidget bookshopOrg.isbn, bookshopOrg.widgetChoose %}
     </div>
-    {% endif %}
-    {% if bookshopOrg.widgets.button and bookshopOrg.widgetChoose == "button" %}
-    <div class="bookshop-org-widget bookshop-org-widget--button">
-      {{ bookshopOrg.widgets.button | safe }}
-    </div>
-    {% endif %}
-    {% if bookshopOrg.widgets.featured and bookshopOrg.widgetChoose == "featured" %}
-    <div class="bookshop-org-widget bookshop-org-widget--featured">
-      {{ bookshopOrg.widgets.featured | safe }}
-    </div>
-    {% endif %}
   </div>
 {% endif %}
 

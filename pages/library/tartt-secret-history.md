@@ -22,15 +22,7 @@ tags:
   - "Dr B's Library"
   - "#reading-library"
 bookshopOrg:
-  link: https://uk.bookshop.org/a/17006/9780140167771
-  widgetChoose: "book"
-  widgets:
-    book: |
-      <script src=https://uk.bookshop.org/widgets.js data-type="book" data-affiliate-id="17006" data-sku="9780140167771"></script>
-    button: |
-      <script src=https://uk.bookshop.org/widgets.js data-type="book_button" data-affiliate-id="17006" data-sku="9780140167771"></script>
-    featured: |
-      <script src=https://uk.bookshop.org/widgets.js data-type="featured" data-full-info="true" data-affiliate-id="17006" data-sku="9780140167771"></script>
+  isbn: 9780140167771
 redirectFrom:
   - /tartt-secret-history/
 ---
@@ -75,7 +67,7 @@ No surprise there. Coz it's already so chilling, so terrible, and you've made su
 
 The story is told in two parts — Book I, and Book II — roughly the same size, and it's quickly clear that Book I has fallen back in time from the world of the prologue. Sort of. We read and we discover that the narrator is a young man called Richard Papen who, at the age of twenty-eight, is telling us his story as a kind of confession.
 
-{% bookshopOrgFeatured bookshopOrg.widgets.featured %}
+{% bookshopOrgFeatured bookshopOrg.isbn "featured" %}
 
 > Does such a thing as 'the fatal flaw,' that shadowy dark crack running down the middle of a life, exist outside of literature? I used to think it didn't. Now I think it does. And I think that mine is this: a morbid longing for the picturesque at all costs.
 > *pg. 5*{.small}
