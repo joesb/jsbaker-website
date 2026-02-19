@@ -23,6 +23,8 @@ tags:
   - "#reading-library"
 bookshopOrg:
   isbn: 9780140167771
+  themeList: |
+    <script src="https://uk.bookshop.org/widgets.js" data-type="list" data-list-slug="dr-b-s-academia-fiction"></script>
 redirectFrom:
   - /tartt-secret-history/
 ---
