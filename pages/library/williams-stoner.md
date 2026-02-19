@@ -29,7 +29,29 @@ redirectFrom:
   - /williams-stoner/
 ---
 
-{% bdoWidget bookshopOrg.isbn %}
+How can you do it, John Williams? It's just not right. You open this novel, and in the first paragraph you tell us everything. You give is our character, William Stoner. You tell us his whole life in one sentence. And in the end, he's barely remembered by his colleagues. That's all there is to him.
 
-Cillum culpa lorem officia ad velit dolore est mollit elit eiusmod culpa voluptate dolor adipiscing cupidatat nisi commodo voluptate consequat
+What? How can you do that? How can you start one of the most celebrated classic stories like that?
 
+- First sentence:
+  - Stoner goes to university, aged 19.
+- Second:
+  - He gets his PhD 8 years later, at the height of World War 1
+  - … and works at the university until his death.
+- Third:
+  - He was never really promoted.
+  - Few students remembered him.
+- Fourth:
+  - He dies.
+  - And he's memorialised with a rare manuscript.
+
+That's it.
+
+Paragraph two does the summary even more briskly:
+
+> An occasional student who comes upon the name may remember idly who William Stoner was, but he seldom pursues his curiosity beyond a casual question.
+> {.bq-alt}
+
+{% bookshopOrgFeatured bookshopOrg.isbn "featured" %}
+
+An utterly unremarkable man, who is the profound beating heart of one of the best novels of the 20th Century.
