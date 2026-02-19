@@ -22,6 +22,7 @@ import { minify } from "html-minifier-terser";
 import slugify from "slugify";
 
 import path from 'path';
+import bookshopOrg from "./src/_data/bookshopOrg.js";
 
 /** @param {import("@11ty/eleventy").UserConfig} eleventyConfig */
 export default async function(eleventyConfig) {
@@ -415,9 +416,20 @@ export default async function(eleventyConfig) {
     return '<figure' + (classes.length ? ' class="' + (classes instanceof Array ? classes.join(" ") : classes) + '"' : '') + '>' + (md ? markdownLibrary.renderInline(content) : content) + (caption ? caption : '') +'</figure>';
   });
 
-  eleventyConfig.addShortcode("bookshopOrgFeatured", (widget) => {
-    return '<div class="content-canvas-item-full-right content-canvas-item--span-3 content-canvas-item-hide-mobile">' + widget + '</div>';
+  // A Bookshop.org featured book widget
+  eleventyConfig.addShortcode("bookshopOrgFeatured", (isbn, type = "book") => {
+    return '<div class="content-canvas-item-full-right content-canvas-item--span-3 content-canvas-item-hide-mobile">' + bookshopOrg.getWidget(isbn, type) + '</div>';
   });
+
+  // Get markdown for a Bookshop.org widget embed
+  eleventyConfig.addShortcode("bdoWidget", (isbn, type = "book") => {
+    return bookshopOrg.getWidget(isbn, type);
+  });
+
+  // Get Bookshop.org book link
+  eleventyConfig.addFilter("bdoLink", (isbn) => {
+    return bookshopOrg.getAffiliateLink(isbn);
+  })
 
   // Customize Markdown library and settings:
   let markdownLibrary = markdownIt({

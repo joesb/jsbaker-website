@@ -22,8 +22,8 @@ tags:
   - "Dr B's Library"
   - "#reading-library"
 bookshopOrg:
+  isbn: 9780007179817
   link: https://uk.bookshop.org/a/17006/9780007179817
-  widgetChoose: "book"
   widgets:
     book: |
       <script src=https://uk.bookshop.org/widgets.js data-type="book" data-affiliate-id="17006" data-sku="9780007179817"></script>
@@ -70,7 +70,7 @@ Actual Mr B. Gates? Come on now.
 
 *Microserfs* is about the search for meaning, about yearning for purpose in a world becoming saturated with technology. Programmers, coders, testers — they've got hip jobs and eye-watering pay at one of the biggest names in tech, but Daniel and his friends are rapidly heading nowhere however hard they work. Bored and desperately frustrated, something's got to give.
 
-{% bookshopOrgFeatured bookshopOrg.widgets.featured %}
+{% bookshopOrgFeatured bookshopOrg.isbn "featured" %}
 
 Don't believe me? Well, turn to page 15 (Sunday) — not even out of the first chapter.
 
