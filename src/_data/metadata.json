@@ -10,6 +10,11 @@
     "name": "J S Baker",
     "url": "https://www.jsbaker.co.uk/about/"
   },
+  "drbslibrary": {
+    "title": "Dr B's Library",
+    "machinename": "drbslibrary",
+    "slogan": "Yeah, sure, there’s plenty of new books, but do you ever read old books?"
+  },
   "page_count": 6,
   "social_site": [
     {
