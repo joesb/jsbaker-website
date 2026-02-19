@@ -23,13 +23,9 @@ tags:
 bookshopOrg:
   isbn: 9780241323410
   link: https://uk.bookshop.org/a/17006/9780241323410
-  widgets:
-    book: |
-      <script src=https://uk.bookshop.org/widgets.js data-type="book" data-affiliate-id="17006" data-sku="9780241323410"></script>
-    button: |
-      <script src=https://uk.bookshop.org/widgets.js data-type="book_button" data-affiliate-id="17006" data-sku="9780241323410"></script>
-    featured: |
-      <script src=https://uk.bookshop.org/widgets.js data-type="featured" data-full-info="true" data-affiliate-id="17006" data-sku="9780241323410"></script>
+  themeList: | 
+    <script src="https://uk.bookshop.org/widgets.js" data-type="list" data-list-slug="dr-b-s-spies-and-espionage"></script>
+          
 redirectFrom:
   - /reading/old-books/lecarre-tinker-tailor/
   - /lecarre-tinker-tailor/

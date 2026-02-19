@@ -108,4 +108,13 @@ styles:
   </div>
 {% endif %}
 
+{% if bookshopOrg.themeList %}
+  <div class="layout-affiliate item-fade-in item-fade-in-1-5 item-fade-in-delay-vlg margin-block-lg padding-block-lg">
+    <h3>Like this book? Well, you might also like:</h3>
+    <div class="bookshop-org-widge">
+      {{ bookshopOrg.themeList | safe }}
+    </div>
+  </div>
+{% endif %}
+
   {% include "layouts/components/page-footer.njk" %}
