@@ -25,6 +25,7 @@ import path from 'path';
 import bookshopOrg from "./src/_data/bookshopOrg.js";
 
 /** @param {import("@11ty/eleventy").UserConfig} eleventyConfig */
+
 export default async function(eleventyConfig) {
 
   eleventyConfig.addPlugin(pluginRss);
@@ -429,7 +430,24 @@ export default async function(eleventyConfig) {
   // Get Bookshop.org book link
   eleventyConfig.addFilter("bdoLink", (isbn) => {
     return bookshopOrg.getAffiliateLink(isbn);
-  })
+  });
+
+  eleventyConfig.addAsyncShortcode('dblSideLinks', async (collections, url, len = 3, type = 'content-canvas-item-hide-mobile') => {
+    let libraryList = collections['readingLibrary'];
+    let items = [];
+    let i = 0;
+    while (items.length < len) {
+      let item = libraryList[i];
+      if (item.url !== url) {
+        let markup = `<li class="dbl-item">
+          <a href="${item.url}">${item.data.title}</a>
+        </li>`;
+        items.push(markup);
+      }
+      i++;
+    }
+    return `<ul class="dbl-items content-canvas-item-full-right content-canvas-item--span-3 ${type}">${items.join("\n")}</ul>`;
+  });
 
   // Customize Markdown library and settings:
   let markdownLibrary = markdownIt({
