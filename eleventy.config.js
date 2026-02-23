@@ -419,7 +419,7 @@ export default async function(eleventyConfig) {
 
   // A Bookshop.org featured book widget
   eleventyConfig.addShortcode("bookshopOrgFeatured", (isbn, type = "book") => {
-    return '<div class="content-canvas-item-full-right content-canvas-item--span-3 content-canvas-item-hide-mobile">' + bookshopOrg.getWidget(isbn, type) + '</div>';
+    return '<div class="content-canvas-item-full-right content-canvas-item--span-4 content-canvas-item-hide-mobile">' + bookshopOrg.getWidget(isbn, type) + '</div>';
   });
 
   // Get markdown for a Bookshop.org widget embed
