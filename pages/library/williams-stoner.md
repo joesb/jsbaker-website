@@ -1,7 +1,7 @@
 ---
 title: "Stoner, by John Williams"
 description: Have you ever read … Williams's classic about love, literature, and the dignity of an unremarkable life?
-date: 2026-02-20T09:15:04Z
+date: 2026-02-23T15:03:22Z
 layout: page-library.njk
 promoted: true
 order: -1
