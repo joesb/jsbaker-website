@@ -28,8 +28,8 @@ bookshopOrg:
   themeList: |
     <script src="https://uk.bookshop.org/widgets.js" data-type="list" data-list-slug="dr-b-s-academia-fiction-list"></script>
 redirectFrom:
-  - /williams-stoner/
   - /stoner/
+  - /williams-stoner/
 ---
 
 How can you do it, John Williams? It's just not right. You open this novel, and in the first paragraph you tell us everything. You give us our character, William Stoner. You tell us his whole life in just a couple of sentences. And in the end, he's barely remembered by his colleagues. That's all there is to him.
