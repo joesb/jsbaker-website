@@ -31,9 +31,9 @@ redirectFrom:
   - /williams-stoner/
 ---
 
-How can you do it, John Williams? It's just not right. You open this novel, and in the first paragraph you tell us everything. You give is our character, William Stoner. You tell us his whole life in one sentence. And in the end, he's barely remembered by his colleagues. That's all there is to him.
+How can you do it, John Williams? It's just not right. You open this novel, and in the first paragraph you tell us everything. You give us our character, William Stoner. You tell us his whole life in just a couple of sentences. And in the end, he's barely remembered by his colleagues. That's all there is to him.
 
-What? How can you do that? How can you start one of the most celebrated classic stories like that?
+What? How can you do that? How can you start one of the most celebrated stories of the 20th Century like that, John Williams?
 
 - First sentence:
   - Stoner goes to university, aged 19.
@@ -53,6 +53,8 @@ Paragraph two does the summary even more briskly:
 
 > An occasional student who comes upon the name may remember idly who William Stoner was, but he seldom pursues his curiosity beyond a casual question.
 > {.bq-alt}
+
+Blunt. Wow.
 
 A completely unremarkable man who is the profound beating heart of one of the best novels of the 20th Century.
 
