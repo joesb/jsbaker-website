@@ -3,6 +3,10 @@
 @use "../tools/respond-to" as rt;
 
 // Margin helpers
+.margin-block-nil {
+  margin-block: 0 !important;
+}
+
 .margin-block-start-nil {
   margin-block-start: 0 !important;
 }
