@@ -1,6 +1,6 @@
 ---
-title: Sicily
-description: "Dreams and hopes fold and refold over a coffee. A short story."
+title: "Sicily: a short story"
+description: "Dreams and hopes fold and refold over a coffee."
 layout: page.njk
 date: 2019-04-18
 promoted: true
