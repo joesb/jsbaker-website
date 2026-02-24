@@ -171,6 +171,14 @@
       --single-meta-button--text-color: var(--color-brand-primary);
     }
   }
+
+  &.single-meta-button-narrow {
+    padding-block: var(--size-2);
+  }
+
+  &.single-meta-button-v-narrow {
+    padding-block: var(--size-1);
+  }
 }
 
 .single-meta-forward-button {

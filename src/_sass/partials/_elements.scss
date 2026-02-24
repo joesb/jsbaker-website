@@ -47,6 +47,8 @@ ELEMENTS
     --surface-2-rgb: #{var.$surface-2-rgb};
     --surface-3-rgb: #{var.$surface-3-rgb};
     --surface-4-rgb: #{var.$surface-4-rgb};
+    --color-text: var(--color-black);
+    --color-text-white: var(--color-white);
     --text-1: var(--color-black);
     --text-alt-1: var(--surface-violet);
     --text-highlight-1: var(--color-dark-cyan);
@@ -100,16 +102,6 @@ ELEMENTS
     -moz-osx-font-smoothing: grayscale;
   }
   
-  a,
-  a:visited {
-    color: var.$english-violet;
-  }
-  
-  a:hover,
-  a:focus {
-    text-decoration: none;
-  }
-  
   button {
     background: none;
     border: none;
@@ -158,8 +150,14 @@ ELEMENTS
 
 :where(a) {
   text-decoration: underline;
+  color: var(--color-english-violet);
 
-  &:hover {
+  &:visited {
+    color: var(--color-english-violet);
+  }
+
+  &:hover,
+  &:focus {
     color: var(--text-highlight-1);
     text-decoration: underline;
   }

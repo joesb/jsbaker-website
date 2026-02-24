@@ -76,6 +76,7 @@
   input,
   textarea {
     grid-column: 2 / span 2;
+    padding: var(--size-2);
   }
 
   textarea {
@@ -85,10 +86,13 @@
 
 .form-group--submit {
   margin-block: var(--size-3);
+
   button {
     grid-column: 2 / span 2;
     font-size: var(--font-size-fluid-01);
     padding-block: var(--size-3);
+    color: var(--color-text-white); 
+    max-width: 35ch;
   }
 }
 
@@ -108,6 +112,7 @@
   transition: all 0.2s ease;
   box-shadow: unset;
   text-shadow: unset;
+  max-width: 20ch;
 
   &:hover {
     background: var(--color-brand-primary-dark);
