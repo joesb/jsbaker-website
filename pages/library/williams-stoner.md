@@ -9,7 +9,7 @@ page:
   class: "page--with-hero dr-bs-library dr-bs-library--page"
 image:
   path: /static/images/oldbooks/williams-stoner.jpg
-  alt: 'Cover of Stoner, by John Williams'
+  alt: 'Dr B reading Stoner, by John Williams'
   class:
     - image-obj-cover
     - image-darken-50
