@@ -148,6 +148,10 @@ h5,
   text-align: center;
 }
 
+.text-right {
+  text-align: right;
+}
+
 .hide-text {
   @include mixins.hide-text;
 }

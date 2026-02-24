@@ -11,7 +11,7 @@
   }
 
   :where(a) {
-    &:not(.link-affiliates--link) {
+    &:not(.link-affiliates--link, .single-meta-button) {
       margin-block:calc(var(--size-00)*-1);
       margin-inline: calc(var(--size-1)*-1);
       padding-block:var(--size-00);

@@ -2,8 +2,17 @@
 layout: base.njk
 list: true
 styles:
-  - list-library.css
-  - dbl.css
+  internal:
+    - list-library.css
+    - dbl.css
+    - modal.css
+  external:
+    - "https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css"
+scripts:
+  internal:
+    - modal-newsletter.js
+  external:
+    - "https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"
 ---
 
   <div class="site-content site-content--zero-top-padding content-canvas">
@@ -11,6 +20,10 @@ styles:
     <div class="site-content{% if pageClass %} {{ pageClass }} {% else %} site-content--surface-teal site-content--surface-dark{% endif %} jumbotron content-canvas-item-full content-canvas item-fade-in item-fade-in-1-5">
 
       {% include "layouts/components/title-bar.njk" %}
+
+      <div class="newsletter-modal-subscribe">
+        <a href="#newsletter-modal" class="open-modal single-meta-button single-meta-button-narrow margin-block-sml" rel="modal:open" data-modal>Subscribe</a>
+      </div>
 
     </div>
     {% if content %}
@@ -32,3 +45,5 @@ styles:
     {% endif %}
 
   </div>
+
+  {% include "layouts/components/newsletter-modal.njk" %}

@@ -35,6 +35,8 @@ ELEMENTS
     //Shades
     --color-eerie-black-light: #{var.$eerie-black-light};
     --color-eerie-black-pale: #{var.$eerie-black-pale};
+    --color-english-violet-darker: #{var.$english-violet-darker};
+    --color-dark-cyan-darker: #{var.$dark-cyan-darker};
     --color-french-rose-darker: #{var.$french-rose-darker};
 
     --surface-1: var(--color-white);
@@ -45,6 +47,8 @@ ELEMENTS
     --surface-2-rgb: #{var.$surface-2-rgb};
     --surface-3-rgb: #{var.$surface-3-rgb};
     --surface-4-rgb: #{var.$surface-4-rgb};
+    --color-text: var(--color-black);
+    --color-text-white: var(--color-white);
     --text-1: var(--color-black);
     --text-alt-1: var(--surface-violet);
     --text-highlight-1: var(--color-dark-cyan);
@@ -56,9 +60,12 @@ ELEMENTS
     --surface-rose: var(--color-french-rose);
     --surface-rose-darker: var(--color-french-rose-darker);
     --color-brand-primary: var(--surface-teal);
+    --color-brand-primary-dark: var(--color-dark-cyan-darker);
     --color-brand-secondary: var(--surface-violet);
+    --color-brand-secondary-dark: var(--color-english-violet-darker);
     --color-brand-white: var(--color-white);
     --color-brand-black: var(--color-black);
+    --color-red: var(--color-french-rose);
 
     --font-size-fluid-000: clamp(#{var.$body-v-sml-font-size-mobile}, 1.3vw, #{var.$body-v-sml-font-size});
     --font-size-fluid-00: clamp(#{var.$body-sml-font-size-mobile}, 1.4vw, #{var.$body-sml-font-size});
@@ -93,16 +100,6 @@ ELEMENTS
   body {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-  }
-  
-  a,
-  a:visited {
-    color: var.$english-violet;
-  }
-  
-  a:hover,
-  a:focus {
-    text-decoration: none;
   }
   
   button {
@@ -151,10 +148,16 @@ ELEMENTS
 
 // Links, anchors
 
-a {
+:where(a) {
   text-decoration: underline;
+  color: var(--color-english-violet);
 
-  &:hover {
+  &:visited {
+    color: var(--color-english-violet);
+  }
+
+  &:hover,
+  &:focus {
     color: var(--text-highlight-1);
     text-decoration: underline;
   }

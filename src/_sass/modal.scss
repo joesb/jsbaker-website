@@ -1,0 +1,129 @@
+@use "./tools/respond-to" as rt;
+
+.blocker {
+  z-index: 450;
+}
+
+.newsletter-modal {
+  display: none;
+  position: absolute;
+  top: 20vh;
+  left: 15vw;
+  z-index: 500;
+  max-width: unset;
+  width: 70vw;
+  height: 60vh;
+  box-sizing: border-box;
+  background: var(--color-white);
+  padding: clamp(var(--size-2), 5vw, var(--size-10));
+  border-radius: 1rem;
+
+  a.close-modal {
+    top: var(--size-6);
+    right: var(--size-6);
+    height: var(--size-6);
+    width: var(--size-6);
+  }
+
+  .contact-form {
+    max-width: 40rem;
+  }
+
+
+}
+
+.newsletter-modal-inner {
+  display: grid;
+  gap: var(--size-7);
+  align-items: center;
+  min-height: 30vh;
+  max-height: 50vh;
+}
+
+@include rt.respond-to('large') {
+  .newsletter-modal-inner {
+    grid-template-columns: 2fr 3fr;
+  }
+}
+
+.newsletter-modal[aria-hidden=false] {
+  .newsletter-modal-inner {
+    animation: mslideIn 0.3s cubic-bezier(0, 0, 0.2, 1);
+  }
+}
+
+.newsletter-modal-title {
+  font-size: var(--font-size-fluid-4);
+}
+
+@keyframes mslideIn {
+    from {
+        transform: translateY(15%)
+    }
+
+    to {
+        transform: translateY(0)
+    }
+}
+
+
+.form-group {
+  display: grid;
+  grid-auto-flow: row;
+  grid-template-columns: minmax(10ch, 16ch) 1fr 1fr;
+  column-gap: var(--size-3);
+
+  input,
+  textarea {
+    grid-column: 2 / span 2;
+    padding: var(--size-2);
+  }
+
+  textarea {
+    min-block-size: 5lh;
+  }
+}
+
+.form-group--submit {
+  margin-block: var(--size-3);
+
+  button {
+    grid-column: 2 / span 2;
+    font-size: var(--font-size-fluid-01);
+    padding-block: var(--size-3);
+    color: var(--color-text-white); 
+    max-width: 35ch;
+  }
+}
+
+@include rt.respond-to('medium') {
+  .form-group--submit {
+    button {
+      grid-column: 2;
+    }
+  }
+}
+
+:where([type=submit],form button:not([type],[disabled])) {
+  background: var(--color-brand-primary);
+  color: var(--color-text-white);
+  border: 0;
+  border-radius: var(--size-3);
+  transition: all 0.2s ease;
+  box-shadow: unset;
+  text-shadow: unset;
+  max-width: 20ch;
+
+  &:hover {
+    background: var(--color-brand-primary-dark);
+    border-radius: var(--size-1);
+    transition: all 0.2s ease;
+  }
+}
+
+.required {
+  color: var(--color-red);
+  display: inline-block;
+  margin-inline: 0.125rem;
+  font-weight: bold;
+}

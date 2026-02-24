@@ -20,7 +20,16 @@ page:
 bookshopOrg:
   widgetChoose: "book"
 styles:
-  - dbl.css
+  internal:
+    - dbl.css
+    - modal.css
+  external:
+    - "https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css"
+scripts:
+  internal:
+    - modal-newsletter.js
+  external:
+    - "https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"
 ---
 
   {% if image.path %}
@@ -100,6 +109,8 @@ styles:
         {% set encodable = ["I'm reading", pageTitle, "by @jsbaker.co.uk:\n", pageURL] %}
       <span class="metadata__share_item"><a href="https://bsky.app/intent/compose?text={{ encodable | join(' ') | encodeUri }}" class="bluesky" target="_blank" rel="nofollow ugc noopener" title="Share to Bluesky"><span class="visually-hidden">Share to Bluesky</span></a></span>
       {% endif %}
+      <span class="metadata__divider divider"></span>
+      <a href="#newsletter-modal" class="open-modal single-meta-button single-meta-button-v-narrow margin-block-sml" rel="modal:open" data-modal>Subscribe</a>
     </div>
   </div>
   {% endif %}
@@ -125,4 +136,6 @@ styles:
   </div>
 {% endif %}
 
-  {% include "layouts/components/page-footer.njk" %}
+{% include "layouts/components/newsletter-modal.njk" %}
+
+{% include "layouts/components/page-footer.njk" %}

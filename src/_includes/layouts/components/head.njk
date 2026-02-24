@@ -39,20 +39,38 @@
   <style>{{ css | cssmin | safe }}</style>
 
   {% if styles %}
-    {% for style in styles %}
-      {% set include_style %}assets/css/{{ style }}{% endset %}
-      {% set include_css %}
-        {% include include_style %}
-      {% endset %}
-    <style>{{ include_css | cssmin | safe }}</style>
-    {% endfor %}
-  {% endif %}
+      {# External styles first #}
+      {% for style in styles.external %}
+      <link rel="stylesheet" href="{{ style }}" />
+      {% endfor %}
+      {# Internal styles second #}
+      {% for style in styles.internal %}
+        {% set include_style %}assets/css/{{ style }}{% endset %}
+        {% set include_css %}
+          {% include include_style %}
+        {% endset %}
+      <style>{{ include_css | cssmin | safe }}</style>
+      {% endfor %}
+    {% endif %}
   
   <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
   {% set js %}
     {% include "assets/js/inline.js" %}
   {% endset %}
-  <script>{{ js | jsmin | safe }}</script>
+  {% if scripts %}
+      {# External scripts first #}
+      {% for script in scripts.external %}
+      <script src="{{ script }}"></script>
+      {% endfor %}
+      {# Internal scripts second #}
+      {% for script in scripts.internal %}
+        {% set include_script %}assets/js/{{ script }}{% endset %}
+          {% set include_js %}
+            {% include include_script %}
+          {% endset %}
+    <script>{{ include_js | jsmin | safe }}</script>
+      {% endfor %}
+    {% endif %}
 
   {% include "layouts/components/head-social-cards.njk" %}
 
