@@ -1,7 +1,7 @@
 ---
 title: Reading
 description: Notes on my reading, and thoughts about reading.
-date: 2026-02-16T14:32:19Z
+date: 2026-02-24T11:52:19Z
 layout: list.njk
 eleventyNavigation:
   key: Reading
@@ -20,7 +20,8 @@ pageClass: "site-content--surface-dark site-content--surface-rose"
 
 I'm currently reading:
 
-- Ben Pester, *[The Expansion Project](https://uk.bookshop.org/a/17006/9781803512587){target=_blank rel="noopener noreferrer"}*
+- William Boyd, *[Gabriel's Moon](https://app.thestorygraph.com/books/2e62687e-b048-4102-a630-2ddfeedfb1e0){target=_blank rel="noopener noreferrer"}*
+- Douglas Coupland, *[Microserfs](https://app.thestorygraph.com/books/28f9a686-f34c-4c5b-8497-eef360b53e4c){target=_blank rel="noopener noreferrer"}*
 - Hannah Arendt, *[The Origins of Totalitarianism](https://app.thestorygraph.com/books/3d22409b-1c07-48ae-9468-ac0b158ccff1){target=_blank rel="noopener noreferrer"}*
 - John Banville, *[The Infinities](https://app.thestorygraph.com/books/c5c5c6d4-3dbf-42ad-a564-35bcd0723c82){target=_blank rel="noopener noreferrer"}*
 
@@ -29,6 +30,8 @@ I'm on [The StoryGraph](https://app.thestorygraph.com/profile/joesb){target=_bla
 ## Read in 2026{.h3-style}
 
 - **February**
+  - Elizabeth O'Connor, *[Whale Fall](https://app.thestorygraph.com/books/4abebb26-5e1a-4c07-8a98-6361edcdc189){target=_blank rel="noopener noreferrer"}*
+  - Ben Pester, *[The Expansion Project](https://uk.bookshop.org/a/17006/9781803512587){target=_blank rel="noopener noreferrer"}*
   - Anne Michaels, *[Held](https://app.thestorygraph.com/books/2d4ba404-c998-4518-a846-1bad638d02d0){target=_blank rel="noopener noreferrer"}*
   - Anne Tyler, *[The Accidental Tourist](https://app.thestorygraph.com/books/d01c49e2-1c5c-41a5-9cec-54438f5a9541){target=_blank rel="noopener noreferrer"}*
 - **January**
