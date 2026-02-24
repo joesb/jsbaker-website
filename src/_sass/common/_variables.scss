@@ -22,6 +22,8 @@ $english-violet: rgba(74, 64, 99, 100%);      // #4A4063
 $dark-cyan: rgba(85, 134, 140, 100%);         // #55868C
 $french-rose: rgba(140, 86, 114, 100%);       // #8C5672
 
+$english-violet-darker: color.adjust($english-violet, $lightness: -15%);
+$dark-cyan-darker: color.adjust($dark-cyan, $lightness: -15%);
 $french-rose-darker: color.adjust($french-rose, $lightness: -15%);
 
 $champagne: rgba(249, 234, 200, 100%);         // #F9EAC8

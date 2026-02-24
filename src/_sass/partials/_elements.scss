@@ -35,6 +35,8 @@ ELEMENTS
     //Shades
     --color-eerie-black-light: #{var.$eerie-black-light};
     --color-eerie-black-pale: #{var.$eerie-black-pale};
+    --color-english-violet-darker: #{var.$english-violet-darker};
+    --color-dark-cyan-darker: #{var.$dark-cyan-darker};
     --color-french-rose-darker: #{var.$french-rose-darker};
 
     --surface-1: var(--color-white);
@@ -56,9 +58,12 @@ ELEMENTS
     --surface-rose: var(--color-french-rose);
     --surface-rose-darker: var(--color-french-rose-darker);
     --color-brand-primary: var(--surface-teal);
+    --color-brand-primary-dark: var(--color-dark-cyan-darker);
     --color-brand-secondary: var(--surface-violet);
+    --color-brand-secondary-dark: var(--color-english-violet-darker);
     --color-brand-white: var(--color-white);
     --color-brand-black: var(--color-black);
+    --color-red: var(--color-french-rose);
 
     --font-size-fluid-000: clamp(#{var.$body-v-sml-font-size-mobile}, 1.3vw, #{var.$body-v-sml-font-size});
     --font-size-fluid-00: clamp(#{var.$body-sml-font-size-mobile}, 1.4vw, #{var.$body-sml-font-size});
@@ -151,7 +156,7 @@ ELEMENTS
 
 // Links, anchors
 
-a {
+:where(a) {
   text-decoration: underline;
 
   &:hover {

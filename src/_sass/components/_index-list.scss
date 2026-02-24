@@ -108,7 +108,8 @@
   }
 }
 
-.index-list__item-first {
+.index-list__item-first,
+.index-list__item-full {
   min-height: px-to-rem.px-to-rem(216px);
 
   :where(p) {
@@ -127,7 +128,8 @@
     min-height: px-to-rem.px-to-rem(270px);
   }
 
-  .index-list__item-first {
+  .index-list__item-first,
+  .index-list__item-full {
     min-height: px-to-rem.px-to-rem(270px);
   }
 
@@ -146,7 +148,8 @@
     min-height: px-to-rem.px-to-rem(360px);
   }
 
-  .index-list__item-first {
+  .index-list__item-first,
+  .index-list__item-full {
     min-height: px-to-rem.px-to-rem(396px);
   }
 }
@@ -164,3 +167,8 @@
   //     }
   //   }
   // }
+
+.index-list__item-naked {
+  border-width: 0;
+  min-height: unset
+}

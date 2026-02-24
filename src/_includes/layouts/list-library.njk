@@ -2,8 +2,17 @@
 layout: base.njk
 list: true
 styles:
-  - list-library.css
-  - dbl.css
+  internal:
+    - list-library.css
+    - dbl.css
+    - modal.css
+  external:
+    - "https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css"
+scripts:
+  internal:
+    - modal-newsletter.js
+  external:
+    - "https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"
 ---
 
   <div class="site-content site-content--zero-top-padding content-canvas">
@@ -32,3 +41,5 @@ styles:
     {% endif %}
 
   </div>
+
+  {% include "layouts/components/newsletter-modal.njk" %}

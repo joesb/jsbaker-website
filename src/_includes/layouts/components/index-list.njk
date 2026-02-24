@@ -8,6 +8,14 @@
       {% set trash = sze.next() %}
       {% endif %}
 
+      {% if layout == "list-library.njk" and loop.index == 2 %}
+
+      <li class="index-list__item index-list__item-full index-list__item-naked">
+        <a href="#newsletter-modal" class="open-modal single-meta-button margin-block-md" rel="modal:open" data-modal>Subscribe</a>
+      </li>
+
+      {% endif %}
+
       <li class="faux-block-link-parent index-list__item index-list__item-{{ loop.index }}{% if loop.first %} index-list__item-first{% endif %} index-list__item-{{ vr }}{% if loop.index != 1 %} index-list__item-{{ sze.next() }}{% endif %}{% if item.data.image.path %} index-list__item--picture{% endif %}{% if item.data.indexListClass %} {{ item.data.indexListClass }}{% endif %} item-fade-in item-fade-in-delay-{{ loop.index }}">
         <div class="index-list__item__content">
           {% if item.data.tags and showTags !== false %}
