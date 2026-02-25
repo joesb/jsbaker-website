@@ -24,13 +24,8 @@ tags:
 bookshopOrg:
   isbn: 9780007179817
   link: https://uk.bookshop.org/a/17006/9780007179817
-  widgets:
-    book: |
-      <script src=https://uk.bookshop.org/widgets.js data-type="book" data-affiliate-id="17006" data-sku="9780007179817"></script>
-    button: |
-      <script src=https://uk.bookshop.org/widgets.js data-type="book_button" data-affiliate-id="17006" data-sku="9780007179817"></script>
-    featured: |
-      <script src=https://uk.bookshop.org/widgets.js data-type="featured" data-full-info="true" data-affiliate-id="17006" data-sku="9780007179817"></script>
+  themeList: |
+    <script src="https://uk.bookshop.org/widgets.js" data-type="list" data-list-slug="dr-b-s-business-and-workplace-fiction-list"></script>
 redirectFrom:
   - /coupland-microserfs/
 ---
