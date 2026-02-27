@@ -40,6 +40,10 @@
   max-height: 50vh;
 }
 
+.newsletter-modal-form {
+  justify-self: center;
+}
+
 @include rt.respond-to('large') {
   .newsletter-modal-inner {
     grid-template-columns: 2fr 3fr;
@@ -53,7 +57,7 @@
 }
 
 .newsletter-modal-title {
-  font-size: var(--font-size-fluid-4);
+  font-size: var(--font-size-fluid-3);
 }
 
 @keyframes mslideIn {
@@ -66,37 +70,55 @@
     }
 }
 
+.form-group--suffix {
+  > * {
+    max-inline-size: var(--size-content-1-2);
+  }
+}
 
 .form-group {
-  display: grid;
-  grid-auto-flow: row;
-  grid-template-columns: minmax(10ch, 16ch) 1fr 1fr;
-  column-gap: var(--size-3);
-
-  input,
-  textarea {
-    grid-column: 2 / span 2;
-    padding: var(--size-2);
-  }
-
-  textarea {
-    min-block-size: 5lh;
-  }
+    display: grid;
+    row-gap: var(--size-2);
+    max-inline-size: var(--size-14);
 }
 
-.form-group--submit {
-  margin-block: var(--size-3);
+@include rt.respond-to('large') {
+  .form-group {
+    display: grid;
+    grid-auto-flow: row;
+    grid-template-columns: minmax(10ch, 16ch) auto auto;
+    column-gap: var(--size-3);
+    max-inline-size: var(--size-15);
 
-  button {
-    grid-column: 2 / span 2;
-    font-size: var(--font-size-fluid-01);
-    padding-block: var(--size-3);
-    color: var(--color-text-white); 
-    max-width: 35ch;
+    input,
+    textarea {
+      grid-column: 2 / span 2;
+      padding: var(--size-2);
+    }
+
+    textarea {
+      min-block-size: 5lh;
+    }
   }
-}
 
-@include rt.respond-to('medium') {
+  .form-group--submit {
+    margin-block: var(--size-3);
+
+    button {
+      grid-column: 2 / span 2;
+      font-size: var(--font-size-fluid-01);
+      padding-block: var(--size-3);
+      color: var(--color-text-white); 
+      max-width: 35ch;
+    }
+  }
+
+  .form-group--suffix {
+    > * {
+      grid-column: 2 / span 2;
+    }
+  }
+
   .form-group--submit {
     button {
       grid-column: 2;

@@ -281,3 +281,11 @@ h5,
 .white-text {
   color: var(--surface-1);
 }
+
+.para-narrow {
+  max-inline-size: var(--size-content-2);
+}
+
+.para-v-narrow {
+  max-inline-size: var(--size-content-1-1);
+}
