@@ -1,10 +1,10 @@
 ---
 title: Dr B's Library
 description: |
-  Yeah, sure, there’s plenty of new books, but do you ever read old books?
+  Yeah, sure, new books are great, but do you ever read old books?
   
   Let's pick one off the shelf.
-date: 2026-02-23T15:04:10Z
+date: 2026-03-01T18:04:10Z
 layout: list-library.njk
 hideDescriptions: false
 promoted: false
