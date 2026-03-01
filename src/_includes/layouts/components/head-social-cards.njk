@@ -22,14 +22,14 @@
   <meta name="twitter:card" content="{{cardType}}" />
   <meta name="twitter:site" content="{{ metadata.title }}" />
   <meta name="twitter:creator" content="{{ metadata.author.name }}" />
-  <meta property="twitter:title" content="{{cardTitle}}" />
+  <meta property="twitter:title" content="{{ cardTitle | safe }}" />
   <meta property="twitter:description" content="{% if excerpt %}{{excerpt}}{% else %}{{metadata.summary}}{% endif %}" />
   {% if image.social or image.path %}
   <meta property="twitter:image" content="{{ metadata.url }}{% if image.social %}{% imageData image.social | url %}{% else %}{% imageData image.path | url %}{% endif %}" />
   {% endif %}
   <meta property="twitter:site" content="{{ metadata.twitter }}" />
   <meta property="og:url" content="{{ absolutePostUrl }}" />
-  <meta property="og:title" content="{{cardTitle}}" />
+  <meta property="og:title" content="{{ cardTitle | safe }}" />
   <meta property="og:description" content="{% if excerpt %}{{excerpt}}{% else %}{{metadata.summary}}{% endif %}" />
   {% if image.social or image.path %}
   <meta property="og:image" content="{{ metadata.url }}{% if image.social %}{% imageData image.social | url %}{% else %}{% imageData image.path | url %}{% endif %}" />
