@@ -28,7 +28,6 @@ bookshopOrg:
     <script src="https://uk.bookshop.org/widgets.js" data-type="list" data-list-slug="dr-b-s-business-and-workplace-fiction-list"></script>
 redirectFrom:
   - /coupland-microserfs/
-  - /library/coupland-microserfs/
   - /microserfs/
   - /library/microserfs/
 ---
