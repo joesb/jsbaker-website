@@ -34,7 +34,9 @@ bookshopOrg:
 redirectFrom:
   - /coupland-microserfs/
   - /microserfs/
+  - /microserfs
   - /library/microserfs/
+  - /library/microserfs
 ---
 
 Well, Douglas Coupland's *Microserfs* — it's a groundbreaking novel about a particular period in time, but it's kinda disappeared into history. So, what's it like reading it today?
