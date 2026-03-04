@@ -32,11 +32,15 @@ bookshopOrg:
             
 redirectFrom:
   - /obrien-third-policeman/
+  - /obrien-third-policeman
   - /third-policeman/
+  - /third-policeman
   - /thirdpoliceman/
-  - /library/obrien-third-policeman/
+  - /thirdpoliceman
   - /library/third-policeman/
+  - /library/third-policeman
   - /library/thirdpoliceman/
+  - /library/thirdpoliceman
 ---
 
 Absurd times need absurd words, and Flann O'Brien, you really have some for us. For which we thank you.
