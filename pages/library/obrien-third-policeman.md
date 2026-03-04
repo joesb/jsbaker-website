@@ -59,9 +59,9 @@ But you're not done, I can see — that first sentence isn't finished, left hang
 > … but first it is better to speak of friendship with John Divney because it was he who knocked old Mathers down by giving him a great blow in the neck with a special bicycle-pump which he manufactured himself out of a hollow iron bar.
 > {.bq-alt}
 
-And you want us to understand that your friend should share the blame for Mathers's death:
-
 {% ImgFigure "First edition cover", "content-canvas-item-full-right content-canvas-item--span-4" %}![First edition cover of 'The Third Policeman', by Flann O'Brien](/static/images/oldbooks/obrien-third-policeman-1st-ed.jpg){.picture-rounded .picture-outline}{% endImgFigure %}
+
+And you want us to understand that your friend should share the blame for Mathers's death:
 
 > Divney was a strong civil man but he was lazy and idle-minded. He was personally responsible for the whole idea in the first place.
 > {.bq-alt}
