@@ -74,3 +74,7 @@ You expect us to believe that, shifting the blame?
 What?
 
 ---
+
+It's an extraordinary book. We never know the name of the narrator. He is accused of robbery and murder, but we never know his name.
+
+He is an armchair academic, a dedicated scholar of the works of de Selby, a renowned scientist and philosopher whose rich output fills the pages of *The Third Policeman*.
