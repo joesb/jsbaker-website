@@ -113,7 +113,9 @@ The narrator and his soul, Joe, try to find the money box, and Mathers recommend
 > *pg. 88–90*{.small}
 > {.bq-alt}
 
- The mysterious third policeman of the title, Fox, is reputedly all-powerful, and the narrator meets him later *(pg. 189)*{.small} in a secret police station in the walls of Mathers's house, and discovers he has Mathers's face.
+(This is presumably the reference [William Fotheringham](https://www.williamfotheringham.com/){target=_blank rel="noopener noreferrer"}, the sports journalist, was using in his biography of the great Belgian cyclist, Eddy Merckx — [Merckx: Half Man, Half Bike](https://uk.bookshop.org/a/17006/9780224074513){target=_blank rel="noopener noreferrer"}.){.italic}
+
+The mysterious third policeman of the title, Fox, is reputedly all-powerful, and the narrator meets him later *(pg. 189)*{.small} in a secret police station in the walls of Mathers's house, and discovers he has Mathers's face.
 
 ---
 
