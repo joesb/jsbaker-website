@@ -143,6 +143,6 @@ Flann O'Brien's *The Third Policeman* is one of my favourite books of all time, 
 
 Once, many years ago, a friend agreed to read it after I'd kept on about it. On finishing he said, ‘I don't know what I have just read, but I loved it!’
 
-I strange and difficult times, we need absurdity. This book is exactly that.
+In strange and difficult times, we need absurdity. This book is exactly that.
 
 So, do yourself a favour — go grab yourself a copy right now. You won't regret it.
