@@ -91,7 +91,7 @@ The narrator does not let Divney out of his sight, even sharing a bed with him �
 
 — until he tells him where the box of cash is hidden. Three years pass before Divney relents, saying it's under the floorboard in Mathers's old house. The narrator goes to find the box, but as he puts his hands on it, “something happened” *(pg. 24)*{.small}.
 
-To this point the story has been curious and quirky. From here on, though, he narrator enters an increasingly strange, surreal world.
+To this point the story has been curious and quirky. From here on, though, the narrator enters an increasingly strange, surreal world.
 
 ---
 
