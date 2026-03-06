@@ -45,7 +45,7 @@ redirectFrom:
 
 Absurd times need absurd words, and Flann O'Brien, you really have some for us. For which we thank you.
 
-You start the absurdity starts at the very beginning, with a horrifying confession from your narrator:
+The absurdity starts at the very beginning, with a horrifying confession from your narrator:
 
 > Not everybody knows how I killed old Phillip Mathers, smashing his jaw in with my spade; …
 > {.bq-alt}
