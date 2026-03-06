@@ -79,9 +79,7 @@ This is an extraordinary book.
 
 We never know the name of the narrator. We know that he is accused of robbery and murder, but we never know his name. Extraordinary.
 
-{% bookshopOrgFeatured bookshopOrg.isbn "featured" %}
-
-The narrator is an armchair academic, a dedicated scholar of the works of de Selby, a renowned scientist and philosopher who he discovers when he's sent to boarding school following his parents' death. de Selby's rich output fills the pages of *The Third Policeman*, and the book itself contains many numbered footnotes, references to de Selby's work. He shapes the whole of the narrator's life to the extent that he tells us early on, '… it was for de Selby I committed my first serious sin. It was for him I committed my greatest sin.' *(pg. 9)*{.small}
+The narrator is an armchair academic, a dedicated scholar of the works of de Selby, a renowned scientist and philosopher who he discovers when he's sent to boarding school following his parents' death. de Selby's rich output fills the pages of [*The Third Policeman*](https://uk.bookshop.org/a/17006/9780007247172){target=_blank rel="noopener noreferrer"}, and the book itself contains many numbered footnotes, references to de Selby's work. He shapes the whole of the narrator's life to the extent that he tells us early on, '… it was for de Selby I committed my first serious sin. It was for him I committed my greatest sin.' *(pg. 9)*{.small}
 
 Though O'Brien's narrator works for years to complete the definitive critical text on de Selby's work, he has no money to publish it. Divney, who runs the family's farm and pub, already has a plan to murder and rob local man Mathers, and, realising this would give him the funds he needs, the two join forces to commit the crime. But Divney double-crosses him — he absconds with the box of money and buries it, not telling his friend where.
 
@@ -104,6 +102,8 @@ Old Mathers is in the room with him.
 > {.bq-alt}
 
 Soon another joins too, the voice of the narrator's soul, who he calls Joe.
+
+{% bookshopOrgFeatured bookshopOrg.isbn "featured" %}
 
 The narrator and his soul, Joe, try to find the money box, and Mathers recommends a trip to the police station. At the barracks, the duty officers, Sergeant Pluck and Policeman MacCruiskeen, speak in nonsense phrases and we find they are obsessed with bicycles. In one of the most brilliant phrases in literature, Sergeant Pluck offers his ‘atomic theory’ of bicycles:
 
