@@ -5,6 +5,10 @@ date: 2026-02-10T17:23:04Z
 layout: page-library.njk
 promoted: true
 order: 0
+book:
+  author: Donna Tartt
+  title: The Secret History
+  summary: Donna Tartt's modern classic of academic elitism and moral decay
 page:
   class: "page--with-hero dr-bs-library dr-bs-library--page"
 image:

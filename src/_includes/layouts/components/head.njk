@@ -15,6 +15,10 @@
   {% endif %}
 
   <!-- meta -->
+  {% if layout == "page-library.njk" and book.summary | length != 0 %}
+  {% set description = ["Have you ever read … ", book.summary, "?"] | join %}
+  {% endif %}
+
   <meta name="author" itemprop="author" content="{{ metadata.author.name }}">
   <meta name="description" itemprop="description" content="{{ description }}">
 

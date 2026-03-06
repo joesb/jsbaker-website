@@ -11,10 +11,14 @@
   margin-block: 2rem;
 }
 
-.picture--outline {
+.picture-outline {
   border-width: 1px;
   border-style: solid;
-  border-color: color.adjust(variables.$text-1, $lightness: 67%);
+  border-color: color.adjust(variables.$text-1, $lightness: 75%);
+}
+
+.picture-rounded {
+  border-radius: var(--size-1);
 }
 
 .picture--hero,

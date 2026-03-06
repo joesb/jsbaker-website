@@ -4,7 +4,12 @@ description: Have you ever read … Douglas Coupland's story of yearning for pur
 date: 2026-02-13T17:13:04Z
 layout: page-library.njk
 promoted: true
-order: -1
+order: 0
+book:
+  author: Douglas Coupland
+  title: Microserfs
+  summary: Douglas Coupland's story of yearning for purpose in a world saturated with technology
+hideDescription: false
 page:
   class: "page--with-hero dr-bs-library dr-bs-library--page"
 image:
