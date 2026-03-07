@@ -12,7 +12,7 @@ image:
   alt: "Me, Joe Baker"
 pagination:
   data: collections.promotedContent
-  size: 11
+  size: 15
   alias: items
 ---
 
