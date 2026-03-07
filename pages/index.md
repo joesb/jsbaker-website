@@ -2,7 +2,7 @@
 title: Joe Baker
 description: Writer's journal for J S Baker, a writer based in Birmingham, UK — my writing projects, and the reading and thinking that supports them.
 pageTitle: Writer
-date: 2026-02-26T09:53:10Z
+date: 2026-03-07T06:53:10Z
 eleventyNavigation:
   key: Home
 layout: home.njk
@@ -20,7 +20,7 @@ My writer's journal, for my [writing](/writing){.light} projects, as well as the
 
 ---{.margin-block-start-vlg}
 
-**And also …**{.bold} Yeah, sure, there’s plenty of new books, but do you ever read old books?
+**And also …**{.bold} Yeah, sure, new books are great, but do you ever read old books?
 {.margin-block-start-vlg}
 
 Welcome to [Dr B's Library](/library/){.light .single-meta-forward .bold}
