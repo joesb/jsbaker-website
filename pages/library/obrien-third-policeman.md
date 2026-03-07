@@ -29,7 +29,6 @@ bookshopOrg:
   link: https://uk.bookshop.org/a/17006/9780007247172
   themeList: |
     <script src="https://uk.bookshop.org/widgets.js" data-type="list" data-list-slug="dr-b-s-absurdity-and-satire-list"></script>
-            
 redirectFrom:
   - /obrien-third-policeman/
   - /obrien-third-policeman
