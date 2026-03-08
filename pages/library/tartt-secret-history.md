@@ -87,6 +87,9 @@ The reader realises quickly that Book I is going to take us to his terrible deat
 
 That makes *The Secret History* already two things — a murder mystery thriller, and a campus coming-of-age story. But there's one more — it's also a modern-day Greek tragedy.
 
+[Get Dr B's Library direct to your inbox](#newsletter-modal){.open-modal .single-meta-button .single-meta-button-narrow .margin-block-lg rel="modal:open" data-modal}
+{.center}
+
 Richard, Bunny, and their classmates all study classics together, mostly the Greeks, and in particular [Euripides' story of *The Bacchae*](https://chs.harvard.edu/primary-source/euripides-bacchae-sb/){target=_blank rel="noopener noreferrer"}, which has a shaping hand on the plot of Donna Tartt's novel. The climax of *The Bacchae* has the strongest echo — King Pentheus of Thebes has rejected Dionysus, god of wine and religious ecstasy, and his whole cult, and in punishment the god lures him to the mountains, where he is torn apart by the frenzied Maenads — but there are lots of other classical themes throughout, for those sensitive to them.
 
 {% ImgFigure "'A Bacchanalian Revel Before a Term' (a bust, of Pan here), Nicolas Poussin, 1632–1633. Image: [WikiMedia](https://commons.wikimedia.org/w/index.php?curid=156625){target=_blank rel=\"noopener noreferrer\"}", "margin-block-vlg content-canvas-item-wide" %}![A Bacchanalian Revel Before a Term, Nicolas Poussin, 1632–1633](/static/images/oldbooks/nicolas-poussin-bacchanale-devant-une-statue-de-pan.jpg){% endImgFigure %}

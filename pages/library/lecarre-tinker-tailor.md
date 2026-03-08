@@ -76,6 +76,9 @@ The novel follows George Smiley, John le Carré's most enduring character, now a
 
 Smiley was forced out of the service after a botched operation that resulted in the capture and torture of Jim Prideaux, the Jim of that opening sentence. The question is, who betrayed him? Suspicion falls on 5 men at the top of MI6, friends and ex-colleagues.
 
+[Get Dr B's Library direct to your inbox](#newsletter-modal){.open-modal .single-meta-button .single-meta-button-narrow .margin-block-lg rel="modal:open" data-modal}
+{.center}
+
 ---
 
 It's said that the novel is le Carré's examination of his own life and experiences, the people he knew when he was a spy himself. The 1950s and ’60s saw a bunch of revelations that exposed the [Cambridge Five traitors](https://www.theguardian.com/books/2014/apr/18/cambridge-spy-ring-what-biographers-say){target=_blank rel="noopener noreferrer"}, many of whom [le Carré had known and worked with](https://theconversation.com/john-le-carre-authentic-spy-fiction-that-wrote-the-wrongs-of-post-war-british-intelligence-152055){target=_blank rel="noopener noreferrer"}, people who had deeply covered over all that they were doing to undermine everything he stood for. Le Carré was coming to terms with discovering people he knew and trusted were two things, diametrically opposed, at once. One character, Roy Bland, is drinking with Smiley at a bar:
