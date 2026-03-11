@@ -1,7 +1,7 @@
 ---
 title: Reading
 description: Notes on my reading, and thoughts about reading.
-date: 2026-02-26T14:52:19Z
+date: 2026-03-11T10:06:19Z
 layout: list.njk
 eleventyNavigation:
   key: Reading
@@ -20,16 +20,22 @@ pageClass: "site-content--surface-dark site-content--surface-rose"
 
 I'm currently reading:
 
-- William Boyd, *[Gabriel's Moon](https://app.thestorygraph.com/books/2e62687e-b048-4102-a630-2ddfeedfb1e0){target=_blank rel="noopener noreferrer"}*
+- Adam Haslett, *[Mothers and Sons](https://app.thestorygraph.com/books/f1066816-082d-4c56-a17d-977d18c98b0a){target=_blank rel="noopener noreferrer"}*
+- Philip Roth, *[American Pastoral](https://app.thestorygraph.com/books/f2ce5db4-fb0d-484d-9fa2-84e703897ff1){target=_blank rel="noopener noreferrer"}* *(re-read)*{.small}
 - Hannah Arendt, *[The Origins of Totalitarianism](https://app.thestorygraph.com/books/3d22409b-1c07-48ae-9468-ac0b158ccff1){target=_blank rel="noopener noreferrer"}*
 - John Banville, *[The Infinities](https://app.thestorygraph.com/books/c5c5c6d4-3dbf-42ad-a564-35bcd0723c82){target=_blank rel="noopener noreferrer"}*
+
+I've also just finished reading the latest draft (5th!) of my debut novel manuscript. It's now with a few beta readers, awaiting feedback.
 
 I'm on [The StoryGraph](https://app.thestorygraph.com/profile/joesb){target=_blank rel="noopener noreferrer"} and [GoodReads](https://www.goodreads.com/jsbaker){target=_blank rel="noopener noreferrer"}.{.smaller}
 
 ## Read in 2026{.h3-style}
 
+- **March**
+  - William Boyd, *[Gabriel's Moon](https://app.thestorygraph.com/books/2e62687e-b048-4102-a630-2ddfeedfb1e0){target=_blank rel="noopener noreferrer"}*
 - **February**
-  - Douglas Coupland, *[Microserfs](https://app.thestorygraph.com/books/28f9a686-f34c-4c5b-8497-eef360b53e4c){target=_blank rel="noopener noreferrer"}*
+  - Douglas Coupland, *[Microserfs](https://app.thestorygraph.com/books/28f9a686-f34c-4c5b-8497-eef360b53e4c){target=_blank rel="noopener noreferrer"}* *(re-read)*{.small}
+    - See my [Dr B's Library review of *Microserfs*](/library/coupland-microserfs/){.single-meta-forward} {.small}
   - Elizabeth O'Connor, *[Whale Fall](https://app.thestorygraph.com/books/4abebb26-5e1a-4c07-8a98-6361edcdc189){target=_blank rel="noopener noreferrer"}*
   - Ben Pester, *[The Expansion Project](https://uk.bookshop.org/a/17006/9781803512587){target=_blank rel="noopener noreferrer"}*
   - Anne Michaels, *[Held](https://app.thestorygraph.com/books/2d4ba404-c998-4518-a846-1bad638d02d0){target=_blank rel="noopener noreferrer"}*
@@ -38,4 +44,5 @@ I'm on [The StoryGraph](https://app.thestorygraph.com/profile/joesb){target=_bla
   - Arundhati Roy, *[Mother Mary Comes To Me](https://app.thestorygraph.com/books/e1b64482-44ed-408d-adbf-254e289642d2){target=_blank rel="noopener noreferrer"}*
   - John Banville, *[The Untouchable](https://app.thestorygraph.com/books/3f1c814b-f957-42e4-88cd-fc6a73fc8268){target=_blank rel="noopener noreferrer"}*
   - Yanis Varoufakis, *[Technofeudalism: What Killed Capitalism](https://uk.bookshop.org/a/17006/9781529926095){target=_blank rel="noopener noreferrer"}*
-  - John le Carré, *[Tinker, Tailor, Soldier, Spy](https://app.thestorygraph.com/books/9991c463-0086-48ba-ad22-8bdc072d9499){target=_blank rel="noopener noreferrer"}*
+  - John le Carré, *[Tinker, Tailor, Soldier, Spy](https://app.thestorygraph.com/books/9991c463-0086-48ba-ad22-8bdc072d9499){target=_blank rel="noopener noreferrer"}* *(re-read)*{.small}
+    - See my [Dr B's Library review of *Tinker, Tailor*](/library/lecarre-tinker-tailor/){.single-meta-forward} {.small}
