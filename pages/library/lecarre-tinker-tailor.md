@@ -31,6 +31,8 @@ redirectFrom:
   - /lecarre-tinker-tailor/
   - /tinkertailor/
   - /library/tinkertailor/
+  - /tinkertailor
+  - /library/tinkertailor
 ---
 
 Here’s how it starts, the opening sentence …
