@@ -29,6 +29,8 @@ bookshopOrg:
 redirectFrom:
   - /reading/old-books/lecarre-tinker-tailor/
   - /lecarre-tinker-tailor/
+  - /tinkertailor/
+  - /library/tinkertailor/
 ---
 
 Here’s how it starts, the opening sentence …
