@@ -1,7 +1,7 @@
 ---
 title: Reading
 description: Notes on my reading, and thoughts about reading.
-date: 2026-03-11T10:06:19Z
+date: 2026-03-20T10:09:09Z
 layout: list.njk
 eleventyNavigation:
   key: Reading
@@ -20,7 +20,7 @@ pageClass: "site-content--surface-dark site-content--surface-rose"
 
 I'm currently reading:
 
-- Adam Haslett, *[Mothers and Sons](https://app.thestorygraph.com/books/f1066816-082d-4c56-a17d-977d18c98b0a){target=_blank rel="noopener noreferrer"}*
+- Andrew Miller, *[The Land in Winter](https://app.thestorygraph.com/books/3ac5ce14-220a-41fe-89e1-0c672ac441db){target=_blank rel="noopener noreferrer"}*
 - Philip Roth, *[American Pastoral](https://app.thestorygraph.com/books/f2ce5db4-fb0d-484d-9fa2-84e703897ff1){target=_blank rel="noopener noreferrer"}* *(re-read)*{.small}
 - Hannah Arendt, *[The Origins of Totalitarianism](https://app.thestorygraph.com/books/3d22409b-1c07-48ae-9468-ac0b158ccff1){target=_blank rel="noopener noreferrer"}*
 - John Banville, *[The Infinities](https://app.thestorygraph.com/books/c5c5c6d4-3dbf-42ad-a564-35bcd0723c82){target=_blank rel="noopener noreferrer"}*
@@ -32,6 +32,7 @@ I'm on [The StoryGraph](https://app.thestorygraph.com/profile/joesb){target=_bla
 ## Read in 2026{.h3-style}
 
 - **March**
+  - Adam Haslett, *[Mothers and Sons](https://app.thestorygraph.com/books/f1066816-082d-4c56-a17d-977d18c98b0a){target=_blank rel="noopener noreferrer"}*
   - William Boyd, *[Gabriel's Moon](https://app.thestorygraph.com/books/2e62687e-b048-4102-a630-2ddfeedfb1e0){target=_blank rel="noopener noreferrer"}*
 - **February**
   - Douglas Coupland, *[Microserfs](https://app.thestorygraph.com/books/28f9a686-f34c-4c5b-8497-eef360b53e4c){target=_blank rel="noopener noreferrer"}* *(re-read)*{.small}
