@@ -29,6 +29,10 @@ bookshopOrg:
 redirectFrom:
   - /reading/old-books/lecarre-tinker-tailor/
   - /lecarre-tinker-tailor/
+  - /tinkertailor/
+  - /library/tinkertailor/
+  - /tinkertailor
+  - /library/tinkertailor
 ---
 
 Here’s how it starts, the opening sentence …
@@ -75,6 +79,9 @@ In truth, *Tinker, Tailor* is about betrayal, about friendship and its failures.
 The novel follows George Smiley, John le Carré's most enduring character, now an ageing and unhappily retired spymaster. Smiley is brought back to help track down a Soviet mole in British intelligence.
 
 Smiley was forced out of the service after a botched operation that resulted in the capture and torture of Jim Prideaux, the Jim of that opening sentence. The question is, who betrayed him? Suspicion falls on 5 men at the top of MI6, friends and ex-colleagues.
+
+[Get Dr B's Library direct to your inbox](#newsletter-modal){.open-modal .single-meta-button .single-meta-button-narrow .margin-block-lg rel="modal:open" data-modal}
+{.center}
 
 ---
 

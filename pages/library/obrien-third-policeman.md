@@ -92,6 +92,9 @@ The narrator does not let Divney out of his sight, even sharing a bed with him â
 
 To this point the story has been curious and quirky. From here on, though, the narrator enters an increasingly strange, surreal world.
 
+[Get Dr B's Library direct to your inbox](#newsletter-modal){.open-modal .single-meta-button .single-meta-button-narrow .margin-block-lg rel="modal:open" data-modal}
+{.center}
+
 ---
 
 Old Mathers is in the room with him.
@@ -121,6 +124,9 @@ The mysterious third policeman of the title, Fox, is reputedly all-powerful, and
 The book is an utter delight â€” brilliant, and overflowing with wit and the most wonderful absurdity. Every paragraph is strange, every sentence brims with surreality, immensely fun and funny without leaning into jokes or one-liners.
 
 It's a pastoral landscape, unmistakably Irish, yet closer to that contorted version of reality you find between wake and dream. The ending is simply marvellous, making the absurdity even more fun.
+
+[Get Dr B's Library direct to your inbox](#newsletter-modal){.open-modal .single-meta-button .single-meta-button-narrow .margin-block-lg rel="modal:open" data-modal}
+{.center}
 
 ---
 

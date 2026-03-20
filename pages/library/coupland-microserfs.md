@@ -108,6 +108,9 @@ Through resentment and frustration, Daniel and his friends — all except Abe �
 
 Abe ends up saving Oop! by investing in the company.
 
+[Get Dr B's Library direct to your inbox](#newsletter-modal){.open-modal .single-meta-button .single-meta-button-narrow .margin-block-lg rel="modal:open" data-modal}
+{.center}
+
 ---
 
 Through Dan's stream-of-consciousness journal we follow the fragile lives of this group of geeks. We find them vulnerable and tender, and Coupland portrays them against-type of the digital nerd cliché.
