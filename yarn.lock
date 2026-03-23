@@ -124,19 +124,19 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@11ty/eleventy-plugin-rss@npm:^2.0.4":
-  version: 2.0.4
-  resolution: "@11ty/eleventy-plugin-rss@npm:2.0.4"
+"@11ty/eleventy-plugin-rss@npm:^3.0.0":
+  version: 3.0.0
+  resolution: "@11ty/eleventy-plugin-rss@npm:3.0.0"
   dependencies:
-    "@11ty/eleventy-utils": "npm:^2.0.0"
-    "@11ty/posthtml-urls": "npm:^1.0.1"
-    debug: "npm:^4.4.0"
-    posthtml: "npm:^0.16.6"
-  checksum: 10c0/b5249680c7cdbfef48d80b7ab12f7e403d9fef3c5216660db006209042557e47354aa25fc088a5d0cac2e7ae204711f7d40e0cd1286506206e39f9796195f11e
+    "@11ty/eleventy-utils": "npm:^2.0.7"
+    "@11ty/posthtml-urls": "npm:^1.0.2"
+    debug: "npm:^4.4.3"
+    posthtml: "npm:^0.16.7"
+  checksum: 10c0/e274eaf9ecde520e0360cfb0e43ed19d959dc849a9f2b503720c9e6594e1d7d4335cb87b54a288180f628cf132c6879bb8265a3be541535862f2ff0db283f27d
   languageName: node
   linkType: hard
 
-"@11ty/eleventy-utils@npm:^2.0.0, @11ty/eleventy-utils@npm:^2.0.1, @11ty/eleventy-utils@npm:^2.0.2, @11ty/eleventy-utils@npm:^2.0.7":
+"@11ty/eleventy-utils@npm:^2.0.1, @11ty/eleventy-utils@npm:^2.0.2, @11ty/eleventy-utils@npm:^2.0.7":
   version: 2.0.7
   resolution: "@11ty/eleventy-utils@npm:2.0.7"
   checksum: 10c0/71d1fbdf4d651c5320cac420ef4bb82024c1133a2404d5276f6826856cef3658bc8df201a5fb4531f07583e353431ba0f6dd5920259c741da06ac1d9f75be5de
@@ -193,7 +193,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@11ty/posthtml-urls@npm:^1.0.1":
+"@11ty/posthtml-urls@npm:^1.0.1, @11ty/posthtml-urls@npm:^1.0.2":
   version: 1.0.2
   resolution: "@11ty/posthtml-urls@npm:1.0.2"
   dependencies:
@@ -2459,7 +2459,7 @@ __metadata:
     "@11ty/eleventy": "npm:^3.1.2"
     "@11ty/eleventy-img": "npm:^6.0.4"
     "@11ty/eleventy-navigation": "npm:^1.0.5"
-    "@11ty/eleventy-plugin-rss": "npm:^2.0.4"
+    "@11ty/eleventy-plugin-rss": "npm:^3.0.0"
     "@types/markdown-it": "npm:^14.1.2"
     autoprefixer: "npm:^10.4.27"
     clean-css: "npm:^5.3.3"
