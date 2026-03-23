@@ -73,6 +73,19 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@11ty/eleventy-fetch@npm:^5.1.2":
+  version: 5.1.2
+  resolution: "@11ty/eleventy-fetch@npm:5.1.2"
+  dependencies:
+    "@11ty/eleventy-utils": "npm:^2.0.7"
+    "@rgrove/parse-xml": "npm:^4.2.0"
+    debug: "npm:^4.4.3"
+    flatted: "npm:^3.4.2"
+    p-queue: "npm:6.6.2"
+  checksum: 10c0/11fe1e65dc8a59c912403454e19c065974b3bdcb048d1f3d5905390bb4c95dfeec58566cf2d54241a253202bb23dad8276d5e0133325bc048d8741a2306258e9
+  languageName: node
+  linkType: hard
+
 "@11ty/eleventy-img@npm:^4.0.2":
   version: 4.0.2
   resolution: "@11ty/eleventy-img@npm:4.0.2"
@@ -1482,57 +1495,57 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eleventy-plugin-embed-bluesky@npm:^1.0.1":
-  version: 1.0.1
-  resolution: "eleventy-plugin-embed-bluesky@npm:1.0.1"
-  dependencies:
-    "@11ty/eleventy-fetch": "npm:^5.1.0"
-    string-replace-async: "npm:^3.0.2"
-  checksum: 10c0/ab98a4e2109013765f63243325f5271539752eae6835b4aff6d6904c5b43126845ad5afcadaac6209ac9bc9cc4ae8da30816694180d833022acfd1618dc5c7a8
-  languageName: node
-  linkType: hard
-
-"eleventy-plugin-embed-everything@npm:^1.21.1":
-  version: 1.21.1
-  resolution: "eleventy-plugin-embed-everything@npm:1.21.1"
-  dependencies:
-    deepmerge: "npm:^4.3.1"
-    eleventy-plugin-embed-bluesky: "npm:^1.0.1"
-    eleventy-plugin-embed-instagram: "npm:^1.3.0"
-    eleventy-plugin-embed-mastodon: "npm:^1.0.2"
-    eleventy-plugin-embed-openstreetmap: "npm:^1.1.0"
-    eleventy-plugin-embed-soundcloud: "npm:^1.2.10"
-    eleventy-plugin-embed-spotify: "npm:^1.3.0"
-    eleventy-plugin-embed-ted: "npm:^1.0.1"
-    eleventy-plugin-embed-tiktok: "npm:^1.1.8"
-    eleventy-plugin-embed-twitch: "npm:^1.2.8"
-    eleventy-plugin-embed-twitter: "npm:^1.4.3"
-    eleventy-plugin-vimeo-embed: "npm:^1.4.0"
-    eleventy-plugin-youtube-embed: "npm:^1.13.1"
-  checksum: 10c0/331360b8239731b728aa80c4ae2a61f93c4a3ae7467971db1eb2f3e847f563a3e2951d26817fe0624ccd91ace0f01d5d90e8d8d3fe2fb1dea6197758f74a1873
-  languageName: node
-  linkType: hard
-
-"eleventy-plugin-embed-instagram@npm:^1.3.0":
-  version: 1.3.0
-  resolution: "eleventy-plugin-embed-instagram@npm:1.3.0"
-  checksum: 10c0/fe00c23913f44c15d686bb576765a8ceb355eb444d7e583d272b118e4ff11f5105ee378b8b472ff439d29f9ac2127ea27311fc52e2845bad473621cce5ccc50a
-  languageName: node
-  linkType: hard
-
-"eleventy-plugin-embed-mastodon@npm:^1.0.2":
+"eleventy-plugin-embed-bluesky@npm:1.0.2":
   version: 1.0.2
-  resolution: "eleventy-plugin-embed-mastodon@npm:1.0.2"
+  resolution: "eleventy-plugin-embed-bluesky@npm:1.0.2"
   dependencies:
-    "@11ty/eleventy-fetch": "npm:^5.1.0"
-    deepmerge: "npm:^4.3.1"
-    regex: "npm:^6.0.1"
+    "@11ty/eleventy-fetch": "npm:^5.1.2"
     string-replace-async: "npm:^3.0.2"
-  checksum: 10c0/f0cb2b3f286665133591f64fc82f8be6eb8fa98f94f62390840fb1189f1b66e0e84ee8ef2922683bc85d56f7e3c0ae1f60b0cf4149640de56dd128e72a279908
+  checksum: 10c0/51b7eb30b05ceee7359458b56d1b08ab993999df9714884e0bf50be1380cb0497e5d41e45dd988d8b80e44b5c634db6d8f2053fe0dde0516b2b6147490e56e04
   languageName: node
   linkType: hard
 
-"eleventy-plugin-embed-openstreetmap@npm:^1.1.0":
+"eleventy-plugin-embed-everything@npm:^1.21.2":
+  version: 1.21.2
+  resolution: "eleventy-plugin-embed-everything@npm:1.21.2"
+  dependencies:
+    deepmerge: "npm:^4.3.1"
+    eleventy-plugin-embed-bluesky: "npm:1.0.2"
+    eleventy-plugin-embed-instagram: "npm:1.3.1"
+    eleventy-plugin-embed-mastodon: "npm:1.0.3"
+    eleventy-plugin-embed-openstreetmap: "npm:1.1.0"
+    eleventy-plugin-embed-soundcloud: "npm:1.2.11"
+    eleventy-plugin-embed-spotify: "npm:1.3.0"
+    eleventy-plugin-embed-ted: "npm:1.0.1"
+    eleventy-plugin-embed-tiktok: "npm:1.1.9"
+    eleventy-plugin-embed-twitch: "npm:1.2.8"
+    eleventy-plugin-embed-twitter: "npm:1.4.4"
+    eleventy-plugin-vimeo-embed: "npm:1.4.0"
+    eleventy-plugin-youtube-embed: "npm:1.13.2"
+  checksum: 10c0/b1df75f7ef387d12a5b516ed385d613ff43f805f3d1c187d4ffc1d4d239b587d066c9ceec9bd6e4f601e2b701a7661521d7065a8a3730fc74c91bd90203713a6
+  languageName: node
+  linkType: hard
+
+"eleventy-plugin-embed-instagram@npm:1.3.1":
+  version: 1.3.1
+  resolution: "eleventy-plugin-embed-instagram@npm:1.3.1"
+  checksum: 10c0/e318cfac07bf7706f0428b388a44873452a70615dfa591939ce41978a77c154f03e8f2625adfbe664c1031871ab1a02d529c83d3c1872e1003b46f54ba28871d
+  languageName: node
+  linkType: hard
+
+"eleventy-plugin-embed-mastodon@npm:1.0.3":
+  version: 1.0.3
+  resolution: "eleventy-plugin-embed-mastodon@npm:1.0.3"
+  dependencies:
+    "@11ty/eleventy-fetch": "npm:^5.1.2"
+    deepmerge: "npm:^4.3.1"
+    regex: "npm:^6.1.0"
+    string-replace-async: "npm:^3.0.2"
+  checksum: 10c0/445908fd3ce4c8a5521260cc61a76554eb9d0d062c527568cea04bf3348b5e228115a193be2a702ec14522ab92c77f6220aa1c41c56685366b7e4f59a89501d4
+  languageName: node
+  linkType: hard
+
+"eleventy-plugin-embed-openstreetmap@npm:1.1.0":
   version: 1.1.0
   resolution: "eleventy-plugin-embed-openstreetmap@npm:1.1.0"
   dependencies:
@@ -1541,53 +1554,53 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eleventy-plugin-embed-soundcloud@npm:^1.2.10":
-  version: 1.2.10
-  resolution: "eleventy-plugin-embed-soundcloud@npm:1.2.10"
+"eleventy-plugin-embed-soundcloud@npm:1.2.11":
+  version: 1.2.11
+  resolution: "eleventy-plugin-embed-soundcloud@npm:1.2.11"
   dependencies:
-    "@11ty/eleventy-fetch": "npm:^5.1.0"
-  checksum: 10c0/8bbed275b19268a42b6ddaa652762687e642e880b4af3edb2d38a1dc17b8b89871bb1f4dc8ea0e11f3f20c88c21ccb1e4bbbabd7dfd7b49651f84244020aaf66
+    "@11ty/eleventy-fetch": "npm:^5.1.2"
+  checksum: 10c0/b8e77691b4e74be8fd59eb6820c835de9e36ad0ab9f3b6bd816166c969dfbb5bac3aa8ed9d1778f13f7eae1a11e86cb28f39364bc92e00b96e5501ae550824ea
   languageName: node
   linkType: hard
 
-"eleventy-plugin-embed-spotify@npm:^1.3.0":
+"eleventy-plugin-embed-spotify@npm:1.3.0":
   version: 1.3.0
   resolution: "eleventy-plugin-embed-spotify@npm:1.3.0"
   checksum: 10c0/58b56327d816089c50a5d55f04d9668a44a10e7410ed1cab412e1181a754b34855826d6f45aeb84d2082e8205d65273043e4ac06a5ad716fdf54d4c710061076
   languageName: node
   linkType: hard
 
-"eleventy-plugin-embed-ted@npm:^1.0.1":
+"eleventy-plugin-embed-ted@npm:1.0.1":
   version: 1.0.1
   resolution: "eleventy-plugin-embed-ted@npm:1.0.1"
   checksum: 10c0/84ddc1743606b8fea7432e10ed58b77b35dbb1b4e3f97cd60218f8bf0f65cc2f2f9dd63df9d460240ebdabfa94ccdaa64218c59966c21aebdaa88002b6d595ee
   languageName: node
   linkType: hard
 
-"eleventy-plugin-embed-tiktok@npm:^1.1.8":
-  version: 1.1.8
-  resolution: "eleventy-plugin-embed-tiktok@npm:1.1.8"
+"eleventy-plugin-embed-tiktok@npm:1.1.9":
+  version: 1.1.9
+  resolution: "eleventy-plugin-embed-tiktok@npm:1.1.9"
   dependencies:
     deepmerge: "npm:^4.3.1"
-    regex: "npm:^6.0.1"
-  checksum: 10c0/308420470608003d5309344ff2187fec3df11f72b45af522a8e54e5920ba11fa02003ecd5c718ec59dd31227f5c4d0d8166232dd99bd124d5c09690ef4d9cc80
+    regex: "npm:^6.1.0"
+  checksum: 10c0/43e0e22400c1ac2d3bd2ebd508158f4b1154e7e7e444a44a2564b989e5b030a50f638d75377faeca014c49b37967823d21afe5dbf2e44c8ad138baf78db805d2
   languageName: node
   linkType: hard
 
-"eleventy-plugin-embed-twitch@npm:^1.2.8":
+"eleventy-plugin-embed-twitch@npm:1.2.8":
   version: 1.2.8
   resolution: "eleventy-plugin-embed-twitch@npm:1.2.8"
   checksum: 10c0/1464def116a951e68cf2a11efaba110e6698a844c72177c21c1f533e50ef728e9a233ae437793a133a74a8d5187261e801e3a41ba6e611cc44d542f62d88de66
   languageName: node
   linkType: hard
 
-"eleventy-plugin-embed-twitter@npm:^1.4.3":
-  version: 1.4.3
-  resolution: "eleventy-plugin-embed-twitter@npm:1.4.3"
+"eleventy-plugin-embed-twitter@npm:1.4.4":
+  version: 1.4.4
+  resolution: "eleventy-plugin-embed-twitter@npm:1.4.4"
   dependencies:
-    "@11ty/eleventy-fetch": "npm:^5.1.0"
+    "@11ty/eleventy-fetch": "npm:^5.1.2"
     deepmerge: "npm:^4.3.1"
-  checksum: 10c0/964b56e86df072f8a4770700b578e9e399a5ad2c9daf3fb5431f931edcb01fd673a0025776436a995829478a0601e8188bfcbc0ebf300256992853b3acce0773
+  checksum: 10c0/a16eb96c4911520fc6c24c78ce15a7565feb6b535a857ce2dff13bc9b1496f9a2a6eca9dd083aad76f4a6feead4ad7b5fe765e182d2c5c43565c26354fd54ca8
   languageName: node
   linkType: hard
 
@@ -1603,22 +1616,22 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eleventy-plugin-vimeo-embed@npm:^1.4.0":
+"eleventy-plugin-vimeo-embed@npm:1.4.0":
   version: 1.4.0
   resolution: "eleventy-plugin-vimeo-embed@npm:1.4.0"
   checksum: 10c0/a959864524fe3d751779315428ef97b9ab282ee7c1ddee5dc4215fdcd7c1af29c466a6c3ab0046291d62335021f67ba7ccbcdc8fade8cc65827f337df17de58a
   languageName: node
   linkType: hard
 
-"eleventy-plugin-youtube-embed@npm:^1.13.1":
-  version: 1.13.1
-  resolution: "eleventy-plugin-youtube-embed@npm:1.13.1"
+"eleventy-plugin-youtube-embed@npm:1.13.2":
+  version: 1.13.2
+  resolution: "eleventy-plugin-youtube-embed@npm:1.13.2"
   dependencies:
-    "@11ty/eleventy-fetch": "npm:^5.1.0"
+    "@11ty/eleventy-fetch": "npm:^5.1.2"
     deepmerge: "npm:^4.3.1"
     lite-youtube-embed: "npm:^0.3.4"
     string-replace-async: "npm:^3.0.2"
-  checksum: 10c0/ea953061b328458d1d70e68a75428931d0d4feb807e1dbacffbf844756d5301d4377d70204a00eb324bbc45c1639905f2f49605ebea72569064a915f783d197f
+  checksum: 10c0/66acfc0c415572e0ab66ce9ef6e02fecbcc47e8cd4f6ff5ded30a44ffa23fd6e28c12327e8845a339a3971eae2859652c3d4b4e6571b36c0c3f2c54267d4e0ca
   languageName: node
   linkType: hard
 
@@ -1919,6 +1932,13 @@ __metadata:
   version: 3.3.3
   resolution: "flatted@npm:3.3.3"
   checksum: 10c0/e957a1c6b0254aa15b8cce8533e24165abd98fadc98575db082b786b5da1b7d72062b81bfdcd1da2f4d46b6ed93bec2434e62333e9b4261d79ef2e75a10dd538
+  languageName: node
+  linkType: hard
+
+"flatted@npm:^3.4.2":
+  version: 3.4.2
+  resolution: "flatted@npm:3.4.2"
+  checksum: 10c0/a65b67aae7172d6cdf63691be7de6c5cd5adbdfdfe2e9da1a09b617c9512ed794037741ee53d93114276bff3f93cd3b0d97d54f9b316e1e4885dde6e9ffdf7ed
   languageName: node
   linkType: hard
 
@@ -2464,7 +2484,7 @@ __metadata:
     autoprefixer: "npm:^10.4.27"
     clean-css: "npm:^5.3.3"
     dotenv: "npm:^17.3.1"
-    eleventy-plugin-embed-everything: "npm:^1.21.1"
+    eleventy-plugin-embed-everything: "npm:^1.21.2"
     eleventy-plugin-time-to-read: "npm:^1.3.0"
     html-minifier-terser: "npm:^7.2.0"
     luxon: "npm:^3.7.2"
@@ -3591,7 +3611,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"regex@npm:^6.0.1":
+"regex@npm:^6.1.0":
   version: 6.1.0
   resolution: "regex@npm:6.1.0"
   dependencies:
