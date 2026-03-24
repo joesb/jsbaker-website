@@ -3,7 +3,7 @@ import CleanCSS from "clean-css";
 import postCSS from "postcss";
 import autoprefixer from "autoprefixer";
 import UglifyJS from "uglify-js";
-import pluginRss from "@11ty/eleventy-plugin-rss";
+import rssPlugin from "@11ty/eleventy-plugin-rss";
 import eleventyNavigationPlugin from "@11ty/eleventy-navigation";
 import Image from "@11ty/eleventy-img";
 import { eleventyImageOnRequestDuringServePlugin } from "@11ty/eleventy-img";
@@ -28,7 +28,7 @@ import bookshopOrg from "./src/_data/bookshopOrg.js";
 
 export default async function(eleventyConfig) {
 
-  eleventyConfig.addPlugin(pluginRss);
+  eleventyConfig.addPlugin(rssPlugin);
   eleventyConfig.addPlugin(eleventyNavigationPlugin);
   eleventyConfig.addPlugin(timeToRead, {
     speed: '850 characters per minute',
