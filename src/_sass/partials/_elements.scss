@@ -1,7 +1,7 @@
 @use "sass:color";
 @use "../common/base-variables" as bvar;
 @use "../common/variables" as var;
-@use "../tools/px-to-rem";
+@use "../tools/px-to-rem" as p2r;
 
 /* ==========================================================================
 ELEMENTS
@@ -73,7 +73,9 @@ ELEMENTS
     --font-size-fluid-01: clamp(#{var.$h4-font-size-mobile}, 1.75vw, #{var.$h3-font-size});
     --font-size-fluid-21: clamp(#{var.$h2-font-size-mobile}, 2.5vw, #{var.$h2-font-size});
     --font-size-fluid-3: clamp(#{var.$h1-font-size-mobile}, 4vw, #{var.$h1-font-size});
-    --font-size-fluid-4: clamp(#{var.$h1-lg-font-size-mobile}, 6vw, #{var.$h1-lg-font-size});
+    --font-size-fluid-4: clamp(#{var.$h1-lg-font-size-mobile}, 5vw, #{var.$h1-lg-font-size});
+    --font-size-fluid-5: clamp(#{p2r.px-to-rem(56px)}, 7vw, #{p2r.px-to-rem(72px)});
+    --font-size-fluid-6: clamp(#{p2r.px-to-rem(64px)}, 7vw, #{p2r.px-to-rem(96px)});
 
     --size-content-1-1: 30ch;
     --size-content-1-2: 35ch;
@@ -127,7 +129,7 @@ ELEMENTS
     ul,
     ol {
       margin-block-end: 1rem;
-      padding-left: px-to-rem.px-to-rem(40px);
+      padding-left: p2r.px-to-rem(40px);
   
       ul,
       ol {
@@ -140,7 +142,7 @@ ELEMENTS
       }
   
       hr {
-        height: px-to-rem.px-to-rem(1px);
+        height: p2r.px-to-rem(1px);
         border: none;
       }
     }
@@ -183,6 +185,40 @@ blockquote {
   margin-block: var(--size-fluid-2);
   padding-block: 0;
   font-style: italic;
+
+  &.bq {
+    position: relative;
+    border-inline-start-width: 0;
+    padding-inline: var(--size-6);
+
+    &::before,
+    &::after {
+      display: inline-block;
+      position: absolute;
+      font-size: var(--font-size-fluid-6);
+      font-weight: bold;
+      color: var(--surface-teal);
+    }
+
+    &:before {
+      content: '\201C';
+      top: 0;
+      left: -4px;
+    }
+
+    &:not(.bq-f) {
+      &::after {
+        content: '\201D';
+        bottom: 0;
+        right: 0;
+      }
+    }
+
+    >* {
+      font-size: var(--font-size-fluid-1);
+      line-height: var(--font-lineheight-2) !important;
+    }
+  }
 
   &.bq-alt{ 
     border-inline-start-width: 0;
