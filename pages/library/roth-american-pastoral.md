@@ -1,6 +1,6 @@
 ---
 title: "American Pastoral, by Philip Roth"
-date: 2026-03-07T07:33:04Z
+date: 2026-03-25T17:33:04Z
 layout: page-library.njk
 promoted: true
 order: -1

@@ -4,7 +4,7 @@ description: |
   Yeah, sure, new books are great, but do you ever read old books?
   
   Let's pick one off the shelf.
-date: 2026-03-01T18:04:10Z
+date: 2026-03-25T17:43:04Z
 layout: list-library.njk
 hideDescriptions: false
 promoted: false
