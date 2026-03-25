@@ -110,7 +110,7 @@ A few months afterwards, Zuckerman is at his high school reunion but The Swede d
 
 Zuckerman knew nothing about either Seymour Levov's cancer, or his daughter, the domestic terrorist, and is devastated. He begins writing about The Swede, initially imagining the life he lived, then actually researching what happened, and his daughter …
 
-{% ImgFigure "[Seymour 'Swede' Masin](https://en.wikipedia.org/wiki/Swede_Masin){target=_blank rel='noopener noreferrer'} was the inspiration for Swede Levov, here with his wife Estelle", "content-canvas-item-full-right content-canvas-item--span-4 rt-padding-inline-md" %}![Seymour "Swede" Masin, the inspiration for Swede Levov, with his wife Estelle](/static/images/oldbooks/roth-american-pastoral-swede-masin.jpg){.picture-rounded .picture-outline eleventy:widths="200,500"}{% endImgFigure %}
+{% ImgFigure "[Seymour 'Swede' Masin](https://en.wikipedia.org/wiki/Swede_Masin){target=_blank rel='noopener noreferrer'} was the inspiration for Swede Levov, here with his wife Estelle. Picture: [Robert G Masin](https://swedethebook.blogspot.com/2009/08/what-happened-to-me.html){target=_blank rel='noopener noreferrer'} for his biography, *Swede: Weequahic’s Gentle Giant*.", "content-canvas-item-full-right content-canvas-item--span-4 rt-padding-inline-md" %}![Seymour "Swede" Masin, the inspiration for Swede Levov, with his wife Estelle](/static/images/oldbooks/roth-american-pastoral-swede-masin.jpg){.picture-rounded .picture-outline eleventy:widths="200,500"}{% endImgFigure %}
 
 > … who transports him out of the longed-for American pastoral and into everything that is its antithesis and its enemy, into the fury, the violence, and the desperation of the counterpastoral – into the indigenous American berserk.
 > *pg. 86*{.small}
