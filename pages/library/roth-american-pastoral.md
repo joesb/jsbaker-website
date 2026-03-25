@@ -134,6 +134,9 @@ Ewan McGregor chose to adapt the novel for the big screen for his [directorial d
 
 Adapting literary classics comes with [something of a curse](https://www.theguardian.com/film/2016/oct/20/american-pastoral-film-ewan-mcgregor-philip-roth){target=_blank rel="noopener noreferrer"}, maybe.
 
+[Get Dr B's Library direct to your inbox](#newsletter-modal){.open-modal .single-meta-button .single-meta-button-narrow .margin-block-lg rel="modal:open" data-modal}
+{.center}
+
 ---
 
 The book was published in 1997, and Philip Roth won the Pulitzer Prize with *American Pastoral* in 1998. This book along with his other astonishing writing put him amongst the greatest of American writers.
