@@ -287,3 +287,8 @@
   @include mx.border(block-end, 5px);
 }
 
+@include rt.respond-to('large') {
+  .rt-padding-inline-md {
+    padding-inline: var(--size-3) !important;
+  }  
+}

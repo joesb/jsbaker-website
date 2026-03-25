@@ -2,7 +2,7 @@
 title: Joe Baker
 description: Writer's journal for J S Baker, a writer based in Birmingham, UK — my writing projects, and the reading and thinking that supports them.
 pageTitle: Writer
-date: 2026-03-07T06:53:10Z
+date: 2026-03-25T17:44:04Z
 eleventyNavigation:
   key: Home
 layout: home.njk
