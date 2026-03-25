@@ -13,7 +13,7 @@ page:
   class: "page--with-hero dr-bs-library dr-bs-library--page"
 image:
   path: /static/images/oldbooks/roth-american-pastoral.avif
-  alt: "Philip Roth, reading American Pastoral"
+  alt: "Philip Roth, American Pastoral"
   class:
     - image-obj-cover
     - image-darken-50
