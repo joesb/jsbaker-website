@@ -43,7 +43,7 @@ How can you do that, Mr Roth? Oh, because you're a Pulitzer Prize winning author
 
 WHAT?
 
-When I was at school, I was taught that sentences in English work a certain way. Subject–Verb—Object. The verb has to match the subject. Those were the rules.
+When I was at school, I was taught that sentences in English work a certain way. Subject–Verb–Object. The verb has to match the subject. Those were the rules.
 
 But, no for this book, not for you Philip Roth, those rules don't apply here. One of the most seminal works of fiction *ever* starts with a sentence that's not even a sentence.
 
