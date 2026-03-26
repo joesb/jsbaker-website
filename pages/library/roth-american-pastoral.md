@@ -29,7 +29,17 @@ bookshopOrg:
   link: https://uk.bookshop.org/a/17006/9781784875541
   themeList: |
     <script src="https://uk.bookshop.org/widgets.js" data-type="list" data-list-slug="dr-b-s-great-american-novels-list"></script>
-          
+redirectFrom:
+  - /roth-american-pastoral/
+  - /roth-american-pastoral
+  - /american-pastoral/
+  - /american-pastoral
+  - /americanpastoral/
+  - /americanpastoral
+  - /library/american-pastoral/
+  - /library/american-pastoral
+  - /library/americanpastoral/
+  - /library/americanpastoral  
 ---
 
 What a novel. What a way to start.
