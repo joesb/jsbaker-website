@@ -25,7 +25,7 @@ styles:
     <div class="home-layout__item home-layout__item--right">
       <div class="home-layout__item__inner">
         <a href="/about/">
-        {% image image.path, image.alt, image.class, image.pictureClass.page, "(min-width: 30em) 50vw, 100vw", [300, 600] %}
+        {% image image.path, image.alt, image.class, image.pictureClass.page, 'fetchpriority="high" loading="eager"', "auto", [300, 600] %}
         </a>
       </div>
     </div>
