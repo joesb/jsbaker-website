@@ -69,6 +69,12 @@ export default async function(eleventyConfig) {
     // optional, output image formats
     formats: ["webp", "jpeg"],
     // formats: ["auto"],
+    sharpWebpOptions: {
+      quality: 67
+    },
+    sharpJpegOptions: {
+      quality: 67
+    },
 
     // optional, output image widths
     widths: [1980, 1200, 800, 500, 300],
