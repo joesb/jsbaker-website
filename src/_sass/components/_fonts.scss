@@ -23,14 +23,13 @@
   font-display: swap;
   src: url(/static/fonts/nunito_sans/NunitoSans-Italic-VariableFont_YTLC,opsz,wdth,wght.ttf) format('woff2');
 }
-/* cyrillic-ext */
 @font-face {
   font-family: 'Nunito Sans';
   font-style: normal;
   font-weight: 300;
   font-stretch: 100%;
   font-display: swap;
-  src: url(/static/fonts/nunito_sans/NunitoSans-VariableFont_YTLC,opsz,wdth,wght) format('woff2');
+  src: url(/static/fonts/nunito_sans/NunitoSans-VariableFont_YTLC,opsz,wdth,wght.ttf) format('woff2');
 }
 @font-face {
   font-family: 'Nunito Sans';
@@ -38,7 +37,7 @@
   font-weight: 500;
   font-stretch: 100%;
   font-display: swap;
-  src: url(/static/fonts/nunito_sans/NunitoSans-VariableFont_YTLC,opsz,wdth,wght) format('woff2');
+  src: url(/static/fonts/nunito_sans/NunitoSans-VariableFont_YTLC,opsz,wdth,wght.ttf) format('woff2');
 }
 @font-face {
   font-family: 'Nunito Sans';
@@ -46,7 +45,7 @@
   font-weight: 700;
   font-stretch: 100%;
   font-display: swap;
-  src: url(/static/fonts/nunito_sans/NunitoSans-VariableFont_YTLC,opsz,wdth,wght) format('woff2');
+  src: url(/static/fonts/nunito_sans/NunitoSans-VariableFont_YTLC,opsz,wdth,wght.ttf) format('woff2');
 }
 
 /* PT Serif */
@@ -62,5 +61,5 @@
   font-style: normal;
   font-weight: 700;
   font-display: swap;
-  src: url(https://fonts.gstatic.com/s/pt_serif/PTSerif-Bold) format('woff2');
+  src: url(https://fonts.gstatic.com/s/pt_serif/PTSerif-Bold.ttf) format('woff2');
 }
