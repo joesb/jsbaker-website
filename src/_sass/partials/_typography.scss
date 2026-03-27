@@ -94,6 +94,7 @@ h2,
 h3,
 .h3-style {
   font-size: var(--font-size-fluid-1);
+  max-inline-size: var(--size-header-3);
 }
 //   font-size: $h3-font-size-mobile;
 //   line-height: $h3-line-height-mobile;
@@ -111,11 +112,13 @@ h3,
 h4,
 .h4-style {
   font-size: var(--font-size-fluid-01);
+  max-inline-size: var(--size-header-3);
 }
 
 h5,
 .h5-style {
   font-size: var(--font-size-fluid-0);
+  max-inline-size: var(--size-header-3);
 }
 
 //   font-size: $h4-font-size-mobile;

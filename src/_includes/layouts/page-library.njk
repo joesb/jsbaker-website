@@ -132,12 +132,12 @@ scripts:
 {% endif %}
 
 {% if bookshopOrg.themeList %}
-  <div class="layout-affiliate margin-block-lg padding-block-lg content-canvas-item-wide">
-    <h3>Like this book? Well, you might also like:</h3>
+  <aside class="layout-affiliate margin-block-lg padding-block-lg content-canvas-item-wide">
+    <h2 class="h3-style">Like this book? Well, you might also like:</h2>
     <div class="bookshop-org-widget bookshop-org-widget--list margin-block-vlg">
       {{ bookshopOrg.themeList | safe }}
     </div>
-  </div>
+  </aside>
 {% endif %}
 
 {% include "layouts/components/newsletter-modal.njk" %}
