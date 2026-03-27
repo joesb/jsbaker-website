@@ -1,8 +1,8 @@
     <ul class="index-list">
     {% set cls = cycler("odd", "even") %}
     {% set sze = cycler("large","small") %}
-    {% set imgSizes = [300, 650, 1100] %}
     {% for item in items %}
+      {% set imgSizes = [300, 450, 650] %}
       {% set vr = cls.next() %}
       {% if loop.index != 1 and vr == "even" %}
       {% set trash = sze.next() %}
@@ -42,6 +42,7 @@
           {% set imgExtras = '' %}
         {% if loop.index == 1 %}
           {% set imgExtras = 'fetchpriority="high" loading="eager"' %}
+          {% set imgSizes = [300, 450, 650, 1100] %}
         {% endif %}
           {% image item.data.image.path, item.data.image.alt, item.data.image.class, item.data.image.pictureClass.list, imgExtras, 'auto', imgSizes %}
         {% endif %}
