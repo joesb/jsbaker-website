@@ -19,7 +19,7 @@ $eerie-black: rgba(28, 29, 33, 100%);         // #1C1D21
 $eerie-black-light: color.adjust($eerie-black, $lightness: 20%);
 $eerie-black-pale: color.adjust($eerie-black, $lightness: 80%);
 $english-violet: rgba(74, 64, 99, 100%);      // #4A4063
-$dark-cyan: rgba(85, 134, 140, 100%);         // #55868C
+$dark-cyan: rgba(76, 121, 126, 100%);         // #4c797e
 $french-rose: rgba(140, 86, 114, 100%);       // #8C5672
 
 $english-violet-darker: color.adjust($english-violet, $lightness: -10%);

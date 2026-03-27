@@ -12,7 +12,7 @@
 @use "tools/respond-to";
 
 .home-layout__item--dark-cyan {
-  background-color: variables.$dark-cyan;
+  background-color: var(--color-dark-cyan);
   color: var(--surface-1);
 }
 
