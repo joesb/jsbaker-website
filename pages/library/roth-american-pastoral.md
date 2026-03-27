@@ -142,7 +142,7 @@ It's no surprise that *American Pastoral* has not been readily adapted for the s
 
 Ewan McGregor chose to adapt the novel for the big screen for his [directorial debut, released in 2016](https://www.imdb.com/title/tt0376479/){target=_blank rel="noopener noreferrer"}, though the [critical reviews were less than overwhelming](https://www.metacritic.com/movie/american-pastoral/){target=_blank rel="noopener noreferrer"}.
 
-<iframe class="margin-block-vlg" width="560" height="315" src="https://www.youtube.com/embed/079zFCh81L4?si=BnCc-ToSMYYHdwMa" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe title="Trailer for 2016 film of American Pastoral — YouTube video player" class="margin-block-vlg" width="560" height="315" src="https://www.youtube.com/embed/079zFCh81L4?si=BnCc-ToSMYYHdwMa" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 Adapting literary classics comes with [something of a curse](https://www.theguardian.com/film/2016/oct/20/american-pastoral-film-ewan-mcgregor-philip-roth){target=_blank rel="noopener noreferrer"}, maybe.
 
