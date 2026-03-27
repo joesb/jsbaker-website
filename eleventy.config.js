@@ -96,7 +96,7 @@ export default async function(eleventyConfig) {
   });
 
   // Return responsive images
-  eleventyConfig.addShortcode("image", async function(src, alt, cls = [], pictureCls = "", sizes = "auto", widths = [300, 600, 1000, 1980]) {
+  eleventyConfig.addShortcode("image", async function(src, alt, cls = [], pictureCls = "", extras = "", sizes = "auto", widths = [300, 600, 1000, 1980]) {
     if(alt === undefined) {
       // You bet we throw an error on missing alt (alt="" works okay)
       throw new Error(`Missing \`alt\` on responsiveimage from: ${src}`);
@@ -104,7 +104,7 @@ export default async function(eleventyConfig) {
 
     let imgClass = cls.length ? cls.map(s => `.${s}`).join(' ') : '';
 
-    let content = `![${alt}](${src}){${imgClass} eleventy:widths="${widths.join(',')}" eleventy:pictureattr:class="${pictureCls}"}`;
+    let content = `![${alt}](${src}){${imgClass} eleventy:widths="${widths.join(',')}" eleventy:pictureattr:class="${pictureCls}" ${extras}}`;
 
     content = markdownLibrary.renderInline(content);
 

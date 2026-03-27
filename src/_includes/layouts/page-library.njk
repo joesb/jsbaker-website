@@ -34,7 +34,8 @@ scripts:
 
   {% if image.path %}
       <figure class="{{ image.figureClass.page }}">
-      {% image image.path, image.alt, image.class, image.pictureClass.page %}
+      {% image image.path, image.alt, image.class, image.pictureClass.page, ' fetchpriority="high" loading="eager"' %}
+      {# {% Markdown %}![{{ image.alt }}]({{ image.path }}){% endMarkdown %} #}
       {% if image.caption or image.credit %}
       <figcaption>{{ image.caption | safe }}{% if image.credit and image.caption %} | {% endif %}{% if image.credit %}{{ image.credit | safe }}{% endif %}</figcaption>
       {% endif %}
