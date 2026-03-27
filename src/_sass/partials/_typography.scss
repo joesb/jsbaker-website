@@ -1,6 +1,7 @@
 @use "../common/variables";
 @use "../tools/mixins";
 @use "../tools/px-to-rem";
+@use "../components/fonts";
 
 /* ==========================================================================
 TYPOGRAPHY
@@ -9,7 +10,7 @@ TYPOGRAPHY
 p,
 .body-style {
   width: 100%;
-  font-family: variables.$primary-font;
+  font-family: var(--font-primary);
   font-size: var(--font-size-fluid-01);
   font-weight: variables.$base-font-weight-regular;
   line-height: var(--font-lineheight-3);
@@ -215,7 +216,7 @@ h5,
 .section-header__text {
   font-size: px-to-rem.px-to-rem(31px);
   line-height: px-to-rem.px-to-rem(57px);
-  font-family: variables.$primary-font;
+  font-family: var(--font-primary);
   margin: 0;
   position: relative;
   text-align: left;
@@ -242,7 +243,7 @@ h5,
 }
 
 .caption {
-  font-family: variables.$primary-font;
+  font-family: var(--font-primary);
   font-style: normal;
   font-weight: normal;
   font-size: px-to-rem.px-to-rem(12px);

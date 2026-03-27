@@ -82,7 +82,11 @@ ELEMENTS
 
     // --gradient-6: conic-gradient(from 90deg at bottom right, black, white);
     
-    font-family: var.$primary-font;
+    --font-primary:  #{var.$primary-font};
+    --font-secondary: #{var.$secondary-font};
+    --font-headings: #{var.$headings-font};
+
+    font-family: var(--font-primary);
     font-size: bvar.$root-font-size;
     font-weight: var.$base-font-weight-regular;
     line-height: var.$base-line-height;
