@@ -33,7 +33,7 @@ scripts:
 ---
 
   {% if image.path %}
-      <figure class="{{ image.figureClass.page }} item-fade-in item-fade-in-1-5">
+      <figure class="{{ image.figureClass.page }}">
       {% image image.path, image.alt, image.class, image.pictureClass.page %}
       {% if image.caption or image.credit %}
       <figcaption>{{ image.caption | safe }}{% if image.credit and image.caption %} | {% endif %}{% if image.credit %}{{ image.credit | safe }}{% endif %}</figcaption>
@@ -50,7 +50,7 @@ scripts:
 {% endfor %}
 
   {% if (description or book.summary) and not hideDescription %}
-  <div class="page__summary site-content--surface-dark site-content--surface-violet{% if page.class %}{% if page.class.includes('page--summary--wide') %} content-canvas-item-full content-canvas site-content--small-padding{% elif page.class.includes('page--with-hero') %} content-canvas-item-full content-canvas site-content site-content--zero-spacing{% else %} content-canvas-item-wide-left{% endif %}{% endif %}{% if tags | hasTag('#writing') and page.class %}{% if summary.class %} {{ summary.class }}{% elif page.class.includes('page--writing--light') %} site-content--surface-black-light site-content--surface-dark{% endif %}{% endif %} item-fade-in item-fade-in-1-5 item-fade-in-delay-sm">
+  <div class="page__summary site-content--surface-dark site-content--surface-violet{% if page.class %}{% if page.class.includes('page--summary--wide') %} content-canvas-item-full content-canvas site-content--small-padding{% elif page.class.includes('page--with-hero') %} content-canvas-item-full content-canvas site-content site-content--zero-spacing{% else %} content-canvas-item-wide-left{% endif %}{% endif %}{% if tags | hasTag('#writing') and page.class %}{% if summary.class %} {{ summary.class }}{% elif page.class.includes('page--writing--light') %} site-content--surface-black-light site-content--surface-dark{% endif %}{% endif %}">
 
     {% if tags | hasTag('#writing') %}
     <div class="metadata{% if page.class and (page.class.includes('page--with-hero') or page.class.includes('page--summary--wide')) %} content-canvas-item-wide-left{% endif %}">
@@ -66,7 +66,7 @@ scripts:
       </div>
     </div>
     {% endif %}
-    <div class="page__summary__content{% if page.class and (page.class.includes('page--with-hero') or page.class.includes('page--summary--wide')) %} content-canvas-item-wide-left{% endif %} item-fade-in item-fade-in-1-5 item-fade-in-delay-sm">
+    <div class="page__summary__content{% if page.class and (page.class.includes('page--with-hero') or page.class.includes('page--summary--wide')) %} content-canvas-item-wide-left{% endif %}">
       {% if book.summary %}
       {{ ["Have you ever read ", book.summary, "?"] | join | markdown | safe }}
       {% else %}
@@ -77,7 +77,7 @@ scripts:
   {% endif %}
 
   {% if metadata.show !== false %}
-  <div class="metadata page__metadata item-fade-in item-fade-in-1-5 item-fade-in-delay-md">
+  <div class="metadata page__metadata">
     {% if tags | hasTag('#writing', false) %}
     <div class="metadata__tags">
       {%- for topic in pageTags %}
@@ -119,12 +119,12 @@ scripts:
   </div>
   {% endif %}
 
-  <div class="layout-content item-fade-in item-fade-in-1-5 item-fade-in-delay-mdl content-canvas-item-full content-canvas">
+  <div class="layout-contentl content-canvas-item-full content-canvas">
     {{ content | safe }}
   </div>
 
 {% if bookshopOrg.isbn and bookshopOrg.widgetChoose != false %}
-  <div class="layout-affiliate item-fade-in item-fade-in-1-5 item-fade-in-delay-lg margin-block-vlg padding-block-start-vlg">
+  <div class="layout-affiliate margin-block-vlg padding-block-start-vlg">
     <div class="bookshop-org-widget bookshop-org-widget--{{ bookshopOrg.widgetChoose }}">
       {% bdoWidget bookshopOrg.isbn, bookshopOrg.widgetChoose %}
     </div>
@@ -132,7 +132,7 @@ scripts:
 {% endif %}
 
 {% if bookshopOrg.themeList %}
-  <div class="layout-affiliate item-fade-in item-fade-in-1-5 item-fade-in-delay-vlg margin-block-lg padding-block-lg content-canvas-item-wide">
+  <div class="layout-affiliate margin-block-lg padding-block-lg content-canvas-item-wide">
     <h3>Like this book? Well, you might also like:</h3>
     <div class="bookshop-org-widget bookshop-org-widget--list margin-block-vlg">
       {{ bookshopOrg.themeList | safe }}
