@@ -3,7 +3,7 @@ import CleanCSS from "clean-css";
 import postCSS from "postcss";
 import autoprefixer from "autoprefixer";
 import UglifyJS from "uglify-js";
-import rssPlugin from "@11ty/eleventy-plugin-rss";
+import pluginRss from "@11ty/eleventy-plugin-rss";
 import eleventyNavigationPlugin from "@11ty/eleventy-navigation";
 import Image from "@11ty/eleventy-img";
 import { eleventyImageOnRequestDuringServePlugin } from "@11ty/eleventy-img";
@@ -20,6 +20,7 @@ import embedEverything from "eleventy-plugin-embed-everything";
 import env from "./src/_data/env.js";
 import { minify } from "html-minifier-terser";
 import slugify from "slugify";
+import schema from "@quasibit/eleventy-plugin-schema";
 
 import path from 'path';
 import bookshopOrg from "./src/_data/bookshopOrg.js";
@@ -28,7 +29,7 @@ import bookshopOrg from "./src/_data/bookshopOrg.js";
 
 export default async function(eleventyConfig) {
 
-  eleventyConfig.addPlugin(rssPlugin);
+  eleventyConfig.addPlugin(pluginRss);
   eleventyConfig.addPlugin(eleventyNavigationPlugin);
   eleventyConfig.addPlugin(timeToRead, {
     speed: '850 characters per minute',
@@ -37,17 +38,19 @@ export default async function(eleventyConfig) {
   eleventyConfig.addPlugin(embedEverything);
   eleventyConfig.addFilter("debug", (content) => `<pre>${inspect(content)}</pre>`);
   eleventyConfig.addPlugin(eleventyImageOnRequestDuringServePlugin);
+
   eleventyConfig.addPlugin(EleventyHtmlBasePlugin, {
     // The base URL: defaults to Path Prefix
     // baseHref: eleventyConfig.pathPrefix,
 
     // But you could use a full URL here too:
-    // baseHref: env.baseUrl,
+    baseHref: env.baseUrl,
 
     // Comma separated list of output file extensions to apply
     // our transform to. Use `false` to opt-out of the transform.
     extensions: "html",
   });
+  eleventyConfig.addPlugin(schema);
 
   // Return active path attributes
   eleventyConfig.addShortcode('activepath', function (itemUrl, currentUrl) {
@@ -214,6 +217,28 @@ export default async function(eleventyConfig) {
   eleventyConfig.addFilter("isTag", (str, tag) => {
     return str === tag;
   });
+
+  // Trim trailing characters
+  eleventyConfig.addFilter('trimTrailingChars', (text, charToTrim = '/') => {
+    return trimTrailingChars(text, charToTrim);
+  });
+
+  // Trim trailing slashes
+  eleventyConfig.addFilter('trimTrailingSlash', (text) => {
+    return trimTrailingChars(text);
+  });
+
+  function trimTrailingChars(s, charToTrim) {
+    var regExp = new RegExp(charToTrim + "+$");
+    var result = s.replace(regExp, "");
+
+    return result;
+  }
+
+  // Date filter to convert date objects to ISO 8601 format
+  eleventyConfig.addFilter('iso8601', (dateObj) => {
+    return DateTime.fromJSDate(dateObj, { zone: 'utc' }).toISO()
+  })
 
   eleventyConfig.addFilter("readableDate", (dateObj, format, zone) => {
     // Formatting tokens for Luxon: https://moment.github.io/luxon/#/formatting?id=table-of-tokens

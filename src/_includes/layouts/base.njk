@@ -1,3 +1,23 @@
+---
+eleventyComputed:
+  meta:
+    site:
+      name: "{{ metadata.title }}"
+      description: "{{ metadata.summary }}"
+      url: "{{ metadata.url }}"
+      logo:
+        src: "{{ metadata.logo.src }}"
+        width: "{{ metadata.logo.width }}"
+        height: "{{ metadata.logo.height }}"
+    image:
+      src: "{% if image.social %}{{ metadata.url | trimTrailingSlash }}{% imageData image.social %}{% endif %}"
+    language: "{{ metadata.language }}"
+    creator:
+      person:
+        name: "{{ metadata.author.name }}"
+    title: "{% if meta.title %}{{ meta.title }}{% else %}{{ title }}{% endif %}"
+    description: "{% if meta.description %}{{ meta.description }}{% else %}{{ description }}{% endif %}"
+---
 <!doctype html>
 <html {% if section %} data-current="{{ section }}"{% endif %} lang="en">
 

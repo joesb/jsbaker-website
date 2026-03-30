@@ -30,6 +30,13 @@ scripts:
     - modal-newsletter.js
   external:
     - "https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"
+eleventyComputed:
+  meta:
+    author:
+      name: "{{ metadata.author.name }}"
+    published: "{{ date | iso8601 }}"
+    modified: "{% if changed %}{{ changed | iso8601 }}{% endif %}"
+    url: "{{ page.url | htmlBaseUrl }}"
 ---
 
   {% if image.path %}

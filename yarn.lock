@@ -785,6 +785,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@quasibit/eleventy-plugin-schema@npm:^1.13.0":
+  version: 1.13.0
+  resolution: "@quasibit/eleventy-plugin-schema@npm:1.13.0"
+  peerDependencies:
+    "@11ty/eleventy": ">=0.11.0"
+  checksum: 10c0/0cfec822c9918d1557131d0f781a941bde5f671b5cb2e2368c3af62db7c9b3a40b30bb2876afcb32c1ab132683120088cd1d3d2d6ed68f71a1b76616a79ce31c
+  languageName: node
+  linkType: hard
+
 "@rgrove/parse-xml@npm:^4.2.0":
   version: 4.2.0
   resolution: "@rgrove/parse-xml@npm:4.2.0"
@@ -2442,6 +2451,7 @@ __metadata:
     "@11ty/eleventy-img": "npm:^6.0.4"
     "@11ty/eleventy-navigation": "npm:^1.0.5"
     "@11ty/eleventy-plugin-rss": "npm:^3.0.0"
+    "@quasibit/eleventy-plugin-schema": "npm:^1.13.0"
     "@types/markdown-it": "npm:^14.1.2"
     autoprefixer: "npm:^10.4.27"
     clean-css: "npm:^5.3.3"

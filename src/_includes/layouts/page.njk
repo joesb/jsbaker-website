@@ -6,8 +6,14 @@ image:
   caption:
   figureClass:
     page:
+eleventyComputed:
+  meta:
+    author:
+      name: "{{ metadata.author.name }}"
+    published: "{{ date | iso8601 }}"
+    modified: "{% if changed %}{{ changed | iso8601 }}{% endif %}"
+    url: "{{ page.url | htmlBaseUrl }}"
 ---
-
 	{% if image.path %}
 			<figure class="{{ image.figureClass.page }}">
 			{% image image.path, image.alt, image.class, image.pictureClass.page, ' fetchpriority="high" loading="eager"' %}
