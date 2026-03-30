@@ -1,6 +1,13 @@
 ---
 layout: base.njk
 list: true
+eleventyComputed:
+  meta:
+    author:
+      name: "{{ metadata.author.name }}"
+    published: "{{ date | iso8601 }}"
+    modified: "{% if changed %}{{ changed | iso8601 }}{% endif %}"
+    url: "{{ page.url | htmlBaseUrl }}"
 ---
 
 	<div class="site-content site-content--zero-top-padding content-canvas">
