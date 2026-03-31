@@ -187,9 +187,14 @@ image:
       {% Markdown %}
 ### {{ month | monthNameFromNum }}{.content-canvas-item-wide .margin-block-vlg .heading-v-wide .h-underline}
       {% endMarkdown %}
+        <div class="reviewset reviewset--{{ reviews.reviewSet }} content-canvas-item-wide">
+      {% set cls = cycler("odd", "even") %}
         {% for review in reviewSet %}
-        {{ reviewItemMini(review) }}
+      <div class="reviewset-item reviewset-item--{{ cls.next() }}">
+    {{ reviewItemMini(review) }}
+        </div>
         {% endfor %}
+    </div>
       {% endfor %}
     {% endif %}
   {% else %}

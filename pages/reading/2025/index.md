@@ -22,6 +22,7 @@ image:
   figureClass:
     page: "content-canvas-item-full figure--hero"
 reviews:
+  reviewSet: true
   top:
     fiction:
       title: The Best Fiction of 2025
