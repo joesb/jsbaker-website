@@ -3,6 +3,7 @@ title: "Reading Recap, October 2023"
 description: "Reading further into the Autumn"
 layout: review.njk
 date: 2023-10-31
+order: 2
 promoted: false
 page:
   class: "page--with-hero"
@@ -30,6 +31,7 @@ reviews:
   list:
     - title: As I Lay Dying
       author: William Faulkner
+      month: 0
       urls:
         book: https://app.thestorygraph.com/books/e1ecc77d-59f0-43aa-befe-8721d1908e22
         cover: /static/images/source/books/faulkner-as-i-lay-dying.jpeg
@@ -63,6 +65,7 @@ reviews:
     - title: Novelist as a Vocation
       audiobook: yes
       author: Haruki Murakami
+      month: 0
       author_extras:
         - 
           name: Kotaro Watanabe
@@ -84,6 +87,7 @@ reviews:
   It's a riveting and detailed book, honest and self-effacing throughout. With its focus on the vocation of the author's life, it's fascinating, though I would like to have understood a bit more of his journey to becoming — I felt a bit of a gap between the 'before' and the 'now' of being a novelist that I would've liked to hear about a little more."
     - title: The French Lieutenant's Woman
       author: John Fowles
+      month: 0
       urls:
         book: https://app.thestorygraph.com/books/13990cd7-7a1d-4edc-8fe8-6949df70ff77
         cover: /static/images/source/books/fowles-the-french-lieutenants-woman.jpeg

@@ -1,7 +1,7 @@
 ---
 title: Reading
 description: Notes on my reading, and thoughts about reading.
-date: 2026-03-27T11:06:18Z
+date: 2026-03-31T16:06:18Z
 layout: list.njk
 eleventyNavigation:
   key: Reading
@@ -28,24 +28,8 @@ I'm currently reading:
 
 I've also just finished reading the latest draft (5th!) of my debut novel manuscript. It's now with a few beta readers, awaiting feedback.
 
-I'm on [The StoryGraph](https://app.thestorygraph.com/profile/joesb){target=_blank rel="noopener noreferrer"} and [GoodReads](https://www.goodreads.com/jsbaker){target=_blank rel="noopener noreferrer"}.{.smaller}
+I'm on [The StoryGraph](https://app.thestorygraph.com/profile/joesb){target=_blank rel="noopener noreferrer"} and [GoodReads](https://www.goodreads.com/jsbaker){target=_blank rel="noopener noreferrer"}.
 
-## Read in 2026{.h3-style}
+---
 
-- **March**
-  - Andrew Miller, *[The Land in Winter](https://app.thestorygraph.com/books/3ac5ce14-220a-41fe-89e1-0c672ac441db){target=_blank rel="noopener noreferrer"}*
-  - Adam Haslett, *[Mothers and Sons](https://app.thestorygraph.com/books/f1066816-082d-4c56-a17d-977d18c98b0a){target=_blank rel="noopener noreferrer"}*
-  - William Boyd, *[Gabriel's Moon](https://app.thestorygraph.com/books/2e62687e-b048-4102-a630-2ddfeedfb1e0){target=_blank rel="noopener noreferrer"}*
-- **February**
-  - Douglas Coupland, *[Microserfs](https://app.thestorygraph.com/books/28f9a686-f34c-4c5b-8497-eef360b53e4c){target=_blank rel="noopener noreferrer"}* *(re-read)*{.small}
-    - See my [Dr B's Library review of *Microserfs*](/library/coupland-microserfs/){.single-meta-forward} {.small}
-  - Elizabeth O'Connor, *[Whale Fall](https://app.thestorygraph.com/books/4abebb26-5e1a-4c07-8a98-6361edcdc189){target=_blank rel="noopener noreferrer"}*
-  - Ben Pester, *[The Expansion Project](https://uk.bookshop.org/a/17006/9781803512587){target=_blank rel="noopener noreferrer"}*
-  - Anne Michaels, *[Held](https://app.thestorygraph.com/books/2d4ba404-c998-4518-a846-1bad638d02d0){target=_blank rel="noopener noreferrer"}*
-  - Anne Tyler, *[The Accidental Tourist](https://app.thestorygraph.com/books/d01c49e2-1c5c-41a5-9cec-54438f5a9541){target=_blank rel="noopener noreferrer"}*
-- **January**
-  - Arundhati Roy, *[Mother Mary Comes To Me](https://app.thestorygraph.com/books/e1b64482-44ed-408d-adbf-254e289642d2){target=_blank rel="noopener noreferrer"}*
-  - John Banville, *[The Untouchable](https://app.thestorygraph.com/books/3f1c814b-f957-42e4-88cd-fc6a73fc8268){target=_blank rel="noopener noreferrer"}*
-  - Yanis Varoufakis, *[Technofeudalism: What Killed Capitalism](https://uk.bookshop.org/a/17006/9781529926095){target=_blank rel="noopener noreferrer"}*
-  - John le Carré, *[Tinker, Tailor, Soldier, Spy](https://app.thestorygraph.com/books/9991c463-0086-48ba-ad22-8bdc072d9499){target=_blank rel="noopener noreferrer"}* *(re-read)*{.small}
-    - See my [Dr B's Library review of *Tinker, Tailor*](/library/lecarre-tinker-tailor/){.single-meta-forward} {.small}
+[My reading for 2026](/reading/2026/){.single-meta-forward .bold}

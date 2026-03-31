@@ -4,7 +4,7 @@ description: "Reading into the Autumn"
 layout: page.njk
 date: 2023-09-30
 promoted: false
-order: 5
+order: 2
 page:
   class: "page--with-hero"
 tags:

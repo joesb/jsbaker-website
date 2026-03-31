@@ -4,7 +4,7 @@ description: "Prescient warning about gangster capitalism from a master of ficti
 layout: page.njk
 date: 2023-06-30
 promoted: false
-order: 4
+order: 2
 page:
   class: "page--with-hero"
 is_review: true
