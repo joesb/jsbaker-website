@@ -4,7 +4,7 @@ description: "A month of more holiday reading"
 layout: page.njk
 date: 2023-08-31
 promoted: false
-order: 0
+order: 2
 page:
   class: "page--with-hero"
 tags:

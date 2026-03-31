@@ -326,7 +326,8 @@ export default async function(eleventyConfig) {
   // Sort reading pieces by 'order' field
   eleventyConfig.addCollection('reading', (collection) => {
     var nav = collection.getFilteredByTag('#reading');
-    return sortByDate(nav).reverse();
+    return nav.sortBy((o) => {return [o.data.order, -o.data.date]});
+    // return sortByDate(nav).reverse();
   });
 
   // Sort reading old books pieces by 'order' field
@@ -398,6 +399,28 @@ export default async function(eleventyConfig) {
       else return 0;
     });
   }
+
+  eleventyConfig.addFilter('monthNameFromNum', (num) => {
+    num = Number(num);
+    if (!Number.isInteger(num)) {
+      throw new Error(`Invalid month number: ${num}. Must be an integer`);
+    }
+    let months = {
+      1:  "January",
+      2: "February",
+      3: "March",
+      4: "April",
+      5: "May",
+      6: "June",
+      7: "July",
+      8: "August",
+      9: "September",
+      10: "October",
+      11: "November",
+      12: "December"
+    };
+    return months[num];
+  });
 
   async function getPictureMarkup(src, alt, cls, pictureCls = "", sizes = "(min-width: 30em) 50vw, 100vw", widths = [300, 600, 1000, 1980]) {
     if(alt === undefined) {

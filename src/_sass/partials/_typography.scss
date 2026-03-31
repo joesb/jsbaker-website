@@ -40,6 +40,12 @@ h6,
   margin: 0;
   mix-blend-mode: normal;
   margin-block: 1.5rem 0.75rem;
+
+  &.h-underline {
+    border-bottom-width: 2px;
+    border-bottom-style: solid;
+    border-bottom-color: var(--color-brand-primary);
+  }
 }
 
 :where(h1,h2,h3,h4,h5,h6) {

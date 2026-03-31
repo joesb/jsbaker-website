@@ -88,7 +88,7 @@ image:
 {% endmacro %}
 
 {% macro reviewItemMini(review) %}
-<div class="review-item review-item-mini{% if review.urls.cover %} review-item-mini-with-cover{% endif %} review-key-data content-canvas-item-wide">
+<div class="review-item review-item-mini{% if review.urls.cover %} review-item-mini-with-cover{% endif %} review-key-data">
     <div class="review-item-title">
       <h3 class="heading-v-wide h4-style">
         <a href="{{ review.urls.book }}" rel="noopener noreferrer" target="_blank">{{ review.title }}</a>
@@ -99,22 +99,35 @@ image:
       </h3>
 
       {% if review.subtitle %}
-      <p class="bold headings-font">— {{ review.subtitle }}</p>
+      <p class="review-item-subtitle margin-block-start-nil bold headings-font">— {{ review.subtitle }}</p>
       {% endif %}
     </div>
-    <p class="review-item-author">
+    <p class="review-item-author margin-block-start-nil">
       <em>by {{ review.author }}</em><br/>
       {% if review.author_extras %}
       <em class="small">with {% for extra in review.author_extras %}{{ extra.name }} ({{ extra.role }}){% if not loop.last %}, {% endif %}{% endfor %}</em><br />
       {% endif %}
     </p>
-    {% if review.type %}
+    <div class="review-item-text">
+    {% if review.text %}
+      {% Markdown %}
+{{ review.text }}
+      {% endMarkdown %}
+    {% endif %}
+    </div>
+
+    {% if review.reread or review.type%}
     <div class="review-item-meta review-meta">
+      {% if review.reread %}
+        <em class="small">(re-read)</em>
+      {% endif %}
+
       {% if review.type %}
       <p class="review-meta--type">
         ({{ review.type }})
       </p>
       {% endif %}
+
     </div>
     {% endif %}
 
@@ -132,9 +145,9 @@ image:
 
   {% if reviews.top | length %}
     {% if reviews.top.fiction | length %}
-{% Markdown %}
+      {% Markdown %}
 ## {{ reviews.top.fiction.title | default("Best Fiction") }}{.content-canvas-item-wide}
-{% endMarkdown %}
+      {% endMarkdown %}
       {% for review in reviews.top.fiction.list %}
         {{ reviewItem(review) }}
 
@@ -146,9 +159,9 @@ image:
       {% endfor %}
     {% endif %}
     {% if reviews.top.nonFiction | length %}
-{% Markdown %}
+      {% Markdown %}
 ## {{ reviews.top.nonFiction.title | default("Best Non-Fiction") }}{.content-canvas-item-wide}
-{% endMarkdown %}
+      {% endMarkdown %}
       {% for review in reviews.top.nonFiction.list %}
         {{ reviewItem(review) }}
 
@@ -160,9 +173,9 @@ image:
       {% endfor %}
     {% endif %}
     {% if reviews.others | length %}
-{% Markdown %}
+      {% Markdown %}
 ## {{ reviews.others.title | default("The Rest") }}{.content-canvas-item-wide}
-{% endMarkdown %}
+      {% endMarkdown %}
 
 {% if reviews.others.text | length %}
 {% Markdown %}
@@ -170,20 +183,55 @@ image:
 {% endMarkdown %}
 {% endif %}
 
-      {% for review in reviews.others.list %}
-        {{ reviewItemMini(review) }}
+      {% for month, reviewSet in reviews.others.list | groupby("month") %}
+      {% Markdown %}
+### {{ month | monthNameFromNum }}{.content-canvas-item-wide .margin-block-vlg .heading-v-wide .h-underline}
+      {% endMarkdown %}
+        <div class="reviewset reviewset--{{ reviews.reviewSet }} content-canvas-item-wide">
+      {% set cls = cycler("odd", "even") %}
+        {% for review in reviewSet %}
+      <div class="reviewset-item reviewset-item--{{ cls.next() }}">
+    {{ reviewItemMini(review) }}
+        </div>
+        {% endfor %}
+    </div>
       {% endfor %}
     {% endif %}
   {% else %}
     {% set reviewsList = reviews.list %}
   {% endif %}
 
-  {% for review in reviewsList %}
-    
-    {{ reviewItem(review) }}
+{% if reviewsList %}
+{% if reviews.title or reviews.text %}
 
-    {% if not loop.last %}
-    <hr>
+{% if reviews.title | length %}
+<div class="content-canvas-item-wide margin-block-lg">
+    {% Markdown %}
+## {{ reviews.title }}
+    {% endMarkdown %}
+  {% endif %}
+
+  {% if reviews.text | length %}
+    {% Markdown %}
+{{ reviews.text }}
+    {% endMarkdown %}
+  {% endif %}
+</div>
+{% endif %}
+
+  {% for month, reviewSet in reviewsList | groupby("month") %}
+    {% if month > 0 %}
+      {% Markdown %}
+### {{ month | monthNameFromNum }}{.content-canvas-item-wide .margin-block-vlg .heading-v-wide .h-underline}
+      {% endMarkdown %}
     {% endif %}
+    <div class="reviewset reviewset--{{ reviews.reviewSet }} content-canvas-item-wide">
+      {% set cls = cycler("odd", "even") %}
+        {% for review in reviewSet %}
+      <div class="reviewset-item reviewset-item--{{ cls.next() }}">
+    {{ reviewItemMini(review) }}
+        </div>
+        {% endfor %}
+    </div>
   {% endfor %}
-
+{% endif %}

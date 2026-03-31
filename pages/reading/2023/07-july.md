@@ -4,7 +4,7 @@ description: "A bumper month of holiday reading"
 layout: page.njk
 date: 2023-07-31
 promoted: false
-order: 3
+order: 2
 page:
   class: "page--with-hero"
 tags:

@@ -4,7 +4,7 @@ description: "Since finishing my PhD I’ve read lots of fiction again. Here’s
 layout: page.njk
 date: 2018-11-02
 promoted: false
-# order: 3
+order: 2
 page:
   class: "page--with-hero"
 tags:

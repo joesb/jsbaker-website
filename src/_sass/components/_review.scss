@@ -1,5 +1,11 @@
 @use "../tools/respond-to" as rt;
 
+.review-item {
+  &:not(:last-of-type) {
+    margin-block-end: var(--size-9);
+  }
+}
+
 .review-meta--type {
   font-size: var(--font-size-fluid-00);
   margin-block-start: 0;
@@ -22,6 +28,10 @@
       .review-item-meta {
         grid-column: 1;
       }
+    
+      .review-item-text {
+          grid-column: 1 / span 2;
+      }
       .review-item-cover {
         grid-column: 2;
         grid-row: 1 / span 3;
@@ -30,42 +40,69 @@
 }
 
 @include rt.respond-to('medium') {
-    
+
+  .reviewset {
+    display: grid;
+    gap: 1.5rem 1rem;
+      
+    &.reviewset--true {
+      grid-template-columns: repeat(auto-fill, minmax(45%, auto));
+
+      > * {
+        &:not(.reviewset-item--odd) {
+          padding-inline-start: 1rem;
+          border-left: 1px solid var(--surface-black-pale);
+        }
+      }
+    }
+  }
+
   .review-item-mini {
     grid-template-columns: 2fr 3fr;
     margin-block-end: var(--size-5);
 
     .review-item-title {
       grid-column: 1;
-      grid-row: 1 / span 2;
 
       h3 {
         margin-block-start: var(--size-2);
       }
     }
 
+    .review-item-subtitle {
+      font-size: var(--font-size-fluid-00);
+    }
+
     .review-item-author,
+    .review-item-text {
+      grid-column: 1;
+    }
+
     .review-item-meta {
       margin-block-start:  var(--size-2);
       grid-column: 2;
+        grid-row: 2;
     }
 
 
 
     &.review-item-mini-with-cover {
-      grid-template-columns: minmax(auto, 120px) 1fr 2fr;
+      grid-template-columns: minmax(auto, 120px) 2fr 1fr;
       grid-template-rows: auto 1fr;
 
-      .review-item-title {
+      .review-item-title,
+      .review-item-author {
         grid-column: 2;
       }
-      .review-item-author,
+      .review-item-text {
+          grid-column: 2 / span 2;
+      }
       .review-item-meta {
         grid-column: 3;
       }
       .review-item-cover {
         grid-column: 1;
-        grid-row: 1 / span 2;
+        grid-row: 1 / span 3;
 
         .picture--block {
           margin-block: var(--size-1);
