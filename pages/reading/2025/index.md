@@ -382,7 +382,7 @@ reviews:
           cover: https://cdn.thestorygraph.com/ysqkps5yromen1ikxafbab2vets4
 ---
 
-I'm not a very fast reader at all, but still I managed to read 48 books in 2025 (my original aim target 30, so maybe low-balling it a bit, eh). Below are my favourites, in both fiction and non-fiction … plus the others as well.
+I'm not a very fast reader at all, but still I managed to read 48 books in 2025 (my original target was 30, so maybe low-balling it a bit, eh). Below are my favourites, in both fiction and non-fiction … plus the others as well.
 
 I keep track of my reading on [The StoryGraph](https://app.thestorygraph.com/){target=_blank rel="noopener noreferrer"} — a very nice independent alternative to GoodReads. You can find me over there at [@joesb](https://app.thestorygraph.com/profile/joesb){target=_blank rel="noopener noreferrer"}.
 
