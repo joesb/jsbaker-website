@@ -110,9 +110,7 @@ image:
     </p>
     <div class="review-item-text">
     {% if review.text %}
-      {% Markdown %}
-{{ review.text }}
-      {% endMarkdown %}
+      {{ review.text | markdown | safe }}
     {% endif %}
     </div>
 

@@ -179,11 +179,11 @@ h5,
 }
 
 .smaller {
-  font-size: var(--font-size-fluid-0);
+  font-size: var(--font-size-fluid-0) !important;
 }
 
 .small {
-  font-size: var(--font-size-fluid-000);
+  font-size: var(--font-size-fluid-000) !important;
   line-height: var(--font-lineheight-2) !important;
 }
 

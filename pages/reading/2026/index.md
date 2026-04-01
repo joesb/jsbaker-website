@@ -2,7 +2,7 @@
 title: "Reading Books in 2026"
 description: "The books I've read in 2026, fiction and non-fiction … plus the other stuff as well"
 layout: review.njk
-date: 2026-03-31T16:30:15Z
+date: 2026-03-31T16:35:15Z
 order: 1
 page:
   class: "page--with-hero"
@@ -98,6 +98,8 @@ reviews:
       urls:
         book: https://app.thestorygraph.com/books/e1b64482-44ed-408d-adbf-254e289642d2
         cover: https://cdn.thestorygraph.com/vgtntyw9v2ibyxgm9avq5fax54j2
+      text: |
+        I was surprised — I was actually a bit disappointed. I hoped for more self-reflection, but felt I got only a description of an uncompleted life.
     -
       author: Yanis Varoufakis
       title: "Technofeudalism: What Killed Capitalism"
@@ -106,6 +108,8 @@ reviews:
       urls: 
         book: https://uk.bookshop.org/a/17006/9781529926095
         cover: https://cdn.thestorygraph.com/w5tnark3plxkxqd1sx055prnjqza
+      text: |
+        An important examination of the rise of the tech barons to dominate our modern world.
     -
       author: John Banville
       title: The Untouchable
@@ -114,11 +118,15 @@ reviews:
       urls:
         book: https://app.thestorygraph.com/books/3f1c814b-f957-42e4-88cd-fc6a73fc8268
         cover: https://cdn.thestorygraph.com/135zjua389hhv8k1t76tqwlgwdec
+      text: |
+        A great fictionalisation of the [Cambridge Five](https://spyscape.com/article/the-cambridge-spy-scandal-that-haunts-britain){target=_blank rel="noopener noreferrer"} and excellent companion for *Tinker, Tailor*.
     -
       author: John le Carré
       title: Tinker, Tailor, Soldier, Spy
       type: Fiction
       text: |
+        One of my all-time faves.
+
         See my [Dr B's Library review of *Tinker, Tailor*](/library/lecarre-tinker-tailor/){.single-meta-forward} {.small}
       reread: true
       month: 1

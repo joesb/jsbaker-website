@@ -523,7 +523,7 @@ export default async function(eleventyConfig) {
     return ril ? markdownLibrary.renderInline(content) : markdownLibrary.render(content);
   });
 
-  eleventyConfig.addPairedShortcode("Markdown", function(content, ril = false) {
+  eleventyConfig.addPairedShortcode("Markdown", (content, ril = false) => {
     return ril ? markdownLibrary.renderInline(content) : markdownLibrary.render(content);
   });
 

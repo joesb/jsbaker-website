@@ -13,6 +13,12 @@
   font-style: italic;
 }
 
+.review-item-text {
+  > p {
+    font-size: var(--font-size-fluid-00);
+  }
+}
+
 .review-item-mini {
     display: grid;
     align-content: start;
