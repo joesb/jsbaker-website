@@ -133,7 +133,7 @@ image:
     <div class="review-item-cover">
       {% set imagePath = review.urls.cover %}
       {% set imageAlt = [review.title, " book cover"] | join %}
-      <a href="{{ review.urls.book }}" rel="noopener noreferrer" target="_blank" class="content-canvas-item-wide-right content-canvas-item-right--span-2">{% ImgFigure "", image.figClasses %}![{{ imageAlt }}]({{ imagePath }}){.image-rounded eleventy:widths="80,120" eleventy:formats="webp,jpg"}{% endImgFigure %}</a>
+      <a href="{{ review.urls.book }}" rel="noopener noreferrer" target="_blank" class="content-canvas-item-wide-right content-canvas-item-right--span-2">{% ImgFigure "", image.figClasses %}![{{ imageAlt }}]({{ imagePath }}){.image-rounded eleventy:widths="100,150" eleventy:formats="webp,jpg"}{% endImgFigure %}</a>
     </div>
     {% endif %}
 </div>

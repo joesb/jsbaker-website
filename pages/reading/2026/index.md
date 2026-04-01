@@ -2,7 +2,7 @@
 title: "Reading Books in 2026"
 description: "The books I've read in 2026, fiction and non-fiction … plus the other stuff as well"
 layout: review.njk
-date: 2026-03-31T16:35:15Z
+date: 2026-03-31T16:38:15Z
 order: 1
 page:
   class: "page--with-hero"
@@ -34,6 +34,8 @@ reviews:
       urls:
         book: https://app.thestorygraph.com/books/3ac5ce14-220a-41fe-89e1-0c672ac441db
         cover: https://cdn.thestorygraph.com/cdjdjr9h1t9aj5wtgcxil78di2dg
+      text: |
+        Really enjoyed this, my first Andrew Miller — desperately sad stories, but a great weaving of four perspectives of the same things.
     -
       title: Mothers and Sons
       author: Adam Haslett
@@ -42,6 +44,8 @@ reviews:
       urls:
         book: https://app.thestorygraph.com/books/f1066816-082d-4c56-a17d-977d18c98b0a
         cover: https://cdn.thestorygraph.com/wb63w2nomu468i6teq4ywp7j59zg
+      text: |
+        A good read, though a bit of a game of two halves, and the detail of the first felt somewhat disconnected from the second.
     -
       title: Gabriel's Moon
       author: William Boyd
@@ -50,6 +54,8 @@ reviews:
       urls:
         book: https://app.thestorygraph.com/books/2e62687e-b048-4102-a630-2ddfeedfb1e0
         cover: https://cdn.thestorygraph.com/1fz21l7osh3pgrfcavgl80broyqb
+      text: |
+        Hmm. Confusing. I used to love William Boyd. I found this really disappointing.
     -
       title: Microserfs
       author: Douglas Coupland
@@ -58,6 +64,10 @@ reviews:
       urls:
         book: https://app.thestorygraph.com/books/28f9a686-f34c-4c5b-8497-eef360b53e4c
         cover: https://cdn.thestorygraph.com/w1fbr4nqivn2u7oada0g9lh113vx
+      text: |
+        Superb. Groundbreaking when it was published, and just as powerful and provocative today on the precipice of the AI bubble bursting.
+
+        See my [Dr B's Library review of *Microserfs*](/library/coupland-microserfs/){.single-meta-forward} {.small}
     -
       title: Whale Fall
       author: Elizabeth O'Connor
@@ -66,6 +76,8 @@ reviews:
       urls:
         book: https://app.thestorygraph.com/books/4abebb26-5e1a-4c07-8a98-6361edcdc189
         cover: https://cdn.thestorygraph.com/lfgmj7unhrj8vv16yd16alqpj1jj
+      text: |
+        Fabulous book, a gentle, thoughtful book on the tension between desire and duty.
     -
       title: The Expansion Project
       author: Ben Pester
@@ -74,6 +86,8 @@ reviews:
       urls:
         book: https://app.thestorygraph.com/books/d9eff520-8eb3-4dc4-ad28-4361c2f851e6
         cover: https://cdn.thestorygraph.com/z4a4li9xl1g1hs1o3kslqqst9glt
+      text: |
+        Great book. Weird and disorientating, in the same way as modern work can be. Superb.
     -
       title: Held
       author: Anne Michaels
@@ -82,11 +96,15 @@ reviews:
       urls:
         book: https://app.thestorygraph.com/books/2d4ba404-c998-4518-a846-1bad638d02d0
         cover: https://cdn.thestorygraph.com/wumlcduxee2jtq1we4kmt9jaxii5
+      text: |
+        An interesting book, and a lovely style, though I found it a bit disjointed.
     -
       title: The Accidental Tourist
       author: Anne Tyler
       type: Fiction
       month: 2
+      text: |
+        Hmm, it was fine, but not really one for me.
       urls:
         book: https://app.thestorygraph.com/books/d01c49e2-1c5c-41a5-9cec-54438f5a9541
         cover: https://cdn.thestorygraph.com/0genefl13d42aqzmj44t21g8g2vo
@@ -125,7 +143,7 @@ reviews:
       title: Tinker, Tailor, Soldier, Spy
       type: Fiction
       text: |
-        One of my all-time faves.
+        One of my all-time faves. Really enjoyed the re-read.
 
         See my [Dr B's Library review of *Tinker, Tailor*](/library/lecarre-tinker-tailor/){.single-meta-forward} {.small}
       reread: true
