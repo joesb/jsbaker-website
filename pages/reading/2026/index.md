@@ -77,7 +77,7 @@ reviews:
         book: https://app.thestorygraph.com/books/4abebb26-5e1a-4c07-8a98-6361edcdc189
         cover: https://cdn.thestorygraph.com/lfgmj7unhrj8vv16yd16alqpj1jj
       text: |
-        Fabulous book, a gentle, thoughtful book on the tension between desire and duty.
+        Fabulous — a gentle, thoughtful book on the tension between desire and duty.
     -
       title: The Expansion Project
       author: Ben Pester
