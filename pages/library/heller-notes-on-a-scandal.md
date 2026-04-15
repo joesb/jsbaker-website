@@ -3,6 +3,10 @@ title: "Notes on a Scandal, by Zoë Heller"
 description: Have you ever read … Zoë Heller's story of isolation, obsession, and the fragility of trust?
 date: 2026-04-15T16:23:04Z
 layout: page-library.njk
+book:
+  author: Zoë Heller
+  title: Notes on a Scandal
+  summary: Zoë Heller's story of isolation, obsession, and the fragility of trust
 promoted: true
 order: -1
 page:
