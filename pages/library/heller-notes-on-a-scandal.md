@@ -4,11 +4,11 @@ description: Have you ever read … Zoë Heller's story of isolation, obsession,
 date: 2026-04-15T16:23:04Z
 layout: page-library.njk
 promoted: true
-order: 0
+order: -1
 page:
   class: "page--with-hero dr-bs-library dr-bs-library--page"
 image:
-  path: /static/images/oldbooks/pexels-optimistas-6149540.jpg
+  path: https://images.pexels.com/photos/6149540/pexels-photo-6149540.jpeg
   alt: 'A Close-Up Shot of a Woman Looking Out the Window'
   class:
     - image-obj-cover
