@@ -2428,7 +2428,7 @@ __metadata:
     prettier: "npm:^3.8.2"
     react: "npm:^19.2.4"
     react-dom: "npm:^19.2.5"
-    resend: "npm:^6.10.0"
+    resend: "npm:^6.12.2"
     rimraf: "npm:^6.1.3"
     sass: "npm:^1.99.0"
     sass-autoprefixer: "npm:^1.0.1"
@@ -3495,9 +3495,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"resend@npm:^6.10.0":
-  version: 6.11.0
-  resolution: "resend@npm:6.11.0"
+"resend@npm:^6.12.2":
+  version: 6.12.2
+  resolution: "resend@npm:6.12.2"
   dependencies:
     postal-mime: "npm:2.7.4"
     svix: "npm:1.90.0"
@@ -3506,7 +3506,7 @@ __metadata:
   peerDependenciesMeta:
     "@react-email/render":
       optional: true
-  checksum: 10c0/eca275ff28ad19599bcd6d093b96bc036a031a11aae107c9dd0d022c70755f457b66e4f6512fd6841b4fbb5c1dfcc38a429e0fe7d72faeeede32a1309f518a32
+  checksum: 10c0/24de17d936aa03727b466d8dc44bd18151d5d0c8a5fd2318b9eb67780ce9d1eddc0b0b862083319fb99439c0112d115106ecea93d2f66ac7b30fb50844b5ba5c
   languageName: node
   linkType: hard
 
