@@ -14,8 +14,9 @@ image:
   </div>
 
 {% macro reviewItem(review) %}
-    <div class="review-item review-key-data content-canvas-item-wide-left">
-      <h3 class="heading-v-wide">
+  <div class="review-item" itemscope itemtype="https://schema.org/Book">
+    <div class="review-item--key-data">
+      <h3 class="review-item--title heading-v-wide" itemprop="name">
         <a href="{{ review.urls.book }}" rel="noopener noreferrer" target="_blank">{{ review.title }}</a>
         <a class="direct-link visually-hidden" href="#{{ review.title | slug }}" aria-hidden="true">#</a>
       {% if review.audiobook %}
@@ -26,23 +27,19 @@ image:
       <p class="bold smaller"><em>{{ review.subtitle }}</em></p>
       {% endif %}
 
-      <p>
+      <p class="review-item--author" itemprop="author">
         <em>by {{ review.author }}</em><br/>
         {% if review.author_extras %}
         <em class="small">with {% for extra in review.author_extras %}{{ extra.name }} ({{ extra.role }}){% if not loop.last %}, {% endif %}{% endfor %}</em><br />
         {% endif %}
       </p>
-      {% if review.rating %}
-      <p>
-        {{ review.rating }} ⭐️
-      </p>
-      {% endif %}
     </div>
+    
 
     {% if review.urls.cover %}
       {% set imagePath = review.urls.cover %}
       {% set imageAlt = [review.title, " book cover"] | join %}
-    <a href="{{ review.urls.book }}" rel="noopener noreferrer" target="_blank" class="content-canvas-item-wide-right content-canvas-item-right--span-2">{% ImgFigure "", image.figClasses %}![{{ imageAlt }}]({{ imagePath }}){.image-rounded eleventy:widths="100,200" eleventy:formats="webp,jpg"}{% endImgFigure %}</a>
+    <a href="{{ review.urls.book }}" rel="noopener noreferrer" target="_blank" class="review-item--cover">{% ImgFigure "", image.figClasses %}![{{ imageAlt }}]({{ imagePath }}){.image-rounded eleventy:widths="100,200" eleventy:formats="webp,jpg" itemprop=image}{% endImgFigure %}</a>
     {% endif %}
 
     {% if  review.type or review.moods or review.questions %}
@@ -80,16 +77,24 @@ image:
     {% endif %}
 
     {% if review.text %}
-    <div class="review-text">
-      {{ review.text | markdown | safe }}
+    <div class="review-item--text" itemprop="review" itemscope itemtype="https://schema.org/Review">
+      <span itemprop="reviewBody">
+        {{ review.text | markdown | safe }}
+      </span>
+      {% if review.rating %}
+      <div itemprop="reviewRating">
+        {{ review.rating }} ⭐️
+      </div>
+      {% endif %}
     </div>
     {% endif %}
-
+  </div> 
 {% endmacro %}
 
 {% macro reviewItemMini(review) %}
-<div class="review-item review-item-mini{% if review.urls.cover %} review-item-mini-with-cover{% endif %} review-key-data">
-    <div class="review-item-title">
+<div class="review-item review-item-mini{% if review.urls.cover %} review-item-mini-with-cover{% endif %} review-key-data" itemscope itemtype="https://schema.org/Book">
+  <div class="review-item--key-data">
+    <div class="review-item-title" itemprop="name">
       <h3 class="heading-v-wide h4-style">
         <a href="{{ review.urls.book }}" rel="noopener noreferrer" target="_blank">{{ review.title }}</a>
         <a class="direct-link visually-hidden" href="#{{ review.title | slug }}" aria-hidden="true">#</a>
@@ -102,38 +107,41 @@ image:
       <p class="review-item-subtitle margin-block-start-nil bold headings-font">— {{ review.subtitle }}</p>
       {% endif %}
     </div>
-    <p class="review-item-author margin-block-start-nil">
+    <p class="review-item-author margin-block-start-nil" itemprop="author">
       <em>by {{ review.author }}</em><br/>
       {% if review.author_extras %}
       <em class="small">with {% for extra in review.author_extras %}{{ extra.name }} ({{ extra.role }}){% if not loop.last %}, {% endif %}{% endfor %}</em><br />
       {% endif %}
     </p>
-    <div class="review-item-text">
-    {% if review.text %}
-      {{ review.text | markdown | safe }}
-    {% endif %}
-    </div>
 
     {% if review.reread or review.type%}
     <div class="review-item-meta review-meta">
+      {% if review.type %}
+      <p class="review-meta--type small">
+        ({{ review.type }})
+      </p>
+
       {% if review.reread %}
         <em class="small">(re-read)</em>
       {% endif %}
-
-      {% if review.type %}
-      <p class="review-meta--type">
-        ({{ review.type }})
-      </p>
       {% endif %}
 
     </div>
     {% endif %}
+  </div>
+    <div class="review-item--text" itemprop="review" itemscope itemtype="https://schema.org/Review">
+      <span itemprop="reviewBody">
+      {% if review.text %}
+        {{ review.text | markdown | safe }}
+      {% endif %}
+      </span>
+    </div>
 
     {% if review.urls.cover %}
     <div class="review-item-cover">
       {% set imagePath = review.urls.cover %}
       {% set imageAlt = [review.title, " book cover"] | join %}
-      <a href="{{ review.urls.book }}" rel="noopener noreferrer" target="_blank" class="content-canvas-item-wide-right content-canvas-item-right--span-2">{% ImgFigure "", image.figClasses %}![{{ imageAlt }}]({{ imagePath }}){.image-rounded eleventy:widths="100,150" eleventy:formats="webp,jpg"}{% endImgFigure %}</a>
+      <a href="{{ review.urls.book }}" rel="noopener noreferrer" target="_blank" class="content-canvas-item-wide-right content-canvas-item-right--span-2">{% ImgFigure "", image.figClasses %}![{{ imageAlt }}]({{ imagePath }}){.image-rounded eleventy:widths="100,150" eleventy:formats="webp,jpg" itemprop=image}{% endImgFigure %}</a>
     </div>
     {% endif %}
 </div>
@@ -185,7 +193,7 @@ image:
       {% Markdown %}
 ### {{ month | monthNameFromNum }}{.content-canvas-item-wide .margin-block-vlg .heading-v-wide .h-underline}
       {% endMarkdown %}
-        <div class="reviewset reviewset--{{ reviews.reviewSet }} content-canvas-item-wide">
+        <div class="reviewset reviewset--{{ reviews.reviewSet | tf }} content-canvas-item-wide">
       {% set cls = cycler("odd", "even") %}
         {% for review in reviewSet %}
       <div class="reviewset-item reviewset-item--{{ cls.next() }}">
@@ -223,7 +231,7 @@ image:
 ### {{ month | monthNameFromNum }}{.content-canvas-item-wide .margin-block-vlg .heading-v-wide .h-underline}
       {% endMarkdown %}
     {% endif %}
-    <div class="reviewset reviewset--{{ reviews.reviewSet }} content-canvas-item-wide">
+    <div class="reviewset reviewset--{{ reviews.reviewSet | tf }}{% if reviews.reviewSet %} content-canvas-item-wide{% endif %}">
       {% set cls = cycler("odd", "even") %}
         {% for review in reviewSet %}
       <div class="reviewset-item reviewset-item--{{ cls.next() }}">
