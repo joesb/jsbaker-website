@@ -25,7 +25,7 @@ reviews:
   title: The Books of 2026
   text: |
     The books I've read so far in 2026 were great.{.margin-block-lg}
-  reviewSet: true 
+  reviewSet: true
   list:
     -
       title: So Late in the Day
