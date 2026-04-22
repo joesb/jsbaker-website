@@ -47,7 +47,7 @@ reviews:
         book: https://app.thestorygraph.com/books/f2ce5db4-fb0d-484d-9fa2-84e703897ff1
         cover: https://cdn.thestorygraph.com/1wgytawbzcrqhozt39iwvlv1thws
       text: |
-        I love this book. It's a tough read about grief and societal decay, but it's one of the most powerful stories of the 50 years.
+        I love this book. It's a tough read about grief and societal decay, but it's one of the most powerful stories of the last 50 years.
     -
       title: A Perfect Spy
       author: John le Carré
