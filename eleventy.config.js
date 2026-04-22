@@ -454,8 +454,8 @@ export default async function(eleventyConfig) {
   };
   
   async function getPictureData(src, widths = [300, 600, 1000, 1980]) {
-    let metadata = await Image('./pages' + src, {
-      returnType: 'object',
+    src = isUrl(src) ? src : './pages/' + src;
+    let metadata = await Image(src, {
       widths: widths,
       formats: ['jpeg'],
       urlPath: "/static/img/",
@@ -463,6 +463,15 @@ export default async function(eleventyConfig) {
     });
     return metadata;
   };
+
+  function isUrl(path) {
+    try {
+      const url = new URL(path);
+      return typeof url.protocol === 'string';
+    } catch (error) {
+      return false;
+    }
+  }
 
   eleventyConfig.addPairedShortcode("ImgFigure", function(content, caption = false, classes = [], md = true) {
     if (caption) {
