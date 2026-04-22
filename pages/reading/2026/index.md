@@ -38,7 +38,7 @@ reviews:
       text: |
         A great short story about the quiet fractures in relationships, being confronted with yourself, and the weight of individual regret.
     -
-      title: American Pastoral Audiobook edition
+      title: American Pastoral
       author: Philip Roth
       type: Fiction
       month: 4
