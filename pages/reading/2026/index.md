@@ -2,7 +2,7 @@
 title: "Reading Books in 2026"
 description: "The books I've read in 2026, fiction and non-fiction … plus the other stuff as well"
 layout: review.njk
-date: 2026-03-31T16:38:15Z
+date: 2026-04-22T10:02:09Z
 order: 1
 page:
   class: "page--with-hero"
@@ -24,12 +24,45 @@ image:
 reviews:
   title: The Books of 2026
   text: |
-    The books I've read so far in 2026 were great{.margin-block-lg}
+    The books I've read so far in 2026 were great.{.margin-block-lg}
   reviewSet: true 
   list:
     -
+      title: So Late in the Day
+      author: Claire Keegan
+      type: Fiction — Short Story
+      month: 4
+      urls:
+        book: https://app.thestorygraph.com/books/44583662-d4bd-447b-9f15-2585542e3aed
+        cover: https://cdn.thestorygraph.com/2unbrthm8v35kbsj3x6posazp7ac
+      text: |
+        A great short story about the quiet fractures in relationships, being confronted with yourself, and the weight of individual regret.
+    -
+      title: American Pastoral Audiobook edition
+      author: Philip Roth
+      type: Fiction
+      month: 4
+      reread: true
+      urls:
+        book: https://app.thestorygraph.com/books/f2ce5db4-fb0d-484d-9fa2-84e703897ff1
+        cover: https://cdn.thestorygraph.com/1wgytawbzcrqhozt39iwvlv1thws
+      text: |
+        I love this book. It's a tough read about grief and societal decay, but it's one of the most powerful stories of the 50 years.
+    -
+      title: A Perfect Spy
+      author: John le Carré
+      type: Fiction
+      month: 4
+      reread: true
+      urls:
+        book: https://app.thestorygraph.com/books/fe2e167b-239d-4b1c-a82a-1ab62cb5c1c7
+        cover: https://cdn.thestorygraph.com/im5ub0ie2eefadrpfh76iz3o4k7c
+      text: |
+        Maybe Le Carré's best book, and one of my favourite books ever, I think. A demanding read about trauma and abandonment, with spies and spying as just the context.
+    -
       title: The Land in Winter
       author: Andrew Miller
+      type: Fiction
       month: 3
       urls:
         book: https://app.thestorygraph.com/books/3ac5ce14-220a-41fe-89e1-0c672ac441db
@@ -155,9 +188,7 @@ reviews:
 
 I'm currently reading:
 
-- John le Carré, *[A Perfect Spy](https://app.thestorygraph.com/books/fe2e167b-239d-4b1c-a82a-1ab62cb5c1c7){target=_blank rel="noopener noreferrer"}* *(re-read)*{.small}
-- Philip Roth, *[American Pastoral](https://app.thestorygraph.com/books/f2ce5db4-fb0d-484d-9fa2-84e703897ff1){target=_blank rel="noopener noreferrer"}* *(re-read)*{.small}
-  - See my [Dr B's Library review of *American Pastoral*](/library/roth-american-pastoral/){.single-meta-forward} {.small}
+- William Maxwell, *[So Long, See You Tomorrow](https://app.thestorygraph.com/books/4a01273a-ff15-44a6-9beb-c27472f1d38e){target=_blank rel="noopener noreferrer"}*
 - Hannah Arendt, *[The Origins of Totalitarianism](https://app.thestorygraph.com/books/3d22409b-1c07-48ae-9468-ac0b158ccff1){target=_blank rel="noopener noreferrer"}*
 - John Banville, *[The Infinities](https://app.thestorygraph.com/books/c5c5c6d4-3dbf-42ad-a564-35bcd0723c82){target=_blank rel="noopener noreferrer"}*
 
