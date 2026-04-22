@@ -486,6 +486,11 @@ export default async function(eleventyConfig) {
     return bookshopOrg.getAffiliateLink(isbn);
   });
 
+  eleventyConfig.addFilter("tf", (bool) => {
+    bool = Boolean(bool);
+    return bool.toString();
+  });
+
   eleventyConfig.addAsyncShortcode('dblSideLinks', async (collections, url, len = 3, type = 'content-canvas-item-hide-mobile') => {
     let libraryList = collections['readingLibrary'];
     let items = [];

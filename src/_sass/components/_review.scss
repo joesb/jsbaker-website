@@ -1,29 +1,54 @@
 @use "../tools/respond-to" as rt;
 
 .review-item {
+  display: grid;
+  grid-template-columns:
+    [review-start]
+      minmax(15ch, 3fr)
+    [text-start]
+      minmax(6ch, 1fr)
+    [review-end];
+  grid-auto-flow: row;
+  grid-template-rows: min-content;
+  column-gap: var(--size-fluid-2);
+  row-gap: var(--size-fluid-1);
+
   &:not(:last-of-type) {
     margin-block-end: var(--size-9);
   }
 }
 
+.review-item--cover {
+  grid-column: 2;
+  grid-row: 1 / span 2;
+}
+
+.review-meta {
+  margin-inline-start: var(--size-3);
+  display: flex;
+
+  > * {
+    flex: 0 1 20ch;
+  }
+}
+
 .review-meta--type {
   font-size: var(--font-size-fluid-00);
-  margin-block-start: 0;
-  margin-inline-start: var(--size-5);
+  margin-block: 0;
   font-style: italic;
 }
 
-.review-item-text {
-  > p {
-    font-size: var(--font-size-fluid-00);
+.review-item--text {
+  p {
+    font-size: var(--font-size-fluid-0);
   }
 }
 
 .review-item-mini {
     display: grid;
     align-content: start;
-    column-gap: var(--size-fluid-1);
-    grid-template-columns: 1fr 1fr;
+    column-gap: var(--size-fluid-2);
+    grid-template-columns: 3fr minmax(10ch, 2fr);
     grid-template-rows: min-content auto 1fr;
 
     &.review-item-mini-with-cover {
@@ -46,6 +71,33 @@
 }
 
 @include rt.respond-to('medium') {
+  .review-item {
+    grid-template-columns:
+      [review-start]
+        minmax(15ch, 1fr)
+      [text-start]
+        minmax(20ch, 2fr)
+      [text-end]
+        minmax(10ch, 0.75fr)
+      [review-end];
+    grid-auto-flow: row;
+    grid-template-rows: min-content;
+  }
+
+  .review-item--key-data {
+    grid-column: review-start/text-end;
+    grid-row: 1;
+  }
+
+  .review-item--text {
+    grid-column: text-start/text-end;
+    grid-row: 2;
+  }
+
+  .review-item--cover {
+    grid-column: text-end/review-end;
+    grid-row: 1 / span 2;
+  }
 
   .reviewset {
     display: grid;
@@ -67,7 +119,7 @@
     grid-template-columns: 2fr 3fr;
     margin-block-end: var(--size-5);
 
-    .review-item-title {
+    .review-item--key-data {
       grid-column: 1;
 
       h3 {
@@ -80,12 +132,11 @@
     }
 
     .review-item-author,
-    .review-item-text {
+    .review-item--text {
       grid-column: 1;
     }
 
     .review-item-meta {
-      margin-block-start:  var(--size-2);
       grid-column: 2;
         grid-row: 2;
     }
@@ -93,15 +144,14 @@
 
 
     &.review-item-mini-with-cover {
-      grid-template-columns: minmax(auto, 120px) 2fr 1fr;
+      grid-template-columns: minmax(auto, 160px) 2fr;
       grid-template-rows: auto 1fr;
 
-      .review-item-title,
-      .review-item-author {
+      .review-item--key-data {
         grid-column: 2;
       }
-      .review-item-text {
-          grid-column: 2 / span 2;
+      .review-item--text {
+          grid-column: 2;
       }
       .review-item-meta {
         grid-column: 3;
