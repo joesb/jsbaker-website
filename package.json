@@ -46,7 +46,7 @@
     "markdown-it-eleventy-img": "^0.10.2",
     "markdown-it-small": "^1.0.0",
     "markdown-it-sup": "^2.0.0",
-    "postcss": "^8.5.8",
+    "postcss": "^8.5.12",
     "postcss-cli": "^11.0.1",
     "posthtml": "^0.16.7",
     "prettier": "^3.8.2",

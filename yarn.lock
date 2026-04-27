@@ -2422,7 +2422,7 @@ __metadata:
     markdown-it-eleventy-img: "npm:^0.10.2"
     markdown-it-small: "npm:^1.0.0"
     markdown-it-sup: "npm:^2.0.0"
-    postcss: "npm:^8.5.8"
+    postcss: "npm:^8.5.12"
     postcss-cli: "npm:^11.0.1"
     posthtml: "npm:^0.16.7"
     prettier: "npm:^3.8.2"
@@ -3289,7 +3289,18 @@ __metadata:
   languageName: node
   linkType: hard
 
-"postcss@npm:^8.5.8, postcss@npm:^8.5.9":
+"postcss@npm:^8.5.12":
+  version: 8.5.12
+  resolution: "postcss@npm:8.5.12"
+  dependencies:
+    nanoid: "npm:^3.3.11"
+    picocolors: "npm:^1.1.1"
+    source-map-js: "npm:^1.2.1"
+  checksum: 10c0/5baebaf574c567bc1b3d61197f38af4ce5920b8f611c887fb6bc3dcc14af00253c169dbf19897bc889cce0b0d9818ab5eb4ea0caedf02b0bab10da8a43ce8c12
+  languageName: node
+  linkType: hard
+
+"postcss@npm:^8.5.9":
   version: 8.5.10
   resolution: "postcss@npm:8.5.10"
   dependencies:
