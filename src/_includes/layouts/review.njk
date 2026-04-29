@@ -225,7 +225,7 @@ image:
 </div>
 {% endif %}
 
-  {% for month, reviewSet in reviewsList | groupby("month") %}
+  {% for month, reviewSet in reviewsList | reverse | groupby("month") %}
     {% if month > 0 %}
       {% Markdown %}
 ### {{ month | monthNameFromNum }}{.content-canvas-item-wide .margin-block-vlg .heading-v-wide .h-underline}

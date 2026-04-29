@@ -1,7 +1,7 @@
 ---
 title: Reading
 description: Notes on my reading, and thoughts about reading.
-date: 2026-04-22T10:01:08Z
+date: 2026-04-29T15:47:19Z
 layout: list.njk
 eleventyNavigation:
   key: Reading
@@ -20,7 +20,8 @@ pageClass: "site-content--surface-dark site-content--surface-rose"
 
 I'm currently reading:
 
-- William Maxwell, *[So Long, See You Tomorrow](https://app.thestorygraph.com/books/4a01273a-ff15-44a6-9beb-c27472f1d38e){target=_blank rel="noopener noreferrer"}*
+- Susan Choi, *[Flashlight](https://app.thestorygraph.com/books/528193e3-f661-4d51-8e31-c6d7a7f3ef45){target=_blank rel="noopener noreferrer"}*
+- Martin Wolf, *[The Crisis of Democratic Capitalism](https://app.thestorygraph.com/books/363f2c59-ffa6-4492-a949-92ff4660d2f5){target=_blank rel="noopener noreferrer"}*
 - Hannah Arendt, *[The Origins of Totalitarianism](https://app.thestorygraph.com/books/3d22409b-1c07-48ae-9468-ac0b158ccff1){target=_blank rel="noopener noreferrer"}*
 - John Banville, *[The Infinities](https://app.thestorygraph.com/books/c5c5c6d4-3dbf-42ad-a564-35bcd0723c82){target=_blank rel="noopener noreferrer"}*
 
