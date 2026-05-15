@@ -18,7 +18,7 @@ image:
   credit: '<a href="https://www.pexels.com/photo/dramatic-skies-27661899/" rel="noopener nofollow" target="_blank">Photo</a> by <a href="https://www.pexels.com/@timmossholder/" rel="noopener nofollow" target="_blank">Tim Mossholder</a> from Pexels'
   class:
     - image-obj-cover
-    - image-darken-50
+    - image-darken-33
     - image-obj-pos-lower
   figureClass:
       page: "content-canvas-item-full figure--hero"
@@ -29,4 +29,4 @@ tags:
   - "#reading-library"
 ---
 
-  
+  There are few books that take such an unflinching stare at masculinity and all its fragilities as Thomas Savage's astonishing novel, *The Power of the Dog*.
