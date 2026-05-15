@@ -8,6 +8,7 @@ book:
   author: Thomas Savage
   title: The Power of the Dog
   summary: Thomas Savage's claustrophobic domestic drama that disembowels cruel power, toxic masculinity, and repressed desire
+hideDescription: false
 page:
   class: "page--with-hero dr-bs-library dr-bs-library--page"
 image:

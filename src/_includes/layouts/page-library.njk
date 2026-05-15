@@ -10,7 +10,9 @@ image:
   figureClass:
     page:
   coverClass:
-    - "figure-book-cover-picture"
+    - figure-book-cover-picture
+    - picture-outline
+    - picture-rounded
 page:
   intro: "Yeah, sure, new books are great, but do you ever read old books?
 
@@ -57,7 +59,7 @@ eleventyComputed:
     {% set bookAlt = bookAlt | join(' ') %}
 
     <figure class="figure--book-cover">
-      {% image image.cover, bookAlt, image.coverClass, "picture-outline", ' fetchpriority="high" loading="eager"', "auto", [150, 250] %}
+      {% image image.cover, bookAlt, image.coverClass, ' fetchpriority="high" loading="eager"', "auto", [150, 250] %}
     </figure>
   {% endif %}
 
