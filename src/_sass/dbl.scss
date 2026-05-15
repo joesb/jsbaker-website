@@ -53,15 +53,28 @@
     top: 0;
     right: 0;
     z-index: 0;
-    height: 25vh;
+    height: 30vh;
   }
 
   .figure-book-cover-picture {
     width: auto;
     height: 80%;
-    max-height: 200px;
+    max-height: 175px;
   }
 }
+
+@include rt.respond-to('medium') {
+  .dr-bs-library--page {
+    .figure--book-cover {
+      height: 50vh;
+    }
+
+    .figure-book-cover-picture {
+      max-height: 250px;
+    }
+  }
+}
+
 
 @include rt.respond-to('large') {
   .dr-bs-library--page {
