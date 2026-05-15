@@ -15,6 +15,7 @@ image:
   path: /static/images/source/pexels-timmossholder-27661899.jpg
   alt: "Expansive prairie under a dramatic sky in Junction, Utah, showcasing thunderstorm clouds and golden grass"
   cover: /static/images/source/books/savage-power-dog.jpeg
+  credit: '<a href="https://www.pexels.com/photo/dramatic-skies-27661899/" rel="noopener nofollow" target="_blank">Photo</a> by <a href="https://www.pexels.com/@timmossholder/" rel="noopener nofollow" target="_blank">Tim Mossholder</a> from Pexels'
   class:
     - image-obj-cover
     - image-darken-50
@@ -28,3 +29,4 @@ tags:
   - "#reading-library"
 ---
 
+  
