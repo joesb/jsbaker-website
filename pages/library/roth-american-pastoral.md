@@ -3,7 +3,7 @@ title: "American Pastoral, by Philip Roth"
 date: 2026-03-25T17:33:04Z
 layout: page-library.njk
 promoted: true
-order: -1
+order: 0
 book:
   author: Philip Roth
   title: American Pastoral
@@ -14,6 +14,7 @@ page:
 image:
   path: /static/images/oldbooks/roth-american-pastoral.avif
   alt: "Philip Roth, American Pastoral"
+  cover: /static/images/source/books/roth-philip-american-pastoral.jpeg
   class:
     - image-obj-cover
     - image-darken-50
