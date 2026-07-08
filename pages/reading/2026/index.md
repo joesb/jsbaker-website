@@ -2,7 +2,7 @@
 title: "Reading Books in 2026"
 description: "The books I've read in 2026, fiction and non-fiction … plus the other stuff as well"
 layout: review.njk
-date: 2026-05-31T11:42:09Z
+date: 2026-06-30T11:42:09Z
 order: 1
 page:
   class: "page--with-hero"
@@ -27,6 +27,37 @@ reviews:
     The books I've read so far in 2026 were great.{.margin-block-lg}
   reviewSet: true
   list:
+    -
+      title: "Talk: The Science of Conversation and the Art of Being Ourselves Audiobook edition"
+      author: Alison Wood Brooks
+      type: Non-fiction
+      month: 6
+      urls:
+        book: https://app.thestorygraph.com/books/c9e6b69b-cfe2-4abe-b5da-efc0f1b182ec
+        cover: https://cdn.thestorygraph.com/eq4scvp0oezcwkkyev7am2te1iqy
+      text: |
+        I'm always eager to be a better conversationalist, and I enjoyed this plenty — a thoughtful and thoroughgoing discussion of the art of conversation.
+    -
+      title: The MANIAC
+      author: Benjamín Labatut
+      type: Fictionalised history
+      month: 6
+      urls:
+        book: https://app.thestorygraph.com/books/0aed4691-d2e6-4ee9-be35-63d5e51dc4d9
+        cover: https://cdn.thestorygraph.com/mz5f3skdgd10pq6tqnft5ibo7h6m
+      text: |
+        An enjoyable read, and a great experiment in writing, but really three stories slammed together in a way that felt, to me, somewhat unsatisfactory.
+
+    -
+      title: Beloved
+      author: Toni Morrison
+      type: Fiction
+      month: 6
+      urls:
+        book: https://app.thestorygraph.com/books/b7bd4146-b217-4034-9ed3-e207e3dc92a1
+        cover: https://cdn.thestorygraph.com/z65nhzqhxu2gs7zzfbtlmbmrw2bo
+      text: |
+        Stunning. One my favourite novels ever. Non-linear, idiosyncratic, a brilliant tale of motherhood, trauma, and the legacy of oppression. A masterpiece.
     -
       title: Show Me Where It Hurts
       author: Claire Gleeson
@@ -228,6 +259,7 @@ reviews:
 
 I'm currently reading:
 
+- Ian McEwan, *[What We Can Know](https://app.thestorygraph.com/books/1d2a8af3-90b5-4f8f-bfa1-82fd8ac07240){target=_blank rel="noopener noreferrer"}*
 - Lauren Groff, *[Brawler](https://app.thestorygraph.com/books/c0cd15c2-d44f-4eae-bb66-c7bc7bbb4f1a){target=_blank rel="noopener noreferrer"}*
 - Seamus Heaney, *[The Spirit Level](https://app.thestorygraph.com/books/ccb046ae-3881-4ca4-9907-c540dd27f5ae){target=_blank rel="noopener noreferrer"}*
 - Alwyn Turner, *[A Shellshocked Nation: Britain Between the Wars Audiobook edition](https://app.thestorygraph.com/books/7e5087cd-6852-44f8-9493-a33288cf8363){target=_blank rel="noopener noreferrer"}*
