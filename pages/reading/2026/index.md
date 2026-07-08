@@ -2,7 +2,7 @@
 title: "Reading Books in 2026"
 description: "The books I've read in 2026, fiction and non-fiction … plus the other stuff as well"
 layout: review.njk
-date: 2026-04-29T15:42:09Z
+date: 2026-05-31T11:42:09Z
 order: 1
 page:
   class: "page--with-hero"
@@ -27,9 +27,40 @@ reviews:
     The books I've read so far in 2026 were great.{.margin-block-lg}
   reviewSet: true
   list:
+    -
+      title: Show Me Where It Hurts
+      author: Claire Gleeson
+      type: Fiction
+      month: 5
+      urls:
+        book: https://app.thestorygraph.com/books/558c3440-b754-401b-a8d1-d76008da8789
+        cover: https://cdn.thestorygraph.com/7jatk5rw9ff3g27d0o3w9zil0ng4
+      text: |
+        How do you survive the unsurvivable? A solid debut novel about domestic heartbreak and family trauma, grief and memory, though maybe missing the depth, the gravity, the scale that I hunger for the most.
+    -
+      title: Flashlight
+      author: Susan Choi
+      type: Fiction
+      month: 5
+      urls:
+        book: https://app.thestorygraph.com/books/cf250f16-0715-4ae8-91fe-f32c36dce452
+        cover: https://cdn.thestorygraph.com/sg50jb797qwuk3s7lztydryovpih
+      text: |
+        Slow and powerful, an emotionally devastating family saga: a single traumatic event casts a long shadow across decades and borders. Loved it.
+    -
+      title: The Crisis of Democratic Capitalism
+      author: Martin Wolf
+      type: Non-fiction
+      month: 5
+      urls:
+        book: https://app.thestorygraph.com/books/363f2c59-ffa6-4492-a949-92ff4660d2f5
+        cover: https://cdn.thestorygraph.com/jsuugc8sqmys26cglxylpnl4urly
+      text: |
+        Rigorous and challenging — a deep dive into the global economic, political, and societal fracturing and the philosophical and practical work required to mend things.
     - 
       title: So Long, See You Tomorrow
       author: William Maxwell
+      type: Fiction
       month: 4
       urls:
         book: https://app.thestorygraph.com/books/4a01273a-ff15-44a6-9beb-c27472f1d38e
@@ -197,8 +228,9 @@ reviews:
 
 I'm currently reading:
 
-- Susan Choi, *[Flashlight](https://app.thestorygraph.com/books/528193e3-f661-4d51-8e31-c6d7a7f3ef45){target=_blank rel="noopener noreferrer"}*
-- Martin Wolf, *[The Crisis of Democratic Capitalism](https://app.thestorygraph.com/books/363f2c59-ffa6-4492-a949-92ff4660d2f5){target=_blank rel="noopener noreferrer"}*
+- Lauren Groff, *[Brawler](https://app.thestorygraph.com/books/c0cd15c2-d44f-4eae-bb66-c7bc7bbb4f1a){target=_blank rel="noopener noreferrer"}*
+- Seamus Heaney, *[The Spirit Level](https://app.thestorygraph.com/books/ccb046ae-3881-4ca4-9907-c540dd27f5ae){target=_blank rel="noopener noreferrer"}*
+- Alwyn Turner, *[A Shellshocked Nation: Britain Between the Wars Audiobook edition](https://app.thestorygraph.com/books/7e5087cd-6852-44f8-9493-a33288cf8363){target=_blank rel="noopener noreferrer"}*
 - Hannah Arendt, *[The Origins of Totalitarianism](https://app.thestorygraph.com/books/3d22409b-1c07-48ae-9468-ac0b158ccff1){target=_blank rel="noopener noreferrer"}*
 - John Banville, *[The Infinities](https://app.thestorygraph.com/books/c5c5c6d4-3dbf-42ad-a564-35bcd0723c82){target=_blank rel="noopener noreferrer"}*
 
