@@ -16,8 +16,8 @@ image:
 {% macro reviewItem(review) %}
   <div class="review-item" itemscope itemtype="https://schema.org/Book">
     <div class="review-item--key-data">
-      <h3 class="review-item--title heading-v-wide" itemprop="name">
-        <a href="{{ review.urls.book }}" rel="noopener noreferrer" target="_blank">{{ review.title }}</a>
+      <h3 class="review-item--title heading-v-wide">
+        <a href="{{ review.urls.book }}" rel="noopener noreferrer" target="_blank" itemprop="name">{{ review.title }}</a>
         <a class="direct-link visually-hidden" href="#{{ review.title | slug }}" aria-hidden="true">#</a>
       {% if review.audiobook %}
         <em class="small">(audiobook)</em>
@@ -27,8 +27,8 @@ image:
       <p class="bold smaller"><em>{{ review.subtitle }}</em></p>
       {% endif %}
 
-      <p class="review-item--author" itemprop="author">
-        <em>by {{ review.author }}</em><br/>
+      <p class="review-item--author">
+        <em>by <span itemprop="author">{{ review.author }}</span></em><br/>
         {% if review.author_extras %}
         <em class="small">with {% for extra in review.author_extras %}{{ extra.name }} ({{ extra.role }}){% if not loop.last %}, {% endif %}{% endfor %}</em><br />
         {% endif %}
@@ -94,9 +94,9 @@ image:
 {% macro reviewItemMini(review) %}
 <div class="review-item review-item-mini{% if review.urls.cover %} review-item-mini-with-cover{% endif %} review-key-data" itemscope itemtype="https://schema.org/Book">
   <div class="review-item--key-data">
-    <div class="review-item-title" itemprop="name">
+    <div class="review-item-title">
       <h3 class="heading-v-wide h4-style">
-        <a href="{{ review.urls.book }}" rel="noopener noreferrer" target="_blank">{{ review.title }}</a>
+        <a href="{{ review.urls.book }}" rel="noopener noreferrer" target="_blank" itemprop="name">{{ review.title }}</a>
         <a class="direct-link visually-hidden" href="#{{ review.title | slug }}" aria-hidden="true">#</a>
       {% if review.audiobook %}
         <em class="small">(audiobook)</em>
@@ -107,8 +107,8 @@ image:
       <p class="review-item-subtitle margin-block-start-nil bold headings-font">— {{ review.subtitle }}</p>
       {% endif %}
     </div>
-    <p class="review-item-author margin-block-start-nil" itemprop="author">
-      <em>by {{ review.author }}</em><br/>
+    <p class="review-item-author margin-block-start-nil">
+      <em>by <span itemprop="author">{{ review.author }}</span></em><br/>
       {% if review.author_extras %}
       <em class="small">with {% for extra in review.author_extras %}{{ extra.name }} ({{ extra.role }}){% if not loop.last %}, {% endif %}{% endfor %}</em><br />
       {% endif %}
