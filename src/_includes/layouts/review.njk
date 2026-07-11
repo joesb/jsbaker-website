@@ -86,7 +86,7 @@ image:
         {{ review.rating }} ⭐️
       </div>
       {% endif %}
-      <div class="visually-hidden">Review by <span itemprop="author">{{ metadata.author.name }}</span></div>
+      <div class="visually-hidden">Review by <span itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="name">{{ metadata.author.name }}</span></span></div>
     </div>
     {% endif %}
   </div> 
@@ -136,7 +136,7 @@ image:
         {{ review.text | markdown | safe }}
       {% endif %}
       </span>
-      <div class="visually-hidden">Review by <span itemprop="author">{{ metadata.author.name }}</span></div>
+      <div class="visually-hidden">Review by <span itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="name">{{ metadata.author.name }}</span></span></div>
     </div>
 
     {% if review.urls.cover %}
