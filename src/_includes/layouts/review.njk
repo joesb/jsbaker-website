@@ -28,7 +28,7 @@ image:
       {% endif %}
 
       <p class="review-item--author">
-        <em>by <span itemprop="author">{{ review.author }}</span></em><br/>
+        <em>by <span itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="name">{{ review.author }}</span></span></em><br/>
         {% if review.author_extras %}
         <em class="small">with {% for extra in review.author_extras %}{{ extra.name }} ({{ extra.role }}){% if not loop.last %}, {% endif %}{% endfor %}</em><br />
         {% endif %}
@@ -109,7 +109,7 @@ image:
       {% endif %}
     </div>
     <p class="review-item-author margin-block-start-nil">
-      <em>by <span itemprop="author">{{ review.author }}</span></em><br/>
+      <em>by <span itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="name">{{ review.author }}</span></span></em><br/>
       {% if review.author_extras %}
       <em class="small">with {% for extra in review.author_extras %}{{ extra.name }} ({{ extra.role }}){% if not loop.last %}, {% endif %}{% endfor %}</em><br />
       {% endif %}
