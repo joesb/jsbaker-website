@@ -2307,6 +2307,7 @@ __metadata:
     markdown-it-anchor: "npm:^9.2.1"
     markdown-it-attrs: "npm:^5.0.0"
     markdown-it-eleventy-img: "npm:^0.10.2"
+    markdown-it-for-inline: "npm:^2.0.1"
     markdown-it-small: "npm:^1.0.0"
     markdown-it-sup: "npm:^2.0.0"
     postcss: "npm:^8.5.16"
@@ -2515,6 +2516,13 @@ __metadata:
   peerDependencies:
     markdown-it: ">= 9.0.0"
   checksum: 10c0/e2069a584c52a84a4d8671f753ddade751125c224c26fbb5f3812df546aa1ca45843eae34ce5e94611b13efd0d895e71198607ac96362841265d59f42e58acc0
+  languageName: node
+  linkType: hard
+
+"markdown-it-for-inline@npm:^2.0.1":
+  version: 2.0.1
+  resolution: "markdown-it-for-inline@npm:2.0.1"
+  checksum: 10c0/b854424b22e4bcfdde558ef4a8220d22ea940e48a171777e25697281965b527b76916c1bf02f6367547e8b60f780e6a979758901d1f7d2ec5f31aa44a4b0e3bc
   languageName: node
   linkType: hard
 
