@@ -2,7 +2,7 @@
 title: "Reading Books in 2026"
 description: "The books I've read in 2026, fiction and non-fiction … plus the other stuff as well"
 layout: review.njk
-date: 2026-06-30T11:42:09Z
+date: 2026-07-28T12:58:21Z
 order: 1
 page:
   class: "page--with-hero"
@@ -27,6 +27,86 @@ reviews:
     The books I've read so far in 2026 were great.{.margin-block-lg}
   reviewSet: true
   list:
+    -
+      title: Dirt Music
+      author: Tim Winton
+      type: Fiction
+      month: 7
+      urls:
+        book: https://app.thestorygraph.com/books/a483046b-0180-4a83-8c99-d0bad93d86ed
+        cover: https://cdn.thestorygraph.com/ov5qpujn9ev5dfuejpeza67beq3i
+      text: |
+       Brilliant book, and another multi-threaded, multi-perspective story — a deep character story with an intricate plot examining how grief and regret can hold us in an iron grip, all set against the landscape of Western Australia. Loved it.
+    -
+      title: Fingersmith
+      author: Sarah Waters
+      type: Fiction
+      month: 7
+      urls:
+        book: https://app.thestorygraph.com/books/e3806637-69fd-401c-a622-f8dc95e49b24
+        cover: https://cdn.thestorygraph.com/63qk1xa6psh8ygapfapdnx8uafkt
+      text: |
+       Superb. A modern alternative view of Dickensian England, and a brilliant multi-threaded, multi-perspective crime story. An absolute page-turner from the beginning.
+    -
+      title: Transcription
+      author: Ben Lerner
+      type: Fiction
+      month: 7
+      urls:
+        book: https://app.thestorygraph.com/books/5d66af08-fefd-42ea-89d4-04b4eee413a3
+        cover: https://cdn.thestorygraph.com/a1c80jcrjqp9nmdbyikdqx70lqbb
+      text: |
+       A writer, about to interview his old university tutor, drops his phone in a sink of water — suddenly without his device, everything falls apart. An interesting premise, a good comment on modern life, but ultimately I felt it lacked the punch of real critique or insight somehow.
+    -
+      title: What We Can Know
+      author: Ian McEwan
+      type: Fiction
+      month: 7
+      urls:
+        book: https://app.thestorygraph.com/books/1d2a8af3-90b5-4f8f-bfa1-82fd8ac07240
+        cover: https://cdn.thestorygraph.com/g9k32alieoavjxd3mwx96ak2fle2
+      text: |
+        A good read as expected from McEwan, a speculative future looking back from a future wrecked by climate catastrophe, called the Derangement, so capitalised. I felt somewhat dissatisfied, though: that the book couldn't quite decide which story it wanted to be.
+    -
+      title: The Infinities
+      author: John Banville
+      type: Fiction
+      month: 7
+      urls:
+        book: https://app.thestorygraph.com/books/c5c5c6d4-3dbf-42ad-a564-35bcd0723c82
+        cover: https://cdn.thestorygraph.com/szzzuxm2rx3r2pyamau1kv2f727c
+      text: |
+        A really enjoyable read, funny and pointed, with mythological figures observing (or even precipitating?) a family in breakdown.
+    -
+      title: Harvest
+      author: Jim Crace
+      type: Fiction
+      month: 7
+      urls:
+        book: https://app.thestorygraph.com/books/bc2bc45b-1f82-418a-8c62-b918e1224076
+        cover: https://cdn.thestorygraph.com/kis7w1abuthffcv7uf39q8go7f18
+      text: |
+        A great, if idiosyncratic, telling of the tragedy of the Enclosures of the Commons, but maybe more a critique of the desolation of power and greed exercised without care.
+    -
+      title: Our Game
+      author: John le Carré
+      type: Fiction
+      month: 7
+      urls:
+        book: https://app.thestorygraph.com/books/ecce03d6-02f3-451b-bed8-2a23ae6dbab5
+        cover: https://cdn.thestorygraph.com/90hridcusjdyzq52r0ponzyjazs9
+      text: |
+        This was a re-read of one of my favourite le Carré's, his first real foray into fiction beyond the spying world. A great exploration of whether it's truly possible to escape your past.
+    -
+      title: "Why Populists Are Winning: and How to Beat Them"
+      author: Liam Byrne
+      type: Non-fiction
+      month: 7
+      urls:
+        book: https://app.thestorygraph.com/books/e72485bf-927c-47d6-9c57-4ff6f931b682
+        cover: https://cdn.thestorygraph.com/2w3e3ucb1cj3s2afv6etq5qclh2s
+      text: |
+        A great read, about how the levers of power and the psychology of voters are being manipulated, all in the light of the global election marathon of 2024.
     -
       title: "Talk: The Science of Conversation and the Art of Being Ourselves Audiobook edition"
       author: Alison Wood Brooks
@@ -259,11 +339,10 @@ reviews:
 
 I'm currently reading:
 
-- Ian McEwan, *[What We Can Know](https://app.thestorygraph.com/books/1d2a8af3-90b5-4f8f-bfa1-82fd8ac07240){target=_blank rel="noopener noreferrer"}*
+- Sarah Wynn-Williams, *[Careless People: A Story of Where I Used to Work](https://app.thestorygraph.com/books/2920432a-eca7-4bf8-ab6f-c1df6bb2e2a9){target=_blank rel="noopener noreferrer"}*
 - Lauren Groff, *[Brawler](https://app.thestorygraph.com/books/c0cd15c2-d44f-4eae-bb66-c7bc7bbb4f1a){target=_blank rel="noopener noreferrer"}*
 - Seamus Heaney, *[The Spirit Level](https://app.thestorygraph.com/books/ccb046ae-3881-4ca4-9907-c540dd27f5ae){target=_blank rel="noopener noreferrer"}*
 - Alwyn Turner, *[A Shellshocked Nation: Britain Between the Wars Audiobook edition](https://app.thestorygraph.com/books/7e5087cd-6852-44f8-9493-a33288cf8363){target=_blank rel="noopener noreferrer"}*
 - Hannah Arendt, *[The Origins of Totalitarianism](https://app.thestorygraph.com/books/3d22409b-1c07-48ae-9468-ac0b158ccff1){target=_blank rel="noopener noreferrer"}*
-- John Banville, *[The Infinities](https://app.thestorygraph.com/books/c5c5c6d4-3dbf-42ad-a564-35bcd0723c82){target=_blank rel="noopener noreferrer"}*
 
 I'm on [The StoryGraph](https://app.thestorygraph.com/profile/joesb){target=_blank rel="noopener noreferrer"} and [GoodReads](https://www.goodreads.com/jsbaker){target=_blank rel="noopener noreferrer"}.

@@ -11,7 +11,7 @@
     "clean": "npx rimraf -v _site/* || true",
     "watch": "npx eleventy --watch",
     "serve": "(yarn clean) && (yarn sass:build) && (npx @11ty/eleventy --dryrun) && (npx @11ty/eleventy --serve & yarn sass:dev)",
-    "go": "yarn serve",
+    "dev": "yarn serve",
     "debug": "DEBUG=* npx eleventy",
     "wdebug": "set DEBUG=Eleventy* & eleventy",
     "sass:build": "sass --style=compressed ./src/_sass/:./src/_includes/assets/css/  && npx postcss ./src/_includes/assets/css/*.css --use autoprefixer -d ./src/_includes/assets/css",

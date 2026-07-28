@@ -13,6 +13,8 @@ image:
     {{ content | safe }}
   </div>
 
+{% macro pluralize(count, singular, plural) %}{{ count }} {{ singular if count == 1 else plural }}{% endmacro %}
+
 {% macro reviewItem(review) %}
   <div class="review-item" itemscope itemtype="https://schema.org/Book">
     <div class="review-item--key-data">
@@ -198,11 +200,13 @@ image:
         <div class="reviewset reviewset--{{ reviews.reviewSet | tf }} content-canvas-item-wide">
       {% set cls = cycler("odd", "even") %}
         {% for review in reviewSet %}
-      <div class="reviewset-item reviewset-item--{{ cls.next() }}">
+          <div class="reviewset-item reviewset-item--{{ cls.next() }}">
     {{ reviewItemMini(review) }}
-        </div>
+          </div>
         {% endfor %}
-    </div>
+        </div>
+
+        <p class="content-canvas-item-wide"><small>({{ pluralize(reviewSet | length , "book", "books") }})</small></p>
       {% endfor %}
     {% endif %}
   {% else %}
@@ -241,5 +245,7 @@ image:
         </div>
         {% endfor %}
     </div>
+
+    <p class="content-canvas-item-wide"><small>({{ pluralize(reviewSet | length , "book", "books") }})</small></p>
   {% endfor %}
 {% endif %}
