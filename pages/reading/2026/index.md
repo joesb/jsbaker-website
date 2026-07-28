@@ -3,7 +3,8 @@ title: "Reading Books in 2026"
 description: "The books I've read in 2026, fiction and non-fiction … plus the other stuff as well"
 layout: review.njk
 date: 2026-07-28T12:58:21Z
-order: 1
+promoted: true
+order: -1
 page:
   class: "page--with-hero"
 tags:
