@@ -44,6 +44,7 @@
     "markdown-it-anchor": "^9.2.1",
     "markdown-it-attrs": "^5.0.0",
     "markdown-it-eleventy-img": "^0.10.2",
+    "markdown-it-for-inline": "^2.0.1",
     "markdown-it-small": "^1.0.0",
     "markdown-it-sup": "^2.0.0",
     "postcss": "^8.5.16",

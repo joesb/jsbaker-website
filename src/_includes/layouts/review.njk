@@ -223,6 +223,8 @@ image:
     {% Markdown %}
 {{ reviews.text }}
     {% endMarkdown %}
+
+    <p>So far, I've read {{ reviews.list | length }}.</p>
   {% endif %}
 </div>
 {% endif %}

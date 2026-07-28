@@ -2,7 +2,7 @@
 title: "Reading Books in 2026"
 description: "The books I've read in 2026, fiction and non-fiction … plus the other stuff as well"
 layout: review.njk
-date: 2026-06-30T11:42:09Z
+date: 2026-07-14T14:06:09Z
 order: 1
 page:
   class: "page--with-hero"
@@ -27,6 +27,47 @@ reviews:
     The books I've read so far in 2026 were great.{.margin-block-lg}
   reviewSet: true
   list:
+    - 
+      title: The Infinities
+      author:  John Banville 
+      type: Fiction
+      month: 7
+      urls:
+        book: https://app.thestorygraph.com/books/c5c5c6d4-3dbf-42ad-a564-35bcd0723c82
+        cover: https://cdn.thestorygraph.com/dofxlvr9jpfoeoldocl2v9tgp6eg
+      text: |
+        A lyrical, literary, at times hilariously bawdy book. I really enjoyed the magical realism — the mischievous Greek gods come to interfere in the last days of Old Adam Godley. It's strange and confusing, being human.
+    - 
+      title: Harvest
+      author: Jim Crace
+      type: Fiction
+      month: 7
+      urls:
+        book: https://app.thestorygraph.com/books/bc2bc45b-1f82-418a-8c62-b918e1224076
+        cover: https://cdn.thestorygraph.com/kis7w1abuthffcv7uf39q8go7f18
+      text: |
+        An idiosyncratic but beautifully lyrical story of the awful experience of [the Enclosures](https://www.thelandmagazine.org.uk/articles/short-history-enclosure-britain) in Britain and their devastating effects — the political economy shifts, a village collapses, a way of life is erased without any care.
+    -
+      title: Our Game
+      author: "John le Carré"
+      type: Fiction
+      month: 7
+      reread: true
+      urls:
+        book: https://app.thestorygraph.com/books/ecce03d6-02f3-451b-bed8-2a23ae6dbab5
+        cover: https://cdn.thestorygraph.com/90hridcusjdyzq52r0ponzyjazs9
+      text: |
+        A re-read, a great re-read. I thought I remembered the book really well. I didn't. So it was a great re-read. Not the top echelon of le Carré's works, maybe, and it took a little while to get into its rhythm, but it did and so it's certainly high up in the rankings for me.
+    -
+      title: "Why Populists Are Winning: and How to Beat Them"
+      author: Liam Byrne
+      type: Non-fiction
+      month: 7
+      urls:
+        book: https://app.thestorygraph.com/books/e72485bf-927c-47d6-9c57-4ff6f931b682
+        cover: https://cdn.thestorygraph.com/2w3e3ucb1cj3s2afv6etq5qclh2s
+      text: |
+        After [2024, democracy's super-year](https://www.idea.int/initiatives/the-2024-global-elections-supercycle), the year that autocracy won big, this book is a powerful and thoroughly evidence-driven examination of the structural decay of democratic systems and the economic pressures that drive political instability — a natural fit for me.
     -
       title: "Talk: The Science of Conversation and the Art of Being Ourselves Audiobook edition"
       author: Alison Wood Brooks
@@ -264,6 +305,5 @@ I'm currently reading:
 - Seamus Heaney, *[The Spirit Level](https://app.thestorygraph.com/books/ccb046ae-3881-4ca4-9907-c540dd27f5ae){target=_blank rel="noopener noreferrer"}*
 - Alwyn Turner, *[A Shellshocked Nation: Britain Between the Wars Audiobook edition](https://app.thestorygraph.com/books/7e5087cd-6852-44f8-9493-a33288cf8363){target=_blank rel="noopener noreferrer"}*
 - Hannah Arendt, *[The Origins of Totalitarianism](https://app.thestorygraph.com/books/3d22409b-1c07-48ae-9468-ac0b158ccff1){target=_blank rel="noopener noreferrer"}*
-- John Banville, *[The Infinities](https://app.thestorygraph.com/books/c5c5c6d4-3dbf-42ad-a564-35bcd0723c82){target=_blank rel="noopener noreferrer"}*
 
 I'm on [The StoryGraph](https://app.thestorygraph.com/profile/joesb){target=_blank rel="noopener noreferrer"} and [GoodReads](https://www.goodreads.com/jsbaker){target=_blank rel="noopener noreferrer"}.
