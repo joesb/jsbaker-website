@@ -126,6 +126,12 @@
   }
 }
 
+.page--short-story {
+  :where(p) {
+    font-family: var(--font-family-serif);
+  }
+}
+
 // Page layouts
 
 .layout-affiliate {

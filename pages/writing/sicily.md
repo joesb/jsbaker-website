@@ -13,7 +13,7 @@ tags:
   - '#writing'
 canonical: https://www.jsbaker.co.uk/writing/sicily/
 page:
-  class: "page--with-hero page--writing page--writing--light"
+  class: "page--with-hero page--writing page--writing--light page--short-story"
 image:
   path: "/static/images/source/jason-briscoe-fugfJRW18jM-unsplash.jpg"
   alt: "Person drinking tea"

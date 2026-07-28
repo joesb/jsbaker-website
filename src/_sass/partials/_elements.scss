@@ -85,6 +85,7 @@ ELEMENTS
     --font-primary:  #{var.$primary-font};
     --font-secondary: #{var.$secondary-font};
     --font-headings: #{var.$headings-font};
+    --font-family-serif: #{var.$headings-font};
 
     font-family: var(--font-primary);
     font-size: bvar.$root-font-size;

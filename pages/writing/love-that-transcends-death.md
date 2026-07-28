@@ -13,7 +13,7 @@ tags:
   - Short Story
 canonical: https://www.jsbaker.co.uk/writing/love-that-transcends-death/
 page:
-  class: "page--with-hero page--writing page--writing--light"
+  class: "page--with-hero page--writing page--writing--light page--short-story"
 image:
   path: "/static/images/source/filippo-andolfatto-X63Vc5OZKlo-unsplash.jpg"
   alt: "Grayscale shot of people's hands on steel bar photo"

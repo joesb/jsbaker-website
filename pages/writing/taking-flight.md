@@ -13,7 +13,7 @@ tags:
   - '#writing'
 canonical: https://www.jsbaker.co.uk/writing/taking-flight/
 page:
-  class: "page--with-hero page--writing page--writing--light"
+  class: "page--with-hero page--writing page--writing--light page--short-story"
 image:
   path: "/static/images/source/37283402336_2dfad389a1_k_flickr.jpg"
   alt: "Peregrine falcon and prey, Caloundra"

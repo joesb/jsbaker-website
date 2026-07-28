@@ -12,7 +12,7 @@ tags:
   - Short Story
   - '#writing'
 page:
-  class: "page--with-hero page--writing page--writing--light"
+  class: "page--with-hero page--writing page--writing--light page--short-story"
 image:
   path: "/static/images/source/pexels-pum-pumz-1254330126-28439653.jpg"
   alt: "A detailed close-up of a blooming pink and white rose with soft green leaves"
@@ -28,7 +28,9 @@ image:
   credit: "Photo by <a href=\"https://www.pexels.com/@pum-pumz-1254330126/\">Pum PumZ</a> on <a href=\"https://www.pexels.com/photo/close-up-of-a-pink-and-white-rose-bloom-28439653/\">Pexels</a>"
 ---
 
-<span class="text-uppercase bold">The table is still set,</span> if you can call it that at the end of the meal, the detritus scattered across it, and Hannah feels the urge to get a cloth to wipe away the spilt water, the stray shavings of parmesan, the oily drips of salad dressing, but she doesn’t move. Not yet. She is unable to move, in truth, because she is waiting and while she waits she stares. She is dressed for the occasion, dressed to receive as her mother would have said. Though it was just the two of them, her and Leo, had only ever been the two of them, no friends or guests invited, and only a minor celebration, to herald the weekend. Though it was the end of a climactic week for her, an important week, a watershed. And he had to leave to meet friends across the city for their wild weekend in Wales, downhill bikes in the Black Mountains, so it had its natural morphology anyway, this meal. They both knew that.
+<span class="text-uppercase bold">The table is still set,</span> if you can call it that at the end of the meal, the detritus scattered across it, and Hannah feels the urge to get a cloth to wipe away the spilt water, the stray shavings of parmesan, the oily drips of salad dressing, but she doesn’t move. Not yet. She is unable to move, in truth, because she is waiting and while she waits she stares.
+
+She is dressed for the occasion, dressed to receive as her mother would have said. Though it was just the two of them, her and Leo, had only ever been the two of them, no friends or guests invited, and only a minor celebration, to herald the weekend. Though it was the end of a climactic week for her, an important week, a watershed. And he had to leave to meet friends across the city for their wild weekend in Wales, downhill bikes in the Black Mountains, so it had its natural morphology anyway, this meal. They both knew that.
 
 She has sat here for an hour now, staring. The kitchen window this side looks toward the road, the low ledge affording a grandstand view of traffic and passers-by though not of callers to her door. Her gaze has barely altered from the street’s strange serenity all this time, waiting for the cab, waiting for the doorbell, waiting for the jangle of keys and the heavy clunk of the twisted lock. Still she waits and it feels like anticipation in her mind, of runners in some kind of marathon, out of sight but coming, though maybe this one is just a two-horse race between Leo and Guy Verhoeven. Yes, he had left, Leo, and she had watched him cross the road and put a hand out to ``feel for the flint wall as he turned the corner and she sent Guy a message. And also she thought, maybe he will come back.
 
