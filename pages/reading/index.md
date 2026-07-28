@@ -32,4 +32,4 @@ I'm on [The StoryGraph](https://app.thestorygraph.com/profile/joesb){target=_bla
 
 ---
 
-[My reading for 2026](/reading/2026/){.single-meta-forward .bold}
+[All my reading for 2026](/reading/2026/){.single-meta-forward .bold}
