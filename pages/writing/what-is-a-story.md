@@ -5,6 +5,7 @@ layout: page.njk
 date: 2023-06-27
 promoted: true
 sharePage: true
+hideDescription: true
 order: 2
 page:
   class: "page--summary--wide page--writing--light"

@@ -3,7 +3,7 @@ title: "The Third Policeman, by Flann O’Brien"
 date: 2026-03-06T17:13:04Z
 layout: page-library.njk
 promoted: true
-order: -1
+order: 0
 book:
   author: Flann O'Brien
   title: The Third Policeman

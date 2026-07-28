@@ -5,13 +5,15 @@ layout: page.njk
 date: 2018-01-05
 promoted: true
 sharePage: true
+showMetadata: false
+showDescription: false
 order: 5
 tags:
   - '#writing'
   - Short Story
 canonical: https://www.jsbaker.co.uk/writing/love-that-transcends-death/
 page:
-  class: "page--with-hero page--writing page--writing--light"
+  class: "page--with-hero page--writing page--writing--light page--short-story"
 image:
   path: "/static/images/source/filippo-andolfatto-X63Vc5OZKlo-unsplash.jpg"
   alt: "Grayscale shot of people's hands on steel bar photo"
@@ -27,7 +29,7 @@ image:
   caption: "Grayscale shot of people's hands on steel bar photo – Free Milan Image on Unsplash. Photo by <a href=\"https://unsplash.com/photos/X63Vc5OZKlo?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText\" rel=\"noopener ugc nofollow\" target=\"_blank\">Filippo Andolfatto</a> on <a href=\"https://unsplash.com/?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText\" rel=\"noopener ugc nofollow\" target=\"_blank\">Unsplash</a>"
 ---
 
-On the Underground today I caught a glimpse of my father, which I thought was strange since he’s been dead for twenty-nine years.
+</span>On the Underground today</span> I caught a glimpse of my father, which I thought was strange since he’s been dead for twenty-nine years.
 
 He was on the east-bound platform of the Circle and District lines at Victoria Tube station. I was on my way home after a long day at work, as was the whole of the rest of the city, it seemed. People were shuffling in both directions along the packed platform, and, since I am a pitifully polite Englishman, I was calmly waiting to take my turn to nip down the stairs off the platform and head off towards the Victoria line.
 

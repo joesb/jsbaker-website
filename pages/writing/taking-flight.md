@@ -1,22 +1,25 @@
 ---
 title: "Taking Flight"
-description: "A short story."
+description: "He’s wounded, but he seems to be coping."
 layout: page.njk
 date: 2018-02-26
 promoted: true
 sharePage: true
+showMetadata: false
+showDescription: false
 order: 4
 tags:
   - Short Story
   - '#writing'
 canonical: https://www.jsbaker.co.uk/writing/taking-flight/
 page:
-  class: "page--with-hero page--writing page--writing--light"
+  class: "page--with-hero page--writing page--writing--light page--short-story"
 image:
   path: "/static/images/source/37283402336_2dfad389a1_k_flickr.jpg"
   alt: "Peregrine falcon and prey, Caloundra"
   class:
     - image-obj-cover
+    - image-darken-25
     - image-obj-pos-lower
   # pictureClass: "content-canvas-item-right content-canvas-item-right--span-3"
   pictureClass:
@@ -27,7 +30,7 @@ image:
   caption: "Hunter and Hunted. Peregrine falcon and prey, Caloundra. Photo by <a href=\"https://www.flickr.com/photos/paul_e_balfe/37283402336/in/photostream/\" rel=\"noopener nofollow\" target=\"_blank\">Paul Balfe</a> on Flickr"
 ---
 
-The wind snatched away his breath, carrying any spoken sound soaring away across the skyline. Nods, pointing, actions were more important than any yelled commands up here, vulnerable, on the top of the office block where eyesight was more important than hearing. He liked it that way, the loud quietness where human voices were made useless by the deafening wind in high and exposed places. He had always thought the world would be a better place if there was a little less talking.
+<span class="text-uppercase bold">The wind snatched away his breath,</span> carrying any spoken sound soaring away across the skyline. Nods, pointing, actions were more important than any yelled commands up here, vulnerable, on the top of the office block where eyesight was more important than hearing. He liked it that way, the loud quietness where human voices were made useless by the deafening wind in high and exposed places. He had always thought the world would be a better place if there was a little less talking.
 
 Each member of the team had a different coloured helmet, to make it easy to tell one from another at a glance, with each person’s name stencilled on front and back. Jack. Jen. Serge. Pez. Bold, simple. All the equipment had been thoroughly checked on the ground by at least two people — every rope and accessory cord examined for nicks or stretches, every harness for worn stitching or fastenings, every belay and carabiner for wear or fatigue — so that activity on the roof would be focussed and efficient when the team were most vulnerable.
 

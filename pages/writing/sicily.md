@@ -5,13 +5,15 @@ layout: page.njk
 date: 2019-04-18
 promoted: true
 sharePage: true
+showMetadata: false
+showDescription: false
 order: 6
 tags:
   - Short Story
   - '#writing'
 canonical: https://www.jsbaker.co.uk/writing/sicily/
 page:
-  class: "page--with-hero page--writing page--writing--light"
+  class: "page--with-hero page--writing page--writing--light page--short-story"
 image:
   path: "/static/images/source/jason-briscoe-fugfJRW18jM-unsplash.jpg"
   alt: "Person drinking tea"
@@ -28,7 +30,7 @@ image:
   credit: "Photo by <a href=\"https://unsplash.com/@jsnbrsc?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText\">Jason Briscoe</a> on <a href=\"https://unsplash.com/photos/fugfJRW18jM?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText\">Unsplash</a>"
 ---
 
-He was twenty minutes late, uncharacteristically. He had sounded distressed on the phone, but he was always reliably on time, even when tense or upset. After twelve years together you know someone. You know what they like for breakfast; you know how they respond to bad drivers; you know the smell of their skin when you embrace. She knew he preferred to order when they ate out, his inherited provider instinct irrepressible despite her deconstructing, nudging, persuading, lampooning, arguing; innate dispositions are strong, even when you know they are problematic. Even so, she knew him well enough to order coffee, expecting him to arrive on time and to appreciate the forethought.
+<span class="text-uppercase bold">He was twenty minutes late,</span> uncharacteristically. He had sounded distressed on the phone, but he was always reliably on time, even when tense or upset. After twelve years together you know someone. You know what they like for breakfast; you know how they respond to bad drivers; you know the smell of their skin when you embrace. She knew he preferred to order when they ate out, his inherited provider instinct irrepressible despite her deconstructing, nudging, persuading, lampooning, arguing; innate dispositions are strong, even when you know they are problematic. Even so, she knew him well enough to order coffee, expecting him to arrive on time and to appreciate the forethought.
 
 She had suggested this particular coffee shop. ‘Spinnato’ — named apparently in honour of the finest coffee shop in Palermo, maybe in all of Sicily — had quickly gained a reputation as the best in town. (What had happened at the meeting this morning?) She had wanted to try it for a while, and the Sicilian connection made it appropriate for the happy news that had arrived in the post that morning, after he had left for the office — a good place to put right what started to go wrong on that liminal holiday, almost two years ago now. Fortunately, Spinnato was not too far from his work and, given how he sounded on the phone, the quicker he could get here the better.
 

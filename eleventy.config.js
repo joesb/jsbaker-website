@@ -207,7 +207,7 @@ export default async function(eleventyConfig) {
   });
 
   eleventyConfig.addFilter("hasTag", (tags, tag, not = true) => {
-    return (tags || []).includes(tag) === not;
+    return (tags || []).includes(tag) == not;
   });
 
   // Check if a thing is a string

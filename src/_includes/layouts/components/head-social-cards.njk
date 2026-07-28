@@ -18,6 +18,10 @@
 {% set excerpt = ["Have you ever read … ", book.summary, "?"] | join %}
 {% endif %}
 
+{% if tags | hasTag('Short Story') %}
+{% set excerpt = "Short story: " ~ excerpt %}
+{% endif %}
+
 {# {% if image.path %}
   {% set cardImage %}{{ metadata.url }}{% imageData image.path %}{% endset %}
 {% endif %} #}

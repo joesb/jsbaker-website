@@ -97,6 +97,17 @@
     a {
       color: var(--color-brand-white);
     }
+
+    .container {
+      > {
+        :is(:first-child) {
+          font-weight: 600;
+        }
+        :not(:first-child) {
+          margin-inline-start: var(--size-5);
+        }
+      }
+    }
   }
 }
 
@@ -112,6 +123,12 @@
 .page--writing--light {
   .page__summary {
     color: var(--surface-1);
+  }
+}
+
+.page--short-story {
+  :where(p) {
+    font-family: var(--font-family-serif);
   }
 }
 

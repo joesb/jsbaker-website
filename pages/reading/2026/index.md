@@ -4,7 +4,7 @@ description: "The books I've read in 2026, fiction and non-fiction … plus the 
 layout: review.njk
 date: 2026-07-28T12:58:21Z
 promoted: true
-order: -1
+order: 0
 page:
   class: "page--with-hero"
 tags:

@@ -2,6 +2,8 @@
 layout: base.njk
 section: page
 sharePage: false
+showMetadata: true
+showDescription: true
 image:
   caption:
   figureClass:
@@ -31,7 +33,7 @@ eleventyComputed:
 	{% endif %}
 {% endfor %}
 
-	{% if description %}
+	{% if showDescription or showMetadata %}
 	<div class="page__summary{% if page.class %}{% if page.class.includes('page--summary--wide') %} content-canvas-item-full content-canvas site-content--small-padding{% elif page.class.includes('page--with-hero') %} content-canvas-item-full content-canvas site-content site-content--zero-spacing{% else %} content-canvas-item-wide-left{% endif %}{% endif %}{% if tags | hasTag('#writing') and page.class %}{% if summary.class %} {{ summary.class }}{% elif page.class.includes('page--writing--light') %} site-content--surface-black-light site-content--surface-dark{% endif %}{% endif %}">
 
 		{% if tags | hasTag('#writing') %}
@@ -48,9 +50,11 @@ eleventyComputed:
 			</div>
 		</div>
 		{% endif %}
+		{% if showDescription and description %}
 		<div class="page__summary__content{% if page.class and (page.class.includes('page--with-hero') or page.class.includes('page--summary--wide')) %} content-canvas-item-wide-left{% endif %}">
-			{{ description | markdown | safe }}
+			{% if tags | hasTag('Short Story') %}Short story: {% endif %}{{ description | markdown | safe }}
 		</div>
+		{% endif %}
 	</div>
 	{% endif %}
 
@@ -93,7 +97,7 @@ eleventyComputed:
 	</div>
 	{% endif %}
 
-	<div class="layout-contentl{% if is_review %} content-canvas-item-full content-canvas{% endif %}">
+	<div class="layout-content{% if is_review %} content-canvas-item-full content-canvas{% endif %}">
 		{{ content | safe }}
 	</div>
 

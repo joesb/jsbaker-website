@@ -1,17 +1,19 @@
 ---
 title: "I Am Green"
-description: ""
+description: "A nature story"
 layout: page.njk
 date: 2023-10-10
 promoted: true
 sharePage: true
+showMetadata: false
+showDescription: false
 order: 2
 tags:
   - '#writing'
   - Short Story
 canonical: https://www.jsbaker.co.uk/writing/i-am-green/
 page:
-  class: "page--with-hero page--writing page--writing--light"
+  class: "page--with-hero page--writing page--writing--light page--short-story"
 image:
   path: "/static/images/source/pexels-markusspiske-113338.jpg"
   alt: "Bird's eye view of a green forest, trees"
