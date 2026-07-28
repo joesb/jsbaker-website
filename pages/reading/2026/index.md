@@ -76,7 +76,7 @@ reviews:
         book: https://app.thestorygraph.com/books/c5c5c6d4-3dbf-42ad-a564-35bcd0723c82
         cover: https://cdn.thestorygraph.com/szzzuxm2rx3r2pyamau1kv2f727c
       text: |
-        A really enjoyable read, funny and pointed, with mythological figures observing (or even precipitating?) a family in breakdown.
+        A lyrical, literary, at times hilariously bawdy book. I really enjoyed the magical realism — the mischievous Greek gods come to interfere in the last days of Old Adam Godley. It's strange and confusing, being human.
     -
       title: Harvest
       author: Jim Crace
@@ -86,7 +86,7 @@ reviews:
         book: https://app.thestorygraph.com/books/bc2bc45b-1f82-418a-8c62-b918e1224076
         cover: https://cdn.thestorygraph.com/kis7w1abuthffcv7uf39q8go7f18
       text: |
-        A great, if idiosyncratic, telling of the tragedy of the Enclosures of the Commons, but maybe more a critique of the desolation of power and greed exercised without care.
+        An idiosyncratic but beautifully lyrical story of the awful experience of [the Enclosures](https://www.thelandmagazine.org.uk/articles/short-history-enclosure-britain) in Britain and their devastating effects — the political economy shifts, a village collapses, a way of life is erased without any care. A message for our modern times.
     -
       title: Our Game
       author: John le Carré
@@ -96,7 +96,7 @@ reviews:
         book: https://app.thestorygraph.com/books/ecce03d6-02f3-451b-bed8-2a23ae6dbab5
         cover: https://cdn.thestorygraph.com/90hridcusjdyzq52r0ponzyjazs9
       text: |
-        This was a re-read of one of my favourite le Carré's, his first real foray into fiction beyond the spying world. A great exploration of whether it's truly possible to escape your past.
+        A re-read, a great re-read. I thought I remembered the book really well. I didn't. So it was a great re-read. Not the top echelon of le Carré's works, maybe, and it took a little while to get into its rhythm, but it did and so it's certainly high up in the rankings for me.
     -
       title: "Why Populists Are Winning: and How to Beat Them"
       author: Liam Byrne
@@ -106,7 +106,7 @@ reviews:
         book: https://app.thestorygraph.com/books/e72485bf-927c-47d6-9c57-4ff6f931b682
         cover: https://cdn.thestorygraph.com/2w3e3ucb1cj3s2afv6etq5qclh2s
       text: |
-        A great read, about how the levers of power and the psychology of voters are being manipulated, all in the light of the global election marathon of 2024.
+        After [2024, democracy's super-year](https://www.idea.int/initiatives/the-2024-global-elections-supercycle), the year that autocracy won big, this book is a powerful and thoroughly evidence-driven examination of the structural decay of democratic systems and the economic pressures that drive political instability — a natural fit for me.
     -
       title: "Talk: The Science of Conversation and the Art of Being Ourselves Audiobook edition"
       author: Alison Wood Brooks
