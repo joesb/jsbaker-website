@@ -33,7 +33,7 @@
     "@11ty/eleventy-plugin-rss": "^3.0.0",
     "@quasibit/eleventy-plugin-schema": "^1.13.0",
     "@types/markdown-it": "^14.1.2",
-    "autoprefixer": "^10.5.2",
+    "autoprefixer": "^10.5.4",
     "clean-css": "^5.3.3",
     "dotenv": "^17.4.2",
     "eleventy-plugin-embed-everything": "^1.21.2",
