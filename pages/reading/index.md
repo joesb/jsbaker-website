@@ -1,7 +1,7 @@
 ---
 title: Reading
 description: Notes on my reading, and thoughts about reading.
-date: 2026-07-14T13:37:22Z
+date: 2026-07-28T12:57:21Z
 layout: list.njk
 eleventyNavigation:
   key: Reading
@@ -20,7 +20,7 @@ pageClass: "site-content--surface-dark site-content--surface-rose"
 
 I'm currently reading:
 
-- Ian McEwan, *[What We Can Know](https://app.thestorygraph.com/books/1d2a8af3-90b5-4f8f-bfa1-82fd8ac07240){target=_blank rel="noopener noreferrer"}*
+- Sarah Wynn-Williams, *[Careless People: A Story of Where I Used to Work](https://app.thestorygraph.com/books/2920432a-eca7-4bf8-ab6f-c1df6bb2e2a9){target=_blank rel="noopener noreferrer"}*
 - Lauren Groff, *[Brawler](https://app.thestorygraph.com/books/c0cd15c2-d44f-4eae-bb66-c7bc7bbb4f1a){target=_blank rel="noopener noreferrer"}*
 - Seamus Heaney, *[The Spirit Level](https://app.thestorygraph.com/books/ccb046ae-3881-4ca4-9907-c540dd27f5ae){target=_blank rel="noopener noreferrer"}*
 - Alwyn Turner, *[A Shellshocked Nation: Britain Between the Wars Audiobook edition](https://app.thestorygraph.com/books/7e5087cd-6852-44f8-9493-a33288cf8363){target=_blank rel="noopener noreferrer"}*
@@ -32,4 +32,4 @@ I'm on [The StoryGraph](https://app.thestorygraph.com/profile/joesb){target=_bla
 
 ---
 
-[My reading for 2026](/reading/2026/){.single-meta-forward .bold}
+[All my reading for 2026](/reading/2026/){.single-meta-forward .bold}
