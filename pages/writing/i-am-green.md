@@ -1,10 +1,12 @@
 ---
 title: "I Am Green"
-description: ""
+description: "A nature story"
 layout: page.njk
 date: 2023-10-10
 promoted: true
 sharePage: true
+showMetadata: false
+showDescription: false
 order: 2
 tags:
   - '#writing'

@@ -17,6 +17,7 @@
       </div>
       {% if description and not (is_review or hideDescription or type == "oldbooks") %}
       <div class="container">
+        {% if tags | hasTag('Short Story') %}<p>Short story:</p>{% endif %}
         {{ description | markdown | safe }}
       </div>
       {% endif %}

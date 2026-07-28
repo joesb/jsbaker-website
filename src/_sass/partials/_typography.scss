@@ -299,3 +299,11 @@ h5,
 .para-v-narrow {
   max-inline-size: var(--size-content-1-1);
 }
+
+.text-uppercase {
+  text-transform: uppercase;
+}
+
+.text-lowercase {
+  text-transform: lowercase;
+}
