@@ -14,6 +14,7 @@ page:
 image:
   path: /static/images/oldbooks/roth-american-pastoral.avif
   alt: "Philip Roth, American Pastoral"
+  cover: /static/images/source/books/roth-philip-american-pastoral.jpeg
   class:
     - image-obj-cover
     - image-darken-50

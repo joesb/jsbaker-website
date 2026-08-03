@@ -9,6 +9,10 @@ image:
   caption:
   figureClass:
     page:
+  coverClass:
+    - figure-book-cover-picture
+    - picture-outline
+    - picture-rounded
 page:
   intro: "Yeah, sure, new books are great, but do you ever read old books?
 
@@ -48,6 +52,15 @@ eleventyComputed:
       {% endif %}
       </figure>
       {# {% ImgFigure image.caption, image.figureClass.page %}![{{ image.alt }}]({{ image.path }}){eleventy:widths="[300, 600, 1000, 1980]" eleventy:formats="webp,jpg"}{% endImgFigure %} #}
+  {% endif %}
+
+  {% if image.cover %}
+    {% set bookAlt = ['Cover for', book.title, 'by', book.author] %}
+    {% set bookAlt = bookAlt | join(' ') %}
+
+    <figure class="figure--book-cover">
+      {% image image.cover, bookAlt, image.coverClass, ' fetchpriority="high" loading="eager"', "auto", [150, 250] %}
+    </figure>
   {% endif %}
 
 {% set pageTags = [] %}

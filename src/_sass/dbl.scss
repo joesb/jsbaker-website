@@ -1,3 +1,4 @@
+@use "./tools/respond-to" as rt;
 // Bookshop.org widgets
 @use "./components/bookshop_org";
 
@@ -43,6 +44,49 @@
     > p {
       line-height: var(--font-lineheight-1);
       margin-block: 0.33rem;
+    }
+  }
+
+  .figure--book-cover {
+    grid-column: main-mid/full-end;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 0;
+    height: 30vh;
+  }
+
+  .figure-book-cover-picture {
+    width: auto;
+    height: 80%;
+    max-height: 175px;
+  }
+}
+
+@include rt.respond-to('medium') {
+  .dr-bs-library--page {
+    .figure--book-cover {
+      height: 50vh;
+    }
+
+    .figure-book-cover-picture {
+      max-height: 250px;
+    }
+  }
+}
+
+
+@include rt.respond-to('large') {
+  .dr-bs-library--page {
+    .figure--book-cover {
+      grid-column: main-end/full-end;
+      height: 60vh;
+      justify-items: left;
+      margin-inline-end: 1rem;
+    }
+
+    .figure-book-cover-picture {
+      max-height: 350px;
     }
   }
 }
