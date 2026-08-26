@@ -36,6 +36,7 @@ The gate is rusty and wedged on the gravel, but I lift a bit and it opens wide e
 The newest graves are on the far side, away from the road and near the bottom end of the cemetery. There’s four that are obviously recent, but only one has a wooden cross still. I switch on my phone’s torch. It’s just a simple plaque, and I can’t tell if it’s copper or something else in the blue-white light. I crouch. My ankle hurts. His name and dates are etched into it but that’s all. I’m none the wiser.
 
 *Nicholas Maintry, 10 February 1973 – 30 August 2025.*
+{.margin-block-vlg .margin-inline-start-vlg}
 
 I count on my fingers. How can it be thirty-three years? I’m sorry, Nick.
 
