@@ -79,6 +79,7 @@ ELEMENTS
 
     --size-content-1-1: 30ch;
     --size-content-1-2: 35ch;
+    --size-content-4: 75ch;
 
     // --gradient-6: conic-gradient(from 90deg at bottom right, black, white);
     
@@ -181,6 +182,10 @@ ELEMENTS
 :where(hr) {
   background-color: var(--surface-black-pale);
   margin-block: var(--size-fluid-2);
+}
+
+:where(p) {
+  max-inline-size: var(--size-content-4);
 }
 
 blockquote {
