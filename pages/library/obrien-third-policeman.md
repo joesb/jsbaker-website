@@ -140,7 +140,7 @@ The nonsense poem, ['Ten Years in an Open Neck Shirt'](https://genius.com/John-c
 
 And famously, the book featured in the TV show [Lost](https://www.imdb.com/title/tt0411008/){target=_blank rel="noopener noreferrer"} in 2005, at the [start of Season 2](https://www.imdb.com/title/tt0636285/){target=_blank rel="noopener noreferrer"}, in part to explain its mythology. Book [sales in the following 3 weeks](https://www.theguardian.com/world/2006/feb/24/books.media){target=_blank rel="noopener noreferrer"} exceeded those of the previous 6 years.
 
-{% ImgFigure "*The Third Policeman* in Lost, S2E1.", "content-canvas-item-full-right content-canvas-item--span-4" %}!['The Third Policeman' open on a bunk in Lost, S2E1](https://static.wikia.nocookie.net/lostpedia/images/5/5e/DesmondThe_thirdpoliceman.jpg){.picture-rounded .picture-outline}{% endImgFigure %}
+{% ImgFigure "*The Third Policeman* in Lost, S2E1.", "content-canvas-item-full-right content-canvas-item--span-4" %}!['The Third Policeman' open on a bunk in Lost, S2E1](/static/images/oldbooks/DesmondThe_thirdpoliceman.jpg){.picture-rounded .picture-outline}{% endImgFigure %}
 
 ---
 
