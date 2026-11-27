@@ -2,7 +2,7 @@
 title: "Reading Books in 2026"
 description: "The books I've read in 2026, fiction and non-fiction … plus the other stuff as well"
 layout: review.njk
-date: 2026-07-28T12:58:21Z
+date: 2026-11-27T08:53:21Z
 promoted: true
 order: 0
 page:
@@ -28,6 +28,40 @@ reviews:
     The books I've read so far in 2026 were great.{.margin-block-lg}
   reviewSet: true
   list:
+    -
+      title: Drive Your Plow Over the Bones of the Dead
+      author: Olga Tokarczuk
+      author_extras:
+        -
+          name: Antonia Lloyd-Jones
+          role: Translator
+      type: Fiction
+      month: 8
+      urls:
+        book: https://app.thestorygraph.com/books/b8083f31-0416-46e4-b9b0-42413903dda5
+        cover: https://cdn.thestorygraph.com/r6kqhi7gktfna9nzwky7u0dozb08
+      text: |
+        An woman, a village, a handful of neighbors, one obsessive perspective — I know people love this book, but it didn't really land with me. I enjoyed the weirdness of it, the working stuff out, but in the end it felt like a good book, but not great.
+    -
+      title: Is a River Alive?
+      author: Robert Macfarlane
+      type: Non-fiction
+      month: 8
+      urls:
+        book: https://app.thestorygraph.com/books/a886c37c-4ee2-4a71-9c34-60d88bc7b09d
+        cover: https://cdn.thestorygraph.com/hz50d1g9mjfgtj8arcfohs8igspr
+      text: |
+        A powerful piece with a strong argument — that rivers are not mere matter for human use, but living beings who deserve recognition in both imagination and law. The stories and their telling, as always with Macfarlane, are brilliant and profound, and they join into a compelling perspective that focuses us on the desperate exploitation of rivers … and yet the question of the title made feel that he'd stepped too far and in doing so lost it's impact.
+    -
+      title: "Careless People: A Story of Where I Used to Work"
+      author: Sarah Wynn-Williams
+      type: Non-fiction
+      month: 7
+      urls:
+        book: https://app.thestorygraph.com/books/2920432a-eca7-4bf8-ab6f-c1df6bb2e2a9
+        cover: https://cdn.thestorygraph.com/imenxp9vy81f61vnd02lnzwsf243
+      text: |
+        A powerful story of the times we live in that treats Facebook, the corporate tech giant that's been so dominant in the modern world, as a political actor, where decisions taken by careless people have consequences that connect personal impacts to international consequences.
     -
       title: Dirt Music
       author: Tim Winton
@@ -340,10 +374,9 @@ reviews:
 
 I'm currently reading:
 
-- Sarah Wynn-Williams, *[Careless People: A Story of Where I Used to Work](https://app.thestorygraph.com/books/2920432a-eca7-4bf8-ab6f-c1df6bb2e2a9){target=_blank rel="noopener noreferrer"}*
-- Lauren Groff, *[Brawler](https://app.thestorygraph.com/books/c0cd15c2-d44f-4eae-bb66-c7bc7bbb4f1a){target=_blank rel="noopener noreferrer"}*
+- Marilynne Robinson, *[Gilead](https://app.thestorygraph.com/books/42bbc95c-eb0a-461e-91ac-fa52aa6abed2){target=_blank rel="noopener noreferrer"}*
+- Daron Acemoğlu, *[What Happened to Liberal Democracy?: Remaking a Politics of Shared Prosperity](https://app.thestorygraph.com/books/95d346b2-5e13-4101-be9f-fc9498f1f9a8){target=_blank rel="noopener noreferrer"}*
 - Seamus Heaney, *[The Spirit Level](https://app.thestorygraph.com/books/ccb046ae-3881-4ca4-9907-c540dd27f5ae){target=_blank rel="noopener noreferrer"}*
-- Alwyn Turner, *[A Shellshocked Nation: Britain Between the Wars Audiobook edition](https://app.thestorygraph.com/books/7e5087cd-6852-44f8-9493-a33288cf8363){target=_blank rel="noopener noreferrer"}*
 - Hannah Arendt, *[The Origins of Totalitarianism](https://app.thestorygraph.com/books/3d22409b-1c07-48ae-9468-ac0b158ccff1){target=_blank rel="noopener noreferrer"}*
 
 I'm on [The StoryGraph](https://app.thestorygraph.com/profile/joesb){target=_blank rel="noopener noreferrer"} and [GoodReads](https://www.goodreads.com/jsbaker){target=_blank rel="noopener noreferrer"}.
