@@ -2,7 +2,7 @@
 title: "Reading Books in 2026"
 description: "The books I've read in 2026, fiction and non-fiction … plus the other stuff as well"
 layout: review.njk
-date: 2026-11-27T08:53:21Z
+date: 2026-11-28T08:23:21Z
 promoted: true
 order: 0
 page:
@@ -28,6 +28,116 @@ reviews:
     The books I've read so far in 2026 were great.{.margin-block-lg}
   reviewSet: true
   list:
+    -
+      title: Crossroads
+      author: Jonathan Franzen
+      type: fiction
+      month: 11
+      urls:
+        book: https://app.thestorygraph.com/books/1b597315-6172-4470-b5d8-f954748fc571
+        cover: https://cdn.thestorygraph.com/83u1jhwbpz1xg5hmatnqb7hoiuia
+      text: |
+        I really enjoyed this — multiple perspectives and misunderstandings, the church as a real social environment with hierarchies and moral machinery not merely portrayed with a set of presuppositions, moral ambiguities. Great stuff.
+    -
+      title: The Line of Beauty
+      author: Alan Hollinghurst
+      type: fiction
+      month: 11
+      urls:
+        book: https://app.thestorygraph.com/books/f5eeb8a9-caab-4426-9d8f-dc6c0492bb59
+        cover: https://cdn.thestorygraph.com/4232lmsp6flmmj759aottr5uweld
+      text: |
+        A good book but slow. The political and societal backdrop worked well for me as atmosphere, but I felt like they were just that, the context for the characters and not something that really shaped them or they grappled with. And there was a long wait for the tension to really build.
+    -
+      title: "The New Dark Ages: The End of Reading and the Dawn of a Post-Literate Society"
+      author: James Marriott
+      type: Non-fiction
+      month: 10
+      urls:
+        book: https://app.thestorygraph.com/books/794dbf10-d97a-4afe-8186-f78e8aa598db
+        cover: https://cdn.thestorygraph.com/be0prxu8d676ca7ra7o8wizv58ex
+      text: |
+        Not just nostalgia for print, this is an argument that our capacity for sustained attention is a political condition, not just a cultural preference, through a diagnosis of the structural forces. It is something of a polemic, though.
+    -
+      title: Flesh
+      author: David Szalay
+      type: Fiction
+      month: 10
+      urls:
+        book: https://app.thestorygraph.com/books/2bafdfb0-9640-440f-b117-359cfcd77ad8
+        cover: https://cdn.thestorygraph.com/6vpfmzgjmw2onyjns47bf8f14mkq
+      text: |
+        A modern bildungsroman, a whole-life story of a man whose life gets shaped by forces he barely steers. István is deliberately blank and the pleasure in the reading is in the accumulation and the drift of the character rather than in his interior life. It felt like a properly Greek story — comedy and tragedy, rise and fall.
+    -
+      title: The Looking Glass War
+      author: John le Carré
+      type: Fiction
+      month: 10
+      urls:
+        book: https://app.thestorygraph.com/books/a377bdb6-cb48-4b54-97da-ff032a39e8c2
+        cover: https://cdn.thestorygraph.com/wc2zqfzv7qh168f7ywafy8cpvlyc
+      text: |
+        A le Carré that I've not previously read, and part of the Smiley world. A good story of institutional decay — an obsolete department chasing relevance, and the tension between the Department and the Circus — but I didn't find it as strong as other Smiley novels.
+    -
+      title: How Democracies Die Audiobook edition
+      author: Steven Levitsky and Daniel Ziblatt
+      type: Non-fiction
+      month: 9
+      urls:
+        book: https://app.thestorygraph.com/books/c3c4f23f-cc2d-4601-b880-c177cb0c8be7
+        cover: https://cdn.thestorygraph.com/peyc6zb0blb7t6l5p4hhqpcrt3uk
+      text: |
+        A powerful book, comparing the case studies of e.g. Chile, Turkey, Hungary, to understand the steps in which democracies die, and help us heed the warnings. One caveat: it's more diagnostic than prescriptive, and the "how to stop them" material is thinner.
+    -
+      title: The Palm House
+      author: Gwendoline Riley
+      type: Fiction
+      month: 9
+      urls:
+        book: https://app.thestorygraph.com/books/f850162c-9f6d-40b1-b2d0-cf78e7ef4aa2
+        cover: https://cdn.thestorygraph.com/aslvm9l5mdpky6w5aooa64sm6vac
+      text: |
+        Yeah, didn't really get on with this one, the characters and their growth and motivations just left me a bit cold really.
+    -
+      title: Joe Country
+      author: Mick Herron
+      type: Fiction
+      month: 9
+      urls:
+        book: https://app.thestorygraph.com/books/3948b8ee-94fd-4a5f-9956-a67be18e84ea
+        cover: https://cdn.thestorygraph.com/xo8pg693g9dujhi0zd3nxg0kgbwq
+      text: |
+        I've enjoyed most of the Slow Horses/Slough House series, but I was disappointed with this one. If felt weirdly weighted and constructed, with the plot slow to set up, slow, slow, and then suddenly fast. It's interesting that the TV series has taken this book and the next, *Slough House*, together in one, as if *Joe Country* was always setting up for another story.
+    -
+      title: Brawler
+      author: Lauren Groff
+      type: Fiction — Short Stories
+      month: 9
+      urls:
+        book: https://app.thestorygraph.com/books/c0cd15c2-d44f-4eae-bb66-c7bc7bbb4f1a
+        cover: https://cdn.thestorygraph.com/kalhdh5evnx13nodviq4agrrm7kt
+      text: |
+        A lovely collection of short stories that explore moral friction and the darker sides of human nature.
+    -
+      title: Helm
+      author: Sarah Hall
+      type: Fiction
+      month: 8
+      urls:
+        book: https://app.thestorygraph.com/books/f42cc1a0-8521-430a-ae63-9be2f66bc1e7
+        cover: https://cdn.thestorygraph.com/iv41tp7mk34d080qw65u758v3uv9
+      text: |
+        A bold approach, to personify the Helm wind in Eden, Cumbria, and tell the story from the wind's perspective across millennia. Except for me, I found the story somewhat disjointed as a consequence.
+    -
+      title: "A Shellshocked Nation: Britain Between the Wars"
+      author: Alwyn Turner
+      type: Non-fiction
+      month: 8
+      urls:
+        book: https://app.thestorygraph.com/books/7e5087cd-6852-44f8-9493-a33288cf8363
+        cover: https://cdn.thestorygraph.com/jq8ijm26793wqb7znc60xo1eidq6
+      text: |
+        Good book, and useful reading for the novel I'm working on. Ordinary life in interwar Britain, as seen through scandals, entertainments, and the texture of daily experience rather than a top-down political narrative.
     -
       title: Drive Your Plow Over the Bones of the Dead
       author: Olga Tokarczuk
